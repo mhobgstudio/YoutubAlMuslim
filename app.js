@@ -19,7 +19,7 @@ const E={
   rb:$('#randomBtn'),bkb:$('#bookmarksBtn')
 };
 const D={1:{l:'Beginner',c:'#4CAF50'},2:{l:'Intermediate',c:'#2196F3'},3:{l:'Advanced',c:'#FF9800'},4:{l:'Scholar',c:'#9C27B0'}};
-const L={en:'English',ar:'العربية',ur:'اردو',tr:'Türkçe',ms:'Melayu',fr:'Français',id:'Indonesia',bn:'বাংলা',ha:'Hausa',sw:'Kiswahili',zh:'中文'};
+const LANG={en:'English',ar:'العربية',ur:'اردو',tr:'Türkçe',ms:'Melayu',fr:'Français',id:'Indonesia',bn:'বাংলা',ha:'Hausa',sw:'Kiswahili',zh:'中文'};
 
 async function init(){
   loadTheme();
@@ -149,7 +149,7 @@ function openWatch(v){
   const ini=(v.speaker||'?')[0].toUpperCase();
   E.ma.textContent=ini;E.ma.style.background=v.topicColor||'#3ea6ff';
   const tags=(v.tags||[]).map(t=>`<span class="yt-watch-tag">${esc(t)}</span>`).join('');
-  E.mm.innerHTML=`<span style="color:var(--yt-text)">${d.l}</span> • ${L[v.language]||v.language} • ${fmtD(v.duration)}${tags?'  •  '+tags:''}`;
+  E.mm.innerHTML=`<span style="color:var(--yt-text)">${d.l}</span> • ${LANG[v.language]||v.language} • ${fmtD(v.duration)}${tags?'  •  '+tags:''}`;
   E.mtg.innerHTML=tags;
   E.mp.innerHTML=`<iframe src="https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
@@ -165,7 +165,7 @@ function openWatch(v){
       <div class="yt-related-info">
         <div class="yt-related-title">${esc(rv.title)}</div>
         <div class="yt-related-channel">${esc(rv.speaker)}</div>
-        <div class="yt-related-meta">${L[rv.language]||rv.language} • ${rd.l}</div>
+        <div class="yt-related-meta">${LANG[rv.language]||rv.language} • ${rd.l}</div>
       </div>
     </div>`;
   }).join('');
