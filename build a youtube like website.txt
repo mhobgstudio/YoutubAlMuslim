@@ -1,0 +1,11 @@
+build a youtube like website using youtube video embeds that will become the database of the site, the database should consist of all possible islamic topics in existence from surface to indept. 
+
+the search field should have topic based toggles for easy searching.
+
+deeply analyze and research  for errors/inconsistencies/incompleteness/missed Islamic topics and add any improvement suggestions.
+
+make it look exactly like youtube.
+
+ask any questions you may have before proceeding.
+
+create/add it to a public git repo and host git pages then output the link here to me.

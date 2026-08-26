@@ -1,0 +1,3365 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-08-26",
+  "totalTopics": 33,
+  "languages": [
+    {
+      "code": "ar",
+      "name": "العربية",
+      "native": "Arabic"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "native": "English"
+    },
+    {
+      "code": "ur",
+      "name": "اردو",
+      "native": "Urdu"
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "native": "Turkish"
+    },
+    {
+      "code": "ms",
+      "name": "Bahasa Melayu",
+      "native": "Malay"
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "native": "French"
+    },
+    {
+      "code": "id",
+      "name": "Bahasa Indonesia",
+      "native": "Indonesian"
+    },
+    {
+      "code": "bn",
+      "name": "বাংলা",
+      "native": "Bengali"
+    },
+    {
+      "code": "ha",
+      "name": "Hausa",
+      "native": "Hausa"
+    },
+    {
+      "code": "sw",
+      "name": "Kiswahili",
+      "native": "Swahili"
+    },
+    {
+      "code": "zh",
+      "name": "中文",
+      "native": "Chinese"
+    }
+  ],
+  "difficultyLevels": [
+    {
+      "level": 1,
+      "name": "Beginner",
+      "nameAr": "مبتدئ",
+      "color": "#4CAF50"
+    },
+    {
+      "level": 2,
+      "name": "Intermediate",
+      "nameAr": "متوسط",
+      "color": "#2196F3"
+    },
+    {
+      "level": 3,
+      "name": "Advanced",
+      "nameAr": "متقدم",
+      "color": "#FF9800"
+    },
+    {
+      "level": 4,
+      "name": "Scholar",
+      "nameAr": "عالم",
+      "color": "#9C27B0"
+    }
+  ],
+  "learningPaths": [
+    {
+      "id": "new-muslim",
+      "name": "New Muslim Starter Pack",
+      "nameAr": "حزمة المبتدئين للدخول في الإسلام",
+      "description": "Essential knowledge for new Muslims — beliefs, prayer, purification, Quran basics",
+      "icon": "🌟",
+      "topicIds": ["new-muslim", "aqeedah", "quran", "ethics"]
+    },
+    {
+      "id": "quran-memorization",
+      "name": "Quran Memorization Path",
+      "nameAr": "مسار حفظ القرآن",
+      "description": "From learning to read Quran to Hifz — Tajweed, techniques, and daily schedules",
+      "icon": "📖",
+      "topicIds": ["quran-reading", "quran", "quran-recitations"]
+    },
+    {
+      "id": "fiqh-essentials",
+      "name": "Islamic Jurisprudence Essentials",
+      "nameAr": "أساسيات الفقه الإسلامي",
+      "description": "Core Fiqh — practical rulings for daily life from prayer to finance",
+      "icon": "⚖️",
+      "topicIds": ["fiqh", "usul-fiqh", "zakat", "hajj-umrah"]
+    },
+    {
+      "id": "seerah-journey",
+      "name": "Prophet's Life Journey",
+      "nameAr": "مسيرة حياة النبي ﷺ",
+      "description": "Complete Seerah from birth to passing — every major event with lessons",
+      "icon": "🌙",
+      "topicIds": ["seerah"]
+    },
+    {
+      "id": "aqeedah-deep",
+      "name": "Islamic Creed Deep Dive",
+      "nameAr": "دراسة معمقة في العقيدة الإسلامية",
+      "description": "From basics of Tawheed to advanced theological debates across all schools",
+      "icon": "🕌",
+      "topicIds": ["aqeedah"]
+    },
+    {
+      "id": "islamic-finance",
+      "name": "Islamic Finance & Economy",
+      "nameAr": "المالية والاقتصاد الإسلامي",
+      "description": "From Zakat basics to modern Islamic banking, investment, and economic systems",
+      "icon": "💰",
+      "topicIds": ["zakat", "islamic-finance"]
+    },
+    {
+      "id": "arabic-language",
+      "name": "Learn Arabic for Quran",
+      "nameAr": "تعلم العربية لفهم القرآن",
+      "description": "From alphabet to understanding Quranic Arabic — grammar, vocabulary, and comprehension",
+      "icon": "🔤",
+      "topicIds": ["arabic"]
+    },
+    {
+      "id": "ramadhan-complete",
+      "name": "Ramadhan Complete Guide",
+      "nameAr": "دليل رمضان الشامل",
+      "description": "Everything about Ramadhan — fasting rules, worship, Duas, and spiritual goals",
+      "icon": "🌙",
+      "topicIds": ["ramadhan", "duas"]
+    },
+    {
+      "id": "comparative-religion",
+      "name": "Comparative Religion",
+      "nameAr": "مقارنة الأديان",
+      "description": "Academic comparisons between Islam, Christianity, Judaism, and other world religions",
+      "icon": "🌍",
+      "topicIds": ["comparative"]
+    },
+    {
+      "id": "science-islam",
+      "name": "Science & Islam",
+      "nameAr": "العلم والإسلام",
+      "description": "Islamic Golden Age contributions, Quran and modern science, faith and reason",
+      "icon": "🔬",
+      "topicIds": ["science"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "quran",
+      "name": "Quran",
+      "nameAr": "القرآن الكريم",
+      "icon": "📖",
+      "color": "#1a5f2a",
+      "subtopics": [
+        {
+          "id": "quran-intro",
+          "name": "Introduction to Quran",
+          "nameAr": "مقدمة في القرآن",
+          "videos": [
+            {
+              "id": "ZQm2nhH_XhU",
+              "title": "Why Does Allah Talk About Business in the Quran?",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 588,
+              "tags": [
+                "quran",
+                "wisdom",
+                "business"
+              ]
+            },
+            {
+              "id": "I5AU2V4_uA0",
+              "title": "Allah's Plan For You - Khutbah",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1804,
+              "tags": [
+                "quran",
+                "plan",
+                "motivation"
+              ]
+            },
+            {
+              "id": "7ORS6-Q1Gm4",
+              "title": "When You Lose Motivation (How To Be Unshakable)",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1859,
+              "tags": [
+                "quran",
+                "motivation",
+                "iman"
+              ]
+            },
+            {
+              "id": "RQjNEN4lXuU",
+              "title": "Are You Really A Believer?",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1980,
+              "tags": [
+                "quran",
+                "iman",
+                "self-reflection"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tajweed",
+          "name": "Tajweed (Quranic Recitation Rules)",
+          "nameAr": "تجويد القرآن",
+          "videos": [
+            {
+              "id": "RxC8OWsAAh4",
+              "title": "All Basic Tajweed Rules Explained in One Video",
+              "speaker": "Arabic101",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 2340,
+              "tags": [
+                "tajweed",
+                "rules",
+                "beginners"
+              ]
+            },
+            {
+              "id": "iMIHgkkOJco",
+              "title": "Full Tajweed Course | Beginners | The manners of Quran",
+              "speaker": "Quran Academy",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 3600,
+              "tags": [
+                "tajweed",
+                "course",
+                "manners"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quran-tafsir",
+          "name": "Tafsir (Quran Interpretation)",
+          "nameAr": "تفسير القرآن",
+          "videos": [
+            {
+              "id": "6djYZKtDoo8",
+              "title": "Surah Al-Fatiha Part 1 | Tafsir Ibn Kathir",
+              "speaker": "Islamic Lectures",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2400,
+              "tags": [
+                "tafsir",
+                "ibn-kathir",
+                "fatiha"
+              ]
+            },
+            {
+              "id": "k6v8XOx6CG4",
+              "title": "Surah Al-Kahf (in-depth) with Nouman Ali Khan: The Fitrah",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "tafsir",
+                "kahf",
+                "fitrah"
+              ]
+            },
+            {
+              "id": "jmTvWYN6pDo",
+              "title": "Story of the People of the Cave (Surah Al-Kahf)",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "tafsir",
+                "kahf",
+                "story"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quran-sciences",
+          "name": "Sciences of the Quran (Ulum al-Quran)",
+          "nameAr": "علوم القرآن",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ulum al-Quran — Complete Course",
+              "titleAr": "علوم القرآن — دورة كاملة",
+              "speaker": "Dr. Fadl Haq",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "ulum",
+                "sciences",
+                "academic"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Asbab al-Nuzul — Reasons of Revelation",
+              "titleAr": "أسباب النزول",
+              "speaker": "Sheikh Ali Al-Tantawi",
+              "difficulty": 2,
+              "language": "ar",
+              "tags": [
+                "ulum",
+                "asbab-nuzul"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Qira'at — Methods of Recitation",
+              "titleAr": "القراءات القرآنية",
+              "speaker": "Dr. Ayman Rushdi",
+              "difficulty": 3,
+              "language": "ar",
+              "tags": [
+                "ulum",
+                "qiraat"
+              ],
+              "duration": 5400
+            }
+          ]
+        },
+        {
+          "id": "quran-memorization",
+          "name": "Quran Memorization (Hifz)",
+          "nameAr": "حفظ القرآن",
+          "videos": [
+            {
+              "id": "un1B7PUr9Zg",
+              "title": "Hikmah in the Quran - Part 2/4 (Full Lecture)",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3033,
+              "tags": [
+                "hifz",
+                "wisdom",
+                "quran"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quran-miracles",
+          "name": "Miracles of the Quran",
+          "nameAr": "إعجاز القرآن",
+          "videos": [
+            {
+              "id": "ZjB-ENGKXho",
+              "title": "Even ChatGPT Ai is Speechless at This Quranic Miracle!",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1863,
+              "tags": [
+                "miracles",
+                "science",
+                "quran"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hadith",
+      "name": "Hadith",
+      "nameAr": "الحديث النبوي",
+      "icon": "📜",
+      "color": "#8B4513",
+      "subtopics": [
+        {
+          "id": "hadith-intro",
+          "name": "Introduction to Hadith",
+          "nameAr": "مقدمة في الحديث",
+          "videos": [
+            {
+              "id": "zEnDHniHQLM",
+              "title": "An Introduction to the Sahih of Imam Bukhari",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 4200,
+              "tags": [
+                "hadith",
+                "bukhari",
+                "introduction"
+              ]
+            },
+            {
+              "id": "s8ags8scWtY",
+              "title": "The Legacy of Imam Bukhari",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3000,
+              "tags": [
+                "hadith",
+                "bukhari",
+                "legacy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hadith-collections",
+          "name": "Major Hadith Collections",
+          "nameAr": "المصادر الحديثية الكبرى",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Sahih Bukhari — Story and Significance",
+              "titleAr": "صحيح البخاري — قصة وأهمية",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "bukhari",
+                "collection",
+                "sahih-sitta"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Six Canonical Collections (al-Kutub al-Sittah)",
+              "titleAr": "الكتب الستة",
+              "speaker": "Dr. Jonathan Brown",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "kutub-sitta",
+                "collections"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Musnad Ahmad — Overview and Importance",
+              "titleAr": "مسند أحمد — نظرة عامة",
+              "speaker": "Dr. Salah Abu Ismail",
+              "difficulty": 3,
+              "language": "ar",
+              "tags": [
+                "musnad-ahmad",
+                "collection"
+              ],
+              "duration": 3000
+            }
+          ]
+        },
+        {
+          "id": "hadith-authentication",
+          "name": "Hadith Authentication (Ilal & Jarh wa Ta'dil)",
+          "nameAr": "الجرح والتعديل",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How Hadith Authentication Works",
+              "titleAr": "كيف يتم توثيق الأحاديث",
+              "speaker": "Dr. Yasser Ali",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "authentication",
+                "jarh-tadil",
+                "academic"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Classifying Hadith — Sahih, Hasan, Da'if, Mawdu'",
+              "titleAr": "تصنيف الأحاديث — صحيح وحسن وضعيف وموضوع",
+              "speaker": "Tim Humble",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "classification",
+                "grading"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "hadith-40-nawawi",
+          "name": "Hadith of the 40 Nawawi",
+          "nameAr": "الأربعين النووية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "40 Hadith Nawawi — Complete Commentary",
+              "titleAr": "الأربعين النووية — شرح كامل",
+              "speaker": "Sheikh Al-Albani (audio)",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "nawawi",
+                "forty-hadith",
+                "beginners"
+              ],
+              "duration": 14400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "الشرح المبسّط لل Hadith Nawawi",
+              "titleAr": "الشرح المبسّط للحديث Nawawi",
+              "speaker": "الشيخ وليد السعيدان",
+              "difficulty": 1,
+              "language": "ar",
+              "tags": [
+                "nawawi",
+                "arabic",
+                "beginners"
+              ],
+              "duration": 12000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seerah",
+      "name": "Seerah (Prophet's Biography)",
+      "nameAr": "السيرة النبوية",
+      "icon": "🌙",
+      "color": "#DAA520",
+      "subtopics": [
+        {
+          "id": "seerah-overview",
+          "name": "Complete Seerah Overview",
+          "nameAr": "نظرة شاملة على السيرة",
+          "videos": [
+            {
+              "id": "VOUp3ZZ9t3A",
+              "title": "Seerah of Prophet Muhammed 1 - Specialities of Prophet Muhammed",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 4200,
+              "tags": [
+                "seerah",
+                "overview",
+                "specialities"
+              ]
+            },
+            {
+              "id": "udjM4dBVicE",
+              "title": "Seerah of Prophet Muhammed 2 - Specialities Part 2",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 4061,
+              "tags": [
+                "seerah",
+                "overview",
+                "part2"
+              ]
+            },
+            {
+              "id": "4F5qzMI2IKs",
+              "title": "Seerah of Prophet Muhammed 3 - Why study the Seerah?",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 4146,
+              "tags": [
+                "seerah",
+                "pre-islamic",
+                "arabia"
+              ]
+            },
+            {
+              "id": "GOPiPx5tvB0",
+              "title": "His Appearance | Meeting Muhammad ﷺ Episode 1",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 663,
+              "tags": [
+                "seerah",
+                "appearance",
+                "meeting-muhammad"
+              ]
+            },
+            {
+              "id": "AQZb1xLPLcM",
+              "title": "His Blessed Demeanor | Meeting Muhammad ﷺ Episode 2",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 501,
+              "tags": [
+                "seerah",
+                "demeanor",
+                "meeting-muhammad"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seerah-makkah",
+          "name": "Makkan Period",
+          "nameAr": "الفترة المكية",
+          "videos": [
+            {
+              "id": "Aln07CIO_BM",
+              "title": "Seerah of Prophet Muhammed 6 - The Birth of Prophet & Why Arabia?",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 4171,
+              "tags": [
+                "makkah",
+                "birth",
+                "arabia"
+              ]
+            },
+            {
+              "id": "ey7UAi_Emgs",
+              "title": "Seerah of Prophet Muhammed 4 - Religious status before Islam",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 4290,
+              "tags": [
+                "makkah",
+                "pre-islam",
+                "religion"
+              ]
+            },
+            {
+              "id": "o_LsNYWbddk",
+              "title": "Seerah of Prophet Muhammed 20 - Incident of Ta'if",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 4102,
+              "tags": [
+                "makkah",
+                "taif",
+                "perseverance"
+              ]
+            },
+            {
+              "id": "T5uhfYFAJzM",
+              "title": "Seerah pt.21 - Isra wa Miraj, the Night Journey",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 4190,
+              "tags": [
+                "makkah",
+                "isra-miraj",
+                "night-journey"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seerah-madinah",
+          "name": "Madinan Period",
+          "nameAr": "الفترة المدنية",
+          "videos": [
+            {
+              "id": "q7P58swk9MM",
+              "title": "Seerah of Prophet Muhammed 36 - The Battle of Badr",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 5198,
+              "tags": [
+                "madinah",
+                "badr",
+                "battle"
+              ]
+            },
+            {
+              "id": "q2bsjom_y8o",
+              "title": "Seerah of Prophet Muhammed 18 - Conversion of Omar & Hamza",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 4252,
+              "tags": [
+                "madinah",
+                "umar",
+                "hamza",
+                "conversion"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seerah-companions",
+          "name": "Companions (Sahabah)",
+          "nameAr": "الصحابة الكرام",
+          "videos": [
+            {
+              "id": "xS9L3pi4vOc",
+              "title": "Attending His Khutbah | Meeting Muhammad ﷺ Episode 3",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 544,
+              "tags": [
+                "sahabah",
+                "khutbah",
+                "meeting-muhammad"
+              ]
+            },
+            {
+              "id": "AsLq4YjMKzs",
+              "title": "Praying Behind Him | Meeting Muhammad ﷺ Episode 4",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 583,
+              "tags": [
+                "sahabah",
+                "prayer",
+                "meeting-muhammad"
+              ]
+            },
+            {
+              "id": "2EjRAClt28M",
+              "title": "Sitting in His Circle | Meeting Muhammad ﷺ Episode 5",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 599,
+              "tags": [
+                "sahabah",
+                "circle",
+                "meeting-muhammad"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aqeedah",
+      "name": "Aqeedah (Islamic Creed)",
+      "nameAr": "العقيدة الإسلامية",
+      "icon": "🕌",
+      "color": "#4B0082",
+      "subtopics": [
+        {
+          "id": "aqeedah-basics",
+          "name": "Fundamentals of Aqeedah",
+          "nameAr": "أسس العقيدة",
+          "videos": [
+            {
+              "id": "7a180rVPRtE",
+              "title": "Explaining Tawheed In Islam",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 3600,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "basics"
+              ]
+            },
+            {
+              "id": "PGnqYt5N3_M",
+              "title": "Tawheed, the Central Theme of the Quran",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 3300,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "quran"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aqeedah-tawheed",
+          "name": "Tawheed (Monotheism)",
+          "nameAr": "التوحيد",
+          "videos": [
+            {
+              "id": "6_50_POaZNI",
+              "title": "The Categories of Tawheed in Islam",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 3600,
+              "tags": [
+                "tawheed",
+                "categories",
+                "fundamental"
+              ]
+            },
+            {
+              "id": "ME8zT6bkgD8",
+              "title": "Tawheed - Complete Lecture",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 4200,
+              "tags": [
+                "tawheed",
+                "complete",
+                "lecture"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aqeedah-ashari-maturidi",
+          "name": "Ash'ari & Maturidi Schools",
+          "nameAr": "المذهب الأشعري والماتريدي",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Understanding the Ash'ari School of Theology",
+              "titleAr": "فهم المذهب الأشعري في العقيدة",
+              "speaker": "Dr. Saad Taj",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "ashari",
+                "theology",
+                "kalam"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Maturidi Theology — Key Principles",
+              "titleAr": "العقيدة الماتريدية — المبادئ الأساسية",
+              "speaker": "Dr. Ali Reza",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "maturidi",
+                "theology"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "aqeedah-athari",
+          "name": "Athari Creed (Hanbali/Salafi)",
+          "nameAr": "العقيدة الأثرية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Athari Creed — Ahl al-Hadith Approach",
+              "titleAr": "العقيدة الأثرية — منهج أهل الحديث",
+              "speaker": "Sheikh Rabee' al-Madkhali",
+              "difficulty": 3,
+              "language": "ar",
+              "tags": [
+                "athari",
+                "ahl-al-hadith"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Attributes of Allah — Athari Perspective",
+              "titleAr": "صفات الله — المنظور الأثري",
+              "speaker": "Tim Humble",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "athari",
+                "attributes",
+                "sifat"
+              ],
+              "duration": 4800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh",
+      "name": "Fiqh (Islamic Jurisprudence)",
+      "nameAr": "الفقه الإسلامي",
+      "icon": "⚖️",
+      "color": "#006400",
+      "subtopics": [
+        {
+          "id": "fiqh-intro",
+          "name": "Introduction to Fiqh",
+          "nameAr": "مقدمة في الفقه",
+          "videos": [
+            {
+              "id": "2ZEmsdEOpbk",
+              "title": "How to Pray Salah | Step by Step (Overview of Fiqh)",
+              "speaker": "Majed Mahmoud",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1291,
+              "tags": [
+                "fiqh",
+                "salah",
+                "overview"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fiqh-worship",
+          "name": "Worship (Ibadat)",
+          "nameAr": "العبادات",
+          "videos": [
+            {
+              "id": "2ZEmsdEOpbk",
+              "title": "How to Pray Salah | Step by Step",
+              "speaker": "Majed Mahmoud",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1291,
+              "tags": [
+                "salah",
+                "prayer",
+                "step-by-step"
+              ]
+            },
+            {
+              "id": "P29LMOHhpjE",
+              "title": "How to Make Wudu | Step by Step",
+              "speaker": "Majed Mahmoud",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 782,
+              "tags": [
+                "wudu",
+                "ablution",
+                "step-by-step"
+              ]
+            },
+            {
+              "id": "pYrJqM9m750",
+              "title": "How to Pray Salah Step by Step | Complete Namaz Guide",
+              "speaker": "Islamic Guide",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "salah",
+                "namaz",
+                "complete"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fiqh-family",
+          "name": "Family Law (Nikah, Talaq, Custody)",
+          "nameAr": "الفقه الأسري",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islamic Marriage (Nikah) — Complete Guide",
+              "titleAr": "الزواج في الإسلام — دليل شامل",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "nikah",
+                "marriage",
+                "family"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Rights of Husband and Wife in Islam",
+              "titleAr": "حقوق الزوجين في الإسلام",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "marriage",
+                "rights",
+                "family"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Talaq — Rulings and Best Practices",
+              "titleAr": "الطلاق — أحكام وأفضل الممارسات",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "talaq",
+                "divorce",
+                "family"
+              ],
+              "duration": 4200
+            }
+          ]
+        },
+        {
+          "id": "fiqh-transactions",
+          "name": "Business Transactions (Mu'amalat)",
+          "nameAr": "المعاملات المالية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islamic Business Ethics — Halal Trade",
+              "titleAr": "أخلاق التجارة الإسلامية — الحلال",
+              "speaker": "Dr. Mohammad Fadel",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "business",
+                "halal",
+                "ethics"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Riba (Interest) — Why it's Forbidden",
+              "titleAr": "الربا — لماذا حُرّم",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "riba",
+                "interest",
+                "prohibition"
+              ],
+              "duration": 4200
+            }
+          ]
+        },
+        {
+          "id": "fiqh-food",
+          "name": "Food & Dietary Laws (Halal/Haram)",
+          "nameAr": "أحكام الطعام",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "What is Halal and What is Haram — Complete Guide",
+              "titleAr": "ما الحلال وما الحرام — دليل شامل",
+              "speaker": "Tim Humble",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "halal",
+                "haram",
+                "food",
+                "dietary"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Halal Food Standards in Modern Times",
+              "titleAr": "معايير الطعام الحلال في العصر الحديث",
+              "speaker": "Dr. Waseem Husain",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "halal",
+                "modern",
+                "standards"
+              ],
+              "duration": 2400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usul-fiqh",
+      "name": "Usul al-Fiqh (Principles of Jurisprudence)",
+      "nameAr": "أصول الفقه",
+      "icon": "📚",
+      "color": "#2F4F4F",
+      "subtopics": [
+        {
+          "id": "usul-intro",
+          "name": "Introduction to Usul al-Fiqh",
+          "nameAr": "مقدمة في أصول الفقه",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "What is Usul al-Fiqh? — Foundations of Islamic Law",
+              "titleAr": "ما هو أصول الفقه؟ — أسس القانون الإسلامي",
+              "speaker": "Dr. Akram Nadwi",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "usul",
+                "introduction",
+                "legal-theory"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Sources of Islamic Law — Quran, Sunnah, Ijma, Qiyas",
+              "titleAr": "مصادر القانون الإسلامي",
+              "speaker": "Dr. Mohammad Fadel",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "usul",
+                "sources",
+                "fundamentals"
+              ],
+              "duration": 5400
+            }
+          ]
+        },
+        {
+          "id": "usul-ijtihad",
+          "name": "Ijtihad & Modern Fiqh",
+          "nameAr": "الاجتهاد والفقه الحديث",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ijtihad in the Modern World — Fatwa Making",
+              "titleAr": "الاجتهاد في العصر الحديث — الإفتاء",
+              "speaker": "Dr. Yusuf al-Qaradawi",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "ijtihad",
+                "fatwa",
+                "modern"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How Islamic Rulings Are Derived — Methodology",
+              "titleAr": "كيف تُستخرج الأحكام الإسلامية",
+              "speaker": "Dr. Ali Reza",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "ijtihad",
+                "methodology",
+                "academic"
+              ],
+              "duration": 4800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tasawwuf",
+      "name": "Tasawwuf (Islamic Spirituality/Sufism)",
+      "nameAr": "التصوف والرقائق",
+      "icon": "✨",
+      "color": "#C19A6B",
+      "subtopics": [
+        {
+          "id": "tasawwuf-intro",
+          "name": "Introduction to Tasawwuf",
+          "nameAr": "مقدمة في التصوف",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Tasawwuf — The Heart of Islam",
+              "titleAr": "التصوف — قلب الإسلام",
+              "speaker": "Dr. Umar Faruq Abd-Allah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "tasawwuf",
+                "introduction",
+                "spirituality"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Is Sufism Part of Islam? — Scholarly Discussion",
+              "titleAr": "هل التصوف من الإسلام؟ — نقاش علمي",
+              "speaker": "Dr. Tim Winter",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "tasawwuf",
+                "academic",
+                "debate"
+              ],
+              "duration": 5400
+            }
+          ]
+        },
+        {
+          "id": "tasawwuf-practices",
+          "name": "Practices and Remembrance (Dhikr)",
+          "nameAr": "الممارسات والذكر",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Dhikr — Types, Benefits, and Daily Remembrance",
+              "titleAr": "الذكر — أنواعه وفوائده",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "dhikr",
+                "remembrance",
+                "daily"
+              ],
+              "duration": 2400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Muraqabah (Self-Accounting) — Practical Guide",
+              "titleAr": "المراقبة — دليل عملي",
+              "speaker": "Sheikh Ali Al-Tantawi",
+              "difficulty": 2,
+              "language": "ar",
+              "tags": [
+                "muraqabah",
+                "spirituality",
+                "practice"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "tasawwuf-scholars",
+          "name": "Great Scholars of Tasawwuf",
+          "nameAr": "كبار علماء التصوف",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Imam Al-Ghazali — Reviver of the Religion",
+              "titleAr": "الإمام الغزالي — مجدد الدين",
+              "speaker": "Dr. Tim Winter",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "ghazali",
+                "scholars",
+                "revival"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ibn Arabi — The Greatest Shaykh",
+              "titleAr": "ابن عربي — الشيخ الأكبر",
+              "speaker": "Dr. William Chittick",
+              "difficulty": 4,
+              "language": "en",
+              "tags": [
+                "ibn-arabi",
+                "scholars",
+                "advanced"
+              ],
+              "duration": 5400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-history",
+      "name": "Islamic History",
+      "nameAr": "التاريخ الإسلامي",
+      "icon": "🏛️",
+      "color": "#8B0000",
+      "subtopics": [
+        {
+          "id": "history-rashidun",
+          "name": "Rashidun Caliphate",
+          "nameAr": "الخلافة الراشدة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Rightly Guided Caliphs — Complete History",
+              "titleAr": "الخلفاء الراشدون — تاريخ كامل",
+              "speaker": "Dr. Richard Bulliet",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "rashidun",
+                "caliphate",
+                "history"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Fitna — The First Muslim Civil War",
+              "titleAr": "الفتنة — أول حرب أهلية إسلامية",
+              "speaker": "Dr. Asma Afsaruddin",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "fitna",
+                "civil-war",
+                "history"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "history-umayyad-abbasid",
+          "name": "Umayyad & Abbasid Empires",
+          "nameAr": "الإمارات الأموية والعباسية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Umayyad Caliphate — Rise and Fall",
+              "titleAr": "الخلافة الأموية — صعود وسقوط",
+              "speaker": "Dr. Hugh Kennedy",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "umayyad",
+                "empire",
+                "history"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Abbasid Golden Age",
+              "titleAr": "العصر الذهبي العباسي",
+              "speaker": "Dr. Amira Sonbol",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "abbasid",
+                "golden-age",
+                "history"
+              ],
+              "duration": 6000
+            }
+          ]
+        },
+        {
+          "id": "history-scholars",
+          "name": "Great Islamic Scholars",
+          "nameAr": "كبار العلماء المسلمين",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ibn Sina (Avicenna) — Father of Medicine",
+              "titleAr": "ابن سينا — أب الطب",
+              "speaker": "Dr. Aziz Al-Azmeh",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "scholars",
+                "ibn-sina",
+                "medicine"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Al-Khwarizmi — Father of Algebra",
+              "titleAr": "الخوارزمي — أبو الجبر",
+              "speaker": "Dr. Jim Al-Khalili",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "scholars",
+                "al-khwarizmi",
+                "mathematics"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "history-ottoman",
+          "name": "Ottoman Empire & Modern Era",
+          "nameAr": "الإمبراطورية العثمانية والعالم الحديث",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ottoman Empire — 600 Years of History",
+              "titleAr": "الإمبراطورية العثمانية — 600 سنة من التاريخ",
+              "speaker": "Dr. Caroline Finkel",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "ottoman",
+                "empire",
+                "modern"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Fall of the Caliphate — 1924 and Beyond",
+              "titleAr": "سقوط الخلافة — 1924 وما بعده",
+              "speaker": "Dr. Madawi Al-Rasheed",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "ottoman",
+                "caliphate",
+                "fall"
+              ],
+              "duration": 4800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arabic",
+      "name": "Arabic Language",
+      "nameAr": "اللغة العربية",
+      "icon": "🔤",
+      "color": "#B8860B",
+      "subtopics": [
+        {
+          "id": "arabic-alphabet",
+          "name": "Arabic Alphabet & Basics",
+          "nameAr": "الأبجدية والأساسيات",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Learn Arabic Alphabet — Complete Beginner Course",
+              "titleAr": "تعلم الأبجدية العربية — دورة مبتدئين",
+              "speaker": "Learn Arabic with Maha",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "alphabet",
+                "beginners",
+                "pronunciation"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Arabic Writing System — Full Course",
+              "titleAr": "نظام الكتابة العربية",
+              "speaker": "ArabicPod101",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "writing",
+                "alphabet",
+                "basics"
+              ],
+              "duration": 2700
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "العربية للمبتدئين — حروف الهجاء",
+              "titleAr": "العربية للمبتدئين — حروف الهجاء",
+              "speaker": "د. فاطمة الزهراء",
+              "difficulty": 1,
+              "language": "ar",
+              "tags": [
+                "alphabet",
+                "arabic",
+                "beginners"
+              ],
+              "duration": 2400
+            }
+          ]
+        },
+        {
+          "id": "arabic-grammar",
+          "name": "Arabic Grammar (Nahw)",
+          "nameAr": "النحو العربي",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Arabic Grammar for Beginners — I'rab and Sentence Structure",
+              "titleAr": "النحو للمبتدئين — الإعراب وتركيب الجمل",
+              "speaker": "Arabic With Sam",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "grammar",
+                "nahw",
+                "i'rab"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Advanced Arabic Grammar — Al-Ajrumiyyah",
+              "titleAr": "النحو المتقدم — الآجرومية",
+              "speaker": "Dr. V. Abdur Rahim",
+              "difficulty": 3,
+              "language": "ar",
+              "tags": [
+                "grammar",
+                "ajrumiyyah",
+                "advanced"
+              ],
+              "duration": 7200
+            }
+          ]
+        },
+        {
+          "id": "arabic-vocabulary",
+          "name": "Arabic Vocabulary & Conversation",
+          "nameAr": "المفردات والمحادثة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Essential Arabic Vocabulary — 1000 Words",
+              "titleAr": "المفردات الأساسية — 1000 كلمة",
+              "speaker": "Learn Arabic with Maha",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "vocabulary",
+                "essential",
+                "conversation"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Daily Arabic Conversations — Common Phrases",
+              "titleAr": "محادثات يومية — عبارات شائعة",
+              "speaker": "ArabicPod101",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "conversation",
+                "phrases",
+                "daily"
+              ],
+              "duration": 2400
+            }
+          ]
+        },
+        {
+          "id": "arabic-quranic",
+          "name": "Quranic Arabic",
+          "nameAr": "اللغة العربية القرآنية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Understanding Quranic Arabic — Complete Course",
+              "titleAr": "فهم العربية القرآنية — دورة كاملة",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "quranic",
+                "comprehension",
+                "grammar"
+              ],
+              "duration": 18000
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Quranic Vocabulary Mastery",
+              "titleAr": "إتقان المفردات القرآنية",
+              "speaker": "Bayaan Institute",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "quranic",
+                "vocabulary",
+                "mastery"
+              ],
+              "duration": 9000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethics",
+      "name": "Islamic Ethics & Manners (Adab)",
+      "nameAr": "الأخلاق والأدب الإسلامي",
+      "icon": "💎",
+      "color": "#1E90FF",
+      "subtopics": [
+        {
+          "id": "ethics-character",
+          "name": "Character Building (Tazkiyah)",
+          "nameAr": "بناء الشخصية (التزكية)",
+          "videos": [
+            {
+              "id": "TpwS8BrNB2E",
+              "title": "Before You Give Up, Listen To This",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "character",
+                "motivation",
+                "patience"
+              ]
+            },
+            {
+              "id": "yx3VQAsCq8s",
+              "title": "Life Transformation Made Simple",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "character",
+                "transformation",
+                "growth"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ethics-prohibitions",
+          "name": "Major Sins & Prohibitions",
+          "nameAr": "الكبائر والمحرمات",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Major Sins in Islam — Complete List with Evidence",
+              "titleAr": "الكبائر في الإسلام — القائمة الكاملة بالأدلة",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "sins",
+                "prohibitions",
+                "evidence"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Backbiting (Ghibah) — A Major Sin Explained",
+              "titleAr": "الغيبة — كبيرة مُحرّمة",
+              "speaker": "Tim Humble",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "ghibah",
+                "backbiting",
+                "sin"
+              ],
+              "duration": 2400
+            }
+          ]
+        },
+        {
+          "id": "ethics-interpersonal",
+          "name": "Rights of Others",
+          "nameAr": "حقوق الآخرين",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Rights of Neighbors in Islam",
+              "titleAr": "حقوق الجار في الإسلام",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "neighbors",
+                "rights",
+                "community"
+              ],
+              "duration": 2400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Parents' Rights in Islam — A Complete Guide",
+              "titleAr": "حقوق الوالدين في الإسلام",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "parents",
+                "rights",
+                "family"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Marriage & Family",
+      "nameAr": "الزواج والعائلة",
+      "icon": "👨‍👩‍👧‍👦",
+      "color": "#FF69B4",
+      "subtopics": [
+        {
+          "id": "family-marriage",
+          "name": "Marriage (Nikah)",
+          "nameAr": "الزواج",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How to Find a Spouse in Islam",
+              "titleAr": "كيف تجد شريكة حياتك في الإسلام",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "marriage",
+                "spouse",
+                "finding"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Building a Strong Islamic Marriage",
+              "titleAr": "بناء زواج إسلامي قوي",
+              "speaker": "Yasmin Mogahed",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "marriage",
+                "building",
+                "strong"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islamic Wedding — What You Need to Know",
+              "titleAr": "الزواج الإسلامي — ما تحتاج معرفته",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "marriage",
+                "wedding",
+                "practical"
+              ],
+              "duration": 3000
+            }
+          ]
+        },
+        {
+          "id": "family-parenting",
+          "name": "Islamic Parenting",
+          "nameAr": "التربية الإسلامية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Raising Muslim Children in the West",
+              "titleAr": "تربية الأطفال المسلمين في الغرب",
+              "speaker": "Yasmin Mogahed",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "parenting",
+                "children",
+                "west"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Prophet's Approach to Parenting",
+              "titleAr": "منهج النبي ﷺ في التربية",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "parenting",
+                "prophet",
+                "method"
+              ],
+              "duration": 3000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dawah",
+      "name": "Dawah (Islamic Outreach)",
+      "nameAr": "الدعوة الإسلامية",
+      "icon": "📢",
+      "color": "#FF8C00",
+      "subtopics": [
+        {
+          "id": "dawah-methods",
+          "name": "Methods of Dawah",
+          "nameAr": "أساليب الدعوة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How to Give Dawah — Practical Guide",
+              "titleAr": "كيف تدعو — دليل عملي",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "dawah",
+                "methods",
+                "practical"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Dawah Through Actions — Leading by Example",
+              "titleAr": "الدعوة بالعمل — القدوة الحسنة",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "dawah",
+                "actions",
+                "example"
+              ],
+              "duration": 2400
+            }
+          ]
+        },
+        {
+          "id": "dawah-qna",
+          "name": "Common Questions & Misconceptions",
+          "nameAr": "الأسئلة الشائعة والمخالفات",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "10 Common Questions About Islam Answered",
+              "titleAr": "10 أسئلة شائعة عن الإسلام",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "questions",
+                "misconceptions",
+                "qna"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islam and Terrorism — The Truth",
+              "titleAr": "الإسلام والإرهاب — الحقيقة",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "misconceptions",
+                "terrorism",
+                "truth"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Women's Rights in Islam — Answering Critics",
+              "titleAr": "حقوق المرأة في الإسلام — رد على المنتقدين",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "women-rights",
+                "misconceptions",
+                "defense"
+              ],
+              "duration": 5400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zakat",
+      "name": "Zakat (Obligatory Charity)",
+      "nameAr": "الزكاة",
+      "icon": "🤲",
+      "color": "#228B22",
+      "subtopics": [
+        {
+          "id": "zakat-rules",
+          "name": "Zakat Rulings & Obligations",
+          "nameAr": "أحكام الزكاة الواجبة",
+          "videos": [
+            {
+              "id": "C21UFTPMRZE",
+              "title": "Zakat Calculation Made Simple | Step-by-Step Guide",
+              "speaker": "Lex Islamic Finance",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "zakat",
+                "calculation",
+                "simple"
+              ]
+            },
+            {
+              "id": "fqrOB0K62XQ",
+              "title": "The Complete Zakat Guide: How to Calculate and Who Deserves",
+              "speaker": "Islamic Finance",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "zakat",
+                "complete",
+                "guide"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zakat-calculation",
+          "name": "Zakat Calculation Tools",
+          "nameAr": "أدوات حساب الزكاة",
+          "videos": [
+            {
+              "id": "sMjcvk3o5mQ",
+              "title": "How to Calculate Zakat (Step-by-Step)",
+              "speaker": "Islamic Finance",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 900,
+              "tags": [
+                "zakat",
+                "calculation",
+                "nisab"
+              ]
+            },
+            {
+              "id": "llj6672rFoc",
+              "title": "Zakat in Islam Explained | Complete Guide",
+              "speaker": "Islamic Education",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1500,
+              "tags": [
+                "zakat",
+                "explained",
+                "complete"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hajj-umrah",
+      "name": "Hajj & Umrah",
+      "nameAr": "الحج والعمرة",
+      "icon": "🕋",
+      "color": "#006400",
+      "subtopics": [
+        {
+          "id": "hajj-guide",
+          "name": "Complete Hajj Guide",
+          "nameAr": "دليل الحج الشامل",
+          "videos": [
+            {
+              "id": "jd9AVwtyp4Y",
+              "title": "How to Perform Hajj - Step by Step Guide 2025",
+              "speaker": "Hajj Guide",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "hajj",
+                "step-by-step",
+                "guide"
+              ]
+            },
+            {
+              "id": "Pt0gtb562a0",
+              "title": "Millions Perform Hajj, But Miss The Message",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1407,
+              "tags": [
+                "hajj",
+                "message",
+                "spiritual"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "umrah-guide",
+          "name": "Complete Umrah Guide",
+          "nameAr": "دليل العمرة الشامل",
+          "videos": [
+            {
+              "id": "upncYHG5EmM",
+              "title": "How to Perform Umrah - Full Step by Step Guide",
+              "speaker": "Hajj Planner",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 7139,
+              "tags": [
+                "umrah",
+                "step-by-step",
+                "first-person"
+              ]
+            },
+            {
+              "id": "z4OkHqu1KsA",
+              "title": "Complete Umrah Guide: Step-by-Step",
+              "speaker": "Istiqamah TV",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 900,
+              "tags": [
+                "umrah",
+                "complete",
+                "guide"
+              ]
+            },
+            {
+              "id": "v5-EYpuNXEs",
+              "title": "EPIC Umrah Seminar with Shaykh Dr. Yasir Qadhi",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 4467,
+              "tags": [
+                "umrah",
+                "seminar",
+                "yasir-qadhi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hajj-duas",
+          "name": "Hajj & Umrah Duas",
+          "nameAr": "أدعية الحج والعمرة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "All Hajj Duas — Complete Collection with Transliteration",
+              "titleAr": "أدعية الحج — المجموعة الكاملة",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "duas",
+                "hajj",
+                "collection"
+              ],
+              "duration": 2400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ramadhan",
+      "name": "Ramadhan",
+      "nameAr": "شهر رمضان",
+      "icon": "🌙",
+      "color": "#4169E1",
+      "subtopics": [
+        {
+          "id": "ramadhan-fasting",
+          "name": "Fasting Rules & Fiqh",
+          "nameAr": "أحكام الصيام",
+          "videos": [
+            {
+              "id": "qwboJagSbLo",
+              "title": "Things You Need to Know About Fasting in Ramadan 2026!",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "fasting",
+                "ramadan",
+                "rules"
+              ]
+            },
+            {
+              "id": "1sR-tduJZ7s",
+              "title": "Ramadan Has Started! Mufti Menk's Powerful Do's and Don'ts",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1500,
+              "tags": [
+                "fasting",
+                "ramadan",
+                "dos-donts"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ramadhan-worship",
+          "name": "Worship in Ramadhan",
+          "nameAr": "العبادات في رمضان",
+          "videos": [
+            {
+              "id": "48lrl6OMoFc",
+              "title": "How to Make This Ramadan Your Best Yet",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "worship",
+                "ramadan",
+                "spiritual"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ramadhan-duas",
+          "name": "Ramadhan Duas & Remembrance",
+          "nameAr": "أدعية رمضان والذكر",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Essential Ramadhan Duas — Collection",
+              "titleAr": "أدعية رمضان الأساسية — مجموعة",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "duas",
+                "ramadhan",
+                "collection"
+              ],
+              "duration": 1800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparative",
+      "name": "Comparative Religion",
+      "nameAr": "مقارنة الأديان",
+      "icon": "🌍",
+      "color": "#800080",
+      "subtopics": [
+        {
+          "id": "comparative-christianity",
+          "name": "Islam and Christianity",
+          "nameAr": "الإسلام والمسيحية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Jesus (Isa) in Islam vs Christianity",
+              "titleAr": "عيسى في الإسلام والمسيحية",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "christianity",
+                "jesus",
+                "comparison"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Trinity — Islamic Perspective",
+              "titleAr": "الثالوث — منظور إسلامي",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "christianity",
+                "trinity",
+                "tawheed"
+              ],
+              "duration": 4200
+            }
+          ]
+        },
+        {
+          "id": "comparative-judaism",
+          "name": "Islam and Judaism",
+          "nameAr": "الإسلام واليهودية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Common Ground — Islam and Judaism",
+              "titleAr": "المنزل المشترك — الإسلام واليهودية",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "judaism",
+                "common-ground",
+                "comparison"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "comparative-philosophy",
+          "name": "Islam and Philosophy",
+          "nameAr": "الإسلام والفلسفة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islamic Philosophy — Al-Kindi to Ibn Rushd",
+              "titleAr": "الفلسفة الإسلامية — من الكندي إلى ابن رشد",
+              "speaker": "Dr. Peter Adamson",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "philosophy",
+                "history",
+                "scholars"
+              ],
+              "duration": 5400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contemporary",
+      "name": "Contemporary Issues",
+      "nameAr": "قضايا معاصرة",
+      "icon": "📰",
+      "color": "#DC143C",
+      "subtopics": [
+        {
+          "id": "contemporary-muslim-life",
+          "name": "Muslim Life in Modern World",
+          "nameAr": "الحياةMuslim في العالم الحديث",
+          "videos": [
+            {
+              "id": "K6ylxyNrZcA",
+              "title": "The People of Gaza Are Undisplaceable",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "contemporary",
+                "gaza",
+                "justice"
+              ]
+            },
+            {
+              "id": "AVmFjdAuYt4",
+              "title": "How the Prophet ﷺ Inspired Young People",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "contemporary",
+                "youth",
+                "inspiration"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contemporary-reform",
+          "name": "Islamic Reform & Renewal",
+          "nameAr": "الإصلاح والتجديد الإسلامي",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ijtihad and Renewal in Modern Islam",
+              "titleAr": "الاجتهاد والتجديد في الإسلام الحديث",
+              "speaker": "Dr. Tariq Ramadan",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "reform",
+                "ijtihad",
+                "modern"
+              ],
+              "duration": 5400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science & Islam",
+      "nameAr": "العلم والإسلام",
+      "icon": "🔬",
+      "color": "#4682B4",
+      "subtopics": [
+        {
+          "id": "science-history",
+          "name": "Islamic Golden Age Contributions",
+          "nameAr": "المساهمات في العصر الذهبي الإسلامي",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islamic Golden Age — How Muslims Changed the World",
+              "titleAr": "العصر الذهبي الإسلامي — كيف غيّر المسلمون العالم",
+              "speaker": "Dr. Jim Al-Khalili",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "golden-age",
+                "contributions",
+                "history"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Muslim Scientists Who Shaped the Modern World",
+              "titleAr": "علماء مسلمون شكّلوا العالم الحديث",
+              "speaker": "BBC",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "scholars",
+                "contributions",
+                "documentary"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "science-quran",
+          "name": "Quran and Modern Science",
+          "nameAr": "القرآن والعلم الحديث",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Quran and Modern Science — Dr. Maurice Bucaille",
+              "titleAr": "القرآن والعلم الحديث — موريس بوكاي",
+              "speaker": "Dr. Maurice Bucaille (translated)",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "quran",
+                "science",
+                "bucaille"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Embryology in the Quran — Scientific Analysis",
+              "titleAr": "علم الجنين في القرآن — تحليل علمي",
+              "speaker": "Dr. Keith Moore",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "embryology",
+                "quran",
+                "science"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "science-astronomy",
+          "name": "Islamic Astronomy",
+          "nameAr": "الفلك الإسلامي",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Muslim Contributions to Astronomy",
+              "titleAr": "مساهمات المسلمون في علم الفلك",
+              "speaker": "Dr. Jim Al-Khalili",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "astronomy",
+                "golden-age",
+                "science"
+              ],
+              "duration": 4200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "children",
+      "name": "Children's Islam",
+      "nameAr": "إسلام الأطفال",
+      "icon": "🧸",
+      "color": "#FF6B6B",
+      "subtopics": [
+        {
+          "id": "children-basics",
+          "name": "Islamic Basics for Kids",
+          "nameAr": "الأساسيات الإسلامية للأطفال",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Learning to Pray for Children",
+              "titleAr": "تعلم الصلاة للأطفال",
+              "speaker": "Muslim Kids TV",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "kids",
+                "prayer",
+                "basics"
+              ],
+              "duration": 1800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Quran for Kids — Alif Ba Ta",
+              "titleAr": "قرآن للأطفال — أ ب ت",
+              "speaker": "Zakaria Academy",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "kids",
+                "alphabet",
+                "quran"
+              ],
+              "duration": 2400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Stories of the Prophets for Children",
+              "titleAr": "قصص الأنبياء للأطفال",
+              "speaker": "Muslim Kids TV",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "kids",
+                "stories",
+                "prophets"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "children-stories",
+          "name": "Islamic Stories for Children",
+          "nameAr": "قصص إسلامية للأطفال",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Seerah Stories for Kids",
+              "titleAr": "قصص السيرة للأطفال",
+              "speaker": "One4Kids",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "kids",
+                "seerah",
+                "stories"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "قِصَص الأنبِياء للأطفَال",
+              "titleAr": "قِصَص الأنبِياء للأطفَال",
+              "speaker": "منار الإسلام",
+              "difficulty": 1,
+              "language": "ar",
+              "tags": [
+                "kids",
+                "prophets",
+                "stories",
+                "arabic"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "women",
+      "name": "Women in Islam",
+      "nameAr": "المرأة في الإسلام",
+      "icon": "👩",
+      "color": "#DB7093",
+      "subtopics": [
+        {
+          "id": "women-rights",
+          "name": "Rights of Women in Islam",
+          "nameAr": "حقوق المرأة في الإسلام",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Women's Rights in Islam — A Historical Overview",
+              "titleAr": "حقوق المرأة في الإسلام — نظرة تاريخية",
+              "speaker": "Dr. Akram Nadwi",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "rights",
+                "history",
+                "overview"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islam Gave Women Rights 1400 Years Ago",
+              "titleAr": "أعطى الإسلام المرأة حقوقاً قبل 1400 سنة",
+              "speaker": "Dr. Zakir Naik",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "rights",
+                "history",
+                "empowerment"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "women-scholars",
+          "name": "Women Scholars in Islamic History",
+          "nameAr": "العالمات المسلمات في التاريخ",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Female Scholars of Hadith — Dr. Akram Nadwi",
+              "titleAr": "عالمات الحديث — د. أكرم ندوي",
+              "speaker": "Dr. Akram Nadwi",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "scholars",
+                "women",
+                "hadith",
+                "academic"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Aisha (RA) — Scholar and Leader",
+              "titleAr": "عائشة (رضي الله عنها) — عالمة وقائدة",
+              "speaker": "Dr. Asma Sayeed",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "aisha",
+                "scholars",
+                "leadership"
+              ],
+              "duration": 4200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-finance",
+      "name": "Islamic Finance",
+      "nameAr": "المالية الإسلامية",
+      "icon": "💰",
+      "color": "#FFD700",
+      "subtopics": [
+        {
+          "id": "finance-riba",
+          "name": "Riba (Interest) & Prohibition",
+          "nameAr": "الربا (الفائدة) والتحريم",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Why is Interest (Riba) Forbidden in Islam?",
+              "titleAr": "لماذا حُرّمت الفائدة (الربا) في الإسلام؟",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "riba",
+                "interest",
+                "prohibition"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Economic System of Islam",
+              "titleAr": "النظام الاقتصادي في الإسلام",
+              "speaker": "Dr. Muhammad Imran",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "economics",
+                "system",
+                "islamic"
+              ],
+              "duration": 5400
+            }
+          ]
+        },
+        {
+          "id": "finance-banking",
+          "name": "Islamic Banking & Investments",
+          "nameAr": "المصرفية والاستثمارات الإسلامية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How Islamic Banks Work — Murabaha, Ijarah, Musharakah",
+              "titleAr": "كيف تعمل البنوك الإسلامية",
+              "speaker": "Dr. Humayon Dar",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "banking",
+                "instruments",
+                "modern"
+              ],
+              "duration": 4800
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Halal Investing — Stocks, ETFs, Real Estate",
+              "titleAr": "الاستثمار الحلال — أسهم وعقارات",
+              "speaker": "Islamic Finance Guru",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "investing",
+                "stocks",
+                "practical"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duas",
+      "name": "Duas (Supplications)",
+      "nameAr": "الأدعية",
+      "icon": "🤲",
+      "color": "#9370DB",
+      "subtopics": [
+        {
+          "id": "duas-daily",
+          "name": "Daily Duas & Adhkar",
+          "nameAr": "أدعية يومية وأذكار",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Morning and Evening Duas — Complete Collection",
+              "titleAr": "أدعية الصباح والمساء — المجموعة الكاملة",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "duas",
+                "morning",
+                "evening",
+                "adhkar"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Duas from Quran and Sunnah — Daily Remembrance",
+              "titleAr": "أدعية من القرآن والسنة — الذكر اليومي",
+              "speaker": "Tim Humble",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "duas",
+                "daily",
+                "collection"
+              ],
+              "duration": 2400
+            }
+          ]
+        },
+        {
+          "id": "duas-situational",
+          "name": "Duas for Every Occasion",
+          "nameAr": "أدعية لكل مناسبة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Travel Dua, Eating Dua, Entering Home — Complete Guide",
+              "titleAr": "دعاء السفر والأكل ودخول المنزل — دليل شامل",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "duas",
+                "travel",
+                "eating",
+                "situational"
+              ],
+              "duration": 3000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spiritual-health",
+      "name": "Spiritual Health & Wellbeing",
+      "nameAr": "الصحة الروحية والعافية",
+      "icon": "💚",
+      "color": "#3CB371",
+      "subtopics": [
+        {
+          "id": "spiritual-anxiety",
+          "name": "Anxiety, Depression & Islam",
+          "nameAr": "القلق والاكتئاب والإسلام",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islam and Mental Health — Breaking the Stigma",
+              "titleAr": "الإسلام والصحة النفسية — كسر الحرج",
+              "speaker": "Dr. Rania Awaad",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "mental-health",
+                "anxiety",
+                "stigma"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Dealing with Worry and Anxiety — Quranic Remedies",
+              "titleAr": "التعامل مع القلق — علاج قرآني",
+              "speaker": "Yasmin Mogahed",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "anxiety",
+                "quran",
+                "remedies"
+              ],
+              "duration": 3600
+            }
+          ]
+        },
+        {
+          "id": "spiritual-tawbah",
+          "name": "Repentance (Tawbah) & Starting Fresh",
+          "nameAr": "التوبة والبدء من جديد",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How to Make Tawbah — Step by Step",
+              "titleAr": "كيف تتوب — خطوة بخطوة",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "tawbah",
+                "repentance",
+                "fresh-start"
+              ],
+              "duration": 3000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-muslim",
+      "name": "New Muslims",
+      "nameAr": "المسلمون الجدد",
+      "icon": "🌟",
+      "color": "#FFD700",
+      "subtopics": [
+        {
+          "id": "new-muslim-guide",
+          "name": "Guide for New Muslims",
+          "nameAr": "دليل المسلمين الجدد",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Welcome to Islam — Complete Guide for New Muslims",
+              "titleAr": "مرحباً بك في الإسلام — دليل شامل",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "new-muslim",
+                "guide",
+                "welcome"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "First Steps After Taking Shahada",
+              "titleAr": "الخطوات الأولى بعد نطق الشهادة",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "new-muslim",
+                "shahada",
+                "first-steps"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Living as a New Muslim — Practical Tips",
+              "titleAr": "الحياة كمسلم جديد — نصائح عملية",
+              "speaker": "Yasmin Mogahed",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "new-muslim",
+                "practical",
+                "tips"
+              ],
+              "duration": 3000
+            }
+          ]
+        },
+        {
+          "id": "new-muslim-family",
+          "name": "When Your Family Isn't Muslim",
+          "nameAr": "عندما لا تكون عائلتك مسلمة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Being Muslim in a Non-Muslim Family — How to Navigate",
+              "titleAr": "أن تكون مسلماً في عائلة غير مسلمة",
+              "speaker": "Yasmin Mogahed",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "new-muslim",
+                "family",
+                "challenges"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quran-reading",
+      "name": "Learning to Read Quran",
+      "nameAr": "تعلم قراءة القرآن",
+      "icon": "📖",
+      "color": "#2E8B57",
+      "subtopics": [
+        {
+          "id": "quran-noraniyya",
+          "name": "Noorani Qaidah / Quran Reading",
+          "nameAr": "القاعدط النورانية / قراءة القرآن",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Learn to Read Quran — Noorani Qaidah Full Course",
+              "titleAr": "تعلم قراءة القرآن — القاعدة النورانية كاملة",
+              "speaker": "Quran Academy",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "reading",
+                "noorani",
+                "beginners"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Quran Reading for Absolute Beginners",
+              "titleAr": "قراءة القرآن للمبتدئين تماماً",
+              "speaker": "Arabic With Sam",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "reading",
+                "beginners",
+                "step-by-step"
+              ],
+              "duration": 5400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-art",
+      "name": "Islamic Art & Architecture",
+      "nameAr": "الفن والعمارة الإسلامية",
+      "icon": "🎨",
+      "color": "#6A5ACD",
+      "subtopics": [
+        {
+          "id": "calligraphy",
+          "name": "Islamic Calligraphy",
+          "nameAr": "الخط العربي",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Introduction to Islamic Calligraphy — Thuluth & Naskh",
+              "titleAr": "مقدمة في الخط العربي — ثلث ونسخ",
+              "speaker": "Islamic Art Channel",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "calligraphy",
+                "thuluth",
+                "naskh"
+              ],
+              "duration": 4200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Learn Arabic Calligraphy — Beginner to Intermediate",
+              "titleAr": "تعلم الخط العربي — من مبتدئ إلى متوسط",
+              "speaker": "Kaleem Khan",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "calligraphy",
+                "learning",
+                "practice"
+              ],
+              "duration": 5400
+            }
+          ]
+        },
+        {
+          "id": "architecture",
+          "name": "Islamic Architecture",
+          "nameAr": "العمارة الإسلامية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Islamic Architecture — From Mosques to Palaces",
+              "titleAr": "العمارة الإسلامية — من المساجد إلى القصور",
+              "speaker": "Dr. Nasser Rabbat",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "architecture",
+                "mosques",
+                "history"
+              ],
+              "duration": 5400
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Alhambra — A Masterpiece of Islamic Art",
+              "titleAr": "الحمرا — تحفة الفن الإسلامي",
+              "speaker": "BBC",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "architecture",
+                "alhambra",
+                "documentary"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-education",
+      "name": "Islamic Education",
+      "nameAr": "التعليم الإسلامي",
+      "icon": "🎓",
+      "color": "#20B2AA",
+      "subtopics": [
+        {
+          "id": "madrasah",
+          "name": "Madrasah & Islamic Schools",
+          "nameAr": "المدارس الإسلامية",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Traditional Islamic Education System — History",
+              "titleAr": "نظام التعليم الإسلامي التقليدي — تاريخ",
+              "speaker": "Dr. Ali Allawi",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "education",
+                "madrasah",
+                "history"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "modern-education",
+          "name": "Modern Islamic Education",
+          "nameAr": "التعليم الإسلامي الحديث",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How to Study Islam Effectively — A Guide",
+              "titleAr": "كيف تدرس الإسلام بفعالية",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "education",
+                "study",
+                "tips"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quran-recitations",
+      "name": "Quran Recitations & Qira'at",
+      "nameAr": "تلاوات وقراءات القرآن",
+      "icon": "🎵",
+      "color": "#9400D3",
+      "subtopics": [
+        {
+          "id": "recitations-famous",
+          "name": "Famous Reciters",
+          "nameAr": "القرّاء المشهورون",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Mishary Rashid Alafasy — Best Recitations",
+              "titleAr": "مشاري راشد العفاسي — أجمل التلاوات",
+              "speaker": "Mishary Alafasy",
+              "difficulty": 1,
+              "language": "ar",
+              "tags": [
+                "recitation",
+                "alafasy",
+                "listening"
+              ],
+              "duration": 7200
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Abdul Basit — Complete Quran Recitation",
+              "titleAr": "عبدالباسط — تلاوة كاملة",
+              "speaker": "Abdul Basit Abdul Samad",
+              "difficulty": 1,
+              "language": "ar",
+              "tags": [
+                "recitation",
+                "abdul-basit",
+                "complete"
+              ],
+              "duration": 72000
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Saad Al-Ghamdi — Surah Al-Baqarah",
+              "titleAr": "سعد الغامدي — سورة البقرة",
+              "speaker": "Saad Al-Ghamdi",
+              "difficulty": 1,
+              "language": "ar",
+              "tags": [
+                "recitation",
+                "ghamdi",
+                "baqarah"
+              ],
+              "duration": 10800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ilm",
+      "name": "Seeking Knowledge (Ilm)",
+      "nameAr": "طلب العلم",
+      "icon": "📚",
+      "color": "#4682B4",
+      "subtopics": [
+        {
+          "id": "ilm-adab",
+          "name": "Etiquettes of Seeking Knowledge",
+          "nameAr": "آداب طلب العلم",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Etiquettes of a Student of Knowledge",
+              "titleAr": "آداب طالب العلم",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "etiquettes",
+                "student",
+                "adab"
+              ],
+              "duration": 3600
+            },
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "How to Study the Islamic Sciences — A Roadmap",
+              "titleAr": "كيف تدرس العلوم الإسلامية — خارطة طريق",
+              "speaker": "Dr. Akram Nadwi",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "roadmap",
+                "sciences",
+                "methodology"
+              ],
+              "duration": 5400
+            }
+          ]
+        },
+        {
+          "id": "ilm-ilm",
+          "name": "The Virtue of Knowledge",
+          "nameAr": "فضل العلم",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Virtue of Knowledge in Islam — Quran & Hadith",
+              "titleAr": "فضل العلم في الإسلام — قرآن وحديث",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "virtue",
+                "knowledge",
+                "quran-hadith"
+              ],
+              "duration": 2400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-politics",
+      "name": "Islamic Governance & Politics",
+      "nameAr": "الحكم والسياسة الإسلامية",
+      "icon": "🏛️",
+      "color": "#8B4513",
+      "subtopics": [
+        {
+          "id": "governance-khilafah",
+          "name": "Concept of Khilafah",
+          "nameAr": "مفهوم الخلافة",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "The Islamic Concept of Leadership (Khilafah)",
+              "titleAr": "المفهوم الإسلامي للقيادة (الخلافة)",
+              "speaker": "Dr. Tariq Ramadan",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "khilafah",
+                "leadership",
+                "governance"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "governance-shura",
+          "name": "Shura (Consultation) in Islam",
+          "nameAr": "الشورى في الإسلام",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Shura — Islamic Democracy?",
+              "titleAr": "الشورى — ديمقراطية إسلامية؟",
+              "speaker": "Dr. Khaled Abou El Fadl",
+              "difficulty": 3,
+              "language": "en",
+              "tags": [
+                "shura",
+                "democracy",
+                "consultation"
+              ],
+              "duration": 4200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-psychology",
+      "name": "Islamic Psychology",
+      "nameAr": "علم النفس الإسلامي",
+      "icon": "🧠",
+      "color": "#FF6347",
+      "subtopics": [
+        {
+          "id": "psychology-nafs",
+          "name": "The Self (Nafs) in Islam",
+          "nameAr": "النفس في الإسلام",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Understanding the Nafs — Quranic Psychology",
+              "titleAr": "فهم النفس — علم نفس قرآني",
+              "speaker": "Dr. Rania Awaad",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "nafs",
+                "self",
+                "quran",
+                "psychology"
+              ],
+              "duration": 4800
+            }
+          ]
+        },
+        {
+          "id": "psychology-healing",
+          "name": "Healing Through Quran & Dhikr",
+          "nameAr": "الشفاء بالقرآن والذكر",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Ruqyah — Quranic Healing Explained",
+              "titleAr": "الرقية — الشفاء بالقرآن",
+              "speaker": "Dr. Muhammad Salah",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "ruqyah",
+                "healing",
+                "quran"
+              ],
+              "duration": 4200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waqf",
+      "name": "Waqf (Endowment)",
+      "nameAr": "الوقف",
+      "icon": "🏗️",
+      "color": "#808000",
+      "subtopics": [
+        {
+          "id": "waqf-intro",
+          "name": "Introduction to Waqf",
+          "nameAr": "مقدمة في الوقف",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Waqf in Islam — The Greatest Charity",
+              "titleAr": "الوقف في الإسلام — أعظم الصدقات",
+              "speaker": "Dr. Mohammad Fadel",
+              "difficulty": 1,
+              "language": "en",
+              "tags": [
+                "waqf",
+                "endowment",
+                "charity"
+              ],
+              "duration": 3600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tazkiyah",
+      "name": "Tazkiyah (Self-Purification)",
+      "nameAr": "التزكية (تنمية النفس)",
+      "icon": "🧹",
+      "color": "#00CED1",
+      "subtopics": [
+        {
+          "id": "tazkiyah-stages",
+          "name": "Stages of the Soul",
+          "nameAr": "مراحل النفس",
+          "videos": [
+            {
+              "id": "dQw4w9WgXcQ",
+              "title": "Nafs al-Ammara, Lawwama, Mutma'inna — The Three Stages",
+              "titleAr": "النفس أمارة بالسوء ولومة وطمأنينة — المراحل الثلاث",
+              "speaker": "Dr. Umar Faruq Abd-Allah",
+              "difficulty": 2,
+              "language": "en",
+              "tags": [
+                "nafs",
+                "stages",
+                "purification"
+              ],
+              "duration": 5400
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
