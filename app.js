@@ -1,415 +1,234 @@
-/* ============================================
-   YoutubAlMuslim — YouTube-Exact App Logic
-   ============================================ */
-(function () {
-  'use strict';
+/* YoutubAlMuslim — YouTube-Exact Logic */
+(function(){
+'use strict';
+let db=null,allV=[],filtV=[],dispCnt=0;const PS=20;
+let actTid=null,actSid=null,curV=null;
+let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const E={
+  si:$('#searchInput'),sb:$('#searchBtn'),st:$('#sidebarToggle'),
+  sbx:$('#sidebar'),sbt:$('#sidebarTopics'),
+  cb:$('#chipsBar'),sc:$('#subtopicChips'),
+  vg:$('#videoGrid'),nr:$('#noResults'),lm:$('#loadMore'),lmb:$('#loadMoreBtn'),
+  hv:$('#homeView'),bv:$('#bookmarksView'),bg:$('#bookmarksGrid'),nb:$('#noBookmarks'),bc:$('#bookmarkCount'),
+  vm:$('#videoModal'),mp:$('#modalPlayer'),mt:$('#modalTitle'),ma:$('#modalAvatar'),
+  ms:$('#modalSpeaker'),mm:$('#modalMeta'),md:$('#modalDifficulty'),
+  ml:$('#modalLanguage'),mur:$('#modalDuration'),
+  mtg:$('#modalTags'),mb:$('#modalBookmark'),mr:$('#modalRelated'),
+  tt:$('#themeToggle'),tid:$('#themeIconDark'),til:$('#themeIconLight'),
+  rb:$('#randomBtn'),bkb:$('#bookmarksBtn')
+};
+const D={1:{l:'Beginner',c:'#4CAF50'},2:{l:'Intermediate',c:'#2196F3'},3:{l:'Advanced',c:'#FF9800'},4:{l:'Scholar',c:'#9C27B0'}};
+const L={en:'English',ar:'العربية',ur:'اردو',tr:'Türkçe',ms:'Melayu',fr:'Français',id:'Indonesia',bn:'বাংলা',ha:'Hausa',sw:'Kiswahili',zh:'中文'};
 
-  let db = null;
-  let allVideos = [];
-  let filteredVideos = [];
-  let displayedCount = 0;
-  const PAGE_SIZE = 20;
-  let activeTopicId = null;
-  let activeSubtopicId = null;
-  let currentModalVideo = null;
-  let bookmarks = JSON.parse(localStorage.getItem('ym_bookmarks') || '[]');
-
-  const $ = (sel) => document.querySelector(sel);
-  const $$ = (sel) => document.querySelectorAll(sel);
-
-  const els = {
-    searchInput: $('#searchInput'),
-    searchBtn: $('#searchBtn'),
-    sidebarToggle: $('#sidebarToggle'),
-    sidebar: $('#sidebar'),
-    sidebarTopics: $('#sidebarTopics'),
-    chipsBar: $('#chipsBar'),
-    subtopicChips: $('#subtopicChips'),
-    videoGrid: $('#videoGrid'),
-    noResults: $('#noResults'),
-    loadMore: $('#loadMore'),
-    loadMoreBtn: $('#loadMoreBtn'),
-    homeView: $('#homeView'),
-    bookmarksView: $('#bookmarksView'),
-    bookmarksGrid: $('#bookmarksGrid'),
-    noBookmarks: $('#noBookmarks'),
-    bookmarkCount: $('#bookmarkCount'),
-    videoModal: $('#videoModal'),
-    modalPlayer: $('#modalPlayer'),
-    modalTitle: $('#modalTitle'),
-    modalSpeaker: $('#modalSpeaker'),
-    modalDifficulty: $('#modalDifficulty'),
-    modalLanguage: $('#modalLanguage'),
-    modalDuration: $('#modalDuration'),
-    modalTags: $('#modalTags'),
-    modalBookmark: $('#modalBookmark'),
-    modalRelated: $('#modalRelated'),
-    themeToggle: $('#themeToggle'),
-    themeIconDark: $('#themeIconDark'),
-    themeIconLight: $('#themeIconLight'),
-    randomBtn: $('#randomBtn'),
-    bookmarksBtn: $('#bookmarksBtn'),
-  };
-
-  const DIFF = {
-    1: { label: 'Beginner', color: '#4CAF50' },
-    2: { label: 'Intermediate', color: '#2196F3' },
-    3: { label: 'Advanced', color: '#FF9800' },
-    4: { label: 'Scholar', color: '#9C27B0' },
-  };
-
-  const LANG = {
-    en: 'English', ar: 'العربية', ur: 'اردو', tr: 'Türkçe',
-    ms: 'Melayu', fr: 'Français', id: 'Indonesia', bn: 'বাংলা',
-    ha: 'Hausa', sw: 'Kiswahili', zh: '中文',
-  };
-
-  // ===== INIT =====
-  async function init() {
-    loadTheme();
-    try {
-      const resp = await fetch('data/topics.json');
-      db = await resp.json();
-      buildIndex();
-      renderChips();
-      renderSidebar();
-      renderGrid(true);
-      bindEvents();
-    } catch (e) {
-      console.error('Failed to load database:', e);
-      els.videoGrid.innerHTML = '<p style="text-align:center;padding:40px;color:#aaa;">Failed to load database. Please refresh.</p>';
-    }
+async function init(){
+  loadTheme();
+  try{
+    const r=await fetch('data/topics.json');db=await r.json();
+    buildIdx();renderChips();renderSide();renderGrid(true);bindEv();
+  }catch(e){
+    console.error(e);
+    E.vg.innerHTML='<p style="text-align:center;padding:60px;color:#aaa">Failed to load. Refresh.</p>';
   }
+}
 
-  // ===== BUILD FLAT INDEX =====
-  function buildIndex() {
-    allVideos = [];
-    db.topics.forEach(t => {
-      t.subtopics.forEach(s => {
-        s.videos.forEach(v => {
-          allVideos.push({
-            ...v,
-            topicId: t.id, topicName: t.name, topicNameAr: t.nameAr,
-            topicIcon: t.icon, topicColor: t.color,
-            subtopicId: s.id, subtopicName: s.name, subtopicNameAr: s.nameAr,
-          });
-        });
-      });
-    });
-    filteredVideos = [...allVideos];
-  }
+function buildIdx(){
+  allV=[];
+  db.topics.forEach(t=>t.subtopics.forEach(s=>s.videos.forEach(v=>{
+    allV.push({...v,topicId:t.id,topicName:t.name,topicNameAr:t.nameAr,topicIcon:t.icon,topicColor:t.color,subtopicId:s.id,subtopicName:s.name,subtopicNameAr:s.nameAr});
+  })));
+  filtV=[...allV];
+}
 
-  // ===== RENDER CHIPS BAR =====
-  function renderChips() {
-    const chips = db.topics.map(t => {
-      const count = t.subtopics.reduce((s, sub) => s + sub.videos.length, 0);
-      return `<button class="yt-chip" data-topic-id="${t.id}">${t.icon} ${t.name} (${count})</button>`;
-    }).join('');
-    els.chipsBar.innerHTML = `<button class="yt-chip active" data-topic-id="all">All</button>${chips}`;
+function renderChips(){
+  const c=db.topics.map(t=>{
+    const n=t.subtopics.reduce((a,s)=>a+s.videos.length,0);
+    return `<button class="yt-chip" data-topic-id="${t.id}">${t.icon} ${t.name}</button>`;
+  }).join('');
+  E.cb.innerHTML=`<button class="yt-chip yt-chip--active" data-topic-id="all">All</button>${c}`;
+  $$('.yt-chip').forEach(ch=>ch.addEventListener('click',()=>{
+    const tid=ch.dataset.topicId;
+    if(tid==='all'||actTid===tid)deselect();else select(tid);
+  }));
+}
 
-    $$('.yt-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        const tid = chip.dataset.topicId;
-        if (tid === 'all') { deselectTopic(); }
-        else if (activeTopicId === tid) { deselectTopic(); }
-        else { selectTopic(tid); }
-      });
-    });
-  }
+function renderSide(){
+  E.sbt.innerHTML=db.topics.map(t=>{
+    const n=t.subtopics.reduce((a,s)=>a+s.videos.length,0);
+    return `<div class="yt-guide-topic" data-topic-id="${t.id}"><span class="g-emoji">${t.icon}</span><span>${t.name}</span><span class="g-count">${n}</span></div>`;
+  }).join('');
+  $$('.yt-guide-topic').forEach(el=>el.addEventListener('click',()=>{
+    const tid=el.dataset.topicId;
+    if(actTid===tid)deselect();else select(tid);
+    showHome();window.scrollTo({top:0,behavior:'smooth'});
+  }));
+}
 
-  // ===== RENDER SIDEBAR =====
-  function renderSidebar() {
-    els.sidebarTopics.innerHTML = db.topics.map(t => {
-      const count = t.subtopics.reduce((s, sub) => s + sub.videos.length, 0);
-      return `<div class="yt-sidebar-topic" data-topic-id="${t.id}">
-        <span class="topic-emoji">${t.icon}</span>
-        <span>${t.name}</span>
-        <span class="topic-count">${count}</span>
-      </div>`;
-    }).join('');
+function select(tid){
+  actTid=tid;actSid=null;
+  const t=db.topics.find(x=>x.id===tid);if(!t)return;
+  $$('.yt-chip').forEach(c=>c.classList.toggle('active',c.dataset.topicId===tid));
+  $$('.yt-guide-topic').forEach(c=>c.classList.toggle('active',c.dataset.topicId===tid));
+  E.sc.style.display='flex';
+  E.sc.innerHTML=`<button class="yt-chip yt-chip--active" data-sub-id="all">All ${t.name}</button>`+t.subtopics.map(s=>`<button class="yt-chip" data-sub-id="${s.id}">${s.name}</button>`).join('');
+  $$('.yt-chip-bar--sub .yt-chip').forEach(ch=>ch.addEventListener('click',()=>{
+    actSid=ch.dataset.subId==='all'?null:ch.dataset.subId;
+    $$('.yt-chip-bar--sub .yt-chip').forEach(c=>c.classList.toggle('active',c.dataset.subId===ch.dataset.subId));
+    applyF();
+  }));
+  applyF();
+}
 
-    $$('.yt-sidebar-topic').forEach(el => {
-      el.addEventListener('click', () => {
-        const tid = el.dataset.topicId;
-        if (activeTopicId === tid) deselectTopic();
-        else selectTopic(tid);
-        showHome();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    });
-  }
+function deselect(){
+  actTid=null;actSid=null;
+  $$('.yt-chip').forEach(c=>c.classList.toggle('active',c.dataset.topicId==='all'));
+  $$('.yt-guide-topic').forEach(c=>c.classList.remove('active'));
+  E.sc.style.display='none';applyF();
+}
 
-  // ===== SELECT / DESELECT TOPIC =====
-  function selectTopic(topicId) {
-    activeTopicId = topicId;
-    activeSubtopicId = null;
-    const topic = db.topics.find(t => t.id === topicId);
-    if (!topic) return;
+function applyF(){
+  const q=E.si.value.toLowerCase().trim();
+  filtV=allV.filter(v=>{
+    if(actTid&&v.topicId!==actTid)return false;
+    if(actSid&&v.subtopicId!==actSid)return false;
+    if(q){const s=[v.title,v.titleAr,v.speaker,v.topicName,v.topicNameAr,v.subtopicName,v.subtopicNameAr,...(v.tags||[])].join(' ').toLowerCase();return s.includes(q);}
+    return true;
+  });
+  renderGrid(true);
+}
 
-    $$('.yt-chip').forEach(c => c.classList.toggle('active', c.dataset.topicId === topicId));
-    $$('.yt-sidebar-topic').forEach(c => c.classList.toggle('active', c.dataset.topicId === topicId));
+function renderGrid(reset){
+  if(reset){dispCnt=0;E.vg.innerHTML='';}
+  const sl=filtV.slice(dispCnt,dispCnt+PS);
+  const f=document.createDocumentFragment();
+  sl.forEach(v=>f.appendChild(mkCard(v)));
+  E.vg.appendChild(f);
+  dispCnt+=sl.length;
+  E.nr.style.display=filtV.length===0?'block':'none';
+  E.lm.style.display=dispCnt<filtV.length?'block':'none';
+}
 
-    els.subtopicChips.style.display = 'flex';
-    els.subtopicChips.innerHTML = `<button class="yt-chip active" data-sub-id="all">All ${topic.name}</button>` +
-      topic.subtopics.map(s => `<button class="yt-chip" data-sub-id="${s.id}">${s.name}</button>`).join('');
-
-    $$('.yt-subchips .yt-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        const sid = chip.dataset.subId;
-        if (sid === 'all') activeSubtopicId = null;
-        else activeSubtopicId = sid;
-        $$('.yt-subchips .yt-chip').forEach(c => c.classList.toggle('active', c.dataset.subId === sid));
-        applyFilters();
-      });
-    });
-
-    applyFilters();
-  }
-
-  function deselectTopic() {
-    activeTopicId = null;
-    activeSubtopicId = null;
-    $$('.yt-chip').forEach(c => c.classList.toggle('active', c.dataset.topicId === 'all'));
-    $$('.yt-sidebar-topic').forEach(c => c.classList.remove('active'));
-    els.subtopicChips.style.display = 'none';
-    applyFilters();
-  }
-
-  // ===== FILTERS =====
-  function applyFilters() {
-    const q = els.searchInput.value.toLowerCase().trim();
-    filteredVideos = allVideos.filter(v => {
-      if (activeTopicId && v.topicId !== activeTopicId) return false;
-      if (activeSubtopicId && v.subtopicId !== activeSubtopicId) return false;
-      if (q) {
-        const s = [v.title, v.titleAr, v.speaker, v.topicName, v.topicNameAr, v.subtopicName, v.subtopicNameAr, ...(v.tags || [])].join(' ').toLowerCase();
-        return s.includes(q);
-      }
-      return true;
-    });
-    renderGrid(true);
-  }
-
-  // ===== RENDER GRID =====
-  function renderGrid(reset) {
-    if (reset) { displayedCount = 0; els.videoGrid.innerHTML = ''; }
-    const slice = filteredVideos.slice(displayedCount, displayedCount + PAGE_SIZE);
-    const frag = document.createDocumentFragment();
-    slice.forEach((v, i) => frag.appendChild(createCard(v, displayedCount + i)));
-    els.videoGrid.appendChild(frag);
-    displayedCount += slice.length;
-    els.noResults.style.display = filteredVideos.length === 0 ? 'block' : 'none';
-    els.loadMore.style.display = displayedCount < filteredVideos.length ? 'block' : 'none';
-  }
-
-  // ===== CREATE VIDEO CARD (YouTube-style) =====
-  function createCard(v) {
-    const diff = DIFF[v.difficulty] || DIFF[1];
-    const dur = fmtDur(v.duration);
-    const isBm = bookmarks.some(b => b.id === v.id && b.topicId === v.topicId);
-    const thumb = `https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
-    const initial = (v.speaker || '?')[0].toUpperCase();
-
-    const card = document.createElement('div');
-    card.className = 'yt-card';
-    card.innerHTML = `
-      <div class="yt-card-thumb">
-        <img src="${thumb}" alt="" loading="lazy">
-        <span class="yt-card-duration">${dur}</span>
-        <span class="yt-card-difficulty" style="background:${diff.color}">${diff.label}</span>
-        <button class="yt-card-bookmark ${isBm ? 'bookmarked' : ''}" data-id="${v.id}" data-topic="${v.topicId}">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
-        </button>
+function mkCard(v){
+  const d=D[v.difficulty]||D[1];
+  const dur=fmtD(v.duration);
+  const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
+  const thumb=`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
+  const ini=(v.speaker||'?')[0].toUpperCase();
+  const prog=Math.floor(Math.random()*80+10);
+  const el=document.createElement('div');el.className='yt-card';
+  el.style.setProperty('--progress',prog+'%');
+  el.innerHTML=`
+    <div class="yt-card-thumb">
+      <img src="${thumb}" alt="" loading="lazy">
+      <div class="yt-card-overlay"></div>
+      <span class="yt-card-duration">${dur}</span>
+      <span class="yt-card-difficulty" style="background:${d.c}">${d.l}</span>
+      <div class="yt-card-progress"></div>
+      <button class="yt-card-bookmark ${isBm?'bookmarked':''}" data-id="${v.id}" data-topic="${v.topicId}">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+      </button>
+    </div>
+    <div class="yt-card-info">
+      <div class="yt-card-avatar" style="background:${v.topicColor||'#3ea6ff'}">${ini}</div>
+      <div class="yt-card-text">
+        <div class="yt-card-title">${esc(v.title)}</div>
+        <div class="yt-card-channel">${esc(v.speaker)}</div>
+        <div class="yt-card-meta">${LANG[v.language]||v.language}</div>
       </div>
-      <div class="yt-card-info">
-        <div class="yt-card-avatar">${initial}</div>
-        <div class="yt-card-text">
-          <div class="yt-card-title">${esc(v.title)}</div>
-          <div class="yt-card-channel">${esc(v.speaker)}</div>
-          <div class="yt-card-meta">${LANG[v.language] || v.language}</div>
-          ${(v.tags||[]).length ? `<div class="yt-card-tags">${v.tags.slice(0,3).map(t=>`<span class="yt-card-tag">${esc(t)}</span>`).join('')}</div>` : ''}
-        </div>
-      </div>`;
+    </div>`;
+  el.querySelector('.yt-card-thumb').addEventListener('click',e=>{if(e.target.closest('.yt-card-bookmark'))return;openWatch(v);});
+  el.querySelector('.yt-card-bookmark').addEventListener('click',e=>{e.stopPropagation();toggleBm(v);e.currentTarget.classList.toggle('bookmarked');});
+  return el;
+}
 
-    card.querySelector('.yt-card-thumb').addEventListener('click', e => {
-      if (e.target.closest('.yt-card-bookmark')) return;
-      openModal(v);
-    });
+function openWatch(v){
+  curV=v;
+  E.mt.textContent=v.title;
+  E.ms.textContent=v.speaker;
+  const d=D[v.difficulty]||D[1];
+  const ini=(v.speaker||'?')[0].toUpperCase();
+  E.ma.textContent=ini;E.ma.style.background=v.topicColor||'#3ea6ff';
+  const tags=(v.tags||[]).map(t=>`<span class="yt-watch-tag">${esc(t)}</span>`).join('');
+  E.mm.innerHTML=`<span style="color:var(--yt-text)">${d.l}</span> • ${L[v.language]||v.language} • ${fmtD(v.duration)}${tags?'  •  '+tags:''}`;
+  E.mtg.innerHTML=tags;
+  E.mp.innerHTML=`<iframe src="https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
+  const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
+  E.mb.classList.toggle('bookmarked',isBm);
+  E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
+  // Related
+  const rel=allV.filter(rv=>rv.topicId===v.topicId&&rv.id!==v.id).slice(0,10);
+  E.mr.innerHTML=rel.map(rv=>{
+    const rd=D[rv.difficulty]||D[1];
+    const rini=(rv.speaker||'?')[0].toUpperCase();
+    return `<div class="yt-related-item" data-vid="${rv.id}" data-tid="${rv.topicId}">
+      <div class="yt-related-thumb"><img src="https://img.youtube.com/vi/${rv.id}/mqdefault.jpg" alt="" loading="lazy"></div>
+      <div class="yt-related-info">
+        <div class="yt-related-title">${esc(rv.title)}</div>
+        <div class="yt-related-channel">${esc(rv.speaker)}</div>
+        <div class="yt-related-meta">${L[rv.language]||rv.language} • ${rd.l}</div>
+      </div>
+    </div>`;
+  }).join('');
+  $$('.yt-related-item').forEach(el=>el.addEventListener('click',()=>{
+    const vid=allV.find(v=>v.id===el.dataset.vid&&v.topicId===el.dataset.tid);
+    if(vid){E.vm.scrollTop=0;openWatch(vid);}
+  }));
+  E.vm.style.display='block';document.body.style.overflow='hidden';
+}
 
-    card.querySelector('.yt-card-bookmark').addEventListener('click', e => {
-      e.stopPropagation();
-      toggleBookmark(v);
-      e.currentTarget.classList.toggle('bookmarked');
-    });
+function closeModal(){E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;}
+window.closeModal=closeModal;
 
-    return card;
-  }
+function toggleBm(v){
+  const i=bms.findIndex(b=>b.id===v.id&&b.topicId===v.topicId);
+  if(i>=0)bms.splice(i,1);else bms.push({id:v.id,topicId:v.topicId,title:v.title,speaker:v.speaker,ts:Date.now()});
+  localStorage.setItem('ym_bms',JSON.stringify(bms));
+}
+window.toggleBookmarkFromModal=function(){
+  if(!curV)return;toggleBm(curV);
+  const isBm=bms.some(b=>b.id===curV.id&&b.topicId===curV.topicId);
+  E.mb.classList.toggle('bookmarked',isBm);
+  E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
+  const btn=document.querySelector(`.yt-card-bookmark[data-id="${curV.id}"]`);
+  if(btn)btn.classList.toggle('bookmarked',isBm);
+};
 
-  // ===== MODAL =====
-  function openModal(v) {
-    currentModalVideo = v;
-    els.modalTitle.textContent = v.title;
-    els.modalSpeaker.textContent = v.speaker;
-    const d = DIFF[v.difficulty] || DIFF[1];
-    els.modalDifficulty.textContent = d.label;
-    els.modalDifficulty.style.color = d.color;
-    els.modalLanguage.textContent = LANG[v.language] || v.language;
-    els.modalDuration.textContent = fmtDur(v.duration);
-    els.modalTags.innerHTML = (v.tags||[]).map(t => `<span class="yt-card-tag">${esc(t)}</span>`).join('');
-    els.modalPlayer.innerHTML = `<iframe src="https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+function renderBookmarks(){
+  if(!bms.length){E.bg.innerHTML='';E.nb.style.display='block';E.bc.textContent='';return;}
+  E.nb.style.display='none';
+  E.bc.textContent=`${bms.length} video${bms.length!==1?'s':''}`;
+  const vs=bms.map(b=>allV.find(v=>v.id===b.id&&v.topicId===b.topicId)).filter(Boolean);
+  E.bg.innerHTML='';vs.forEach(v=>E.bg.appendChild(mkCard(v)));
+}
 
-    const isBm = bookmarks.some(b => b.id === v.id && b.topicId === v.topicId);
-    els.modalBookmark.classList.toggle('bookmarked', isBm);
-    els.modalBookmark.querySelector('span').textContent = isBm ? 'Saved' : 'Save';
+window.randomVideo=function(){if(!allV.length)return;openWatch(allV[Math.floor(Math.random()*allV.length)]);};
+window.showHome=function(){E.hv.style.display='';E.bv.style.display='none';$$('.yt-guide-item').forEach(i=>i.classList.toggle('yt-guide-item--active',i.dataset.view==='home'));};
+window.showBookmarks=function(){E.hv.style.display='none';E.bv.style.display='';$$('.yt-guide-item').forEach(i=>i.classList.toggle('yt-guide-item--active',i.dataset.view==='bookmarks'));renderBookmarks();};
 
-    const related = allVideos.filter(rv => rv.topicId === v.topicId && rv.id !== v.id).slice(0, 8);
-    els.modalRelated.innerHTML = related.map(rv => `
-      <div class="yt-related-item" data-vid="${rv.id}" data-tid="${rv.topicId}">
-        <div class="yt-related-thumb"><img src="https://img.youtube.com/vi/${rv.id}/default.jpg" alt="" loading="lazy"></div>
-        <div class="yt-related-info">
-          <div class="yt-related-title">${esc(rv.title)}</div>
-          <div class="yt-related-channel">${esc(rv.speaker)}</div>
-        </div>
-      </div>`).join('');
+function loadTheme(){const t=localStorage.getItem('ym_theme')||'dark';document.documentElement.setAttribute('data-theme',t);updTI(t);}
+function toggleTheme(){const c=document.documentElement.getAttribute('data-theme');const n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('ym_theme',n);updTI(n);}
+function updTI(t){E.tid.style.display=t==='dark'?'':'none';E.til.style.display=t==='light'?'':'none';}
 
-    $$('.yt-related-item').forEach(el => {
-      el.addEventListener('click', () => {
-        const vid = allVideos.find(v => v.id === el.dataset.vid && v.topicId === el.dataset.tid);
-        if (vid) openModal(vid);
-      });
-    });
+function fmtD(s){if(!s)return'';const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60;return h>0?`${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`:`${m}:${String(sec).padStart(2,'0')}`;}
+function esc(s){if(!s)return'';return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
-    els.videoModal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
+function bindEv(){
+  let t;E.si.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(applyF,200);});
+  E.sb.addEventListener('click',applyF);
+  E.si.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();applyF();}});
+  E.st.addEventListener('click',()=>E.sbx.classList.toggle('open'));
+  E.tt.addEventListener('click',toggleTheme);
+  E.rb.addEventListener('click',window.randomVideo);
+  E.lmb.addEventListener('click',()=>renderGrid(false));
+  E.bkb.addEventListener('click',()=>{if(E.bv.style.display==='none'||!E.bv.style.display)window.showBookmarks();else window.showHome();});
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape')closeModal();
+    if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&document.activeElement!==E.si){e.preventDefault();E.si.focus();}
+  });
+  document.addEventListener('click',e=>{
+    if(window.innerWidth<=1024&&E.sbx.classList.contains('open')&&!E.sbx.contains(e.target)&&!E.st.contains(e.target))E.sbx.classList.remove('open');
+  });
+}
 
-  function closeModal() {
-    els.videoModal.style.display = 'none';
-    els.modalPlayer.innerHTML = '';
-    document.body.style.overflow = '';
-    currentModalVideo = null;
-  }
-  window.closeModal = closeModal;
-
-  // ===== BOOKMARKS =====
-  function toggleBookmark(v) {
-    const idx = bookmarks.findIndex(b => b.id === v.id && b.topicId === v.topicId);
-    if (idx >= 0) bookmarks.splice(idx, 1);
-    else bookmarks.push({ id: v.id, topicId: v.topicId, title: v.title, speaker: v.speaker, ts: Date.now() });
-    localStorage.setItem('ym_bookmarks', JSON.stringify(bookmarks));
-  }
-
-  window.toggleBookmarkFromModal = function () {
-    if (!currentModalVideo) return;
-    toggleBookmark(currentModalVideo);
-    const isBm = bookmarks.some(b => b.id === currentModalVideo.id && b.topicId === currentModalVideo.topicId);
-    els.modalBookmark.classList.toggle('bookmarked', isBm);
-    els.modalBookmark.querySelector('span').textContent = isBm ? 'Saved' : 'Save';
-    const btn = document.querySelector(`.yt-card-bookmark[data-id="${currentModalVideo.id}"]`);
-    if (btn) btn.classList.toggle('bookmarked', isBm);
-  };
-
-  function renderBookmarks() {
-    if (!bookmarks.length) {
-      els.bookmarksGrid.innerHTML = '';
-      els.noBookmarks.style.display = 'block';
-      els.bookmarkCount.textContent = '';
-      return;
-    }
-    els.noBookmarks.style.display = 'none';
-    els.bookmarkCount.textContent = `${bookmarks.length} video${bookmarks.length !== 1 ? 's' : ''}`;
-    const vids = bookmarks.map(b => allVideos.find(v => v.id === b.id && v.topicId === b.topicId)).filter(Boolean);
-    els.bookmarksGrid.innerHTML = '';
-    vids.forEach(v => els.bookmarksGrid.appendChild(createCard(v)));
-  }
-
-  // ===== RANDOM =====
-  window.randomVideo = function () {
-    if (!allVideos.length) return;
-    openModal(allVideos[Math.floor(Math.random() * allVideos.length)]);
-  };
-
-  // ===== VIEWS =====
-  window.showHome = function () {
-    els.homeView.style.display = '';
-    els.bookmarksView.style.display = 'none';
-    $$('.yt-sidebar-item').forEach(i => i.classList.toggle('active', i.dataset.view === 'home'));
-  };
-
-  window.showBookmarks = function () {
-    els.homeView.style.display = 'none';
-    els.bookmarksView.style.display = '';
-    $$('.yt-sidebar-item').forEach(i => i.classList.toggle('active', i.dataset.view === 'bookmarks'));
-    renderBookmarks();
-  };
-
-  // ===== THEME =====
-  function loadTheme() {
-    const t = localStorage.getItem('ym_theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', t);
-    updateThemeIcon(t);
-  }
-
-  function toggleTheme() {
-    const cur = document.documentElement.getAttribute('data-theme');
-    const next = cur === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('ym_theme', next);
-    updateThemeIcon(next);
-  }
-
-  function updateThemeIcon(theme) {
-    els.themeIconDark.style.display = theme === 'dark' ? '' : 'none';
-    els.themeIconLight.style.display = theme === 'light' ? '' : 'none';
-  }
-
-  // ===== HELPERS =====
-  function fmtDur(s) {
-    if (!s) return '';
-    const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
-    return h > 0 ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}` : `${m}:${String(sec).padStart(2,'0')}`;
-  }
-
-  function esc(str) {
-    if (!str) return '';
-    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-
-  // ===== EVENTS =====
-  function bindEvents() {
-    let timer;
-    els.searchInput.addEventListener('input', () => {
-      clearTimeout(timer);
-      timer = setTimeout(applyFilters, 200);
-    });
-    els.searchBtn.addEventListener('click', applyFilters);
-    els.searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); applyFilters(); } });
-
-    els.sidebarToggle.addEventListener('click', () => els.sidebar.classList.toggle('open'));
-    els.themeToggle.addEventListener('click', toggleTheme);
-    els.randomBtn.addEventListener('click', window.randomVideo);
-    els.loadMoreBtn.addEventListener('click', () => renderGrid(false));
-
-    els.bookmarksBtn.addEventListener('click', () => {
-      if (els.bookmarksView.style.display === 'none' || !els.bookmarksView.style.display) showBookmarks();
-      else showHome();
-    });
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') closeModal();
-      if (e.key === '/' && !e.ctrlKey && !e.metaKey && document.activeElement !== els.searchInput) {
-        e.preventDefault(); els.searchInput.focus();
-      }
-    });
-
-    // Close sidebar on outside click (mobile)
-    document.addEventListener('click', e => {
-      if (window.innerWidth <= 1024 && els.sidebar.classList.contains('open') &&
-          !els.sidebar.contains(e.target) && !els.sidebarToggle.contains(e.target)) {
-        els.sidebar.classList.remove('open');
-      }
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded',init);
 })();

@@ -2,10 +2,12 @@ build a youtube like website using youtube video embeds that will become the dat
 
 the search field should have topic based toggles for easy searching.
 
-deeply analyze and research  for errors/inconsistencies/incompleteness/missed Islamic topics and add any improvement suggestions.
-
-make it look exactly like youtube.
+make it look exactly like youtube with video gallery grid and everything working
 
 ask any questions you may have before proceeding.
+
+deeply analyze and research  for errors/inconsistencies/incompleteness/missed Islamic topics and add any improvement suggestions.
+
+Playwright to make sure it works as it should then loop fix if errors.
 
 create/add it to a public git repo and host git pages then output the link here to me.
