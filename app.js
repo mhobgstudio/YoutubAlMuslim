@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 let db=null,allV=[],filtV=[],dispCnt=0;const PS=20;
-let actTid=null,actSid=null,curV=null;
+let actTid=null,actSid=null,actLang=null,curV=null;
 let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 const E={
@@ -16,7 +16,8 @@ const E={
   ml:$('#modalLanguage'),mur:$('#modalDuration'),
   mtg:$('#modalTags'),mb:$('#modalBookmark'),mr:$('#modalRelated'),
   tt:$('#themeToggle'),tid:$('#themeIconDark'),til:$('#themeIconLight'),
-  rb:$('#randomBtn'),bkb:$('#bookmarksBtn')
+  rb:$('#randomBtn'),bkb:$('#bookmarksBtn'),
+  lc:$('#langChips')
 };
 const D={1:{l:'Beginner',c:'#4CAF50'},2:{l:'Intermediate',c:'#2196F3'},3:{l:'Advanced',c:'#FF9800'},4:{l:'Scholar',c:'#9C27B0'}};
 const LANG={en:'English',ar:'العربية',ur:'اردو',tr:'Türkçe',ms:'Melayu',fr:'Français',id:'Indonesia',bn:'বাংলা',ha:'Hausa',sw:'Kiswahili',zh:'中文'};
@@ -50,6 +51,16 @@ function renderChips(){
   $$('.yt-chip').forEach(ch=>ch.addEventListener('click',()=>{
     const tid=ch.dataset.topicId;
     if(tid==='all'||actTid===tid)deselect();else select(tid);
+  }));
+  // Language chips
+  const langs=[...new Set(allV.map(v=>v.language))].sort();
+  const langFlags={en:'🇺🇸',ar:'🇸🇦',ur:'🇵🇰',tr:'🇹🇷',ms:'🇲🇾',fr:'🇫🇷',id:'🇮🇩',bn:'🇧🇩',ha:'🇳🇬',sw:'🇰🇪',zh:'🇨🇳'};
+  const lc=langs.map(l=>`<button class="yt-chip yt-chip--lang" data-lang="${l}">${langFlags[l]||''} ${LANG[l]||l}</button>`).join('');
+  E.lc.innerHTML=`<button class="yt-chip yt-chip--lang yt-chip--active" data-lang="all">All Languages</button>${lc}`;
+  $$('.yt-chip-bar--lang .yt-chip').forEach(ch=>ch.addEventListener('click',()=>{
+    const l=ch.dataset.lang;
+    if(l==='all'||actLang===l){actLang=null;$$('.yt-chip-bar--lang .yt-chip').forEach(c=>c.classList.toggle('active',c.dataset.lang==='all'));}else{actLang=l;$$('.yt-chip-bar--lang .yt-chip').forEach(c=>c.classList.toggle('active',c.dataset.lang===l));}
+    applyF();
   }));
 }
 
@@ -92,7 +103,8 @@ function applyF(){
   filtV=allV.filter(v=>{
     if(actTid&&v.topicId!==actTid)return false;
     if(actSid&&v.subtopicId!==actSid)return false;
-    if(q){const s=[v.title,v.titleAr,v.speaker,v.topicName,v.topicNameAr,v.subtopicName,v.subtopicNameAr,...(v.tags||[])].join(' ').toLowerCase();return s.includes(q);}
+    if(actLang&&v.language!==actLang)return false;
+    if(q){const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();return s.includes(q);}
     return true;
   });
   renderGrid(true);
