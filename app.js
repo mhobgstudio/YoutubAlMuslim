@@ -110,6 +110,7 @@ function applyF(){
   renderGrid(true);
 }
 
+let loadObserver=null;
 function renderGrid(reset){
   if(reset){dispCnt=0;E.vg.innerHTML='';}
   const sl=filtV.slice(dispCnt,dispCnt+PS);
@@ -118,7 +119,17 @@ function renderGrid(reset){
   E.vg.appendChild(f);
   dispCnt+=sl.length;
   E.nr.style.display=filtV.length===0?'block':'none';
-  E.lm.style.display=dispCnt<filtV.length?'block':'none';
+  setupInfiniteScroll();
+}
+function setupInfiniteScroll(){
+  if(loadObserver)loadObserver.disconnect();
+  if(dispCnt>=filtV.length)return;
+  let sentinel=document.getElementById('yt-scroll-sentinel');
+  if(!sentinel){sentinel=document.createElement('div');sentinel.id='yt-scroll-sentinel';sentinel.style.height='1px';E.vg.parentNode.insertBefore(sentinel,E.vg.nextSibling);}
+  loadObserver=new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting&&dispCnt<filtV.length){renderGrid(false);}
+  },{rootMargin:'600px'});
+  loadObserver.observe(sentinel);
 }
 
 function mkCard(v){
