@@ -1,0 +1,47 @@
+name: Validate & Deploy
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate HTML
+        run: test -f index.html && echo "✅ index.html" || exit 1
+
+      - name: Validate service worker
+        run: node --check sw.js && echo "✅ sw.js valid" || exit 1
+
+      - name: Validate manifest
+        run: node -e "JSON.parse(require('fs').readFileSync('manifest.json','utf8'))" && echo "✅ manifest.json" || exit 1
+
+      - name: Validate app.js syntax
+        run: node --check app.js && echo "✅ app.js valid" || exit 1
+
+      - name: Check data file
+        run: test -f data/topics.json && echo "✅ topics.json" || echo "⚠️ topics.json missing"
+
+  deploy:
+    needs: validate
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - uses: actions/deploy-pages@v4
+        id: deployment
