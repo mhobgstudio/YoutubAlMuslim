@@ -31,17 +31,20 @@ jobs:
     needs: validate
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
-      - uses: actions/deploy-pages@v4
-        id: deployment
+          fetch-depth: 0
+
+      - name: Deploy to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan gh-pages
+          git rm -rf . 2>/dev/null || true
+          # Copy only the files needed for the site
+          cp index.html app.js style.css offline.html sw.js manifest.json ./ 2>/dev/null
+          cp -r data audio assets ./ 2>/dev/null
+          git add -A
+          git commit -m "Deploy to GitHub Pages"
+          git push -f origin gh-pages
