@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-08-26",
+  "lastUpdated": "2026-08-27",
   "totalTopics": 16,
   "languages": [
     {
@@ -17,6 +17,46 @@
       "code": "ur",
       "name": "اردو",
       "native": "Urdu"
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "native": "Turkish"
+    },
+    {
+      "code": "ms",
+      "name": "Melayu",
+      "native": "Malay"
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "native": "French"
+    },
+    {
+      "code": "id",
+      "name": "Indonesia",
+      "native": "Indonesian"
+    },
+    {
+      "code": "bn",
+      "name": "বাংলা",
+      "native": "Bengali"
+    },
+    {
+      "code": "ha",
+      "name": "Hausa",
+      "native": "Hausa"
+    },
+    {
+      "code": "sw",
+      "name": "Kiswahili",
+      "native": "Swahili"
+    },
+    {
+      "code": "zh",
+      "name": "中文",
+      "native": "Chinese"
     }
   ],
   "difficultyLevels": [
@@ -2621,6 +2661,32 @@
                 "grave",
                 "first-night",
                 "detailed"
+              ]
+            },
+            {
+              "id": "L-kF82sR5nM",
+              "title": "Life in the Grave - Questions & Punishment",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2400,
+              "tags": [
+                "grave",
+                "barzakh",
+                "afterlife"
+              ]
+            },
+            {
+              "id": "kP4xN2jQ8mL",
+              "title": "The Grave - First Station of the Hereafter",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1200,
+              "tags": [
+                "grave",
+                "first-station",
+                "death"
               ]
             }
           ]
