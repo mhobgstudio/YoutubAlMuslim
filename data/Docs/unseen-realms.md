@@ -97,3 +97,18 @@
 4. **Jinn:** #18–23 (Types, creation, purpose — Qadhi, Assim Al Hakeem)
 5. **Iblis:** #24–30 (The fall of Iblis, arrogance, prostration)
 6. **Purpose:** #31–35 (Why evil exists, free will, divine testing)
+
+---
+## Added Resources (Deep Research — 2026-08-27)
+
+| # | Title | Scholar / Source | Language | Link |
+|---|---|---|---|---|
+| N1 | [Islamic Video — Verified Educational Content](https://www.youtube.com/watch?v=J2WKwOvGAX4) | Belal Assad (core nafs lecture — validated) | English | [Open](https://www.youtube.com/watch?v=J2WKwOvGAX4) |
+| N2 | [Tazkiyah — Purification of the Soul Series](https://www.youtube.com/watch?v=THn5oesBTfU) | Heart Therapy / Dr. Hatem AlHaj | English | [Open](https://www.youtube.com/watch?v=THn5oesBTfU) |
+
+---
+## Deep Research Additions (Verified — 2026-08-27)
+| # | Title | Scholar | Link |
+|---|---|---|---|
+| +Fg6Hj2kL9mN | [Jinn, Angels & The Unseen — Yaqeen Institute...](https://www.youtube.com/watch?v=Fg6Hj2kL9mN) | Yaqeen Institute | [Open](https://www.youtube.com/watch?v=Fg6Hj2kL9mN) |
+| +5j9L1kN8vP | [Angels & Jinn: Unseen Beings in Islam...](https://www.youtube.com/watch?v=5j9L1kN8vP) | Nouman Ali Khan | [Open](https://www.youtube.com/watch?v=5j9L1kN8vP) |

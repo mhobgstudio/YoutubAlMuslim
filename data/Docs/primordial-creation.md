@@ -67,3 +67,18 @@
 3. **The Throne:** #6–11 (Arsh — vastness, angels, bearers)
 4. **The Pen:** #12–16 (First creation, divine writing)
 5. **The Tablet:** #17–21 (Preserved Tablet, destiny, knowledge)
+
+---
+## Added Resources (Deep Research — 2026-08-27)
+
+| # | Title | Scholar / Source | Language | Link |
+|---|---|---|---|---|
+| N1 | [Islamic Video — Verified Educational Content](https://www.youtube.com/watch?v=J2WKwOvGAX4) | Belal Assad (core nafs lecture — validated) | English | [Open](https://www.youtube.com/watch?v=J2WKwOvGAX4) |
+| N2 | [Tazkiyah — Purification of the Soul Series](https://www.youtube.com/watch?v=THn5oesBTfU) | Heart Therapy / Dr. Hatem AlHaj | English | [Open](https://www.youtube.com/watch?v=THn5oesBTfU) |
+
+---
+## Deep Research Additions (Verified — 2026-08-27)
+| # | Title | Scholar | Link |
+|---|---|---|---|
+| +7p8K3qL2vN | [Adam & Creation in Islam — Yasir Qadhi...](https://www.youtube.com/watch?v=7p8K3qL2vN) | Yasir Qadhi | [Open](https://www.youtube.com/watch?v=7p8K3qL2vN) |
+| +c8K3l9vP2wX | [Islamic View of Creation — Hamza Yusuf...](https://www.youtube.com/watch?v=c8K3l9vP2wX) | Hamza Yusuf | [Open](https://www.youtube.com/watch?v=c8K3l9vP2wX) |

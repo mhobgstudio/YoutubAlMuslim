@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "title": "Islamic Videos on the Human Heart & Soul (Nafs) — Enhanced Collection",
+    "purpose": "Curated, research-backed multilingual index for Islamic understanding of heart (qalb) and soul (nafs)",
+    "compiled_date": "2026-08-27",
+    "version": "2.0",
+    "total_entries": 0,
+    "languages": [],
+    "status": "in_progress"
+  },
+  "sections": {
+    "core_foundations": {
+      "title": "Core: The Soul & Self (Ruh & Nafs)",
+      "description": "Foundational concepts distinguishing ruh, nafs, and qalb",
+      "entries": []
+    },
+    "purification_tazkiyah": {
+      "title": "Purification of the Heart & Soul (Tazkiyah)",
+      "description": "Practical techniques and importance of heart purification",
+      "entries": []
+    },
+    "nafs_stages": {
+      "title": "Levels / Stages of the Nafs",
+      "description": "3-level Quranic model and 7-level Sufi taxonomy",
+      "entries": []
+    },
+    "heart_diseases": {
+      "title": "Diseases of the Heart & Their Cures",
+      "description": "Kibr, hasad, riya and classical remedies per Ibn Qayyim/Taymiyyah",
+      "entries": []
+    },
+    "supplementary": {
+      "title": "Supplementary & Related",
+      "description": "Ibn Arabi's soul map, ongoing series, obstacles to development",
+      "entries": []
+    },
+    "women_scholars": {
+      "title": "Women Scholars in Tazkiyah & Islamic Spirituality",
+      "description": "Female educators and researchers in heart purification",
+      "entries": []
+    },
+    "multilingual": {
+      "title": "Multilingual Resources",
+      "description": "Nafs/tazkiyah content in non-English languages",
+      "sections_by_language": {}
+    }
+  },
+  "validation_report": {
+    "total_validated": 0,
+    "live_links": 0,
+    "redirected_links": 0,
+    "broken_links": 0,
+    "average_load_time_ms": 0,
+    "timestamp": null
+  },
+  "schema_example": {
+    "entry": {
+      "id": "unique_identifier",
+      "number": 1,
+      "title": "Video/Article Title",
+      "scholar": "Name & credentials",
+      "language": "English",
+      "format": "video|text|podcast|playlist",
+      "url": "https://example.com",
+      "duration_minutes": null,
+      "views": null,
+      "publish_date": null,
+      "description": "Short description",
+      "category": "core_concepts|purification|stages|diseases|supplementary",
+      "quranic_references": [],
+      "classical_sources": [],
+      "validation": {
+        "status": "live",
+        "http_code": 200,
+        "load_time_ms": 0,
+        "last_checked": null
+      }
+    }
+  }
+}

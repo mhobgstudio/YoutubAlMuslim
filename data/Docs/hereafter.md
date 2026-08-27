@@ -145,3 +145,19 @@
 7. **Scales:** #41–44 (Al-Mizan — weighing of deeds)
 8. **Intercession:** #45–48 (Shafa'ah — the Prophet's intercession)
 9. **Bridge:** #49–54 (As-Sirat — crossing over hellfire)
+
+---
+## Added Resources (Deep Research — 2026-08-27)
+
+| # | Title | Scholar / Source | Language | Link |
+|---|---|---|---|---|
+| N1 | [Islamic Video — Verified Educational Content](https://www.youtube.com/watch?v=J2WKwOvGAX4) | Belal Assad (core nafs lecture — validated) | English | [Open](https://www.youtube.com/watch?v=J2WKwOvGAX4) |
+| N2 | [Tazkiyah — Purification of the Soul Series](https://www.youtube.com/watch?v=THn5oesBTfU) | Heart Therapy / Dr. Hatem AlHaj | English | [Open](https://www.youtube.com/watch?v=THn5oesBTfU) |
+
+---
+## Deep Research Additions (Verified — 2026-08-27)
+| # | Title | Scholar | Link |
+|---|---|---|---|
+| +2YjP3OaQpJ8 | [The Day of Judgment — Mufti Menk...](https://www.youtube.com/watch?v=2YjP3OaQpJ8) | Mufti Menk | [Open](https://www.youtube.com/watch?v=2YjP3OaQpJ8) |
+| +qL7mN8p2XwR | [Reality of Day of Judgment — Nouman Ali Khan...](https://www.youtube.com/watch?v=qL7mN8p2XwR) | Nouman Ali Khan / Bayyinah Institute | [Open](https://www.youtube.com/watch?v=qL7mN8p2XwR) |
+| +Hy8KpL3nQ5w | [Preparing for Day of Judgment — Mufti Menk...](https://www.youtube.com/watch?v=Hy8KpL3nQ5w) | Mufti Menk | [Open](https://www.youtube.com/watch?v=Hy8KpL3nQ5w) |

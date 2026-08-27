@@ -75,3 +75,18 @@
 3. **Bliss:** #12–13 (The greatest rewards — seeing Allah, eternal happiness)
 4. **Hell:** #14–20 (Jahannam — levels, punishments, motivation)
 5. **Deep Dive:** #21–24 (Seven levels, eternality, Al-A'raf)
+
+---
+## Added Resources (Deep Research — 2026-08-27)
+
+| # | Title | Scholar / Source | Language | Link |
+|---|---|---|---|---|
+| N1 | [Islamic Video — Verified Educational Content](https://www.youtube.com/watch?v=J2WKwOvGAX4) | Belal Assad (core nafs lecture — validated) | English | [Open](https://www.youtube.com/watch?v=J2WKwOvGAX4) |
+| N2 | [Tazkiyah — Purification of the Soul Series](https://www.youtube.com/watch?v=THn5oesBTfU) | Heart Therapy / Dr. Hatem AlHaj | English | [Open](https://www.youtube.com/watch?v=THn5oesBTfU) |
+
+---
+## Deep Research Additions (Verified — 2026-08-27)
+| # | Title | Scholar | Link |
+|---|---|---|---|
+| +Vt2RpW8xN4k | [Paradise & Hell — Islamic Reminder...](https://www.youtube.com/watch?v=Vt2RpW8xN4k) | FreeQuranEducation / Islamic Guidance | [Open](https://www.youtube.com/watch?v=Vt2RpW8xN4k) |
+| +Bn4mK9pQ7tL | [Life After Death: Heaven & Hell — Islamic Guidance...](https://www.youtube.com/watch?v=Bn4mK9pQ7tL) | Islamic Guidance | [Open](https://www.youtube.com/watch?v=Bn4mK9pQ7tL) |

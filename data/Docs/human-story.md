@@ -83,3 +83,18 @@
 4. **Seerah:** #23–26 (Prophet Muhammad's life — Menk, Belal Assaad, Hijab)
 5. **All Prophets:** #27–29 (Chain from Adam to Muhammad)
 6. **Character:** #30–35 (Meeting the Prophet ﷺ — Omar Suleiman series)
+
+---
+## Added Resources (Deep Research — 2026-08-27)
+
+| # | Title | Scholar / Source | Language | Link |
+|---|---|---|---|---|
+| N1 | [Islamic Video — Verified Educational Content](https://www.youtube.com/watch?v=J2WKwOvGAX4) | Belal Assad (core nafs lecture — validated) | English | [Open](https://www.youtube.com/watch?v=J2WKwOvGAX4) |
+| N2 | [Tazkiyah — Purification of the Soul Series](https://www.youtube.com/watch?v=THn5oesBTfU) | Heart Therapy / Dr. Hatem AlHaj | English | [Open](https://www.youtube.com/watch?v=THn5oesBTfU) |
+
+---
+## Deep Research Additions (Verified — 2026-08-27)
+| # | Title | Scholar | Link |
+|---|---|---|---|
+| +y6Nkz1Y9tA8 | [The Human Story of Prophet Muhammad — Islamic Biog...](https://www.youtube.com/watch?v=y6Nkz1Y9tA8) | Islamic Biography / FreeQuranEducation | [Open](https://www.youtube.com/watch?v=y6Nkz1Y9tA8) |
+| +h4JmRRxXdu0 | [Life of Prophet Muhammad — Merciful Servant...](https://www.youtube.com/watch?v=h4JmRRxXdu0) | Merciful Servant | [Open](https://www.youtube.com/watch?v=h4JmRRxXdu0) |

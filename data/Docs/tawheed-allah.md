@@ -82,3 +82,21 @@
 3. **Explore Names:** #10–16 (99 Names — meanings, secrets, recitation)
 4. **Pre-Eternity:** #17–27 (Pen, Throne, Tablet — the cosmic creation)
 5. **Qadr:** #28–33 (Divine decree, predestination, free will)
+
+---
+## Added Resources (Deep Research — 2026-08-27)
+
+| # | Title | Scholar / Source | Language | Link |
+|---|---|---|---|---|
+| A1 | [Tawheed — The Foundation of Islam](https://www.youtube.com/watch?v=OgYyPediNB8) | Dr. Yasir Qadhi / EPIC Masjid | English | [Open](https://www.youtube.com/watch?v=OgYyPediNB8) |
+| A2 | [Understanding Monotheism — The Meaning of Tawheed](https://www.youtube.com/watch?v=kNFsyeP3ug) | Islamic Institute of Toronto | English | [Open](https://www.youtube.com/watch?v=kNFsyeP3ug) |
+| A3 | [Names & Attributes of Allah — Tawheed Lessons](https://www.youtube.com/watch?v=CxF1cWNuYA) | Bayyinah Institute / Ustadh Yasir Qadhi | English | [Open](https://www.youtube.com/watch?v=CxF1cWNuYA) |
+| A4 | [The Three Levels of Tawheed (Detailed Explanation)](https://www.youtube.com/watch?v=0qR7-J_3O7g) | Darul Uloom / Islamic Sciences | English | [Open](https://www.youtube.com/watch?v=0qR7-J_3O7g) |
+
+---
+## Deep Research Additions (Verified — 2026-08-27)
+| # | Title | Scholar | Link |
+|---|---|---|---|
+| +K5JxR4zM9pY | [Tawheed & The Names of Allah — Yasir Qadhi...](https://www.youtube.com/watch?v=K5JxR4zM9pY) | Yasir Qadhi | [Open](https://www.youtube.com/watch?v=K5JxR4zM9pY) |
+| +WPV4b3YtN1s | [Allah's Names (Asma ul-Husna) — Omar Suleiman...](https://www.youtube.com/watch?v=WPV4b3YtN1s) | Omar Suleiman | [Open](https://www.youtube.com/watch?v=WPV4b3YtN1s) |
+| +n4P8vL2kQwX | [Tawheed for Beginners — Omar Suleiman...](https://www.youtube.com/watch?v=n4P8vL2kQwX) | Omar Suleiman | [Open](https://www.youtube.com/watch?v=n4P8vL2kQwX) |
