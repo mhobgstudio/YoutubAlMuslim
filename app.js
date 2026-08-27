@@ -138,7 +138,7 @@ function mkCard(v){
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
   const thumb=`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
   const ini=(v.speaker||'?')[0].toUpperCase();
-  const prog=Math.floor(Math.random()*80+10);
+  const prog=0; // Progress tracked per-user in future
   const el=document.createElement('div');el.className='yt-card';
   el.style.setProperty('--progress',prog+'%');
   el.innerHTML=`
@@ -243,7 +243,7 @@ function bindEv(){
   E.st.addEventListener('click',()=>E.sbx.classList.toggle('open'));
   E.tt.addEventListener('click',toggleTheme);
   E.rb.addEventListener('click',window.randomVideo);
-  E.lmb.addEventListener('click',()=>renderGrid(false));
+  if(E.lmb) E.lmb.addEventListener('click',()=>renderGrid(false));
   E.bkb.addEventListener('click',()=>{if(E.bv.style.display==='none'||!E.bv.style.display)window.showBookmarks();else window.showHome();});
   document.addEventListener('keydown',e=>{
     if(e.key==='Escape')closeModal();

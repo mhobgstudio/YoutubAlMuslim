@@ -2,12 +2,86 @@ build a youtube like website using youtube video embeds that will become the dat
 
 the search field should have topic based toggles for easy searching.
 
-make it look exactly like youtube with video gallery grid and everything working
+make it look exactly like youtube with video gallery grid and when it opens youtube make it look how youtube looks and get everything working
 
 ask any questions you may have before proceeding.
+
+there should be no ads in any instant
 
 deeply analyze and research  for errors/inconsistencies/incompleteness/missed Islamic topics and add any improvement suggestions.
 
 Playwright to make sure it works as it should then loop fix if errors.
 
 create/add it to a public git repo and host git pages then output the link here to me.
+
+
+
+it should have many videos from each topic from: 
+Table of Contents: THE RECORD
+I. THE FOUNDATION: ALLAH & PRE-ETERNITY
+- THE RECORD BEFORE MAN
+- ALLAH (Pre-Eternity): The Uncreated, Absolute Being
+- The 99 Names & Attributes of Allah (Al-Asma' al-Husna)
+II. THE PRIMORDIAL CREATION
+- THE SEA: The Primordial Expanse of Water
+- THE THRONE (Al-`Arsh): The Greatest Creation
+- THE PEN (Al-Qalam): The Instrument of Divine Decree
+- THE BOOK (The Preserved Tablet - Al-Lawh Al-Mahfuz)
+III. THE UNSEEN REALMS: SOULS, ANGELS, AND JINN
+- THE SOUL (Divine Spark)
+- The Concept of the Soul (Ruh/Nafs) in Islam
+- The Innate Disposition (Fitrah) and the Inclination to Evil
+- Destiny and Accountability of the Soul
+- ANGELS: Created from Light
+- ARCH-ANGELS (Those Who Apportion the Command of
+Allah)
+- THE THRONE BEARERS
+- ASSIGNED ANGELS (MERCY, PUNISHMENT, GRAVE,
+NOBLE SCRIBES, PROTECTORS)
+- DOOR KEEPERS (Of the Heavens, Paradise and Hell)
+- THE ADVISORS, THE WATCHERS, THE PRAISERS, THE
+PROSTRATERS
+- JINN: Created from Smokeless Fire
+- BELIEVERS (Good Jinn)
+- DISBELIEVERS (Evil Jinn)
+- SHAYAATEEN (Devils)
+- IBLIS: The Forefather of Evil, his Arrogance and Fall
+- THE EXISTENCE OF EVIL: The Purpose of Free Will and
+Test
+IV. THE CELESTIAL REALMS
+- JANNAH (PARADISE) AND JAHANNAM (HELL)
+- Description and their Levels (Rank 1 to Rank 7)
+- The Greatest Bliss vs The Punishment of Allah
+V. EARTH THE HUMAN STORY: CREATION, TEST, AND
+GUIDANCE
+- THE CREATION OF MAN (ADAM)
+- LIFE ON EARTH (THE TEST PERIOD)
+- PROPHETHOOD (THE CHAIN OF GUIDANCE from Adam to
+Muhammad صلى الله عليه وسلم)
+VI. THE HEREAFTER: THE JOURNEY AFTER DEATH
+- DEATH (The Good Gentle Extraction vs The Painful Evil
+Extraction)
+- AL-KABR (THE GRAVE) – The First Station of the Afterlife
+- AL-BARZAKH (The Barrier) - The Intermediate Realm
+- SIGNS OF THE HOUR: Major Signs (Dajjal, Descent of Isa,
+Gog and Magog, etc.)
+- THE DAY OF RESURRECTION (YAUM AL-QIYAMAH)
+- The Blowing of the Trumpet
+- The Gathering
+- THE GATHERING (AL-HASHR) & THE RECKONING (AL-
+HISAB)
+- THE RECORDS: The Book of Deeds
+- THE SCALES (AL-MIZAN): Weighing Deeds
+- INTERCESSION (SHAFA’AH)
+- THE BRIDGE (AS-SIRAT)
+- The Crossing Over Hellfire
+- JUDGEMENT (THE ETERNAL DESTINATION)
+- THE GOOD: JANNAH (Paradise) - Eternal Bliss
+- THE MIDDLE (The Hybrids): The Poor People of Jannah
+(Purified Believers)
+- THE EVIL: JAHANNAM (Hellfire) - Eternal or Temporary
+Punishment
+- The Seven Levels of Hell (Rank 1 to Rank 7)
+
+
+make sure searching any word from the above brings up related videos
