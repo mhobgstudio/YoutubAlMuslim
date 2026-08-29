@@ -766,10 +766,11 @@ function wireDownloadMenu(v){
 }
 
 function closeModal(){
-  // Exit fullscreen if active
+  // Exit fullscreen if active (native or CSS fallback)
   if(document.fullscreenElement||document.webkitFullscreenElement){
     (document.exitFullscreen||document.webkitExitFullscreen).call(document).catch(()=>{});
   }
+  document.querySelector('.yt-player')?.classList.remove('yt-player--fs');
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
   if(curV&&!progMap[curV.id]){progMap[curV.id]={pct:1,ts:Date.now()};saveProg();}
@@ -823,20 +824,46 @@ window.navigateVideo = function(dir) {
 };
 
 // ===== Fullscreen toggle =====
+function isFullscreenActive() {
+  return !!(document.fullscreenElement || document.webkitFullscreenElement || document.querySelector('.yt-player--fs'));
+}
 function toggleFullscreen() {
-  // Target .yt-player (parent) so nav buttons remain visible in fullscreen
   const player = document.querySelector('.yt-player');
   if (!player) return;
-  if (document.fullscreenElement || document.webkitFullscreenElement) {
-    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  // Already fullscreen — exit
+  if (isFullscreenActive()) {
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    }
+    // Also remove CSS fallback class
+    player.classList.remove('yt-player--fs');
+    return;
+  }
+  // Try native fullscreen first (works on desktop browsers)
+  const nativeAPI = player.requestFullscreen || player.webkitRequestFullscreen;
+  if (nativeAPI) {
+    try {
+      nativeAPI.call(player);
+      // On some browsers requestFullscreen is async and may silently fail
+      setTimeout(() => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+          // Native failed silently — use CSS fallback (mobile)
+          player.classList.add('yt-player--fs');
+        }
+      }, 400);
+    } catch(e) {
+      // Native API threw — use CSS fallback
+      player.classList.add('yt-player--fs');
+    }
   } else {
-    (player.requestFullscreen || player.webkitRequestFullscreen).call(player);
+    // No native API (mobile Safari etc) — use CSS fallback
+    player.classList.add('yt-player--fs');
   }
 }
 function updateFullscreenIcon() {
   const btn = document.getElementById('fullscreenBtn');
   if (!btn) return;
-  const isFull = !!(document.fullscreenElement || document.webkitFullscreenElement);
+  const isFull = isFullscreenActive();
   btn.innerHTML = isFull
     ? '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>'
     : '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>';
