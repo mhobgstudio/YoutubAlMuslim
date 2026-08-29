@@ -525,7 +525,6 @@ function openWatch(v){
   updateFullscreenIcon();
   // Wire mini-player
   initMiniPlayer();
-  setTimeout(setupMiniPlayerScrollObserver, 500);
 }
 
 // ===== Playlist resolution =====
@@ -785,8 +784,12 @@ function closeModal(){
   if(_adPollTimer){clearInterval(_adPollTimer);_adPollTimer=null;}
   adTabOpenedFor=null;
   autoUnmuteIfNeeded();
-  // Hide mini-player
-  hideMiniPlayer();
+  // Show mini-player if video was playing
+  if(curV && !curV.isPlaylistRef && !curV.isChannelRef) {
+    showMiniPlayer(curV);
+  } else {
+    hideMiniPlayer();
+  }
   if(miniScrollObserver){miniScrollObserver.disconnect();miniScrollObserver=null;}
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
   updateNavButtons();
