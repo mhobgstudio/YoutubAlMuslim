@@ -783,7 +783,6 @@ function closeModal(){
   // Reset ad mitigation state for the next video
   if(_adPollTimer){clearInterval(_adPollTimer);_adPollTimer=null;}
   adTabOpenedFor=null;
-  autoUnmuteIfNeeded();
   // Show mini-player if video was playing
   console.log('closeModal curV:', curV ? curV.id : 'null', 'isPlaylistRef:', curV?.isPlaylistRef, 'isChannelRef:', curV?.isChannelRef);
   if(curV && !curV.isPlaylistRef && !curV.isChannelRef) {
