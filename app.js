@@ -388,7 +388,7 @@ function mkCard(v){
       <span class="yt-card-difficulty" style="background:${d.c}">${d.l}</span>
       ${isNew?'<span class="yt-card-new">NEW</span>':''}
       <div class="yt-card-progress"></div>
-      ${v.channelHandle?`<a class="yt-card-subscribe" href="https://www.youtube.com./${v.channelHandle}?sub_confirmation=1" target="_blank" rel="noopener noreferrer" data-id="${v.id}" data-channel="${v.channelHandle}" title="Subscribe to ${esc(v.speaker)} on YouTube" aria-label="Subscribe">
+      ${v.channelHandle?`<a class="yt-card-subscribe" href="https://www.youtube.com/${v.channelHandle}?sub_confirmation=1" target="_blank" rel="noopener noreferrer" data-id="${v.id}" data-channel="${v.channelHandle}" title="Subscribe to ${esc(v.speaker)} on YouTube" aria-label="Subscribe">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 17l5-5-5-5v10z"/><path d="M0 24V0h24v24H0z" fill="none"/><path d="M3 9h12v6H3z"/></svg>
       </a>`:''}
       <button class="yt-card-bookmark ${isBm?'bookmarked':''}" data-id="${v.id}" data-topic="${v.topicId}" aria-label="Save">
@@ -447,8 +447,8 @@ function openWatch(v){
   // entire playlist (YouTube IFrame API will autoplay through it).
   const playCtx=resolvePlaylist(v);
   const playerSrc=playCtx
-    ? `https://www.youtube.com./embed/videoseries?list=${playCtx.playlistId}&autoplay=1&rel=0&enablejsapi=1&v=${v.id}`
-    : `https://www.youtube.com./embed/${v.id}?autoplay=1&rel=0&enablejsapi=1`;
+    ? `https://www.youtube.com/embed/videoseries?list=${playCtx.playlistId}&autoplay=1&rel=0&enablejsapi=1&v=${v.id}`
+    : `https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1`;
   E.mp.innerHTML=`<iframe id="ytPlayerIframe" src="${playerSrc}" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
   // Wire progress tracking + caption (transcript) detection via YouTube IFrame API
   setupYTProgress(v);
@@ -460,7 +460,7 @@ function openWatch(v){
   const subBtn=document.getElementById('modalSubscribe');
   if(subBtn){
     if(v.channelHandle){
-      subBtn.href=`https://www.youtube.com./${v.channelHandle}?sub_confirmation=1`;
+      subBtn.href=`https://www.youtube.com/${v.channelHandle}?sub_confirmation=1`;
       subBtn.style.display='';
       subBtn.title=`Subscribe to ${v.speaker} on YouTube`;
     }else{
@@ -470,7 +470,7 @@ function openWatch(v){
   // Open on YouTube (escape hatch for ad-blocker users)
   const openYT=document.getElementById('modalOpenYT');
   if(openYT){
-    openYT.href=`https://www.youtube.com./watch?v=${v.id}`;
+    openYT.href=`https://www.youtube.com/watch?v=${v.id}`;
   }
   // Ad tricks panel — list of well-known YouTube URL hacks
   populateAdTricks(v);
@@ -617,7 +617,7 @@ function loadTranscript(v, panel){
   // Fallback: timedtext API (no JSAPI needed) — returns 200 for many
   // videos, with v3 captions that include timed cues.
   const lang='en';
-  fetch(`https://www.youtube.com./api/timedtext?type=track&v=${encodeURIComponent(v.id)}&lang=${lang}&fmt=json3`)
+  fetch(`https://www.youtube.com/api/timedtext?type=track&v=${encodeURIComponent(v.id)}&lang=${lang}&fmt=json3`)
     .then(r=>r.ok?r.json():null)
     .then(j=>{
       if(!j||!j.events){panel.innerHTML='<div class="yt-transcript-empty">No transcript available for this video on YouTube.</div>';return;}
@@ -676,12 +676,12 @@ function populateAdTricks(v){
     },
     {
       label:'Extra-dot trick (.com.)',
-      url:`https://www.youtube.com./watch?v=${id}`,
+      url:`https://www.youtube.com/watch?v=${id}`,
       note:'Add a dot after .com. Browser normalizes this and bypasses some ad cookies. Mixed results in 2026.'
     },
     {
       label:'Embed URL trick',
-      url:`https://www.youtube.com./embed/${id}`,
+      url:`https://www.youtube.com/embed/${id}`,
       note:'The embed player historically had fewer ads. YouTube has closed this gap — now works only on videos where the uploader disabled ad serving on the embed.'
     },
     {
@@ -743,7 +743,7 @@ function populateDownload(v){
     },
     {
       label:'9Convert (9convert.com)',
-      url:`https://www.9convert.com/?url=https://www.youtube.com./watch?v=${id}`,
+      url:`https://www.9convert.com/?url=https://www.youtube.com/watch?v=${id}`,
       note:'Another popular service. Free, no install. Quality options up to 1080p MP4. Same caveat: ads on the site.'
     },
     {
@@ -788,7 +788,7 @@ function populateDownload(v){
 const DL_TEMPLATES={
   ssyoutube:`https://www.ssyoutube.com/watch?v={id}`,
   y2mate:`https://www.y2mate.com/youtube/{id}`,
-  '9convert':`https://www.9convert.com/?url=https://www.youtube.com./watch?v={id}`,
+  '9convert':`https://www.9convert.com/?url=https://www.youtube.com/watch?v={id}`,
   piped:`https://piped.video/watch?v={id}`,
   invidious:`https://inv.nadeko.net/watch?v={id}`,
 };
@@ -868,7 +868,7 @@ window.toggleBookmarkFromModal=function(){
 };
 window.shareCurrent=function(){
   if(!curV)return;
-  const url=`https://www.youtube.com./watch?v=${curV.id}`;
+  const url=`https://www.youtube.com/watch?v=${curV.id}`;
   const text=`${curV.title} — ${curV.speaker}`;
   if(navigator.share){
     navigator.share({title:curV.title,text,url}).catch(()=>{});
@@ -997,7 +997,7 @@ document.addEventListener('DOMContentLoaded',init);
 let ytPlayer=null,ytReadyCb=null;
 (function loadYT(){
   if(window.YT&&window.YT.Player)return;
-  const tag=document.createElement('script');tag.src='https://www.youtube.com./iframe_api';
+  const tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';
   document.head.appendChild(tag);
   window.onYouTubeIframeAPIReady=function(){
     if(typeof ytReadyCb==='function')ytReadyCb();
