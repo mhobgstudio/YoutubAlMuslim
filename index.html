@@ -190,6 +190,16 @@
         <!-- LEFT: Player + Info -->
         <div class="yt-watch-primary">
           <div class="yt-player">
+            <div id="adOverlay" class="yt-ad-overlay">
+              <div class="yt-ad-overlay-inner">
+                <div class="yt-ad-overlay-icon">📺</div>
+                <div class="yt-ad-overlay-text">
+                  <div class="yt-ad-overlay-title">Ad playing</div>
+                  <div class="yt-ad-overlay-sub">YouTube is serving an ad. You can't block it from the embed, but you can skip after 5 seconds.</div>
+                </div>
+                <button id="adSkipBtn" class="yt-ad-skip-btn" type="button" disabled>Skip ad in 5s</button>
+              </div>
+            </div>
             <div id="modalPlayer" class="yt-player-theatre"></div>
           </div>
           <div class="yt-watch-metadata">
@@ -210,6 +220,10 @@
                 <a id="modalSubscribe" class="yt-watch-btn yt-watch-btn--subscribe" href="#" target="_blank" rel="noopener noreferrer" style="display:none" aria-label="Subscribe to channel">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M10 17l5-5-5-5v10z"/><path d="M3 9h12v6H3z"/></svg>
                   <span>Subscribe</span>
+                </a>
+                <a id="modalOpenYT" class="yt-watch-btn yt-watch-btn--secondary" href="#" target="_blank" rel="noopener noreferrer" title="Open on YouTube to use your ad-blocker">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.59L8.29 14.29l1.42 1.42L19 6.41V10h2V3h-7zM19 19h-7v2h9V12h-2v7z"/></svg>
+                  <span>Open on YouTube</span>
                 </a>
                 <button id="modalShare" class="yt-watch-btn yt-watch-btn--share" onclick="shareCurrent()" aria-label="Copy link">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M15 5.63L20.66 12 15 18.37V14h-1c-3.96 0-7.14 1-9.75 3.09 1.84-4.07 5.11-6.4 9.89-7.1l.86-.13V5.63M14 3v6C6.22 10.13 3.11 15.33 2 21c2.78-3.97 6.44-6 12-6v6l8-9-8-9z"/></svg>

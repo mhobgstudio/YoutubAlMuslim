@@ -204,9 +204,21 @@ input{font-family:inherit}
 .yt-watch-secondary{width:402px;flex-shrink:0}
 
 /* Player */
-.yt-player{width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:12px}
-.yt-player-theatre{width:100%;height:100%}
+.yt-player{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:12px}
+.yt-player-theatre{width:100%;height:100%;position:relative;z-index:1}
 .yt-player-theatre iframe{width:100%;height:100%;border:none}
+
+/* Ad overlay (visible during detected ad playback) */
+.yt-ad-overlay{position:absolute;top:0;left:0;right:0;z-index:5;padding:12px;background:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0));display:none;pointer-events:none}
+.yt-ad-overlay.visible{display:block}
+.yt-ad-overlay-inner{display:flex;align-items:center;gap:12px;background:rgba(20,20,20,.95);border:1px solid #3a3a3a;border-radius:10px;padding:10px 14px;pointer-events:auto;max-width:560px}
+.yt-ad-overlay-icon{font-size:24px;flex-shrink:0}
+.yt-ad-overlay-text{flex:1;min-width:0}
+.yt-ad-overlay-title{font-size:14px;font-weight:600;color:#ffd54f;letter-spacing:.5px}
+.yt-ad-overlay-sub{font-size:12px;color:#ccc;margin-top:2px;line-height:1.4}
+.yt-ad-skip-btn{flex-shrink:0;padding:8px 14px;height:auto;border-radius:18px;background:#444;color:#aaa;font-size:12px;font-weight:600;cursor:not-allowed;border:none;transition:background .15s}
+.yt-ad-skip-btn.ready{background:#ffd54f;color:#000;cursor:pointer}
+.yt-ad-skip-btn.ready:hover{background:#ffca28}
 
 /* Watch metadata */
 .yt-watch-metadata{margin-bottom:24px}

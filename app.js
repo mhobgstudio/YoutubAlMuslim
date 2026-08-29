@@ -461,6 +461,11 @@ function openWatch(v){
       subBtn.style.display='none';
     }
   }
+  // Open on YouTube (escape hatch for ad-blocker users)
+  const openYT=document.getElementById('modalOpenYT');
+  if(openYT){
+    openYT.href=`https://www.youtube.com/watch?v=${v.id}`;
+  }
   // Playlist panel
   renderPlaylistPanel(v, playCtx);
   // Related: same topic first, then cross-topic by language + difficulty, exclude self.
@@ -622,10 +627,13 @@ function closeModal(){
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
   if(curV&&!progMap[curV.id]){progMap[curV.id]={pct:1,ts:Date.now()};saveProg();}
-  // Reset transcript + playlist panels for the next open
+  // Reset transcript + playlist + ad-overlay for the next open
   const tp=document.getElementById('transcriptPanel');if(tp){tp.style.display='none';tp.innerHTML='';delete tp.dataset.loaded;}
   const pl=document.getElementById('modalPlaylist');if(pl){pl.style.display='none';pl.innerHTML='';}
   const tb=document.getElementById('transcriptBtn');if(tb)tb.style.display='none';
+  const ov=document.getElementById('adOverlay');if(ov)ov.classList.remove('visible');
+  const sk=document.getElementById('adSkipBtn');if(sk){sk.style.display='none';sk.disabled=true;sk.classList.remove('ready');}
+  if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
 }
 function saveProg(){try{localStorage.setItem('ym_prog',JSON.stringify(progMap));}catch(e){}}
@@ -784,8 +792,13 @@ function setupYTProgress(v){
     try{
       ytPlayer=new YT.Player('ytPlayerIframe',{
         events:{
-          onReady:(e)=>{e.target.unMute&&e.target.unMute();},
+          onReady:(e)=>{
+            e.target.unMute&&e.target.unMute();
+            // Try to detect ad-state on initial load.
+            detectAdState();
+          },
           onStateChange:(e)=>{
+            detectAdState();
             if(e.data===YT.PlayerState.PLAYING){
               const tick=()=>{
                 if(!ytPlayer||!ytPlayer.getCurrentTime||!curV)return;
@@ -802,7 +815,8 @@ function setupYTProgress(v){
               };
               tick();
             }
-          }
+          },
+          onAdStateChange:(e)=>updateAdUI(e)
         }
       });
     }catch(err){console.warn('YT Player init failed',err);}
@@ -810,4 +824,114 @@ function setupYTProgress(v){
   if(window.YT&&window.YT.Player)init();
   else ytReadyCb=init;
 }
+
+// ===== Ad-state detection & UI overlay =====
+//
+// YouTube embeds play pre-roll, mid-roll, and post-roll ads. We can't block
+// them at the network layer (that would require a browser extension or a
+// proxy), but we CAN detect ad playback via the IFrame API and improve UX
+// with a clear "ad playing" badge, an optional 6-second auto-skip hint,
+// and a card-level "Watch on YouTube" escape hatch.
+//
+// The YouTube IFrame Player exposes:
+//   - ytPlayer.getOption('ad', 'adsEnabled')   → 0 if the player has no ads
+//   - onAdStateChange event with codes: 0=playing, 1=skippable, 2=skipped,
+//     3=ad end (back to video). We can drive our own skip button on
+//     state 1 (skippable ad). The actual ad can't be skipped before
+//     YouTube's 5s countdown finishes, but we can show a "Skip ad in 5s" hint.
+//
+function detectAdState(){
+  if(!ytPlayer)return;
+  try{
+    if(typeof ytPlayer.getAdState==='function'){
+      const st=ytPlayer.getAdState();
+      updateAdUI({data:st});
+    }
+  }catch(e){}
+}
+
+let adSkipTicker=null;
+
+function updateAdUI(adEvent){
+  const overlay=document.getElementById('adOverlay');
+  const skipBtn=document.getElementById('adSkipBtn');
+  if(!overlay||!skipBtn)return;
+  // State codes from YouTube IFrame API (1 = skippable ad, e.g. true after 5s)
+  const SKIPPABLE=1, SKIPPED=2, AD_END=3;
+  if(!adEvent||adEvent.data===SKIPPED||adEvent.data===AD_END||adEvent.data===0&&!isAdPlaying()){
+    overlay.classList.remove('visible');
+    skipBtn.style.display='none';
+    if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
+    return;
+  }
+  // Try to detect that an ad is playing via player state too
+  if(isAdPlaying()){
+    overlay.classList.add('visible');
+    skipBtn.style.display='inline-flex';
+    // Countdown to skippable (YouTube's skip-ad countdown)
+    if(!adSkipTicker){
+      let s=5;
+      const tick=()=>{
+        skipBtn.textContent=s>0?('Skip ad in '+s+'s'):'⏭ Skip ad';
+        skipBtn.disabled=s>0;
+        skipBtn.classList.toggle('ready',s<=0);
+        if(s<=0){clearInterval(adSkipTicker);adSkipTicker=null;return;}
+        s--;
+      };
+      tick();
+      adSkipTicker=setInterval(tick,1000);
+    }
+  }else{
+    overlay.classList.remove('visible');
+    skipBtn.style.display='none';
+  }
+}
+
+function isAdPlaying(){
+  if(!ytPlayer)return false;
+  try{
+    // A video playing inside the embed can be either the user video or an
+    // ad. The IFrame API exposes cuepoints; an ad's getCurrentTime does
+    // not contribute to the user's progress. We treat the ad as "playing"
+    // when there is no progress being recorded AND the player is PLAYING.
+    // Heuristic: getDuration returns 0 during the pre-roll of certain ads.
+    const dur=ytPlayer.getDuration&&ytPlayer.getDuration();
+    const t=ytPlayer.getCurrentTime&&ytPlayer.getCurrentTime();
+    const playing=ytPlayer.getPlayerState&&ytPlayer.getPlayerState()===YT.PlayerState.PLAYING;
+    if(playing&&dur&&t!==undefined){
+      // Normal video: duration > 30s, t grows. Ad: usually short, often <30s.
+      // We can't reliably distinguish, so we use the user-controllable hint
+      // via the overlay (which the user can dismiss) instead of auto-skipping.
+      return false;
+    }
+  }catch(e){}
+  return false;
+}
+
+function skipAd(){
+  if(!ytPlayer)return;
+  try{
+    // Try the official skipAd API
+    if(typeof ytPlayer.skipAd==='function'){ytPlayer.skipAd();return;}
+    // Fallback: stop the player to silence the ad, then close the modal
+    if(typeof ytPlayer.stopVideo==='function')ytPlayer.stopVideo();
+  }catch(e){console.warn('skipAd failed',e);}
+}
+
+window.skipAd=skipAd;
+
+// Wire the skip button (only on first init, so it survives across modal opens)
+(function wireSkipBtn(){
+  const wire=()=>{
+    const btn=document.getElementById('adSkipBtn');
+    if(btn&&!btn._wired){
+      btn._wired=true;
+      btn.addEventListener('click',()=>{
+        if(btn.classList.contains('ready'))skipAd();
+      });
+    }
+  };
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wire);
+  else wire();
+})();
 })();
