@@ -37,10 +37,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 input{font-family:inherit}
 
 /* ===== MASTHEAD (Header) ===== */
-.yt-masthead{position:fixed;top:0;left:0;right:0;height:var(--yt-masthead-height);background:var(--yt-bg);z-index:2000;display:flex;align-items:center;padding:0 16px}
-.yt-masthead-start{display:flex;align-items:center;gap:16px;width:var(--yt-guide-width);flex-shrink:0}
-.yt-masthead-center{flex:1;display:flex;justify-content:center;padding:0 40px}
-.yt-masthead-end{display:flex;align-items:center;gap:8px}
+.yt-masthead{position:fixed;top:0;left:0;right:0;height:var(--yt-masthead-height);background:var(--yt-bg);z-index:2000;display:flex;align-items:center;padding:0 16px;overflow:hidden}
+.yt-masthead-start{display:flex;align-items:center;gap:16px;width:var(--yt-guide-width);flex-shrink:0;overflow:hidden}
+.yt-masthead-center{flex:1;display:flex;justify-content:center;padding:0 40px;min-width:0;overflow:hidden}
+.yt-masthead-end{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .yt-btn-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--yt-text);transition:background .2s}
 .yt-btn-icon:hover{background:var(--yt-bg-hover)}
 .yt-logo-link{display:flex;align-items:center;color:var(--yt-text)}
@@ -232,13 +232,13 @@ input{font-family:inherit}
 .yt-page-header-sub{font-size:14px;color:var(--yt-text-secondary);margin-left:8px}
 
 /* ===== WATCH OVERLAY (YouTube two-column) — sidebar stays visible & usable ===== */
-.yt-watch-overlay{position:fixed;top:var(--yt-masthead-height);left:var(--yt-guide-width);right:0;bottom:0;z-index:3000;overflow-y:auto;background:#000}
+.yt-watch-overlay{position:fixed;top:var(--yt-masthead-height);left:var(--yt-guide-width);right:0;bottom:0;z-index:3000;overflow-y:auto;background:#000;overflow-x:hidden}
 .yt-watch-backdrop{display:none}
 .yt-watch-container{position:relative;z-index:1;background:#000;padding:32px 24px;max-width:1800px;margin:0 auto;min-height:100%;box-sizing:border-box}
 .yt-watch-close{position:fixed;top:16px;right:24px;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;z-index:10;transition:background .2s}
 .yt-watch-close:hover{background:rgba(255,255,255,.1)}
 .yt-watch-body{display:flex;gap:24px}
-.yt-watch-primary{flex:1;min-width:0;max-width:900px}
+.yt-watch-primary{flex:1;min-width:0;max-width:900px;overflow:hidden}
 .yt-watch-secondary{width:402px;flex-shrink:0}
 
 /* Player */
@@ -267,15 +267,15 @@ input{font-family:inherit}
 .yt-auto-optin-dismiss:hover{background:rgba(255,255,255,.05);color:#fff}
 
 /* Watch metadata */
-.yt-watch-metadata{margin-bottom:24px}
-.yt-watch-title{font-size:20px;font-weight:600;line-height:28px;margin-bottom:12px;color:#f1f1f1}
-.yt-watch-actions{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:12px}
+.yt-watch-metadata{margin-bottom:24px;overflow:hidden;min-width:0;word-break:break-word}
+.yt-watch-title{font-size:20px;font-weight:600;line-height:28px;margin-bottom:12px;color:#f1f1f1;overflow:hidden;word-break:break-word}
+.yt-watch-actions{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;min-width:0}
 .yt-watch-channel-info{display:flex;align-items:center;gap:12px}
 .yt-watch-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:500;color:#0f0f0f;flex-shrink:0}
 .yt-watch-channel-name{font-size:16px;font-weight:500;line-height:22px;color:#f1f1f1}
 .yt-watch-channel-subs{font-size:12px;color:#aaa}
-.yt-watch-buttons{display:flex;gap:8px}
-.yt-watch-btn{display:inline-flex;align-items:center;gap:8px;padding:0 16px;height:36px;border-radius:20px;font-size:14px;font-weight:500;background:#272727;color:#f1f1f1;transition:background .2s;border:none;cursor:pointer}
+.yt-watch-buttons{display:flex;gap:6px;flex-wrap:wrap}
+.yt-watch-btn{display:inline-flex;align-items:center;gap:6px;padding:0 14px;height:36px;border-radius:20px;font-size:13px;font-weight:500;background:#272727;color:#f1f1f1;transition:background .2s;border:none;cursor:pointer;white-space:nowrap;flex-shrink:0}
 .yt-watch-btn:hover{background:#3a3a3a}
 .yt-watch-btn--save.bookmarked{background:rgba(255,0,0,.2);color:#ff6b6b}
 .yt-watch-btn--subscribe{background:var(--yt-red);color:#fff;text-decoration:none}
@@ -379,9 +379,9 @@ input{font-family:inherit}
   .yt-guide{transform:translateX(-100%)}
   .yt-guide.open{transform:translateX(0);box-shadow:4px 0 16px rgba(0,0,0,.5)}
   .yt-body,.yt-watch-container{margin-left:0}
-  .yt-masthead-start{width:auto}
+  .yt-masthead-start{width:auto;flex-shrink:0}
   .yt-watch-container{padding:16px}
-  .yt-watch-overlay{left:0}
+  .yt-watch-overlay{left:0!important;width:100vw!important}
   .yt-nav-btn{width:40px;height:40px}
   .yt-nav-btn--prev{left:8px}
   .yt-nav-btn--next{right:8px}
@@ -404,9 +404,15 @@ input{font-family:inherit}
 }
 @media(max-width:640px){
   .yt-masthead{padding:0 8px}
-  .yt-masthead-center{padding:0 4px;flex:1}
-  .yt-search-container{max-width:100%}
-  .yt-masthead-end{gap:2px}
+  .yt-masthead-center{padding:0 4px;flex:1;min-width:0}
+  .yt-search-container{max-width:100%;min-width:0}
+  .yt-masthead-end{gap:2px;flex-shrink:0}
+  .yt-watch-actions{flex-wrap:wrap;gap:8px}
+  .yt-watch-channel-name{font-size:14px}
+  .yt-watch-channel-info{min-width:0;flex:1}
+  .yt-watch-btn{padding:0 10px;font-size:12px;height:32px}
+  .yt-watch-btn span:not(.yt-card-new){display:none}
+  .yt-watch-meta{font-size:12px}
   .yt-body{padding:0 8px 60px}
   .yt-grid{grid-template-columns:1fr;row-gap:20px}
   .yt-watch-container{padding:0}
