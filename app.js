@@ -278,6 +278,9 @@ function mkCard(v){
       <span class="yt-card-difficulty" style="background:${d.c}">${d.l}</span>
       ${isNew?'<span class="yt-card-new">NEW</span>':''}
       <div class="yt-card-progress"></div>
+      ${v.channelHandle?`<a class="yt-card-subscribe" href="https://www.youtube.com/${v.channelHandle}?sub_confirmation=1" target="_blank" rel="noopener noreferrer" data-id="${v.id}" data-channel="${v.channelHandle}" title="Subscribe to ${esc(v.speaker)} on YouTube" aria-label="Subscribe">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 17l5-5-5-5v10z"/><path d="M0 24V0h24v24H0z" fill="none"/><path d="M3 9h12v6H3z"/></svg>
+      </a>`:''}
       <button class="yt-card-bookmark ${isBm?'bookmarked':''}" data-id="${v.id}" data-topic="${v.topicId}" aria-label="Save">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
       </button>
@@ -290,8 +293,11 @@ function mkCard(v){
         <div class="yt-card-meta">${LANG[v.language]||v.language}</div>
       </div>
     </div>`;
-  el.querySelector('.yt-card-thumb').addEventListener('click',e=>{if(e.target.closest('.yt-card-bookmark'))return;openWatch(v);});
-  el.querySelector('.yt-card-bookmark').addEventListener('click',e=>{e.stopPropagation();toggleBm(v);e.currentTarget.classList.toggle('bookmarked');});
+  el.querySelector('.yt-card-thumb').addEventListener('click',e=>{if(e.target.closest('.yt-card-bookmark')||e.target.closest('.yt-card-subscribe'))return;openWatch(v);});
+  el.querySelector('.yt-card-bookmark').addEventListener('click',e=>{e.stopPropagation();e.preventDefault();toggleBm(v);e.currentTarget.classList.toggle('bookmarked');});
+  // Subscribe link — stop the thumb's click from firing, but let the link open normally
+  const subEl=el.querySelector('.yt-card-subscribe');
+  if(subEl)subEl.addEventListener('click',e=>{e.stopPropagation();});
   // Keyboard: Enter / Space on focused card opens watch
   el.addEventListener('keydown',e=>{
     if((e.key==='Enter'||e.key===' ')&&!e.target.closest('.yt-card-bookmark')){
@@ -317,6 +323,17 @@ function openWatch(v){
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
   E.mb.classList.toggle('bookmarked',isBm);
   E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
+  // Subscribe button
+  const subBtn=document.getElementById('modalSubscribe');
+  if(subBtn){
+    if(v.channelHandle){
+      subBtn.href=`https://www.youtube.com/${v.channelHandle}?sub_confirmation=1`;
+      subBtn.style.display='';
+      subBtn.title=`Subscribe to ${v.speaker} on YouTube`;
+    }else{
+      subBtn.style.display='none';
+    }
+  }
   // Related: same topic first, then cross-topic by language + difficulty, exclude self.
   // Also honor current base topic + subtopic filters so recommendations stay in the user's chosen scope.
   const btsArr=Array.from(actBts);

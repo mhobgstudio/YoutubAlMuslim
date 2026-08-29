@@ -140,6 +140,13 @@ input{font-family:inherit}
 .yt-card-bookmark.bookmarked{opacity:1;background:var(--yt-red)}
 .yt-card-bookmark svg{width:16px;height:16px}
 
+/* Subscribe button on card (positioned to the left of bookmark) */
+.yt-card-subscribe{position:absolute;top:4px;right:36px;width:28px;height:28px;border-radius:50%;background:var(--yt-red);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s,background .15s,transform .15s;z-index:2;color:#fff;text-decoration:none}
+.yt-card:hover .yt-card-subscribe{opacity:1}
+.yt-card-subscribe:hover{background:#cc0000;transform:scale(1.08)}
+.yt-card-subscribe:focus-visible{outline:2px solid #fff;outline-offset:2px;opacity:1}
+.yt-card-subscribe svg{width:16px;height:16px}
+
 /* ===== ALERT / NO RESULTS ===== */
 .yt-alert{text-align:center;padding:80px 20px;color:var(--yt-text-secondary)}
 .yt-alert-title{font-size:20px;color:var(--yt-text);margin:16px 0 8px}
@@ -182,6 +189,8 @@ input{font-family:inherit}
 .yt-watch-btn{display:inline-flex;align-items:center;gap:8px;padding:0 16px;height:36px;border-radius:20px;font-size:14px;font-weight:500;background:#272727;color:#f1f1f1;transition:background .2s;border:none;cursor:pointer}
 .yt-watch-btn:hover{background:#3a3a3a}
 .yt-watch-btn--save.bookmarked{background:rgba(255,0,0,.2);color:#ff6b6b}
+.yt-watch-btn--subscribe{background:var(--yt-red);color:#fff;text-decoration:none}
+.yt-watch-btn--subscribe:hover{background:#cc0000;color:#fff}
 .yt-watch-info-box{background:#1a1a1a;border:1px solid #272727;border-radius:12px;padding:12px}
 .yt-watch-meta{font-size:14px;color:#ccc;line-height:20px;white-space:pre-line}
 .yt-watch-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}

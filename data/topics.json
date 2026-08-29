@@ -146,7 +146,8 @@
                 "aqeedah",
                 "qiyamah",
                 "record"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "e2UGmSC1hI4",
@@ -159,7 +160,8 @@
                 "aqeedah",
                 "judgment",
                 "record"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "MUP9B0Sp1gA",
@@ -172,7 +174,8 @@
                 "record",
                 "creation",
                 "qadr"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Kvv3zUnCwhM",
@@ -185,7 +188,8 @@
                 "record",
                 "first-creation",
                 "pre-eternity"
-              ]
+              ],
+              "channelHandle": "@ThePathOfProphets"
             }
           ]
         },
@@ -205,7 +209,8 @@
                 "allah",
                 "majesty",
                 "throne"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "kjGDxNgvoN8",
@@ -218,7 +223,8 @@
                 "allah",
                 "throne",
                 "arsh"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "7a180rVPRtE",
@@ -231,7 +237,8 @@
                 "tawheed",
                 "allah",
                 "oneness"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "PGnqYt5N3_M",
@@ -244,7 +251,8 @@
                 "tawheed",
                 "allah",
                 "quran"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "6_50_POaZNI",
@@ -257,7 +265,8 @@
                 "tawheed",
                 "categories",
                 "fundamental"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "Kvv3zUnCwhM",
@@ -270,7 +279,8 @@
                 "allah",
                 "creation",
                 "throne"
-              ]
+              ],
+              "channelHandle": "@ThePathOfProphets"
             },
             {
               "id": "qdCGKrFxQjU",
@@ -283,7 +293,8 @@
                 "allah",
                 "qadr",
                 "predestination"
-              ]
+              ],
+              "channelHandle": "@mercifulservant"
             },
             {
               "id": "ixBQ3mNpgpA",
@@ -296,7 +307,8 @@
                 "tawheed",
                 "definition",
                 "monotheism"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "wW6pyzhZq4E",
@@ -309,7 +321,8 @@
                 "tawheed",
                 "messengers",
                 "foundation"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "IAdM65cmL70",
@@ -322,7 +335,8 @@
                 "tawheed",
                 "categories",
                 "rububiyyah"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Kv_iVQ3wCzY",
@@ -335,7 +349,8 @@
                 "tawheed",
                 "types",
                 "detailed"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "SMf5YCLJp4c",
@@ -348,7 +363,8 @@
                 "tawheed",
                 "contemporary",
                 "importance"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Jj95KeyBsiY",
@@ -360,7 +376,8 @@
               "tags": [
                 "foundation-allah",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "OgYyPediNB8",
@@ -372,7 +389,8 @@
               "tags": [
                 "foundation-allah",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "0qR7-J_3O7g",
@@ -384,7 +402,8 @@
               "tags": [
                 "foundation-allah",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "K5JxR4zM9pY",
@@ -396,7 +415,8 @@
               "tags": [
                 "foundation-allah",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "n4P8vL2kQwX",
@@ -408,7 +428,8 @@
               "tags": [
                 "foundation-allah",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "QL5ykVqQeLs",
@@ -421,7 +442,8 @@
                 "aqidah",
                 "creation",
                 "sequence"
-              ]
+              ],
+              "channelHandle": "@YousefElkantrawy"
             },
             {
               "id": "pplMrHp5tzs",
@@ -434,7 +456,8 @@
                 "aqidah",
                 "tawheed",
                 "eternity"
-              ]
+              ],
+              "channelHandle": "@YousefElkantrawy"
             },
             {
               "id": "9gfP3mDYf08",
@@ -447,7 +470,8 @@
                 "tawheed",
                 "urdu",
                 "israr-ahmed"
-              ]
+              ],
+              "channelHandle": "@DrIsrarAhmed"
             },
             {
               "id": "iMfcJdtw7Lg",
@@ -461,7 +485,8 @@
                 "decision",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "vMU63mnNMxE",
@@ -475,7 +500,8 @@
                 "tawheed",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "RQjNEN4lXuU",
@@ -488,7 +514,8 @@
                 "iman",
                 "belief",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "Yb3uxMcvFaI",
@@ -501,7 +528,8 @@
                 "sects",
                 "aqeedah",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "nph315dwZRs",
@@ -514,7 +542,8 @@
                 "fiqh",
                 "tablighi",
                 "groups"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "Mqxb9_CmbFQ",
@@ -527,7 +556,8 @@
                 "aqeedah",
                 "doubt",
                 "shahadah"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "59L3YTznE7M",
@@ -540,7 +570,8 @@
                 "bidah",
                 "innovation",
                 "hamza-yusuf"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "ISheHSxiJu8",
@@ -554,7 +585,8 @@
                 "kitab",
                 "classical",
                 "amry"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "Hbxg2rLj_-U",
@@ -568,7 +600,8 @@
                 "kitab",
                 "classical",
                 "amry"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "qEggxqEOL7U",
@@ -583,7 +616,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "EK9XunQxzco",
@@ -598,7 +632,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "gs52OEBhoY0",
@@ -613,7 +648,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "6UmxwEXUiww",
@@ -628,7 +664,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "f6Ym542P_nE",
@@ -643,7 +680,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "VuDEn47VdJQ",
@@ -658,7 +696,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "Bu8gEHbfLxY",
@@ -673,7 +712,8 @@
                 "sh-yahya",
                 "islaam",
                 "boston"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "1j0jT1DCQk0",
@@ -687,7 +727,8 @@
                 "islam",
                 "hamza-yusuf",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -707,7 +748,8 @@
                 "99-names",
                 "asma-ul-husna",
                 "dhikr"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "NzKRztqrbIY",
@@ -720,7 +762,8 @@
                 "99-names",
                 "asma-ul-husna",
                 "dhikr"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "jQedBrSyA2w",
@@ -733,7 +776,8 @@
                 "99-names",
                 "meaning",
                 "asma-ul-husna"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "mQEsEd5e9vE",
@@ -746,7 +790,8 @@
                 "99-names",
                 "animated",
                 "beginners"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "hEanxqGLhGQ",
@@ -759,7 +804,8 @@
                 "99-names",
                 "jannah",
                 "names-of-allah"
-              ]
+              ],
+              "channelHandle": "@BrotherAqib"
             },
             {
               "id": "kqz8nhm65w8",
@@ -772,7 +818,8 @@
                 "99-names",
                 "jannah",
                 "paradise"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "kaM04TR5kLU",
@@ -785,7 +832,8 @@
                 "99-names",
                 "practical",
                 "calling-allah"
-              ]
+              ],
+              "channelHandle": "@QuranGuy"
             },
             {
               "id": "ykv0yx2t30k",
@@ -798,7 +846,8 @@
                 "99-names",
                 "secrets",
                 "stories"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "wuXGhef73v0",
@@ -811,7 +860,8 @@
                 "99-names",
                 "meanings",
                 "quran"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "UxMvdQKXeBw",
@@ -824,7 +874,8 @@
                 "99-names",
                 "explained",
                 "concise"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "70ROfxFev94",
@@ -837,7 +888,8 @@
                 "99-names",
                 "knowing-allah",
                 "introduction"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "WPV4b3YtN1s",
@@ -849,7 +901,8 @@
               "tags": [
                 "foundation-allah",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "vHyQE_mk9HQ",
@@ -863,7 +916,8 @@
                 "classical",
                 "scholar",
                 "asma-ul-husna"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             }
           ]
         },
@@ -883,7 +937,8 @@
                 "aqidah",
                 "covenant",
                 "pre-eternity"
-              ]
+              ],
+              "channelHandle": "@YousefElkantrawy"
             },
             {
               "id": "QL5ykVqQeLs",
@@ -896,7 +951,8 @@
                 "aqidah",
                 "sequence",
                 "creation"
-              ]
+              ],
+              "channelHandle": "@YousefElkantrawy"
             },
             {
               "id": "pplMrHp5tzs",
@@ -909,7 +965,8 @@
                 "aqidah",
                 "eternity",
                 "tawheed"
-              ]
+              ],
+              "channelHandle": "@YousefElkantrawy"
             }
           ]
         }
@@ -941,7 +998,8 @@
                 "creation",
                 "pre-eternity",
                 "preparation"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "nVCIb9sPi0w",
@@ -954,7 +1012,8 @@
                 "creation",
                 "judgment",
                 "accountability"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "GfU3asqS0yc",
@@ -967,7 +1026,8 @@
                 "creation",
                 "soul",
                 "pre-eternity"
-              ]
+              ],
+              "channelHandle": "@mercifulservant"
             },
             {
               "id": "mfpJNZFD1P4",
@@ -980,7 +1040,8 @@
                 "creation",
                 "angels",
                 "jibril"
-              ]
+              ],
+              "channelHandle": "@thedailyreminder"
             },
             {
               "id": "MUP9B0Sp1gA",
@@ -992,7 +1053,8 @@
               "tags": [
                 "primordial-creation",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "xdy2HeS1lug",
@@ -1004,7 +1066,8 @@
               "tags": [
                 "primordial-creation",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YousefElkantrawy"
             },
             {
               "id": "c8K3l9vP2wX",
@@ -1018,7 +1081,8 @@
                 "adam",
                 "hamza-yusuf",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "aNz0YICSZEo",
@@ -1031,7 +1095,8 @@
                 "sea",
                 "creation",
                 "ibn-kathir"
-              ]
+              ],
+              "channelHandle": "@JoyfulMuslims"
             }
           ]
         },
@@ -1052,7 +1117,8 @@
                 "throne",
                 "majesty",
                 "creation"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "kjGDxNgvoN8",
@@ -1065,7 +1131,8 @@
                 "arsh",
                 "throne",
                 "allah"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "5WIZjxeQl_E",
@@ -1078,7 +1145,8 @@
                 "arsh",
                 "throne",
                 "awe"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "N78wwEjw6qo",
@@ -1091,7 +1159,8 @@
                 "arsh",
                 "throne",
                 "qalam"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -1112,7 +1181,8 @@
                 "pen",
                 "decree",
                 "qadr"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "FjLu0hapwM8",
@@ -1125,7 +1195,8 @@
                 "qadr",
                 "decree",
                 "action"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "vpXAx5h76PE",
@@ -1138,7 +1209,8 @@
                 "qalam",
                 "pen",
                 "first-creation"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Pk7CTX3uu7c",
@@ -1151,7 +1223,8 @@
                 "qalam",
                 "pen",
                 "tablet"
-              ]
+              ],
+              "channelHandle": "@BecauseAllahWished"
             },
             {
               "id": "Kvv3zUnCwhM",
@@ -1164,7 +1237,8 @@
                 "qalam",
                 "pen",
                 "first-creation"
-              ]
+              ],
+              "channelHandle": "@ThePathOfProphets"
             }
           ]
         },
@@ -1185,7 +1259,8 @@
                 "tablet",
                 "decree",
                 "judgment"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "D3tL2rupU-0",
@@ -1198,7 +1273,8 @@
                 "qiyamah",
                 "action",
                 "decree"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "QiS23CTUTa0",
@@ -1211,7 +1287,8 @@
                 "lawh",
                 "tablet",
                 "destiny"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "vU_xTqr0e0I",
@@ -1224,7 +1301,8 @@
                 "lawh",
                 "tablet",
                 "pre-creation"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "NQonO5hKFRE",
@@ -1237,7 +1315,8 @@
                 "qalam",
                 "pen",
                 "first-creation"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "Pk7CTX3uu7c",
@@ -1250,7 +1329,8 @@
                 "qalam",
                 "tablet",
                 "creation"
-              ]
+              ],
+              "channelHandle": "@BecauseAllahWished"
             },
             {
               "id": "aNz0YICSZEo",
@@ -1264,7 +1344,8 @@
                 "angels",
                 "light",
                 "ibn-kathir"
-              ]
+              ],
+              "channelHandle": "@JoyfulMuslims"
             },
             {
               "id": "jUT1Nj0dZQQ",
@@ -1276,7 +1357,8 @@
               "tags": [
                 "primordial-creation",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             }
           ]
         }
@@ -1308,7 +1390,8 @@
                 "soul",
                 "death",
                 "barzakh"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "DxS-AtMSRY4",
@@ -1322,7 +1405,8 @@
                 "grave",
                 "barzakh",
                 "alive"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "agf4M_Cb_yA",
@@ -1335,7 +1419,8 @@
                 "soul",
                 "barzakh",
                 "afterlife"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "l5ocTrMpuq0",
@@ -1348,7 +1433,8 @@
                 "soul",
                 "barzakh",
                 "stages"
-              ]
+              ],
+              "channelHandle": "@VisualDeen"
             },
             {
               "id": "oVW1KXZPZoE",
@@ -1361,7 +1447,8 @@
                 "soul",
                 "grave",
                 "barzakh"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "47Hof7pYEeY",
@@ -1373,7 +1460,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "mu_8phRyk-E",
@@ -1385,7 +1473,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "Csw2tcr6e14",
@@ -1397,7 +1486,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "u6JAUu8H-6g",
@@ -1409,7 +1499,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@HaifaaYounis"
             },
             {
               "id": "baThB5C5Lkk",
@@ -1421,7 +1512,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "ylsVFvGAuzc",
@@ -1433,7 +1525,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "OA-SD_OvOTI",
@@ -1445,7 +1538,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "p2nTAzJQQFE",
@@ -1457,7 +1551,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "NYbGiWkrXZM",
@@ -1469,7 +1564,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "zG-xCHuxpro",
@@ -1481,7 +1577,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "8kmuNxb7VOc",
@@ -1493,7 +1590,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "AlkcvuzFiaY",
@@ -1505,7 +1603,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "6FXDQ6C29kc",
@@ -1517,7 +1616,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "6tAnXqMIs1U",
@@ -1529,7 +1629,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "oOpFQhNEbN0",
@@ -1541,7 +1642,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "aNTjb6aYOdg",
@@ -1553,7 +1655,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "UbEWKEVYeUs",
@@ -1565,7 +1668,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "d3zVJ8P1CXY",
@@ -1577,7 +1681,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "0h8eJh5S8wE",
@@ -1589,7 +1694,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "H2Qz0W6L7pT",
@@ -1601,7 +1707,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "a3KjL9nQ4vB",
@@ -1613,7 +1720,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "e9L2mP7qT3v",
@@ -1625,7 +1733,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "J2WKwOvGAX4",
@@ -1640,7 +1749,8 @@
                 "soul",
                 "self",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "THn5oesBTfU",
@@ -1654,7 +1764,8 @@
                 "purification",
                 "soul",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Ul5E53kzLJY",
@@ -1669,7 +1780,8 @@
                 "barzakh",
                 "scholar",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "I2GDXS3UeFI",
@@ -1683,7 +1795,8 @@
                 "affairs",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "Yx821Ts0xNI",
@@ -1697,7 +1810,8 @@
                 "light",
                 "iman",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             }
           ]
         },
@@ -1717,7 +1831,8 @@
                 "fitrah",
                 "purpose",
                 "creation"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "k6v8XOx6CG4",
@@ -1730,7 +1845,8 @@
                 "fitrah",
                 "quran",
                 "nature"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "OStv8PVb-J0",
@@ -1743,7 +1859,8 @@
                 "fitrah",
                 "nature",
                 "disposition"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "JVCrcXEW-CE",
@@ -1756,7 +1873,8 @@
                 "fitrah",
                 "innate",
                 "disposition"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "f6pyVv0gsho",
@@ -1769,7 +1887,8 @@
                 "fitrah",
                 "born",
                 "natural"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "k1Uj23eA7Yo",
@@ -1782,7 +1901,8 @@
                 "fitrah",
                 "purpose",
                 "test"
-              ]
+              ],
+              "channelHandle": "@JavedAhmadGhamidi"
             },
             {
               "id": "wVVMFZ2hoq8",
@@ -1795,7 +1915,8 @@
                 "fitrah",
                 "nature",
                 "hamza-yusuf"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "_bRM6-34ZJ8",
@@ -1808,7 +1929,8 @@
                 "fitrah",
                 "primordial",
                 "return"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "uIms58RqDCs",
@@ -1821,7 +1943,8 @@
                 "fitrah",
                 "characteristics",
                 "types"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "Z6V6y6PpPRQ",
@@ -1835,7 +1958,8 @@
                 "nafs",
                 "qalb",
                 "ruh"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Z8jM9joa-C0",
@@ -1848,7 +1972,8 @@
                 "fitrah",
                 "awakening",
                 "reconnect"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -1868,7 +1993,8 @@
                 "destiny",
                 "accountability",
                 "qadr"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "TSI4bkDHmvA",
@@ -1881,7 +2007,8 @@
                 "destiny",
                 "jannah",
                 "jahannam"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "7d16CpWp-ok",
@@ -1894,7 +2021,8 @@
                 "destiny",
                 "meaning",
                 "life"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "2mcNWsZaANw",
@@ -1907,7 +2035,8 @@
                 "qadr",
                 "predestination",
                 "decree"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "ulxpEi2a_QI",
@@ -1920,7 +2049,8 @@
                 "qadr",
                 "divine-decree",
                 "classical"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "TYe3KKoZlyg",
@@ -1933,7 +2063,8 @@
                 "qadr",
                 "gates",
                 "four-levels"
-              ]
+              ],
+              "channelHandle": "@IslamicGuidance"
             },
             {
               "id": "d2SwI_pNIII",
@@ -1945,7 +2076,8 @@
               "tags": [
                 "qadr",
                 "branches-of-faith"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "5D16ZnWKsR0",
@@ -1957,7 +2089,8 @@
               "tags": [
                 "qadr",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -1978,7 +2111,8 @@
                 "light",
                 "creation",
                 "throne"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "kjGDxNgvoN8",
@@ -1991,7 +2125,8 @@
                 "angels",
                 "throne",
                 "worship"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "tHZQ61Bc2xU",
@@ -2004,7 +2139,8 @@
                 "angels",
                 "jibril",
                 "mikail"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "iKEzonWY1Pc",
@@ -2017,7 +2153,8 @@
                 "angels",
                 "stories",
                 "powerful"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "EGlJ5tNgc0U",
@@ -2031,7 +2168,8 @@
                 "jibril",
                 "mikail",
                 "israfil"
-              ]
+              ],
+              "channelHandle": "@SheikhSamihJad"
             },
             {
               "id": "YhEA7iJam2Q",
@@ -2044,7 +2182,8 @@
                 "angels",
                 "quran",
                 "facts"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "F2bVFqp9eYc",
@@ -2057,7 +2196,8 @@
                 "angels",
                 "scientific",
                 "quranic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "wsEPKsDngOQ",
@@ -2070,7 +2210,8 @@
                 "angels",
                 "aqeedah",
                 "belief"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Fg6Hj2kL9mN",
@@ -2082,7 +2223,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             }
           ]
         },
@@ -2103,7 +2245,8 @@
                 "jibril",
                 "mika'il",
                 "israfil"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "oAiN2zfNSEY",
@@ -2116,7 +2259,8 @@
                 "jibril",
                 "gabriel",
                 "archangel"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "KOjbmm3tlZE",
@@ -2129,7 +2273,8 @@
                 "archangels",
                 "jibril",
                 "revelation"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "iKEzonWY1Pc",
@@ -2144,7 +2289,8 @@
                 "mikail",
                 "israfil",
                 "azrael"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "EGlJ5tNgc0U",
@@ -2158,7 +2304,8 @@
                 "jibril",
                 "mikail",
                 "israfil"
-              ]
+              ],
+              "channelHandle": "@SheikhSamihJad"
             }
           ]
         },
@@ -2178,7 +2325,8 @@
                 "throne-bearers",
                 "angels",
                 "arsh"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "vHyQE_mk9HQ",
@@ -2191,7 +2339,8 @@
                 "throne-bearers",
                 "angels",
                 "arsh"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "e2EqWtGhGo0",
@@ -2204,7 +2353,8 @@
                 "throne",
                 "angels",
                 "vastness"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "SFyPvLp0Ayw",
@@ -2216,7 +2366,8 @@
               "tags": [
                 "throne-bearers",
                 "scholarly"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -2237,7 +2388,8 @@
                 "grave",
                 "munkar-nakir",
                 "recording"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "DxS-AtMSRY4",
@@ -2250,7 +2402,8 @@
                 "angels",
                 "grave",
                 "questioning"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "X-4Yp3Jum7o",
@@ -2263,7 +2416,8 @@
                 "angels",
                 "grave",
                 "munkar-nakir"
-              ]
+              ],
+              "channelHandle": "@IslamicGuidance"
             },
             {
               "id": "6ihFXA81wdc",
@@ -2276,7 +2430,8 @@
                 "angels",
                 "grave",
                 "questions"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "aQygpYsRVuo",
@@ -2289,7 +2444,8 @@
                 "angels",
                 "grave",
                 "munkar-nakir"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "ypctxFWOTJU",
@@ -2302,7 +2458,8 @@
                 "munkar-nakir",
                 "grave",
                 "questioning"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "yH5TGtGiHsM",
@@ -2314,7 +2471,8 @@
               "tags": [
                 "grave-angels",
                 "must-watch"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Uq7CLChME_g",
@@ -2326,7 +2484,8 @@
               "tags": [
                 "munkar-nakir",
                 "introduction"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -2346,7 +2505,8 @@
                 "jannah",
                 "doors",
                 "paradise"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -2359,7 +2519,8 @@
                 "jannah",
                 "jahannam",
                 "doors"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "rWuFF32ZisM",
@@ -2372,7 +2533,8 @@
                 "jannah",
                 "doors",
                 "paradise"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             }
           ]
         },
@@ -2393,7 +2555,8 @@
                 "praise",
                 "worship",
                 "tasbih"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "aNz0YICSZEo",
@@ -2407,7 +2570,8 @@
                 "praise",
                 "tasbih",
                 "light"
-              ]
+              ],
+              "channelHandle": "@JoyfulMuslims"
             },
             {
               "id": "F2bVFqp9eYc",
@@ -2420,7 +2584,8 @@
                 "angels",
                 "tasbih",
                 "worship"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "wsEPKsDngOQ",
@@ -2433,7 +2598,8 @@
                 "angels",
                 "aqeedah",
                 "belief"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -2453,7 +2619,8 @@
                 "jinn",
                 "creation",
                 "smokeless-fire"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "YvIPSYbSCAE",
@@ -2466,7 +2633,8 @@
                 "jinn",
                 "creation",
                 "quran"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "FD_VtnTLRmg",
@@ -2479,7 +2647,8 @@
                 "jinn",
                 "creation",
                 "unseen"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "HKzMlilQC6E",
@@ -2492,7 +2661,8 @@
                 "jinn",
                 "world",
                 "unseen"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "m7mqPO2Kxng",
@@ -2505,7 +2675,8 @@
                 "jinn",
                 "truth",
                 "myth"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "iA4XB73DW0E",
@@ -2518,7 +2689,8 @@
                 "jinn",
                 "creation",
                 "purpose"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "ZzhSwxJQAFU",
@@ -2531,7 +2703,8 @@
                 "jinn",
                 "reality",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "MWADKETGvm8",
@@ -2544,7 +2717,8 @@
                 "jinn",
                 "creation",
                 "smokeless-fire"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "TjHCohhRxk4",
@@ -2556,7 +2730,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "VxH2C37Fbxo",
@@ -2568,7 +2743,8 @@
               "tags": [
                 "unseen-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "jN4gx3HJFVg",
@@ -2581,7 +2757,8 @@
                 "jinn",
                 "surah-jinn",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "aFqNTacKhXw",
@@ -2594,7 +2771,8 @@
                 "jinn",
                 "response",
                 "iman"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             }
           ]
         },
@@ -2614,7 +2792,8 @@
                 "jinn",
                 "believers",
                 "islam"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "gRgiZcmwh7M",
@@ -2627,7 +2806,8 @@
                 "jinn",
                 "believers",
                 "quran"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "z0U4AZmg_8E",
@@ -2640,7 +2820,8 @@
                 "jinn",
                 "perspective",
                 "believers"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -2660,7 +2841,8 @@
                 "jinn",
                 "disbelief",
                 "evil"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "-qubS86GQSo",
@@ -2673,7 +2855,8 @@
                 "jinn",
                 "reality",
                 "disbelievers"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -2693,7 +2876,8 @@
                 "shayateen",
                 "devils",
                 "temptation"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "dEpEMV77x44",
@@ -2706,7 +2890,8 @@
                 "shayateen",
                 "shaytan",
                 "dajjal"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "bRxwvG_1rdc",
@@ -2720,7 +2905,8 @@
                 "devil",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             }
           ]
         },
@@ -2741,7 +2927,8 @@
                 "arrogance",
                 "prostration",
                 "adam"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "hJfCoTAVXss",
@@ -2755,7 +2942,8 @@
                 "refusal",
                 "adam",
                 "pride"
-              ]
+              ],
+              "channelHandle": "@SahihSource"
             },
             {
               "id": "ujJa49IPuNU",
@@ -2768,7 +2956,8 @@
                 "iblis",
                 "prostration",
                 "adam"
-              ]
+              ],
+              "channelHandle": "@AbuBakrZoud"
             },
             {
               "id": "qNNh4p0QSME",
@@ -2781,7 +2970,8 @@
                 "iblis",
                 "prostration",
                 "arrogance"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "3Z3R5HuVeYk",
@@ -2794,7 +2984,8 @@
                 "iblis",
                 "refusal",
                 "pride"
-              ]
+              ],
+              "channelHandle": "@KarimAbuZaid"
             },
             {
               "id": "SrRElRDDR6s",
@@ -2807,7 +2998,8 @@
                 "iblis",
                 "refusal",
                 "prostration"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "_acboQmi_DU",
@@ -2820,7 +3012,8 @@
                 "iblis",
                 "satan",
                 "story"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Rw7-Bhx446o",
@@ -2833,7 +3026,8 @@
                 "iblis",
                 "arrogance",
                 "adam"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "fFbzPvJQXnM",
@@ -2846,7 +3040,8 @@
                 "iblis",
                 "satan",
                 "eternal-enemy"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -2866,7 +3061,8 @@
                 "iblis",
                 "arrogance",
                 "prostration"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "_acboQmi_DU",
@@ -2879,7 +3075,8 @@
                 "iblis",
                 "satan",
                 "story"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Rw7-Bhx446o",
@@ -2892,7 +3089,8 @@
                 "iblis",
                 "arrogance",
                 "adam"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "ujJa49IPuNU",
@@ -2905,7 +3103,8 @@
                 "iblis",
                 "prostration",
                 "adam"
-              ]
+              ],
+              "channelHandle": "@AbuBakrZoud"
             },
             {
               "id": "qNNh4p0QSME",
@@ -2918,7 +3117,8 @@
                 "iblis",
                 "prostration",
                 "arrogance"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "3Z3R5HuVeYk",
@@ -2931,7 +3131,8 @@
                 "iblis",
                 "refusal",
                 "pride"
-              ]
+              ],
+              "channelHandle": "@KarimAbuZaid"
             },
             {
               "id": "fFbzPvJQXnM",
@@ -2944,7 +3145,8 @@
                 "iblis",
                 "satan",
                 "eternal-enemy"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "3WEYp_v0AZk",
@@ -2957,7 +3159,8 @@
                 "free-will",
                 "purpose",
                 "creation"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "XLypLBlFIMU",
@@ -2970,7 +3173,8 @@
                 "free-will",
                 "test",
                 "devotion"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "tvnYp9GaHKs",
@@ -2983,7 +3187,8 @@
                 "free-will",
                 "test",
                 "purpose"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "k1Uj23eA7Yo",
@@ -2996,7 +3201,8 @@
                 "free-will",
                 "test",
                 "academic"
-              ]
+              ],
+              "channelHandle": "@JavedAhmadGhamidi"
             }
           ]
         },
@@ -3017,7 +3223,8 @@
                 "free-will",
                 "test",
                 "purpose"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "XLypLBlFIMU",
@@ -3030,7 +3237,8 @@
                 "test",
                 "devotion",
                 "trial"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "tvnYp9GaHKs",
@@ -3043,7 +3251,8 @@
                 "evil",
                 "test",
                 "purpose"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "NbG0CW7QAWo",
@@ -3056,7 +3265,8 @@
                 "purpose",
                 "trials",
                 "testing"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "ifllgTA2pmY",
@@ -3069,7 +3279,8 @@
                 "purpose",
                 "academic",
                 "meaning"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             }
           ]
         }
@@ -3102,7 +3313,8 @@
                 "jannah",
                 "paradise",
                 "reward"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -3115,7 +3327,8 @@
                 "jannah",
                 "jahannam",
                 "comparison"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "TSI4bkDHmvA",
@@ -3128,7 +3341,8 @@
                 "jannah",
                 "jahannam",
                 "motivation"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "2kvL5Xsh5MY",
@@ -3141,7 +3355,8 @@
                 "jahannam",
                 "hellfire",
                 "levels"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "yISgUudotVI",
@@ -3154,7 +3369,8 @@
                 "jahannam",
                 "hellfire",
                 "punishment"
-              ]
+              ],
+              "channelHandle": "@BrotherAqib"
             },
             {
               "id": "ecQCyVWD9bU",
@@ -3167,7 +3383,8 @@
                 "jannah",
                 "description",
                 "emotional"
-              ]
+              ],
+              "channelHandle": "@wahajtarin"
             },
             {
               "id": "q9-XZh9scQA",
@@ -3180,7 +3397,8 @@
                 "jannah",
                 "description",
                 "scholarly"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "rWuFF32ZisM",
@@ -3193,7 +3411,8 @@
                 "jannah",
                 "paradise",
                 "eternal"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "AD3RJqudRvQ",
@@ -3206,7 +3425,8 @@
                 "jannah",
                 "paradise",
                 "motivation"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -3219,7 +3439,8 @@
                 "jannah",
                 "jahannam",
                 "discussion"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "_MusyKjau0Y",
@@ -3231,7 +3452,8 @@
               "tags": [
                 "celestial-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "Vt2RpW8xN4k",
@@ -3243,7 +3465,8 @@
               "tags": [
                 "celestial-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "kqz8nhm65w8",
@@ -3256,7 +3479,8 @@
                 "jannah",
                 "comprehensive",
                 "paradise"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "9JcCiEdA2nE",
@@ -3269,7 +3493,8 @@
                 "jannah",
                 "seeing-allah",
                 "sidky"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "DW6PSRAALtk",
@@ -3282,7 +3507,8 @@
                 "paradise",
                 "non-muslim",
                 "wahhaj"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             }
           ]
         },
@@ -3303,7 +3529,8 @@
                 "levels",
                 "ranks",
                 "firdaws"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "kf-RLNGBQrE",
@@ -3316,7 +3543,8 @@
                 "jannah",
                 "firdaus",
                 "highest"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "WkhvY3hmBIY",
@@ -3329,7 +3557,8 @@
                 "jannah",
                 "jahannam",
                 "layers"
-              ]
+              ],
+              "channelHandle": "@IslamAsMercy"
             },
             {
               "id": "hEanxqGLhGQ",
@@ -3342,7 +3571,8 @@
                 "jannah",
                 "levels",
                 "ranks"
-              ]
+              ],
+              "channelHandle": "@BrotherAqib"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -3355,7 +3585,8 @@
                 "jannah",
                 "levels",
                 "comparison"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             }
           ]
         },
@@ -3375,7 +3606,8 @@
                 "jannah",
                 "bliss",
                 "seeing-allah"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -3388,7 +3620,8 @@
                 "jannah",
                 "bliss",
                 "comparison"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "rWuFF32ZisM",
@@ -3401,7 +3634,8 @@
                 "jannah",
                 "bliss",
                 "seeing-allah"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "q9-XZh9scQA",
@@ -3414,7 +3648,8 @@
                 "jannah",
                 "bliss",
                 "description"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             }
           ]
         },
@@ -3435,7 +3670,8 @@
                 "punishment",
                 "fire",
                 "warning"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "8dNDrfbj2m4",
@@ -3448,7 +3684,8 @@
                 "jahannam",
                 "punishment",
                 "severe"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "zTkMBR5F5jo",
@@ -3461,7 +3698,8 @@
                 "jahannam",
                 "journey",
                 "punishment"
-              ]
+              ],
+              "channelHandle": "@AbuBakrZoud"
             },
             {
               "id": "sES3KBWaX7E",
@@ -3474,7 +3712,8 @@
                 "jahannam",
                 "details",
                 "essential"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "nOWDqRjzfV8",
@@ -3487,7 +3726,8 @@
                 "jahannam",
                 "webinar",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "TlVwgthVLTU",
@@ -3499,7 +3739,8 @@
               "tags": [
                 "celestial-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@wahajtarin"
             },
             {
               "id": "Bn4mK9pQ7tL",
@@ -3511,7 +3752,8 @@
               "tags": [
                 "celestial-realms",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@IslamicGuidance"
             }
           ]
         },
@@ -3532,7 +3774,8 @@
                 "levels",
                 "hellfire",
                 "ranks"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "3NRJ0xTE6_Q",
@@ -3545,7 +3788,8 @@
                 "jahannam",
                 "levels",
                 "who-goes"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "DlahctJIrWM",
@@ -3558,7 +3802,8 @@
                 "jahannam",
                 "eternal",
                 "temporary"
-              ]
+              ],
+              "channelHandle": "@IslamAsMercy"
             },
             {
               "id": "kwzPTu7GmUs",
@@ -3571,7 +3816,8 @@
                 "al-araf",
                 "heights",
                 "people"
-              ]
+              ],
+              "channelHandle": "@IslamAsMercy"
             },
             {
               "id": "WkhvY3hmBIY",
@@ -3584,7 +3830,8 @@
                 "jahannam",
                 "jannah",
                 "layers"
-              ]
+              ],
+              "channelHandle": "@IslamAsMercy"
             }
           ]
         },
@@ -3605,7 +3852,8 @@
                 "poor",
                 "suffa",
                 "mufti-menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "rWuFF32ZisM",
@@ -3618,7 +3866,8 @@
                 "jannah",
                 "belal-assaad",
                 "paradise"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             }
           ]
         }
@@ -3651,7 +3900,8 @@
                 "creation",
                 "clay",
                 "purpose"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "GOPiPx5tvB0",
@@ -3664,7 +3914,8 @@
                 "adam",
                 "creation",
                 "humanity"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "Kf7SMM6pR0c",
@@ -3678,7 +3929,8 @@
                 "creation",
                 "clay",
                 "soul"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "mI4HNknQG0g",
@@ -3692,7 +3944,8 @@
                 "creation",
                 "clay",
                 "breath"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "7MWlxxh15ww",
@@ -3705,7 +3958,8 @@
                 "adam",
                 "creation",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "wFAfTgDCNPY",
@@ -3718,7 +3972,8 @@
                 "adam",
                 "soul",
                 "quranic-stories"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "m8SZyu3sJik",
@@ -3731,7 +3986,8 @@
                 "adam",
                 "quranic-linguistics",
                 "bayyinah"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "WQyZjfCRnWM",
@@ -3743,7 +3999,8 @@
               "tags": [
                 "human-story",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "WYEox2ZnsLo",
@@ -3755,7 +4012,8 @@
               "tags": [
                 "human-story",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "LnUDDZP-e8M",
@@ -3769,7 +4027,8 @@
                 "mistake",
                 "human-story",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             }
           ]
         },
@@ -3790,7 +4049,8 @@
                 "test",
                 "purpose",
                 "creation"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "XLypLBlFIMU",
@@ -3803,7 +4063,8 @@
                 "test",
                 "devotion",
                 "life"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "Y5W1dkXv05Q",
@@ -3816,7 +4077,8 @@
                 "purpose",
                 "creation",
                 "test"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "P2VTPT-oiuE",
@@ -3829,7 +4091,8 @@
                 "purpose",
                 "contemporary",
                 "meaning"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "laDqzkN-HVk",
@@ -3843,7 +4106,8 @@
                 "conversion",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             }
           ]
         },
@@ -3863,7 +4127,8 @@
                 "prophethood",
                 "muhammad",
                 "guidance"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "AQZb1xLPLcM",
@@ -3876,7 +4141,8 @@
                 "prophethood",
                 "character",
                 "muhammad"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "xS9L3pi4vOc",
@@ -3889,7 +4155,8 @@
                 "prophethood",
                 "khutbah",
                 "guidance"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "VOUp3ZZ9t3A",
@@ -3902,7 +4169,8 @@
                 "prophethood",
                 "seerah",
                 "muhammad"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "DdWxCVYAOCk",
@@ -3915,7 +4183,8 @@
                 "prophethood",
                 "muhammad",
                 "seerah"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "J_ulJPaoXaU",
@@ -3928,7 +4197,8 @@
                 "prophethood",
                 "seerah",
                 "early-life"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "YJUvJBF9USM",
@@ -3941,7 +4211,8 @@
                 "prophethood",
                 "seerah",
                 "complete"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "0reCmOZBRZE",
@@ -3954,7 +4225,8 @@
                 "prophethood",
                 "seerah",
                 "introduction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "rCFKNDtQB00",
@@ -3967,7 +4239,8 @@
                 "prophethood",
                 "seerah",
                 "belal-assaad"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "xO75yfFnnj4",
@@ -3980,7 +4253,8 @@
                 "prophethood",
                 "seerah",
                 "early-muslims"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "PbTtsin8zMQ",
@@ -3993,7 +4267,8 @@
                 "prophethood",
                 "all-prophets",
                 "quranic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "tk983vG9ChA",
@@ -4006,7 +4281,8 @@
                 "prophethood",
                 "adam-to-muhammad",
                 "complete"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "y6Nkz1Y9tA8",
@@ -4018,7 +4294,8 @@
               "tags": [
                 "human-story",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "h4JmRRxXdu0",
@@ -4030,7 +4307,8 @@
               "tags": [
                 "human-story",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "7lqQbsNmqMU",
@@ -4044,7 +4322,8 @@
                 "urdu",
                 "israr-ahmed",
                 "prophet-muhammad"
-              ]
+              ],
+              "channelHandle": "@DrIsrarAhmed"
             },
             {
               "id": "I7ql5ZRXOew",
@@ -4057,7 +4336,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "LsOKMpSvbLo",
@@ -4070,7 +4350,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "bWimr9SNgU0",
@@ -4083,7 +4364,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "NVaoIvx_Ipk",
@@ -4096,7 +4378,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "PiDLP2iaBwU",
@@ -4109,7 +4392,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "6a4WXojpEE4",
@@ -4122,7 +4406,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "eHP5nYTMve8",
@@ -4135,7 +4420,8 @@
                 "seerah",
                 "desert-rose",
                 "al-shareef"
-              ]
+              ],
+              "channelHandle": "@AlMaghribInstitute"
             },
             {
               "id": "VzelKWv-Pok",
@@ -4149,7 +4435,8 @@
                 "prophet",
                 "khutbah",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             }
           ]
         }
@@ -4182,7 +4469,8 @@
                 "death",
                 "soul",
                 "extraction"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "DxS-AtMSRY4",
@@ -4195,7 +4483,8 @@
                 "death",
                 "grave",
                 "alive"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "G1FY8LF6QWg",
@@ -4208,7 +4497,8 @@
                 "death",
                 "soul",
                 "extraction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "OKSadfPj134",
@@ -4221,7 +4511,8 @@
                 "death",
                 "soul",
                 "angels"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "7dmMuHszgqU",
@@ -4234,7 +4525,8 @@
                 "death",
                 "soul",
                 "extraction"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "3On7UTa4EHg",
@@ -4247,7 +4539,8 @@
                 "death",
                 "afterlife",
                 "urdu"
-              ]
+              ],
+              "channelHandle": "@DrIsrarAhmed"
             }
           ]
         },
@@ -4267,7 +4560,8 @@
                 "grave",
                 "munkar-nakir",
                 "questioning"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "DxS-AtMSRY4",
@@ -4281,7 +4575,8 @@
                 "alive",
                 "punishment",
                 "reward"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "kGvVyd5g31A",
@@ -4294,7 +4589,8 @@
                 "grave",
                 "first-night",
                 "introduction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "04KdFu9QSiM",
@@ -4307,7 +4603,8 @@
                 "grave",
                 "first-night",
                 "detailed"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "L-kF82sR5nM",
@@ -4320,7 +4617,8 @@
                 "grave",
                 "barzakh",
                 "afterlife"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "kP4xN2jQ8mL",
@@ -4333,7 +4631,8 @@
                 "grave",
                 "first-station",
                 "death"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "oVW1KXZPZoE",
@@ -4347,7 +4646,8 @@
                 "buried",
                 "qadhi",
                 "verified"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             }
           ]
         },
@@ -4367,7 +4667,8 @@
                 "barzakh",
                 "intermediate",
                 "barrier"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "agf4M_Cb_yA",
@@ -4380,7 +4681,8 @@
                 "barzakh",
                 "hidden",
                 "afterlife"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "xABo3FJufzg",
@@ -4393,7 +4695,8 @@
                 "barzakh",
                 "death",
                 "questions"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "XpiaNJcv3UA",
@@ -4406,7 +4709,8 @@
                 "barzakh",
                 "life",
                 "afterlife"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "vkRQ8E4P98k",
@@ -4419,7 +4723,8 @@
                 "barzakh",
                 "grave",
                 "life"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Ul5E53kzLJY",
@@ -4432,7 +4737,8 @@
                 "barzakh",
                 "comprehensive",
                 "soul"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "C7KcJwYM9GI",
@@ -4445,7 +4751,8 @@
                 "barzakh",
                 "complete",
                 "lecture"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "hmFC_CwmGAA",
@@ -4458,7 +4765,8 @@
                 "barzakh",
                 "40-days",
                 "hidden"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "7G6QbBnX1mM",
@@ -4471,7 +4779,8 @@
                 "barzakh",
                 "urdu",
                 "tariq-masood"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -4492,7 +4801,8 @@
                 "hour",
                 "dajjal",
                 "medina"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "1MVc5-CzttQ",
@@ -4505,7 +4815,8 @@
                 "signs",
                 "hour",
                 "major-signs"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "uMRYF17FhEs",
@@ -4518,7 +4829,8 @@
                 "signs",
                 "major-signs",
                 "judgment"
-              ]
+              ],
+              "channelHandle": "@BrotherAqib"
             },
             {
               "id": "Ltk5tIinFdM",
@@ -4531,7 +4843,8 @@
                 "signs",
                 "dajjal",
                 "isa"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "0z-Ru6ewrkg",
@@ -4544,7 +4857,8 @@
                 "isa",
                 "descent",
                 "signs"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "R3YeqvjP4go",
@@ -4557,7 +4871,8 @@
                 "isa",
                 "second-coming",
                 "consensus"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "2FEz8jsC77k",
@@ -4570,7 +4885,8 @@
                 "isa",
                 "current-state",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "vHmGJoUaHQk",
@@ -4582,7 +4898,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "AXbOekg6NPE",
@@ -4594,7 +4911,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@KarimAbuZaid"
             },
             {
               "id": "YHuIGIgSYqY",
@@ -4606,7 +4924,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@wahajtarin"
             },
             {
               "id": "hrwaoKzceA4",
@@ -4618,7 +4937,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@mercifulservant"
             },
             {
               "id": "QuCxQlNW-LA",
@@ -4630,7 +4950,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "8ZKfuDXHPOk",
@@ -4642,7 +4963,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "U4gSBotVAWc",
@@ -4654,7 +4976,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "F8PLz9m1PIs",
@@ -4666,7 +4989,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "dEpEMV77x44",
@@ -4680,7 +5004,8 @@
                 "dajjal",
                 "shaytan",
                 "verified"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "D9w2nl6618k",
@@ -4693,7 +5018,8 @@
                 "prophecy",
                 "quran",
                 "spread"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "wOw73WqclA8",
@@ -4707,7 +5033,8 @@
                 "reflection",
                 "history",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             }
           ]
         },
@@ -4727,7 +5054,8 @@
                 "qiyamah",
                 "judgment",
                 "resurrection"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "e2UGmSC1hI4",
@@ -4740,7 +5068,8 @@
                 "qiyamah",
                 "judgment",
                 "day"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "nVCIb9sPi0w",
@@ -4753,7 +5082,8 @@
                 "qiyamah",
                 "judgment",
                 "ready"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "kxTcQdklKkk",
@@ -4766,7 +5096,8 @@
                 "qiyamah",
                 "terrifying",
                 "reality"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "FyCbYhtFytY",
@@ -4779,7 +5110,8 @@
                 "qiyamah",
                 "judgment",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "eWhVzPJu1qE",
@@ -4792,7 +5124,8 @@
                 "qiyamah",
                 "judgment",
                 "emotional"
-              ]
+              ],
+              "channelHandle": "@wahajtarin"
             },
             {
               "id": "djP-LLijCpE",
@@ -4805,7 +5138,8 @@
                 "qiyamah",
                 "resurrection",
                 "detailed"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "wcJWdZ0AKfo",
@@ -4818,7 +5152,8 @@
                 "qiyamah",
                 "reckoning",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "2YjP3OaQpJ8",
@@ -4830,7 +5165,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "qL7mN8p2XwR",
@@ -4842,7 +5178,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Hy8KpL3nQ5w",
@@ -4854,7 +5191,8 @@
               "tags": [
                 "hereafter",
                 "doc-import"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             }
           ]
         },
@@ -4874,7 +5212,8 @@
                 "trumpet",
                 "israfil",
                 "resurrection"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "ytXrjX7xuX4",
@@ -4887,7 +5226,8 @@
                 "trumpet",
                 "israfil",
                 "qiyamah"
-              ]
+              ],
+              "channelHandle": "@IslamicLessonsMadeEasy"
             },
             {
               "id": "9vZ3ifZv43Y",
@@ -4900,7 +5240,8 @@
                 "trumpet",
                 "israfil",
                 "end"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -4920,7 +5261,8 @@
                 "hashr",
                 "gathering",
                 "resurrection"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "_fhOL4F9oik",
@@ -4933,7 +5275,8 @@
                 "hashr",
                 "gathering",
                 "qiyamah"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "wcJWdZ0AKfo",
@@ -4946,7 +5289,8 @@
                 "hashr",
                 "gathering",
                 "reckoning"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -4967,7 +5311,8 @@
                 "deeds",
                 "book",
                 "judgment"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "R5q3LEjeVEA",
@@ -4980,7 +5325,8 @@
                 "records",
                 "deeds",
                 "scale"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "88CPLktYzhU",
@@ -4993,7 +5339,8 @@
                 "records",
                 "deeds",
                 "scale"
-              ]
+              ],
+              "channelHandle": "@IslamicGuidance"
             }
           ]
         },
@@ -5014,7 +5361,8 @@
                 "scales",
                 "weighing",
                 "deeds"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "YIXXWUe1lEs",
@@ -5027,7 +5375,8 @@
                 "mizan",
                 "scale",
                 "judgment"
-              ]
+              ],
+              "channelHandle": "@KarimAbuZaid"
             },
             {
               "id": "Wm2p8GkfMJ0",
@@ -5040,7 +5389,8 @@
                 "mizan",
                 "scale",
                 "afterlife-series"
-              ]
+              ],
+              "channelHandle": "@MajedMahmoud"
             }
           ]
         },
@@ -5060,7 +5410,8 @@
                 "shafaah",
                 "intercession",
                 "mercy"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "KhByI2FE9WE",
@@ -5073,7 +5424,8 @@
                 "shafaah",
                 "intercession",
                 "mercy"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "aQl-Itwcpm0",
@@ -5086,7 +5438,8 @@
                 "shafaah",
                 "intercession",
                 "judgment"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "LMSC_c58TxU",
@@ -5099,7 +5452,8 @@
                 "shafaah",
                 "intercession",
                 "part3"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "Ol_eUEWlork",
@@ -5112,7 +5466,8 @@
                 "shafaah",
                 "intercession",
                 "part2"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "DegYH67_Um0",
@@ -5125,7 +5480,8 @@
                 "shafaah",
                 "intercession",
                 "condensed"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             }
           ]
         },
@@ -5146,7 +5502,8 @@
                 "bridge",
                 "hellfire",
                 "crossing"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "cChuwpZf7Zc",
@@ -5159,7 +5516,8 @@
                 "sirat",
                 "bridge",
                 "hellfire"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "gKLzuoECO6w",
@@ -5172,7 +5530,8 @@
                 "sirat",
                 "bridge",
                 "crossing"
-              ]
+              ],
+              "channelHandle": "@VisualDeen"
             },
             {
               "id": "BbUhW6KPQh8",
@@ -5185,7 +5544,8 @@
                 "sirat",
                 "bridge",
                 "test"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "uiHhnZ_Cn_Y",
@@ -5198,7 +5558,8 @@
                 "sirat",
                 "bridge",
                 "yaqeen"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "HB929XjOw8c",
@@ -5211,7 +5572,8 @@
                 "sirat",
                 "bridge",
                 "7-stops"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "gMzMOFHv8fw",
@@ -5224,7 +5586,8 @@
                 "sirat",
                 "bridge",
                 "afterlife-series"
-              ]
+              ],
+              "channelHandle": "@MajedMahmoud"
             }
           ]
         },
@@ -5244,7 +5607,8 @@
                 "jannah",
                 "paradise",
                 "eternal"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -5257,7 +5621,8 @@
                 "jannah",
                 "bliss",
                 "eternal"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             }
           ]
         },
@@ -5278,7 +5643,8 @@
                 "middle",
                 "believers",
                 "purified"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "c_Ac1xH8SJ4",
@@ -5291,7 +5657,8 @@
                 "jannah",
                 "poor",
                 "mufti-menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "rWuFF32ZisM",
@@ -5304,7 +5671,8 @@
                 "jannah",
                 "poor",
                 "suffa"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             }
           ]
         },
@@ -5325,7 +5693,8 @@
                 "hellfire",
                 "punishment",
                 "warning"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "2kvL5Xsh5MY",
@@ -5338,7 +5707,8 @@
                 "jahannam",
                 "levels",
                 "hellfire"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "zTkMBR5F5jo",
@@ -5351,7 +5721,8 @@
                 "jahannam",
                 "journey",
                 "punishment"
-              ]
+              ],
+              "channelHandle": "@AbuBakrZoud"
             }
           ]
         },
@@ -5372,7 +5743,8 @@
                 "levels",
                 "hellfire",
                 "ranks"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "3NRJ0xTE6_Q",
@@ -5385,7 +5757,8 @@
                 "jahannam",
                 "levels",
                 "who-goes"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "DlahctJIrWM",
@@ -5398,7 +5771,8 @@
                 "jahannam",
                 "eternal",
                 "temporary"
-              ]
+              ],
+              "channelHandle": "@IslamAsMercy"
             },
             {
               "id": "kwzPTu7GmUs",
@@ -5411,7 +5785,8 @@
                 "al-araf",
                 "heights",
                 "people"
-              ]
+              ],
+              "channelHandle": "@IslamAsMercy"
             }
           ]
         }
@@ -5444,7 +5819,8 @@
                 "salah",
                 "prayer",
                 "step-by-step"
-              ]
+              ],
+              "channelHandle": "@MajedMahmoud"
             },
             {
               "id": "4zr6tNgmKSI",
@@ -5457,7 +5833,8 @@
                 "salah",
                 "prayer",
                 "five-prayers"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "zalLv2NY98k",
@@ -5470,7 +5847,8 @@
                 "salah",
                 "prayer",
                 "guide"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "dClt_aGyajA",
@@ -5483,7 +5861,8 @@
                 "salah",
                 "mistakes",
                 "correction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "5sYWPiZpV2A",
@@ -5496,7 +5875,8 @@
                 "salah",
                 "mistakes",
                 "fix"
-              ]
+              ],
+              "channelHandle": "@OneIslamProductions"
             },
             {
               "id": "l-M8yjw46g8",
@@ -5509,7 +5889,8 @@
                 "salah",
                 "motivation",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "oP4Nq71PU3A",
@@ -5521,7 +5902,8 @@
               "tags": [
                 "fiqh",
                 "wudu"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "KmQahlg8PxU",
@@ -5534,7 +5916,8 @@
                 "fiqh",
                 "parents",
                 "masjid"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "FfYH8AUIbIQ",
@@ -5547,7 +5930,8 @@
                 "fiqh",
                 "salah",
                 "biddah"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "vvVlTu48APs",
@@ -5560,7 +5944,8 @@
                 "fiqh",
                 "wudu",
                 "salah"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "ajIXeTBaT5E",
@@ -5573,7 +5958,8 @@
                 "fiqh",
                 "ghusl",
                 "purity"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "U_Kp7b_wtzs",
@@ -5586,7 +5972,8 @@
                 "fiqh",
                 "salah",
                 "takbir"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "nI80kXrhUkA",
@@ -5599,7 +5986,8 @@
                 "fiqh",
                 "salah",
                 "doubt"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "j5TRyMbSE98",
@@ -5612,7 +6000,8 @@
                 "fiqh",
                 "menstruation",
                 "purity"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "UnagbtQao9I",
@@ -5625,7 +6014,8 @@
                 "fiqh",
                 "hair",
                 "qaza"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "6NPE2eueBbM",
@@ -5639,7 +6029,8 @@
                 "salah",
                 "ramadan",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "NcCYVRB6UbA",
@@ -5653,7 +6044,8 @@
                 "tahajjud",
                 "salah",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "G1vbhD8kdb8",
@@ -5667,7 +6059,8 @@
                 "ablution",
                 "purity",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             }
           ]
         },
@@ -5687,7 +6080,8 @@
                 "fasting",
                 "ramadan",
                 "ruling"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "kyvlfcVsr5Y",
@@ -5700,7 +6094,8 @@
                 "fasting",
                 "ramadan",
                 "rules"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "MiyRLRhXqwM",
@@ -5713,7 +6108,8 @@
                 "fasting",
                 "ramadan",
                 "explained"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "gg7jbJngqGI",
@@ -5726,7 +6122,8 @@
                 "fasting",
                 "wisdom",
                 "miracle"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "be3VQgagD1A",
@@ -5739,7 +6136,8 @@
                 "fasting",
                 "wisdom",
                 "spiritual"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Mr7nUw4Y_fM",
@@ -5752,7 +6150,8 @@
                 "fasting",
                 "healing",
                 "science"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -5772,7 +6171,8 @@
                 "zakat",
                 "calculation",
                 "ruling"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "NAgUUqsY9T4",
@@ -5785,7 +6185,8 @@
                 "zakat",
                 "calculation",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "O3jRAHt7VZ8",
@@ -5798,7 +6199,8 @@
                 "zakat",
                 "calculation",
                 "yaqeen"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "jNAUQm9LrgU",
@@ -5811,7 +6213,8 @@
                 "zakat",
                 "charity",
                 "obligation"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "NV8r58N53hA",
@@ -5824,7 +6227,8 @@
                 "zakat",
                 "sadaqah",
                 "charity"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "xn5FaEN6gUo",
@@ -5837,7 +6241,8 @@
                 "zakat",
                 "benefits",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             }
           ]
         },
@@ -5857,7 +6262,8 @@
                 "hajj",
                 "pilgrimage",
                 "overview"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "iyOF_9cjGa0",
@@ -5870,7 +6276,8 @@
                 "hajj",
                 "guide",
                 "step-by-step"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "qZ9n4V9lZkE",
@@ -5883,7 +6290,8 @@
                 "umrah",
                 "guide",
                 "step-by-step"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "ce1jf4oU0ro",
@@ -5896,7 +6304,8 @@
                 "hajj",
                 "complete",
                 "guide"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "acVLHDWn_Jw",
@@ -5909,7 +6318,8 @@
                 "umrah",
                 "meaning",
                 "spiritual"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "y5FYkU6ozLU",
@@ -5922,7 +6332,8 @@
                 "hajj",
                 "umrah",
                 "purpose"
-              ]
+              ],
+              "channelHandle": "@AbuBakrZoud"
             },
             {
               "id": "4Vrm_-usIwY",
@@ -5935,7 +6346,8 @@
                 "fiqh",
                 "umrah",
                 "hajj"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "erA1-2fR9Yw",
@@ -5948,7 +6360,8 @@
                 "fiqh",
                 "hajj",
                 "mahram"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             }
           ]
         },
@@ -5968,7 +6381,8 @@
                 "marriage",
                 "relationship",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "u2r9QNk_DHk",
@@ -5981,7 +6395,8 @@
                 "marriage",
                 "sacred",
                 "bond"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "LqYvLS8DDFk",
@@ -5994,7 +6409,8 @@
                 "marriage",
                 "salaf",
                 "examples"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "IiXgZhHL8zc",
@@ -6007,7 +6423,8 @@
                 "divorce",
                 "conditions",
                 "ruling"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "1EWuUZYEufw",
@@ -6020,7 +6437,8 @@
                 "divorce",
                 "manner",
                 "right-way"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "Hv2dcqBZY7I",
@@ -6034,7 +6452,8 @@
                 "divorce",
                 "quran",
                 "bayyinah"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "4RkE3be9EK4",
@@ -6047,7 +6466,8 @@
                 "fiqh",
                 "hijab",
                 "family"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "nBR9OniacBQ",
@@ -6060,7 +6480,8 @@
                 "fiqh",
                 "mahr",
                 "marriage"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "dWnPa59xLk4",
@@ -6073,7 +6494,8 @@
                 "fiqh",
                 "family",
                 "christianity"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "p0m7Cymr5FM",
@@ -6086,7 +6508,8 @@
                 "fiqh",
                 "abortion",
                 "family"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "-nn3ZOUUKOw",
@@ -6099,7 +6522,8 @@
                 "fiqh",
                 "marriage",
                 "family"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "epq-3Oyg0LI",
@@ -6112,7 +6536,8 @@
                 "fiqh",
                 "divorce",
                 "marriage"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "C4Lbm2Nl2A8",
@@ -6125,7 +6550,8 @@
                 "relationships",
                 "hijab",
                 "halal-haram"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "Q499xV32L1g",
@@ -6138,7 +6564,8 @@
                 "hijab",
                 "women",
                 "fiqh"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "vT4Qh8wNR_0",
@@ -6151,7 +6578,8 @@
                 "hijab",
                 "naik",
                 "beauty"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             }
           ]
         }
@@ -6183,7 +6611,8 @@
                 "tasawwuf",
                 "sufism",
                 "complete-guide"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "TdfODhOjoh4",
@@ -6196,7 +6625,8 @@
                 "tasawwuf",
                 "hamza-yusuf",
                 "session"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "xoGWSTfAw6k",
@@ -6209,7 +6639,8 @@
                 "tasawwuf",
                 "sufism",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "nE6wvCPWgsc",
@@ -6222,7 +6653,8 @@
                 "tasawwuf",
                 "sufism",
                 "truth"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "PmK25RP3DS4",
@@ -6236,7 +6668,8 @@
                 "dua",
                 "worship",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "w_7928XlfQo",
@@ -6250,7 +6683,8 @@
                 "ibn-taymiyya",
                 "tasawwuf",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             }
           ]
         },
@@ -6270,7 +6704,8 @@
                 "dhikr",
                 "remembrance",
                 "powerful"
-              ]
+              ],
+              "channelHandle": "@HaifaaYounis"
             },
             {
               "id": "NbDvYWP7DEk",
@@ -6283,7 +6718,8 @@
                 "dhikr",
                 "meaning",
                 "bayyinah"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "nI0MdNno5pg",
@@ -6296,7 +6732,8 @@
                 "dhikr",
                 "importance",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -6316,7 +6753,8 @@
                 "tazkiyah",
                 "purification",
                 "soul"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "yxqtnL1uJSw",
@@ -6329,7 +6767,8 @@
                 "tazkiyah",
                 "heart",
                 "transformation"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "BUEwj54I3M0",
@@ -6342,7 +6781,8 @@
                 "tazkiyah",
                 "practical",
                 "ways"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "THn5oesBTfU",
@@ -6355,7 +6795,8 @@
                 "tazkiyah",
                 "purification",
                 "3-levels"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "J2WKwOvGAX4",
@@ -6368,7 +6809,8 @@
                 "tazkiyah",
                 "nafs",
                 "heart"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             }
           ]
         },
@@ -6388,7 +6830,8 @@
                 "ihsan",
                 "excellence",
                 "pursuit"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "or5V3WVhou0",
@@ -6401,7 +6844,8 @@
                 "ihsan",
                 "meaning",
                 "worship"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "UOl4JIA_vdQ",
@@ -6414,7 +6858,8 @@
                 "ihsan",
                 "perfection",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         }
@@ -6447,7 +6892,8 @@
                 "tafsir",
                 "comprehensive",
                 "30-hours"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "U8RORH_75do",
@@ -6460,7 +6906,8 @@
                 "tafsir",
                 "surah-yaseen",
                 "heart"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "G7XSmRPjXgI",
@@ -6473,7 +6920,8 @@
                 "tafsir",
                 "ibn-kathir",
                 "introduction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "L46UksBSGQw",
@@ -6486,7 +6934,8 @@
                 "tafsir",
                 "baqarah",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "aN5cJIyPph0",
@@ -6499,7 +6948,8 @@
                 "tafsir",
                 "baqarah",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "of1bBtkr7oo",
@@ -6512,7 +6962,8 @@
                 "tafsir",
                 "baqarah",
                 "introduction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "oi00HycOQ1w",
@@ -6525,7 +6976,8 @@
                 "tafsir",
                 "fatiha",
                 "menk"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "_8I6BZQED7E",
@@ -6538,7 +6990,8 @@
                 "tafsir",
                 "fatiha",
                 "bayyinah"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "IY21AZJhtA0",
@@ -6551,7 +7004,8 @@
                 "tafsir",
                 "yaseen",
                 "bayyinah"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "AjBtQ6JIjMY",
@@ -6564,7 +7018,8 @@
                 "tafsir",
                 "yaseen",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "tNzz6lieW50",
@@ -6577,7 +7032,8 @@
                 "quran",
                 "tafsir",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "J7izynGKrek",
@@ -6590,7 +7046,8 @@
                 "quran",
                 "revelation",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "WsBkrfGQniU",
@@ -6604,7 +7061,8 @@
                 "surah",
                 "nak",
                 "deeper-look"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             }
           ]
         },
@@ -6624,7 +7082,8 @@
                 "asbab-nuzul",
                 "reasons",
                 "revelation"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "HkkEZnpCVQI",
@@ -6637,7 +7096,8 @@
                 "asbab-nuzul",
                 "context",
                 "verses"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "FdzeSTPAZO4",
@@ -6650,7 +7110,8 @@
                 "asbab-nuzul",
                 "science",
                 "brief"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "qjbhk0DOw10",
@@ -6663,7 +7124,8 @@
                 "asbab-nuzul",
                 "importance",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "ICk5BW8t9dY",
@@ -6676,7 +7138,8 @@
                 "asbab-nuzul",
                 "revelation",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "rjO50-IMO3U",
@@ -6689,7 +7152,8 @@
                 "asbab-nuzul",
                 "jerusalem",
                 "quran"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             }
           ]
         },
@@ -6709,7 +7173,8 @@
                 "qiraat",
                 "ahruf",
                 "explained"
-              ]
+              ],
+              "channelHandle": "@Arabic101Channel"
             },
             {
               "id": "ZvDYL87HDgo",
@@ -6722,7 +7187,8 @@
                 "qiraat",
                 "surah-fatiha",
                 "listen"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "W2OuSY4JDZA",
@@ -6735,7 +7201,8 @@
                 "qiraat",
                 "fatiha",
                 "ten"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "haqTReeni6w",
@@ -6748,7 +7215,8 @@
                 "qiraat",
                 "ahruf",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "LG2gi88570U",
@@ -6761,7 +7229,8 @@
                 "qiraat",
                 "tajweed",
                 "prayer"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "8MO_ZoszXHM",
@@ -6774,7 +7243,8 @@
                 "qiraat",
                 "recitation",
                 "tajweed"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             }
           ]
         },
@@ -6794,7 +7264,8 @@
                 "ulum",
                 "sciences",
                 "overview"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "IG-q53Cvma8",
@@ -6807,7 +7278,8 @@
                 "ulum",
                 "sciences",
                 "course"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         }
@@ -6840,7 +7312,8 @@
                 "hadith",
                 "collections",
                 "overview"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "m0mk0B5ysEc",
@@ -6853,7 +7326,8 @@
                 "bukhari",
                 "authentic",
                 "introduction"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "KOyqpHCbRIw",
@@ -6866,7 +7340,8 @@
                 "hadith",
                 "six-books",
                 "details"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "c7g0_O9k3Cs",
@@ -6879,7 +7354,8 @@
                 "bukhari",
                 "authenticity",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "7njyZy_TvBQ",
@@ -6892,7 +7368,8 @@
                 "bukhari",
                 "authenticity",
                 "reality"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "wZwonlSxfbg",
@@ -6905,7 +7382,8 @@
                 "muslim",
                 "hadith",
                 "reading"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "8UnBzQD20hM",
@@ -6918,7 +7396,8 @@
                 "abu-dawud",
                 "review",
                 "book"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "CER5Edibz0A",
@@ -6931,7 +7410,8 @@
                 "abu-dawud",
                 "hadith",
                 "reading"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "62w6ljeMsY0",
@@ -6944,7 +7424,8 @@
                 "tirmidhi",
                 "hadith",
                 "reading"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "7gPVlu7Ncuo",
@@ -6957,7 +7438,8 @@
                 "hadith",
                 "adab",
                 "supplications"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "ublP4vVIufw",
@@ -6970,7 +7452,8 @@
                 "hadith",
                 "adab",
                 "supplications"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             }
           ]
         },
@@ -6990,7 +7473,8 @@
                 "hadith",
                 "terminology",
                 "basics"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "9DPXJsEw1u4",
@@ -7003,7 +7487,8 @@
                 "hadith",
                 "terminology",
                 "series"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "heitI0S9BCo",
@@ -7016,7 +7501,8 @@
                 "hadith",
                 "verification",
                 "academic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "qp1F6pygAW0",
@@ -7029,7 +7515,8 @@
                 "hadith",
                 "grading",
                 "terminology"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "VlW5OGbuQaA",
@@ -7042,7 +7529,8 @@
                 "hadith",
                 "isnad",
                 "chains"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "fTkoRMntcmY",
@@ -7055,7 +7543,8 @@
                 "hadith",
                 "isnad",
                 "connectivity"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -7075,7 +7564,8 @@
                 "hadith",
                 "understanding",
                 "basics"
-              ]
+              ],
+              "channelHandle": "@IslamicLessonsMadeEasy"
             },
             {
               "id": "lyR_tICvTBE",
@@ -7088,7 +7578,8 @@
                 "hadith",
                 "authentic",
                 "verification"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "heitI0S9BCo",
@@ -7101,7 +7592,8 @@
                 "hadith",
                 "verification",
                 "academic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "-asSANXwnNE",
@@ -7113,7 +7605,8 @@
               "tags": [
                 "hadith",
                 "verification"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "0nJtS0NaZQg",
@@ -7126,7 +7619,8 @@
                 "hadith",
                 "children",
                 "modern"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             }
           ]
         }
@@ -7158,7 +7652,8 @@
                 "akhlaq",
                 "manners",
                 "foundations"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "81fHLFa83bs",
@@ -7171,7 +7666,8 @@
                 "akhlaq",
                 "self-reflection",
                 "guide"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "GxyG60PwJ_k",
@@ -7184,7 +7680,8 @@
                 "akhlaq",
                 "change",
                 "character"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "7xFz9VTeC88",
@@ -7198,7 +7695,8 @@
                 "excellence",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "Z29aFXcrKiU",
@@ -7212,7 +7710,8 @@
                 "spirit",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "1nlCkI61xvI",
@@ -7226,7 +7725,8 @@
                 "readiness",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "IuRcNa87Efs",
@@ -7240,7 +7740,8 @@
                 "identity",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "meBS8sY_nfU",
@@ -7254,7 +7755,8 @@
                 "action",
                 "wahhaj",
                 "siraj-wahhaj"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "x9FETZfLtME",
@@ -7267,7 +7769,8 @@
                 "akhlaq",
                 "khutbah",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "txXK9Er-Sdk",
@@ -7280,7 +7783,8 @@
                 "sin",
                 "temptation",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "HX90NAkZ_Ic",
@@ -7293,7 +7797,8 @@
                 "akhlaq",
                 "excuses",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "-siyztg0mlM",
@@ -7306,7 +7811,8 @@
                 "youth",
                 "community",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "NU9LdhIQYBg",
@@ -7319,7 +7825,8 @@
                 "character",
                 "akhlaq",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "PPnKJM8IXww",
@@ -7331,7 +7838,8 @@
               "tags": [
                 "responsibility",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "lHwcvy1AZts",
@@ -7344,7 +7852,8 @@
                 "unity",
                 "division",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "klBFL6XaCeo",
@@ -7357,7 +7866,8 @@
                 "politics",
                 "america",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "kzwjOLPxIFE",
@@ -7370,7 +7880,8 @@
                 "time",
                 "discipline",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "Ol-hfoD7Uvw",
@@ -7382,7 +7893,8 @@
               "tags": [
                 "khutbah",
                 "jummah"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             },
             {
               "id": "c46LhgovLFk",
@@ -7395,7 +7907,8 @@
                 "family",
                 "faith",
                 "children"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "OMnxfQPItoE",
@@ -7408,7 +7921,8 @@
                 "khutbah",
                 "jummah",
                 "nak"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             },
             {
               "id": "bl-ZraRmLpQ",
@@ -7420,7 +7934,8 @@
               "tags": [
                 "khutbah",
                 "jummah"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             },
             {
               "id": "Xhw_Xee8f4U",
@@ -7433,7 +7948,8 @@
                 "sins",
                 "major",
                 "green"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "AD_HPFYhKs4",
@@ -7446,7 +7962,8 @@
                 "sins",
                 "major",
                 "green"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "gdQbIWGKvrE",
@@ -7459,7 +7976,8 @@
                 "muslim-house",
                 "family",
                 "amry"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "QmuPwc3cbs4",
@@ -7472,7 +7990,8 @@
                 "muslim-house",
                 "family",
                 "amry"
-              ]
+              ],
+              "channelHandle": "@IslamOnDemand"
             },
             {
               "id": "kQns38InZGM",
@@ -7485,7 +8004,8 @@
                 "faith-in-action",
                 "self",
                 "fazaga"
-              ]
+              ],
+              "channelHandle": "@ISBCC"
             },
             {
               "id": "Qx_pACAl-5w",
@@ -7499,7 +8019,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "KEYDs5bPhJA",
@@ -7513,7 +8034,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "x58H17qPYpc",
@@ -7527,7 +8049,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "XSgYrpC7uXw",
@@ -7541,7 +8064,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "Jai0Jxdo1mw",
@@ -7554,7 +8078,8 @@
                 "emotional-intelligence",
                 "mojadiddi",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "9omzY7ZOqaE",
@@ -7567,7 +8092,8 @@
                 "community",
                 "hamza-yusuf",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "eY94KOis_z8",
@@ -7581,7 +8107,8 @@
                 "technology",
                 "hamza-yusuf",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "6NwhNEpFwCs",
@@ -7594,7 +8121,8 @@
                 "education",
                 "zaytuna",
                 "grad"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "obDi6NVmm84",
@@ -7608,7 +8136,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "6cMgFvMMM3s",
@@ -7622,7 +8151,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "lSUJqfnLpGc",
@@ -7636,7 +8166,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "-BqWcI6Pzgw",
@@ -7650,7 +8181,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "7qcHWqc5zEU",
@@ -7664,7 +8196,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "lr0GTRSLh-0",
@@ -7678,7 +8211,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "VEDAptoaOnk",
@@ -7692,7 +8226,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "1vlnzAKPm4s",
@@ -7706,7 +8241,8 @@
                 "jummah",
                 "sermon",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             },
             {
               "id": "t1sSELFbF_M",
@@ -7720,7 +8256,8 @@
                 "service",
                 "permaculture",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "yRShYLwoKI0",
@@ -7734,7 +8271,8 @@
                 "community",
                 "alumni",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "DDcu_Um1XU4",
@@ -7747,7 +8285,8 @@
                 "education",
                 "zaytuna",
                 "graduation"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             }
           ]
         },
@@ -7767,7 +8306,8 @@
                 "sabr",
                 "patience",
                 "persistence"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "z28WPeNKx14",
@@ -7780,7 +8320,8 @@
                 "sabr",
                 "patience",
                 "blessing"
-              ]
+              ],
+              "channelHandle": "@AbuBakrZoud"
             },
             {
               "id": "8M8tyeMh3AY",
@@ -7793,7 +8334,8 @@
                 "sabr",
                 "grace",
                 "bayyinah"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             }
           ]
         },
@@ -7813,7 +8355,8 @@
                 "shukr",
                 "gratitude",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "gUM2ilQ_iFQ",
@@ -7826,7 +8369,8 @@
                 "shukr",
                 "gratitude",
                 "practical"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "YajMLwVorxA",
@@ -7839,7 +8383,8 @@
                 "shukr",
                 "gratitude",
                 "series"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -7859,7 +8404,8 @@
                 "tawakkul",
                 "trust",
                 "how-to"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "ztZazBAFhJ4",
@@ -7872,7 +8418,8 @@
                 "tawakkul",
                 "trust",
                 "tests"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "rt9vx1NqvDQ",
@@ -7885,7 +8432,8 @@
                 "tawakkul",
                 "trust",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "7gxJ_rLuySw",
@@ -7898,7 +8446,8 @@
                 "tawakkul",
                 "trust",
                 "difficulties"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "NFFfc8qqZG4",
@@ -7910,7 +8459,8 @@
               "tags": [
                 "self-sufficient",
                 "tawakkul"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             }
           ]
         }
@@ -7942,7 +8492,8 @@
                 "tajweed",
                 "rules",
                 "practice"
-              ]
+              ],
+              "channelHandle": "@Arabic101Channel"
             },
             {
               "id": "Q737ZCSbC_g",
@@ -7955,7 +8506,8 @@
                 "tajweed",
                 "madd",
                 "easy"
-              ]
+              ],
+              "channelHandle": "@Arabic101Channel"
             },
             {
               "id": "uae_6YcB31I",
@@ -7968,7 +8520,8 @@
                 "tajweed",
                 "sun-letters",
                 "easy"
-              ]
+              ],
+              "channelHandle": "@IslamicLessonsMadeEasy"
             },
             {
               "id": "sHTvyarm6uM",
@@ -7981,7 +8534,8 @@
                 "tajweed",
                 "introduction",
                 "summary"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "apQ4OpzDTzU",
@@ -7994,7 +8548,8 @@
                 "tajweed",
                 "hamza",
                 "easy"
-              ]
+              ],
+              "channelHandle": "@IslamicLessonsMadeEasy"
             },
             {
               "id": "RxC8OWsAAh4",
@@ -8007,7 +8562,8 @@
                 "tajweed",
                 "complete",
                 "beginners"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "l8iy-LMdAzY",
@@ -8020,7 +8576,8 @@
                 "tajweed",
                 "idghaam",
                 "easy"
-              ]
+              ],
+              "channelHandle": "@IslamicLessonsMadeEasy"
             },
             {
               "id": "thu6eZ-AeOA",
@@ -8033,7 +8590,8 @@
                 "tajweed",
                 "qalqala",
                 "echoing"
-              ]
+              ],
+              "channelHandle": "@Arabic101Channel"
             },
             {
               "id": "hzOr-AORKaY",
@@ -8046,7 +8604,8 @@
                 "tajweed",
                 "qalqala",
                 "easy"
-              ]
+              ],
+              "channelHandle": "@IslamicLessonsMadeEasy"
             },
             {
               "id": "Ho82EnnqJTk",
@@ -8059,7 +8618,8 @@
                 "tajweed",
                 "ikhfa",
                 "meem"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         },
@@ -8079,7 +8639,8 @@
                 "hifz",
                 "memorization",
                 "guide"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "5ukUjI2fGL0",
@@ -8092,7 +8653,8 @@
                 "hifz",
                 "technique",
                 "memorization"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "lRziYya8u4o",
@@ -8105,7 +8667,8 @@
                 "hifz",
                 "method",
                 "madinah"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "zBT2INIo6uk",
@@ -8118,7 +8681,8 @@
                 "hifz",
                 "step-by-step",
                 "effective"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Wp4YUldg8ZE",
@@ -8131,7 +8695,8 @@
                 "hifz",
                 "easy",
                 "busy"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "D_kWYOi4jWs",
@@ -8144,7 +8709,8 @@
                 "hifz",
                 "revision",
                 "method"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "sViOkT3xKQI",
@@ -8157,7 +8723,8 @@
                 "hifz",
                 "schedule",
                 "template"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         }
@@ -8190,7 +8757,8 @@
                 "finance",
                 "halal",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "e7Wbrr4km9g",
@@ -8203,7 +8771,8 @@
                 "finance",
                 "halal",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "lM08yBBejFU",
@@ -8216,7 +8785,8 @@
                 "finance",
                 "halal",
                 "economy"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "CNWVw1fSrVU",
@@ -8229,7 +8799,8 @@
                 "finance",
                 "halal",
                 "crash-course"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "7zkgmlsJq6g",
@@ -8242,7 +8813,8 @@
                 "finance",
                 "stocks",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "wdqnPkXbzlQ",
@@ -8255,7 +8827,8 @@
                 "finance",
                 "stocks",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "J6lL9RJIO8M",
@@ -8268,7 +8841,8 @@
                 "fiqh",
                 "earnings",
                 "halal"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "XiuAijAjx7M",
@@ -8281,7 +8855,8 @@
                 "fiqh",
                 "spending",
                 "charity"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "nak4y1BV9S8",
@@ -8295,7 +8870,8 @@
                 "prophet",
                 "finance",
                 "quba"
-              ]
+              ],
+              "channelHandle": "@QUBAInstitute"
             }
           ]
         },
@@ -8315,7 +8891,8 @@
                 "riba",
                 "interest",
                 "ruling"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "M6gHgSdbMvI",
@@ -8328,7 +8905,8 @@
                 "riba",
                 "interest",
                 "example"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "Z1XW2CK8zAc",
@@ -8341,7 +8919,8 @@
                 "riba",
                 "evil",
                 "understand"
-              ]
+              ],
+              "channelHandle": "@bayyinah"
             },
             {
               "id": "fsts1xrPs4s",
@@ -8354,7 +8933,8 @@
                 "riba",
                 "quran",
                 "usury"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "5uWRpTAFlbs",
@@ -8367,7 +8947,8 @@
                 "riba",
                 "evidence",
                 "quran"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "6C--j-YVFrE",
@@ -8380,7 +8961,8 @@
                 "riba",
                 "interest",
                 "haram"
-              ]
+              ],
+              "channelHandle": null
             }
           ]
         }
@@ -8413,7 +8995,8 @@
                 "dua",
                 "secrets",
                 "journey"
-              ]
+              ],
+              "channelHandle": "@BelalAssaad"
             },
             {
               "id": "L_l25ShSWDk",
@@ -8426,7 +9009,8 @@
                 "dua",
                 "accepted",
                 "secret"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Po1G9Pr-O9E",
@@ -8439,7 +9023,8 @@
                 "dua",
                 "comprehensive",
                 "omar-suleiman"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "y9NzKvY_kco",
@@ -8452,7 +9037,8 @@
                 "dua",
                 "destiny",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "B3Hd5GDXuNo",
@@ -8465,7 +9051,8 @@
                 "dua",
                 "accepted",
                 "powerful"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "itYOgh6wXI0",
@@ -8478,7 +9065,8 @@
                 "dua",
                 "power",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": "@hishamabuyusuf"
             },
             {
               "id": "EuFgCbOEZ84",
@@ -8491,7 +9079,8 @@
                 "dua",
                 "quran",
                 "rabbana"
-              ]
+              ],
+              "channelHandle": "@OmarHishamAlArabi"
             },
             {
               "id": "EZuSY7TAl8o",
@@ -8504,7 +9093,8 @@
                 "dua",
                 "prophet",
                 "hamza-yusuf"
-              ]
+              ],
+              "channelHandle": "@HamzaYusuf"
             },
             {
               "id": "1qyACjDyu4A",
@@ -8517,7 +9107,8 @@
                 "dua",
                 "salah",
                 "need"
-              ]
+              ],
+              "channelHandle": "@hudatv"
             },
             {
               "id": "rLlE7lIWdRM",
@@ -8530,7 +9121,8 @@
                 "dua",
                 "sins",
                 "istighfar"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             }
           ]
         },
@@ -8550,7 +9142,8 @@
                 "adhkar",
                 "evening",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "P8EIBksC0MA",
@@ -8563,7 +9156,8 @@
                 "adhkar",
                 "morning",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "yY91Pq70Mk4",
@@ -8576,7 +9170,8 @@
                 "adhkar",
                 "evening",
                 "recite"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "H-Xk_a_zVac",
@@ -8589,7 +9184,8 @@
                 "adhkar",
                 "morning",
                 "mishary"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "6yb3usDSRVs",
@@ -8602,7 +9198,8 @@
                 "adhkar",
                 "morning",
                 "complete"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "_zZmKMac8wE",
@@ -8615,7 +9212,8 @@
                 "adhkar",
                 "morning",
                 "omar-hisham"
-              ]
+              ],
+              "channelHandle": "@OmarHishamAlArabi"
             },
             {
               "id": "rofORqYGFE4",
@@ -8628,7 +9226,8 @@
                 "adhkar",
                 "protection",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "2Mq2gvBV3RE",
@@ -8641,7 +9240,8 @@
                 "adhkar",
                 "evening",
                 "omar-hisham"
-              ]
+              ],
+              "channelHandle": "@OmarHishamAlArabi"
             },
             {
               "id": "mxyAwfbfsks",
@@ -8654,7 +9254,8 @@
                 "adhkar",
                 "evening",
                 "protection"
-              ]
+              ],
+              "channelHandle": "@OmarHishamAlArabi"
             },
             {
               "id": "OTJhM5-NVHY",
@@ -8667,7 +9268,8 @@
                 "adhkar",
                 "order",
                 "prayer"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             }
           ]
         }
@@ -8700,7 +9302,8 @@
                 "rashidun",
                 "caliphate",
                 "history"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "5yCmBFslLg8",
@@ -8713,7 +9316,8 @@
                 "rashidun",
                 "uthman",
                 "ali"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "Rck2DlxxkTc",
@@ -8726,7 +9330,8 @@
                 "abu-bakr",
                 "ra",
                 "firsts"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "tbPimlm0r2w",
@@ -8739,7 +9344,8 @@
                 "abu-bakr",
                 "ra",
                 "standards"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "cOfi6U_369c",
@@ -8752,7 +9358,8 @@
                 "abu-bakr",
                 "life-story",
                 "first-khalifa"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "bxw7ZrfPzl4",
@@ -8765,7 +9372,8 @@
                 "umar",
                 "conversion",
                 "caliph"
-              ]
+              ],
+              "channelHandle": "@ReligiousStoryTV"
             },
             {
               "id": "r3JRs9_jvB8",
@@ -8778,7 +9386,8 @@
                 "umar",
                 "jerusalem",
                 "keys"
-              ]
+              ],
+              "channelHandle": "@mercifulservant"
             },
             {
               "id": "L2JWijSxA8I",
@@ -8791,7 +9400,8 @@
                 "umar",
                 "conversion",
                 "life"
-              ]
+              ],
+              "channelHandle": "@thedailyreminder"
             },
             {
               "id": "P1aOV-fd3eA",
@@ -8804,7 +9414,8 @@
                 "uthman",
                 "ra",
                 "guidance"
-              ]
+              ],
+              "channelHandle": "@IslamicGuidance"
             },
             {
               "id": "TbU-NjUR9Ls",
@@ -8817,7 +9428,8 @@
                 "uthman",
                 "story",
                 "khalifa"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "In91yLh_WFU",
@@ -8830,7 +9442,8 @@
                 "ali",
                 "courageous",
                 "firsts"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "8cVuF83ass0",
@@ -8843,7 +9456,8 @@
                 "ali",
                 "lineage",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "8vSSRwGRptg",
@@ -8856,7 +9470,8 @@
                 "ali",
                 "story",
                 "comprehensive"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "oc3G-vWTEpk",
@@ -8868,7 +9483,8 @@
               "tags": [
                 "history",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "Q8xnFKxNmvY",
@@ -8881,7 +9497,8 @@
                 "history",
                 "malcolm-x",
                 "america"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "rPyWsakz_lE",
@@ -8895,7 +9512,8 @@
                 "seerah",
                 "companions",
                 "hakeem"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "pmvek7wtvBQ",
@@ -8909,7 +9527,8 @@
                 "seerah",
                 "companions",
                 "hakeem"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "cINxZLYPgiw",
@@ -8923,7 +9542,8 @@
                 "seerah",
                 "companions",
                 "hakeem"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             }
           ]
         },
@@ -8943,7 +9563,8 @@
                 "golden-age",
                 "civilization",
                 "science"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "2OdO8LoKuo8",
@@ -8956,7 +9577,8 @@
                 "golden-age",
                 "civilization",
                 "history"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "O8hhwSn1iaU",
@@ -8969,7 +9591,8 @@
                 "golden-age",
                 "abbasids",
                 "epic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "9r7UFNRJr4s",
@@ -8982,7 +9605,8 @@
                 "ottoman",
                 "empire",
                 "lecture"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "GEaNCMvFzYw",
@@ -8995,7 +9619,8 @@
                 "ottoman",
                 "foundations",
                 "islamic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "f9c4Y7Vf7G0",
@@ -9008,7 +9633,8 @@
                 "ottoman",
                 "history",
                 "complete"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "v79lLEGOAPo",
@@ -9021,7 +9647,8 @@
                 "andalus",
                 "history",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             }
           ]
         },
@@ -9041,7 +9668,8 @@
                 "umayyad",
                 "caliphate",
                 "academic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "O8hhwSn1iaU",
@@ -9054,7 +9682,8 @@
                 "abbasids",
                 "golden-age",
                 "epic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "p7ohY8O7mT0",
@@ -9067,7 +9696,8 @@
                 "umayyad",
                 "caliphate",
                 "history"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "TgOyHX78bmg",
@@ -9080,7 +9710,8 @@
                 "umayyad",
                 "rise-fall",
                 "caliphate"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "uJdsRrLT1pw",
@@ -9093,7 +9724,8 @@
                 "umayyad",
                 "complete",
                 "history"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "okXRjhgci5U",
@@ -9106,7 +9738,8 @@
                 "pakistan",
                 "history",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "m1w3XEEOuR0",
@@ -9118,7 +9751,8 @@
               "tags": [
                 "syria",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "pDVT7VQZBVc",
@@ -9131,7 +9765,8 @@
                 "palestine",
                 "history",
                 "politics"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "thGTq1tgtp4",
@@ -9145,7 +9780,8 @@
                 "unity",
                 "history",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             },
             {
               "id": "W-hPGrH0uU8",
@@ -9159,7 +9795,8 @@
                 "fatwa",
                 "history",
                 "debate"
-              ]
+              ],
+              "channelHandle": "@EPICMasjid"
             }
           ]
         }
@@ -9191,7 +9828,8 @@
                 "comparative",
                 "christianity",
                 "differences"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "3c1tATNXuYE",
@@ -9204,7 +9842,8 @@
                 "comparative",
                 "christianity",
                 "similarities"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "_M1PcTlYalk",
@@ -9217,7 +9856,8 @@
                 "comparative",
                 "christianity",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "INIG636SnU4",
@@ -9230,7 +9870,8 @@
                 "comparative",
                 "judaism",
                 "christianity"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "_2oCE8yupjw",
@@ -9243,7 +9884,8 @@
                 "comparative",
                 "theology",
                 "academic"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "3vnhhkRLVCk",
@@ -9256,7 +9898,8 @@
                 "comparative",
                 "bible",
                 "quran"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "nukVsAM9PQk",
@@ -9269,7 +9912,8 @@
                 "jesus",
                 "isa",
                 "islam"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "dmauue4qkps",
@@ -9282,7 +9926,8 @@
                 "jesus",
                 "isa",
                 "life"
-              ]
+              ],
+              "channelHandle": "@YaqeenInstitute"
             },
             {
               "id": "a1qb78yUkoc",
@@ -9295,7 +9940,8 @@
                 "ai",
                 "technology",
                 "qadhi"
-              ]
+              ],
+              "channelHandle": "@YasirQadhi"
             },
             {
               "id": "r8V-hPH8XSM",
@@ -9308,7 +9954,8 @@
                 "groups",
                 "aqeedah",
                 "comparative"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "VneS4PLkxeo",
@@ -9321,7 +9968,8 @@
                 "music",
                 "fiqh",
                 "murdar"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "ycy1juIm-Vc",
@@ -9334,7 +9982,8 @@
                 "voting",
                 "politics",
                 "fiqh"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "gJhZOq3u-XI",
@@ -9347,7 +9996,8 @@
                 "apostasy",
                 "ruling",
                 "fiqh"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "jE-kuZTdBcw",
@@ -9360,7 +10010,8 @@
                 "salafi",
                 "wahhabi",
                 "murdar"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "Nug6Fqhu884",
@@ -9373,7 +10024,8 @@
                 "jesus",
                 "salah",
                 "comparative"
-              ]
+              ],
+              "channelHandle": "@islamondemand"
             },
             {
               "id": "vHxp8Rljyb0",
@@ -9386,7 +10038,8 @@
                 "quran",
                 "science",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "CVPN9n67YwQ",
@@ -9400,7 +10053,8 @@
                 "scholars",
                 "non-muslim",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "F7_7l7xdM0I",
@@ -9414,7 +10068,8 @@
                 "ethics",
                 "zaytuna",
                 "hamza-yusuf"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "EFyO_eS7tvw",
@@ -9428,7 +10083,8 @@
                 "law",
                 "ethics",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "mmuBNgOHhNc",
@@ -9441,7 +10097,8 @@
                 "ai",
                 "history",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             },
             {
               "id": "EfZmaHLv-pQ",
@@ -9454,7 +10111,8 @@
                 "ai",
                 "future",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             }
           ]
         },
@@ -9474,7 +10132,8 @@
                 "dawah",
                 "method",
                 "naik"
-              ]
+              ],
+              "channelHandle": "@zakirnaik1"
             },
             {
               "id": "VXsakbFrnj8",
@@ -9487,7 +10146,8 @@
                 "dawah",
                 "obligation",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "7iva5m-t3pw",
@@ -9500,7 +10160,8 @@
                 "dawah",
                 "motivation",
                 "why"
-              ]
+              ],
+              "channelHandle": "@MajedMahmoud"
             },
             {
               "id": "Wd0cv997vaE",
@@ -9513,7 +10174,8 @@
                 "dawah",
                 "calling",
                 "inspiring"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "lKOEoEXT0NE",
@@ -9526,7 +10188,8 @@
                 "dawah",
                 "tips",
                 "techniques"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "m0ePD8GDScA",
@@ -9539,7 +10202,8 @@
                 "dawah",
                 "debate",
                 "assim"
-              ]
+              ],
+              "channelHandle": "@assimalhakeem"
             },
             {
               "id": "BvVLQtGLoS8",
@@ -9552,7 +10216,8 @@
                 "dawah",
                 "effective",
                 "method"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "W6a0SScrf2k",
@@ -9565,7 +10230,8 @@
                 "dawah",
                 "wisdom",
                 "menk"
-              ]
+              ],
+              "channelHandle": "@MuftiMenk"
             },
             {
               "id": "9OPKqxfwCAg",
@@ -9578,7 +10244,8 @@
                 "dawah",
                 "right-way",
                 "invite"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "hkZ-7ZAw-UI",
@@ -9591,7 +10258,8 @@
                 "dawah",
                 "questions",
                 "answered"
-              ]
+              ],
+              "channelHandle": null
             },
             {
               "id": "0tDFr44R2eg",
@@ -9605,7 +10273,8 @@
                 "community",
                 "hamza-yusuf",
                 "zaytuna"
-              ]
+              ],
+              "channelHandle": "@ZaytunaCollege"
             }
           ]
         }
