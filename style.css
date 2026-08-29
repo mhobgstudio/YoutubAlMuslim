@@ -252,6 +252,8 @@ input{font-family:inherit}
 .yt-nav-btn:hover{background:rgba(255,255,255,.2);transform:translateY(-50%) scale(1.1)}
 .yt-nav-btn--prev{left:12px}
 .yt-nav-btn--next{right:12px}
+.yt-nav-btn--fullscreen{bottom:12px;top:auto;right:12px;transform:none}
+.yt-nav-btn--fullscreen:hover{transform:scale(1.1)}
 .yt-nav-btn:disabled{opacity:.3;cursor:not-allowed}
 
 /* Masthead badge styles removed */

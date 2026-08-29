@@ -521,6 +521,8 @@ function openWatch(v){
   }));
   E.vm.style.display='block';document.body.style.overflow='hidden';
   updateNavButtons();
+  wireFullscreenBtn();
+  updateFullscreenIcon();
 }
 
 // ===== Playlist resolution =====
@@ -762,6 +764,10 @@ function wireDownloadMenu(v){
 }
 
 function closeModal(){
+  // Exit fullscreen if active
+  if(document.fullscreenElement||document.webkitFullscreenElement){
+    (document.exitFullscreen||document.webkitExitFullscreen).call(document).catch(()=>{});
+  }
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
   if(curV&&!progMap[curV.id]){progMap[curV.id]={pct:1,ts:Date.now()};saveProg();}
@@ -807,6 +813,36 @@ window.navigateVideo = function(dir) {
   E.vm.scrollTop = 0;
   openWatch(nv);
 };
+
+// ===== Fullscreen toggle =====
+function toggleFullscreen() {
+  const player = document.getElementById('modalPlayer');
+  if (!player) return;
+  if (document.fullscreenElement || document.webkitFullscreenElement) {
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  } else {
+    (player.requestFullscreen || player.webkitRequestFullscreen).call(player);
+  }
+}
+function updateFullscreenIcon() {
+  const btn = document.getElementById('fullscreenBtn');
+  if (!btn) return;
+  const isFull = !!(document.fullscreenElement || document.webkitFullscreenElement);
+  btn.innerHTML = isFull
+    ? '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>'
+    : '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>';
+  btn.title = isFull ? 'Exit fullscreen' : 'Fullscreen';
+}
+document.addEventListener('fullscreenchange', updateFullscreenIcon);
+document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+
+// Wire fullscreen button after modal opens
+function wireFullscreenBtn() {
+  const btn = document.getElementById('fullscreenBtn');
+  if (!btn || btn._wired) return;
+  btn._wired = true;
+  btn.addEventListener('click', toggleFullscreen);
+}
 
 function toggleBm(v){
   const i=bms.findIndex(b=>b.id===v.id&&b.topicId===v.topicId);
