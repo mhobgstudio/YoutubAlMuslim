@@ -36,7 +36,6 @@ const L=LANG;
 
 async function init(){
   loadTheme();
-  initArmedBadge();
   try{
     const r=await fetch('data/topics.json');db=await r.json();
     buildIdx();renderChips();renderSide();renderGrid(true);bindEv();
@@ -472,23 +471,6 @@ function openWatch(v){
   if(openYT){
     openYT.href=`https://www.youtube.com/watch?v=${v.id}`;
   }
-  // Ad tricks panel — list of well-known YouTube URL hacks
-  populateAdTricks(v);
-  const tricksBtn=document.getElementById('modalAdTricksBtn');
-  if(tricksBtn&&!tricksBtn._wired){
-    tricksBtn._wired=true;
-    tricksBtn.addEventListener('click',()=>{
-      const panel=document.getElementById('modalAdTricks');
-      if(panel){
-        const wasHidden=panel.style.display==='none';
-        panel.style.display=wasHidden?'block':'none';
-        // First-time: offer the "auto-open alt tab" opt-in
-        if(wasHidden&&localStorage.getItem('ym_auto_alt_on_ad')===null){
-          showAutoAltOptIn();
-        }
-      }
-    });
-  }
   // Download panel — third-party downloader URLs
   populateDownload(v);
   wireDownloadMenu(v);
@@ -532,6 +514,7 @@ function openWatch(v){
     if(vid){E.vm.scrollTop=0;openWatch(vid);}
   }));
   E.vm.style.display='block';document.body.style.overflow='hidden';
+  updateNavButtons();
 }
 
 // ===== Playlist resolution =====
@@ -663,64 +646,7 @@ function fmtT(s){
 // YouTube ads. They are not guaranteed — YouTube has patched most of
 // them over time. We surface them so users can try them at their own
 // discretion. Each one opens the modified URL in a new tab.
-function populateAdTricks(v){
-  const list=document.querySelector('.yt-watch-adtricks-list');
-  if(!list)return;
-  const id=v.id;
-  // 3 tricks, ordered by historical reliability
-  const tricks=[
-    {
-      label:'Hyphen trick (yout‑ube)',
-      url:`https://www.yout-ube.com/watch?v=${id}`,
-      note:'Change the domain. Was patched in 2024–2025 but occasionally still works on ad-light videos.'
-    },
-    {
-      label:'Extra-dot trick (.com.)',
-      url:`https://www.youtube.com/watch?v=${id}`,
-      note:'Add a dot after .com. Browser normalizes this and bypasses some ad cookies. Mixed results in 2026.'
-    },
-    {
-      label:'Embed URL trick',
-      url:`https://www.youtube.com/embed/${id}`,
-      note:'The embed player historically had fewer ads. YouTube has closed this gap — now works only on videos where the uploader disabled ad serving on the embed.'
-    },
-    {
-      label:'Invidious mirror (inv.nadeko.net)',
-      url:`https://inv.nadeko.net/watch?v=${id}`,
-      note:'Third-party YouTube proxy. Often ad-free, but uptime/availability is community-dependent. Open in new tab.'
-    },
-    {
-      label:'Piped (piped.video)',
-      url:`https://piped.video/watch?v=${id}`,
-      note:'Privacy-respecting YouTube frontend. Often ad-free, runs on community servers. Open in new tab.'
-    }
-  ];
-  list.innerHTML=tricks.map(t=>`<li class="yt-watch-adtricks-item">
-    <a class="yt-watch-adtricks-open" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" data-trick="${esc(t.label)}" title="Click to try — opens in a new tab">↗</a>
-    <div class="yt-watch-adtricks-meta">
-      <div class="yt-watch-adtricks-label">${esc(t.label)}</div>
-      <div class="yt-watch-adtricks-url">${esc(t.url)}</div>
-      <div class="yt-watch-adtricks-note">${esc(t.note)}</div>
-    </div>
-    <button class="yt-watch-adtricks-copy" type="button" data-url="${esc(t.url)}" title="Copy URL">⧉ Copy</button>
-  </li>`).join('');
-  // Wire copy buttons
-  list.querySelectorAll('.yt-watch-adtricks-copy').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const url=btn.dataset.url||'';
-      if(navigator.clipboard&&navigator.clipboard.writeText){
-        navigator.clipboard.writeText(url).then(()=>{
-          const orig=btn.textContent;
-          btn.textContent='✓ Copied';
-          btn.classList.add('copied');
-          setTimeout(()=>{btn.textContent=orig;btn.classList.remove('copied');},1400);
-        }).catch(()=>prompt('Copy this URL:',url));
-      }else{
-        prompt('Copy this URL:',url);
-      }
-    });
-  });
-}
+// Ad tricks function removed
 
 // ===== Download via third-party downloader sites =====
 // Well-known "ss" trick (ssyoutube.com) and similar downloader services.
@@ -833,14 +759,10 @@ function closeModal(){
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
   if(curV&&!progMap[curV.id]){progMap[curV.id]={pct:1,ts:Date.now()};saveProg();}
-  // Reset transcript + playlist + ad-overlay for the next open
+  // Reset transcript + playlist for the next open
   const tp=document.getElementById('transcriptPanel');if(tp){tp.style.display='none';tp.innerHTML='';delete tp.dataset.loaded;}
   const pl=document.getElementById('modalPlaylist');if(pl){pl.style.display='none';pl.innerHTML='';}
   const tb=document.getElementById('transcriptBtn');if(tb)tb.style.display='none';
-  const ov=document.getElementById('adOverlay');if(ov)ov.classList.remove('visible');
-  const sk=document.getElementById('adSkipBtn');if(sk){sk.style.display='none';sk.disabled=true;sk.classList.remove('ready');}
-  if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
-  const tricks=document.getElementById('modalAdTricks');if(tricks)tricks.style.display='none';
   const dl=document.getElementById('modalDownload');if(dl)dl.style.display='none';
   const dlm=document.getElementById('modalDownloadMenu');if(dlm)dlm.hidden=true;
   const dlb=document.getElementById('modalDownloadBtn');if(dlb)dlb.setAttribute('aria-expanded','false');
@@ -849,9 +771,36 @@ function closeModal(){
   adTabOpenedFor=null;
   autoUnmuteIfNeeded();
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
+  updateNavButtons();
 }
 function saveProg(){try{localStorage.setItem('ym_prog',JSON.stringify(progMap));}catch(e){}}
 window.closeModal=closeModal;
+
+// ===== Video Navigation =====
+let navIdx = -1; // Current position in filtV
+function updateNavButtons() {
+  const prevBtn = document.getElementById('prevVideoBtn');
+  const nextBtn = document.getElementById('nextVideoBtn');
+  if (!prevBtn || !nextBtn) return;
+  if (!curV || !filtV.length) {
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+    return;
+  }
+  navIdx = filtV.findIndex(v => v.id === curV.id && v.topicId === curV.topicId);
+  prevBtn.style.display = navIdx > 0 ? 'flex' : 'none';
+  nextBtn.style.display = navIdx >= 0 && navIdx < filtV.length - 1 ? 'flex' : 'none';
+}
+window.navigateVideo = function(dir) {
+  if (!curV || !filtV.length) return;
+  if (navIdx < 0) navIdx = filtV.findIndex(v => v.id === curV.id && v.topicId === curV.topicId);
+  const newIdx = navIdx + dir;
+  if (newIdx < 0 || newIdx >= filtV.length) return;
+  const nv = filtV[newIdx];
+  if (nv.isPlaylistRef || nv.isChannelRef) return; // skip non-video entries
+  E.vm.scrollTop = 0;
+  openWatch(nv);
+};
 
 function toggleBm(v){
   const i=bms.findIndex(b=>b.id===v.id&&b.topicId===v.topicId);
@@ -936,6 +885,11 @@ function bindEv(){
   document.addEventListener('keydown',e=>{
     if(e.key==='Escape')closeModal();
     if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&document.activeElement!==E.si){e.preventDefault();E.si.focus();}
+    // Arrow keys for prev/next video navigation
+    if(curV&&E.vm.style.display==='block'){
+      if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();window.navigateVideo(-1);}
+      if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();window.navigateVideo(1);}
+    }
   });
   document.addEventListener('click',e=>{
     if(window.innerWidth<=1024&&E.sbx.classList.contains('open')&&!E.sbx.contains(e.target)&&!E.st.contains(e.target))E.sbx.classList.remove('open');
@@ -1073,182 +1027,5 @@ let adSkipTicker=null;
 let adTabOpenedFor=null;  // dedupe: open alt tab only once per video
 let _adPollTimer=null;
 
-function pollAdFromState(){
-  // Some ads only set a flag we can read via the player's HTML element
-  // (e.g. ad-overlay class on the iframe). We poll every 1s and re-run
-  // updateAdUI when we detect it.
-  const iframe=document.getElementById('ytPlayerIframe');
-  if(!iframe)return;
-  if(_adPollTimer)return;
-  _adPollTimer=setInterval(()=>{
-    try{
-      const isAd=iframe&&/ad-showing|ytp-ad|ad-module/.test(iframe.className||'');
-      if(isAd)updateAdUI({data:1});  // 1 = skippable/playing
-      // Also try getAdState via the iframe.contentWindow — sometimes works
-      // cross-frame even when not exposed in the wrapper
-    }catch(e){}
-  },1500);
-  // Stop polling when modal closes
-  setTimeout(()=>{if(_adPollTimer&&!document.getElementById('videoModal').style.display.includes('block')){clearInterval(_adPollTimer);_adPollTimer=null;}},5000);
-}
-
-function updateAdUI(adEvent){
-  const overlay=document.getElementById('adOverlay');
-  const skipBtn=document.getElementById('adSkipBtn');
-  if(!overlay||!skipBtn)return;
-  // YT IFrame API state codes
-  const SKIPPABLE=1, SKIPPED=2, AD_END=3;
-  const adState=adEvent?adEvent.data:0;
-  // Treat any positive state (except SKIPPED/AD_END) as "ad playing"
-  const isAd=adState>0&&adState!==SKIPPED&&adState!==AD_END;
-
-  if(!isAd){
-    overlay.classList.remove('visible');
-    skipBtn.style.display='none';
-    if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
-    autoUnmuteIfNeeded();
-    return;
-  }
-
-  // ===== Inherent automatic ad mitigation =====
-  // (1) Auto-mute the player during the ad (avoids the audio blast)
-  autoMuteForAd();
-  // (2) Show the persistent overlay with skip countdown
-  overlay.classList.add('visible');
-  skipBtn.style.display='inline-flex';
-  // (3) Auto-open an alt URL in a new tab once per video (user opted in)
-  autoOpenAltTabForAd();
-  // (4) Start the skip countdown
-  if(!adSkipTicker){
-    let s=5;
-    const tick=()=>{
-      skipBtn.textContent=s>0?('Skip ad in '+s+'s'):'⏭ Skip ad';
-      skipBtn.disabled=s>0;
-      skipBtn.classList.toggle('ready',s<=0);
-      if(s<=0){clearInterval(adSkipTicker);adSkipTicker=null;return;}
-      s--;
-    };
-    tick();
-    adSkipTicker=setInterval(tick,1000);
-  }
-}
-
-let _mutedForAd=false;
-function autoMuteForAd(){
-  if(!ytPlayer||_mutedForAd)return;
-  try{
-    if(typeof ytPlayer.isMuted==='function'&&!ytPlayer.isMuted()){
-      ytPlayer.mute();
-      _mutedForAd=true;
-    }
-  }catch(e){}
-}
-function autoUnmuteIfNeeded(){
-  if(!ytPlayer||!_mutedForAd)return;
-  try{ytPlayer.unMute();}catch(e){}
-  _mutedForAd=false;
-}
-
-// Auto-open an alt URL once per video when the user opted in.
-// Off by default. Persisted in localStorage so it's a one-time toggle.
-function autoOpenAltTabForAd(){
-  if(!curV)return;
-  if(localStorage.getItem('ym_auto_alt_on_ad')!=='1')return;
-  if(adTabOpenedFor===curV.id)return;  // dedupe per video
-  adTabOpenedFor=curV.id;
-  const url=localStorage.getItem('ym_auto_alt_url')||('https://www.ssyoutube.com/watch?v='+curV.id);
-  try{window.open(url,'_blank','noopener,noreferrer');}catch(e){}
-}
-
-function skipAd(){
-  if(!ytPlayer)return;
-  try{
-    if(typeof ytPlayer.skipAd==='function'){ytPlayer.skipAd();return;}
-    if(typeof ytPlayer.stopVideo==='function')ytPlayer.stopVideo();
-  }catch(e){console.warn('skipAd failed',e);}
-  autoUnmuteIfNeeded();
-}
-
-window.skipAd=skipAd;
-
-// ===== Auto-open alt tab opt-in (one-time ask) =====
-function showAutoAltOptIn(){
-  // Inject a one-time prompt at the top of the Ad Tricks panel
-  const panel=document.getElementById('modalAdTricks');
-  if(!panel)return;
-  let banner=document.getElementById('ym-auto-optin');
-  if(banner)return; // already showing
-  banner=document.createElement('div');
-  banner.id='ym-auto-optin';
-  banner.className='yt-auto-optin';
-  banner.innerHTML=`
-    <div class="yt-auto-optin-body">
-      <strong>🛡️ Enable automatic ad removal?</strong>
-      <p>When an ad is detected, this site will <em>automatically</em> open a new tab on <code>ssyoutube.com</code> (or your choice) so your browser-level ad blocker can handle it. You can disable this in localStorage any time.</p>
-      <div class="yt-auto-optin-actions">
-        <button class="yt-auto-optin-enable" type="button">✓ Enable</button>
-        <button class="yt-auto-optin-pick" type="button">Pick a different service</button>
-        <button class="yt-auto-optin-dismiss" type="button">Not now</button>
-      </div>
-    </div>`;
-  panel.prepend(banner);
-  banner.querySelector('.yt-auto-optin-enable').addEventListener('click',()=>{
-    localStorage.setItem('ym_auto_alt_on_ad','1');
-    localStorage.setItem('ym_auto_alt_url','https://www.ssyoutube.com/watch?v='+(curV?curV.id:''));
-    banner.remove();
-    updateArmedBadge();
-  });
-  banner.querySelector('.yt-auto-optin-pick').addEventListener('click',()=>{
-    const url=prompt('Enter the alt-URL template. Use {id} for the video id, e.g. https://inv.nadeko.net/watch?v={id}',localStorage.getItem('ym_auto_alt_url')||'https://www.ssyoutube.com/watch?v={id}');
-    if(url){
-      localStorage.setItem('ym_auto_alt_on_ad','1');
-      localStorage.setItem('ym_auto_alt_url',url);
-      banner.remove();
-      updateArmedBadge();
-    }
-  });
-  banner.querySelector('.yt-auto-optin-dismiss').addEventListener('click',()=>{
-    localStorage.setItem('ym_auto_alt_on_ad','0');
-    banner.remove();
-  });
-}
-
-// Masthead status badge — "🛡️ Ad-Block armed" when enabled
-function updateArmedBadge(){
-  const b=document.getElementById('ym-armed-badge');
-  if(!b)return;
-  const on=localStorage.getItem('ym_auto_alt_on_ad')==='1';
-  b.style.display=on?'inline-flex':'none';
-  const url=localStorage.getItem('ym_auto_alt_url')||'';
-  b.title=on?('Will auto-open: '+url):'';
-}
-function initArmedBadge(){
-  if(localStorage.getItem('ym_auto_alt_on_ad')===null)localStorage.setItem('ym_auto_alt_on_ad','0');
-  updateArmedBadge();
-  const b=document.getElementById('ym-armed-badge');
-  if(b&&!b._wired){
-    b._wired=true;
-    b.addEventListener('click',()=>{
-      const on=localStorage.getItem('ym_auto_alt_on_ad')==='1';
-      const next=!on;
-      localStorage.setItem('ym_auto_alt_on_ad',next?'1':'0');
-      updateArmedBadge();
-    });
-  }
-}
-
-// Wire the skip button (only on first init, so it survives across modal opens)
-(function wireSkipBtn(){
-  const wire=()=>{
-    const btn=document.getElementById('adSkipBtn');
-    if(btn&&!btn._wired){
-      btn._wired=true;
-      btn.addEventListener('click',()=>{
-        if(btn.classList.contains('ready'))skipAd();
-      });
-    }
-  };
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wire);
-  else wire();
-})();
+// Ad-related code removed
 })();
