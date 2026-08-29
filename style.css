@@ -243,7 +243,11 @@ input{font-family:inherit}
 
 /* Player */
 .yt-player{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:12px}
-.yt-player-theatre{width:100%;height:100%;position:relative;z-index:1}
+.yt-player:fullscreen{border-radius:0;aspect-ratio:auto;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.yt-player:-webkit-full-screen{border-radius:0;aspect-ratio:auto;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.yt-player:fullscreen .yt-nav-btn{opacity:1!important}
+.yt-player:fullscreen .yt-player-theatre{width:auto;height:auto}
+.yt-player-theatre{width:100%;height:100%;position:relative;z-index:1;flex:1;min-height:0}
 .yt-player-theatre iframe{width:100%;height:100%;border:none}
 
 /* Video navigation buttons */

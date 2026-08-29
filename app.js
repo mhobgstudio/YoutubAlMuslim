@@ -824,7 +824,8 @@ window.navigateVideo = function(dir) {
 
 // ===== Fullscreen toggle =====
 function toggleFullscreen() {
-  const player = document.getElementById('modalPlayer');
+  // Target .yt-player (parent) so nav buttons remain visible in fullscreen
+  const player = document.querySelector('.yt-player');
   if (!player) return;
   if (document.fullscreenElement || document.webkitFullscreenElement) {
     (document.exitFullscreen || document.webkitExitFullscreen).call(document);
