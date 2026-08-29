@@ -466,6 +466,35 @@ function openWatch(v){
   if(openYT){
     openYT.href=`https://www.youtube.com/watch?v=${v.id}`;
   }
+  // Ad tricks panel — list of well-known YouTube URL hacks
+  populateAdTricks(v);
+  const tricksBtn=document.getElementById('modalAdTricksBtn');
+  if(tricksBtn&&!tricksBtn._wired){
+    tricksBtn._wired=true;
+    tricksBtn.addEventListener('click',()=>{
+      const panel=document.getElementById('modalAdTricks');
+      if(panel)panel.style.display=panel.style.display==='none'?'block':'none';
+    });
+  }
+  // Download panel — third-party downloader URLs
+  populateDownload(v);
+  const downloadBtn=document.getElementById('modalDownloadBtn');
+  if(downloadBtn&&!downloadBtn._wired){
+    downloadBtn._wired=true;
+    downloadBtn.addEventListener('click',()=>{
+      const panel=document.getElementById('modalDownload');
+      if(panel)panel.style.display=panel.style.display==='none'?'block':'none';
+    });
+  }
+  // Wire close buttons (one per panel)
+  document.querySelectorAll('.yt-watch-adtricks-close').forEach(btn=>{
+    if(btn._wired)return;
+    btn._wired=true;
+    btn.addEventListener('click',()=>{
+      const panel=btn.closest('.yt-watch-adtricks');
+      if(panel)panel.style.display='none';
+    });
+  });
   // Playlist panel
   renderPlaylistPanel(v, playCtx);
   // Related: same topic first, then cross-topic by language + difficulty, exclude self.
@@ -623,6 +652,132 @@ function fmtT(s){
   return m+':'+String(r).padStart(2,'0');
 }
 
+// ===== YouTube ad-block URL tricks =====
+// These are well-known URL manipulations people use to try to avoid
+// YouTube ads. They are not guaranteed — YouTube has patched most of
+// them over time. We surface them so users can try them at their own
+// discretion. Each one opens the modified URL in a new tab.
+function populateAdTricks(v){
+  const list=document.querySelector('.yt-watch-adtricks-list');
+  if(!list)return;
+  const id=v.id;
+  // 3 tricks, ordered by historical reliability
+  const tricks=[
+    {
+      label:'Hyphen trick (yout‑ube)',
+      url:`https://www.yout-ube.com/watch?v=${id}`,
+      note:'Change the domain. Was patched in 2024–2025 but occasionally still works on ad-light videos.'
+    },
+    {
+      label:'Extra-dot trick (.com.)',
+      url:`https://www.youtube.com./watch?v=${id}`,
+      note:'Add a dot after .com. Browser normalizes this and bypasses some ad cookies. Mixed results in 2026.'
+    },
+    {
+      label:'Embed URL trick',
+      url:`https://www.youtube.com/embed/${id}`,
+      note:'The embed player historically had fewer ads. YouTube has closed this gap — now works only on videos where the uploader disabled ad serving on the embed.'
+    },
+    {
+      label:'Invidious mirror (inv.nadeko.net)',
+      url:`https://inv.nadeko.net/watch?v=${id}`,
+      note:'Third-party YouTube proxy. Often ad-free, but uptime/availability is community-dependent. Open in new tab.'
+    },
+    {
+      label:'Piped (piped.video)',
+      url:`https://piped.video/watch?v=${id}`,
+      note:'Privacy-respecting YouTube frontend. Often ad-free, runs on community servers. Open in new tab.'
+    }
+  ];
+  list.innerHTML=tricks.map(t=>`<li class="yt-watch-adtricks-item">
+    <a class="yt-watch-adtricks-open" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" data-trick="${esc(t.label)}" title="Click to try — opens in a new tab">↗</a>
+    <div class="yt-watch-adtricks-meta">
+      <div class="yt-watch-adtricks-label">${esc(t.label)}</div>
+      <div class="yt-watch-adtricks-url">${esc(t.url)}</div>
+      <div class="yt-watch-adtricks-note">${esc(t.note)}</div>
+    </div>
+    <button class="yt-watch-adtricks-copy" type="button" data-url="${esc(t.url)}" title="Copy URL">⧉ Copy</button>
+  </li>`).join('');
+  // Wire copy buttons
+  list.querySelectorAll('.yt-watch-adtricks-copy').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const url=btn.dataset.url||'';
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(()=>{
+          const orig=btn.textContent;
+          btn.textContent='✓ Copied';
+          btn.classList.add('copied');
+          setTimeout(()=>{btn.textContent=orig;btn.classList.remove('copied');},1400);
+        }).catch(()=>prompt('Copy this URL:',url));
+      }else{
+        prompt('Copy this URL:',url);
+      }
+    });
+  });
+}
+
+// ===== Download via third-party downloader sites =====
+// Well-known "ss" trick (ssyoutube.com) and similar downloader services.
+// We surface these but DO NOT auto-redirect — the user must click.
+// Includes a clear disclaimer about ToS / legal use.
+function populateDownload(v){
+  const list=document.querySelector('#modalDownload .yt-watch-adtricks-list');
+  if(!list)return;
+  const id=v.id;
+  const sources=[
+    {
+      label:'SSYoutube (ssyoutube.com)',
+      url:`https://www.ssyoutube.com/watch?v=${id}`,
+      note:'The famous "ss" trick — adds "ss" before "youtube". Redirects to SaveFrom.net which offers MP4/MP3 in various qualities. Most widely known, often busy with ads.'
+    },
+    {
+      label:'Y2Mate (y2mate.com)',
+      url:`https://www.y2mate.com/youtube/${id}`,
+      note:'Long-running downloader. Offers MP3, MP4 in 144p–1080p. Has ads and pop-ups — be careful what you click.'
+    },
+    {
+      label:'9Convert (9convert.com)',
+      url:`https://www.9convert.com/?url=https://www.youtube.com/watch?v=${id}`,
+      note:'Another popular service. Free, no install. Quality options up to 1080p MP4. Same caveat: ads on the site.'
+    },
+    {
+      label:'Piped (piped.video) — download endpoint',
+      url:`https://piped.video/watch?v=${id}`,
+      note:'Privacy-respecting YouTube frontend. Often ad-free, has a built-in download option in the player. Runs on community servers — uptime varies.'
+    },
+    {
+      label:'Invidious (inv.nadeko.net) — watch + download',
+      url:`https://inv.nadeko.net/watch?v=${id}`,
+      note:'Open-source YouTube proxy. Provides download links in MP4/M4A. Community-run, availability varies by instance.'
+    }
+  ];
+  list.innerHTML=sources.map(s=>`<li class="yt-watch-adtricks-item">
+    <a class="yt-watch-adtricks-open" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" title="Open in a new tab — third-party site">↗</a>
+    <div class="yt-watch-adtricks-meta">
+      <div class="yt-watch-adtricks-label">${esc(s.label)}</div>
+      <div class="yt-watch-adtricks-url">${esc(s.url)}</div>
+      <div class="yt-watch-adtricks-note">${esc(s.note)}</div>
+    </div>
+    <button class="yt-watch-adtricks-copy" type="button" data-url="${esc(s.url)}" title="Copy URL">⧉ Copy</button>
+  </li>`).join('');
+  // Wire copy buttons (same as ad-tricks)
+  list.querySelectorAll('.yt-watch-adtricks-copy').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const url=btn.dataset.url||'';
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(()=>{
+          const orig=btn.textContent;
+          btn.textContent='✓ Copied';
+          btn.classList.add('copied');
+          setTimeout(()=>{btn.textContent=orig;btn.classList.remove('copied');},1400);
+        }).catch(()=>prompt('Copy this URL:',url));
+      }else{
+        prompt('Copy this URL:',url);
+      }
+    });
+  });
+}
+
 function closeModal(){
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
@@ -634,6 +789,8 @@ function closeModal(){
   const ov=document.getElementById('adOverlay');if(ov)ov.classList.remove('visible');
   const sk=document.getElementById('adSkipBtn');if(sk){sk.style.display='none';sk.disabled=true;sk.classList.remove('ready');}
   if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
+  const tricks=document.getElementById('modalAdTricks');if(tricks)tricks.style.display='none';
+  const dl=document.getElementById('modalDownload');if(dl)dl.style.display='none';
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
 }
 function saveProg(){try{localStorage.setItem('ym_prog',JSON.stringify(progMap));}catch(e){}}
