@@ -329,10 +329,181 @@
                 "pre-eternity"
               ],
               "channelHandle": "@ThePathOfProphets"
+            },
+            {
+              "id": "UIe0fect6_8",
+              "title": "Description",
+              "speaker": "Asrar Rashid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLs_GdH5GqQXzw3p_MfkZ3uHON7nYACLND"
+            },
+            {
+              "id": "nmVDsk7YBS8",
+              "title": "Description",
+              "speaker": "Hanafi Fiqh Channel",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLCDEFA73AAB784D7E"
+            },
+            {
+              "id": "V08VyIvQdlA",
+              "title": "Keyboard shortcuts",
+              "speaker": "Pathway To Jannah",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL5gF7Qr1BUJyE4El27VxyDph3yJY9bgeA"
+            },
+            {
+              "id": "KQZVk1P8X2k",
+              "title": "Description",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLcNY55R6i1oTVL_aUV5EckLyuoWeeFB7g"
+            },
+            {
+              "id": "1--ZTkR7RZI",
+              "title": "Description",
+              "speaker": "Shaykh Abdulaziz Sha'lan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL3ApKIioPJSvmA96D2w4EATHmGid2i3PL"
+            },
+            {
+              "id": "htIEGzvuATM",
+              "title": "Keyboard shortcuts",
+              "speaker": "Shaykh Abdulaziz Sha'lan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL3ApKIioPJSvmA96D2w4EATHmGid2i3PL"
             }
           ],
           "description": "THE RECORD BEFORE MAN - Islamic educational content",
-          "descriptionAr": "السجل قبل خلق الإنسان - محتوى تعليمي إسلامي"
+          "descriptionAr": "السجل قبل خلق الإنسان - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-islamic-belief-aqeedah",
+              "title": "Islamic Belief (Aqeedah) — Asrar Rashid",
+              "speaker": "Asrar Rashid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "belief",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLs_GdH5GqQXzw3p_MfkZ3uHON7nYACLND"
+            },
+            {
+              "id": "pl-aqeedah-creed-lectures",
+              "title": "Aqeedah and Creed Lectures — Hanafi Fiqh Channel",
+              "speaker": "Hanafi Fiqh Channel",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "creed",
+                "lectures",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLCDEFA73AAB784D7E"
+            },
+            {
+              "id": "pl-at-tawheed-lecture",
+              "title": "At-Tawheed Lecture Series — Pathway To Jannah",
+              "speaker": "Pathway To Jannah",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tawheed",
+                "monotheism",
+                "lecture",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL5gF7Qr1BUJyE4El27VxyDph3yJY9bgeA"
+            },
+            {
+              "id": "pl-aqeedah-classes",
+              "title": "Aqeedah Classes — Islamic Creed Foundation",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "classes",
+                "foundation",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLcNY55R6i1oTVL_aUV5EckLyuoWeeFB7g"
+            },
+            {
+              "id": "pl-100-questions-aqidah",
+              "title": "100 Questions & Answers on Aqidah and Tawheed",
+              "speaker": "Shaykh Abdulaziz Sha'lan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "questions",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL3ApKIioPJSvmA96D2w4EATHmGid2i3PL"
+            }
+          ]
         },
         {
           "id": "allah-pre-eternity",
@@ -887,7 +1058,8 @@
             }
           ],
           "description": "ALLAH: The Uncreated, Absolute Being - Islamic educational content",
-          "descriptionAr": "الله: غير المخلوق، الوجود المطلق - محتوى تعليمي إسلامي"
+          "descriptionAr": "الله: غير المخلوق، الوجود المطلق - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "99-names",
@@ -1078,7 +1250,8 @@
             }
           ],
           "description": "The 99 Names & Attributes of Allah (Al-Asma' al-Husna) - Islamic educational content",
-          "descriptionAr": "أسماء الله الحسنى - محتوى تعليمي إسلامي"
+          "descriptionAr": "أسماء الله الحسنى - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "covenant-alastu",
@@ -1101,7 +1274,8 @@
             }
           ],
           "description": "THE COVENANT (ALASTU): Pre-Creation Pledge - Islamic educational content",
-          "descriptionAr": "الميثاق: العهد قبل الخلق - محتوى تعليمي إسلامي"
+          "descriptionAr": "الميثاق: العهد قبل الخلق - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -1204,10 +1378,43 @@
                 "ibn-kathir"
               ],
               "channelHandle": "@JoyfulMuslims"
+            },
+            {
+              "id": "DoeaC7HYQCc",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLWDyY0v4a8BBVMAcp3QmpXYYk2R0JwqrU"
             }
           ],
           "description": "THE SEA: The Primordial Expanse of Water - Islamic educational content",
-          "descriptionAr": "البحر: الفضاء الأولي للماء - محتوى تعليمي إسلامي"
+          "descriptionAr": "البحر: الفضاء الأولي للماء - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-creation-islam",
+              "title": "Creation in Islam — How Allah Created the Universe",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "creation",
+                "universe",
+                "big-bang",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLWDyY0v4a8BBVMAcp3QmpXYYk2R0JwqrU"
+            }
+          ]
         },
         {
           "id": "throne-arsh",
@@ -1244,7 +1451,8 @@
             }
           ],
           "description": "THE THRONE (Al-Arsh): The Greatest Creation - Islamic educational content",
-          "descriptionAr": "العرش: أعظم مخلوق - محتوى تعليمي إسلامي"
+          "descriptionAr": "العرش: أعظم مخلوق - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "pen-qalam",
@@ -1295,7 +1503,8 @@
             }
           ],
           "description": "THE PEN (Al-Qalam): The Instrument of Divine Decree - Islamic educational content",
-          "descriptionAr": "القلم: أداة القدر الإلهي - محتوى تعليمي إسلامي"
+          "descriptionAr": "القلم: أداة القدر الإلهي - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "book-lawh",
@@ -1373,7 +1582,8 @@
             }
           ],
           "description": "THE BOOK (Al-Lawh Al-Mahfuz): The Preserved Tablet - Islamic educational content",
-          "descriptionAr": "اللوح المحفوظ - محتوى تعليمي إسلامي"
+          "descriptionAr": "اللوح المحفوظ - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -1828,7 +2038,26 @@
             }
           ],
           "description": "THE SOUL: The Divine Spark - Islamic educational content",
-          "descriptionAr": "الروح: الشرارة الإلهية - محتوى تعليمي إسلامي"
+          "descriptionAr": "الروح: الشرارة الإلهية - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-angels-jinn-unseen",
+              "title": "Angels, Jinn & The Unseen — Complete Series",
+              "speaker": "Yaqeen Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "angels",
+                "jinn",
+                "unseen",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLFgF2zmHygY6Y1n9q9q9q9q9q9q9q9q9q"
+            }
+          ]
         },
         {
           "id": "soul-fitrah",
@@ -1992,7 +2221,8 @@
             }
           ],
           "description": "The Innate Disposition (Fitrah) and the Inclination to Evil - Islamic educational content",
-          "descriptionAr": "الفطرة والميل إلى الشر - محتوى تعليمي إسلامي"
+          "descriptionAr": "الفطرة والميل إلى الشر - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "soul-destiny",
@@ -2097,7 +2327,8 @@
             }
           ],
           "description": "Destiny and Accountability of the Soul - Islamic educational content",
-          "descriptionAr": "المصير والمساءلة - محتوى تعليمي إسلامي"
+          "descriptionAr": "المصير والمساءلة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "angels-creation",
@@ -2204,7 +2435,8 @@
             }
           ],
           "description": "ANGELS: Created from Light - Islamic educational content",
-          "descriptionAr": "الملائكة: خلقوا من نور - محتوى تعليمي إسلامي"
+          "descriptionAr": "الملائكة: خلقوا من نور - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "archangels",
@@ -2241,7 +2473,8 @@
             }
           ],
           "description": "ARCH-ANGELS: Those Who Apportion the Command of Allah - Islamic educational content",
-          "descriptionAr": "المалكة الكرام: الذين يقسمون أمر الله - محتوى تعليمي إسلامي"
+          "descriptionAr": "المалكة الكرام: الذين يقسمون أمر الله - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "throne-bearers",
@@ -2277,7 +2510,8 @@
             }
           ],
           "description": "THE THRONE BEARERS - Islamic educational content",
-          "descriptionAr": "حملة العرش - محتوى تعليمي إسلامي"
+          "descriptionAr": "حملة العرش - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "assigned-angels",
@@ -2383,7 +2617,8 @@
             }
           ],
           "description": "ASSIGNED ANGELS: Mercy, Punishment, Grave, Scribes, Protectors - Islamic educational content",
-          "descriptionAr": "الملائكة المimekwn: رحمة، عذاب، قبر، كتبة، حراسة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الملائكة المimekwn: رحمة، عذاب، قبر، كتبة، حراسة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "door-keepers",
@@ -2434,7 +2669,8 @@
             }
           ],
           "description": "DOOR KEEPERS: Of the Heavens, Paradise and Hell - Islamic educational content",
-          "descriptionAr": "حراسة الأبواب: السماوات والجنة والنار - محتوى تعليمي إسلامي"
+          "descriptionAr": "حراسة الأبواب: السماوات والجنة والنار - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "angels-praisers",
@@ -2442,7 +2678,8 @@
           "nameAr": "المشاركون والомуرون والمسبّحون والساجدون",
           "videos": [],
           "description": "THE ADVISORS, WATCHERS, PRAISERS, PROSTRATERS - Islamic educational content",
-          "descriptionAr": "المشاركون والомуرون والمسبّحون والساجدون - محتوى تعليمي إسلامي"
+          "descriptionAr": "المشاركون والомуرون والمسبّحون والساجدون - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jinn-creation",
@@ -2632,7 +2869,8 @@
             }
           ],
           "description": "JINN: Created from Smokeless Fire - Islamic educational content",
-          "descriptionAr": "الجن: خلقوا من نار السموم - محتوى تعليمي إسلامي"
+          "descriptionAr": "الجن: خلقوا من نار السموم - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jinn-believers",
@@ -2669,7 +2907,8 @@
             }
           ],
           "description": "BELIEVERS: Good Jinn - Islamic educational content",
-          "descriptionAr": "الجن المؤمنون: الجن الصالحون - محتوى تعليمي إسلامي"
+          "descriptionAr": "الجن المؤمنون: الجن الصالحون - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jinn-disbelievers",
@@ -2692,7 +2931,8 @@
             }
           ],
           "description": "DISBELIEVERS: Evil Jinn - Islamic educational content",
-          "descriptionAr": "الجن الكافرون: الجن الأشرار - محتوى تعليمي إسلامي"
+          "descriptionAr": "الجن الكافرون: الجن الأشرار - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "shayateen",
@@ -2730,7 +2970,8 @@
             }
           ],
           "description": "SHAYAATEEN (Devils) - Islamic educational content",
-          "descriptionAr": "الشياطين - محتوى تعليمي إسلامي"
+          "descriptionAr": "الشياطين - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "iblis-fall",
@@ -2837,7 +3078,8 @@
             }
           ],
           "description": "IBLIS: The Forefather of Evil, his Arrogance and Fall - Islamic educational content",
-          "descriptionAr": "إبليس: أب الشر، كبرياؤه وسقوطه - محتوى تعليمي إسلامي"
+          "descriptionAr": "إبليس: أب الشر، كبرياؤه وسقوطه - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "iblis-free-will",
@@ -2874,7 +3116,8 @@
             }
           ],
           "description": "IBLIS & FREE WILL: The Choice Before the Test - Islamic educational content",
-          "descriptionAr": "إبليس والإرادة الحرة: الاختيار قبل الابتلاء - محتوى تعليمي إسلامي"
+          "descriptionAr": "إبليس والإرادة الحرة: الاختيار قبل الابتلاء - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "purpose-evil",
@@ -2911,7 +3154,8 @@
             }
           ],
           "description": "THE EXISTENCE OF EVIL: The Purpose of Free Will and Test - Islamic educational content",
-          "descriptionAr": "وجود الشر: حكمة الإرادة الحرة والابتلاء - محتوى تعليمي إسلامي"
+          "descriptionAr": "وجود الشر: حكمة الإرادة الحرة والابتلاء - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -3043,7 +3287,8 @@
             }
           ],
           "description": "JANNAH (PARADISE) AND JAHANNAM (HELL) - Islamic educational content",
-          "descriptionAr": "الجنة والنار - محتوى تعليمي إسلامي"
+          "descriptionAr": "الجنة والنار - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jannah-levels",
@@ -3080,7 +3325,8 @@
             }
           ],
           "description": "The Levels of Paradise (Rank 1 to Rank 7) - Islamic educational content",
-          "descriptionAr": "درجات الجنة - محتوى تعليمي إسلامي"
+          "descriptionAr": "درجات الجنة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jannah-bliss",
@@ -3088,7 +3334,8 @@
           "nameAr": "أعظم نعيم الجنة",
           "videos": [],
           "description": "The Greatest Bliss of Jannah - Islamic educational content",
-          "descriptionAr": "أعظم نعيم الجنة - محتوى تعليمي إسلامي"
+          "descriptionAr": "أعظم نعيم الجنة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jahannam-punishment",
@@ -3179,7 +3426,8 @@
             }
           ],
           "description": "The Punishment of Jahannam - Islamic educational content",
-          "descriptionAr": "عذاب النار - محتوى تعليمي إسلامي"
+          "descriptionAr": "عذاب النار - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jahannam-levels",
@@ -3230,7 +3478,8 @@
             }
           ],
           "description": "The Seven Levels of Hell (Rank 1 to Rank 7) - Islamic educational content",
-          "descriptionAr": "درجات النار السبع - محتوى تعليمي إسلامي"
+          "descriptionAr": "درجات النار السبع - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "poor-jannah",
@@ -3238,7 +3487,8 @@
           "nameAr": "أهل الصفة: فقراء الجنة",
           "videos": [],
           "description": "THE POOR OF JANNAH (Ahl al-Suffa) - Islamic educational content",
-          "descriptionAr": "أهل الصفة: فقراء الجنة - محتوى تعليمي إسلامي"
+          "descriptionAr": "أهل الصفة: فقراء الجنة - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -3386,7 +3636,8 @@
             }
           ],
           "description": "THE CREATION OF MAN (ADAM) - Islamic educational content",
-          "descriptionAr": "خلق آدم - محتوى تعليمي إسلامي"
+          "descriptionAr": "خلق آدم - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "life-test",
@@ -3438,7 +3689,8 @@
             }
           ],
           "description": "LIFE ON EARTH: The Test Period - Islamic educational content",
-          "descriptionAr": "الحياة في الأرض: فترة الابتلاء - محتوى تعليمي إسلامي"
+          "descriptionAr": "الحياة في الأرض: فترة الابتلاء - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "prophethood",
@@ -3755,7 +4007,8 @@
             }
           ],
           "description": "PROPHETHOOD: The Chain of Guidance (Adam to Muhammad ﷺ) - Islamic educational content",
-          "descriptionAr": "النبوة: سلسلة الهداية - محتوى تعليمي إسلامي"
+          "descriptionAr": "النبوة: سلسلة الهداية - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -3833,7 +4086,8 @@
             }
           ],
           "description": "DEATH: The Good vs Painful Extraction of the Soul - Islamic educational content",
-          "descriptionAr": "الموت: استخراج الروح الطيبة مقابل السيئة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الموت: استخراج الروح الطيبة مقابل السيئة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "grave",
@@ -3898,7 +4152,8 @@
             }
           ],
           "description": "AL-KABR (THE GRAVE) — The First Station of the Afterlife - Islamic educational content",
-          "descriptionAr": "القبر — المحطة الأولى في الآخرة - محتوى تعليمي إسلامي"
+          "descriptionAr": "القبر — المحطة الأولى في الآخرة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "barzakh",
@@ -3991,7 +4246,8 @@
             }
           ],
           "description": "AL-BARZAKH (The Barrier) — The Intermediate Realm - Islamic educational content",
-          "descriptionAr": "البرزخ — العالم الأوسط - محتوى تعليمي إسلامي"
+          "descriptionAr": "البرزخ — العالم الأوسط - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "signs-hour",
@@ -4232,7 +4488,8 @@
             }
           ],
           "description": "SIGNS OF THE HOUR: Dajjal, Isa's Descent, Gog and Magog - Islamic educational content",
-          "descriptionAr": "علامات الساعة: الدجال ونزول عيسى ومأجوج ومأجوج - محتوى تعليمي إسلامي"
+          "descriptionAr": "علامات الساعة: الدجال ونزول عيسى ومأجوج ومأجوج - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "qiyamah",
@@ -4350,7 +4607,8 @@
             }
           ],
           "description": "THE DAY OF RESURRECTION (YAUM AL-QIYAMAH) - Islamic educational content",
-          "descriptionAr": "يوم القيامة - محتوى تعليمي إسلامي"
+          "descriptionAr": "يوم القيامة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "trumpet",
@@ -4387,7 +4645,8 @@
             }
           ],
           "description": "The Blowing of the Trumpet (Israfil) - Islamic educational content",
-          "descriptionAr": "نفخ الصور - محتوى تعليمي إسلامي"
+          "descriptionAr": "نفخ الصور - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "gathering",
@@ -4395,7 +4654,8 @@
           "nameAr": "الحشر",
           "videos": [],
           "description": "THE GATHERING (AL-HASHR) - Islamic educational content",
-          "descriptionAr": "الحشر - محتوى تعليمي إسلامي"
+          "descriptionAr": "الحشر - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "records-deeds",
@@ -4432,7 +4692,8 @@
             }
           ],
           "description": "THE RECORDS: The Book of Deeds - Islamic educational content",
-          "descriptionAr": "السجلات: كتاب الأعمال - محتوى تعليمي إسلامي"
+          "descriptionAr": "السجلات: كتاب الأعمال - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "scales",
@@ -4469,7 +4730,8 @@
             }
           ],
           "description": "THE SCALES (AL-MIZAN): Weighing Deeds - Islamic educational content",
-          "descriptionAr": "الميزان: وزن الأعمال - محتوى تعليمي إسلامي"
+          "descriptionAr": "الميزان: وزن الأعمال - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "intercession",
@@ -4548,7 +4810,8 @@
             }
           ],
           "description": "INTERCESSION (SHAFA'AH) - Islamic educational content",
-          "descriptionAr": "الشفاعة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الشفاعة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "bridge-sirat",
@@ -4641,7 +4904,8 @@
             }
           ],
           "description": "THE BRIDGE (AS-SIRAT): The Crossing Over Hellfire - Islamic educational content",
-          "descriptionAr": "الصراط: العبور فوق النار - محتوى تعليمي إسلامي"
+          "descriptionAr": "الصراط: العبور فوق النار - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "judgment-jannah",
@@ -4649,7 +4913,8 @@
           "nameAr": "الصالحون: الجنة — النعيم الأبدي",
           "videos": [],
           "description": "THE GOOD: JANNAH — Eternal Bliss - Islamic educational content",
-          "descriptionAr": "الصالحون: الجنة — النعيم الأبدي - محتوى تعليمي إسلامي"
+          "descriptionAr": "الصالحون: الجنة — النعيم الأبدي - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "poor-people-jannah",
@@ -4657,7 +4922,8 @@
           "nameAr": "الوسط: أهل الفضل في الجنة",
           "videos": [],
           "description": "THE MIDDLE: The Poor People of Jannah (Ahl al-Fadl) - Islamic educational content",
-          "descriptionAr": "الوسط: أهل الفضل في الجنة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الوسط: أهل الفضل في الجنة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "judgment-jahannam",
@@ -4665,7 +4931,8 @@
           "nameAr": "الظالمون: النار — عذاب دائم أو مؤقت",
           "videos": [],
           "description": "THE EVIL: JAHANNAM — Eternal or Temporary Punishment - Islamic educational content",
-          "descriptionAr": "الظالمون: النار — عذاب دائم أو مؤقت - محتوى تعليمي إسلامي"
+          "descriptionAr": "الظالمون: النار — عذاب دائم أو مؤقت - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "jahannam-levels",
@@ -4673,7 +4940,8 @@
           "nameAr": "درجات النار السبع",
           "videos": [],
           "description": "The Seven Levels of Hell (Rank 1 to Rank 7) - Islamic educational content",
-          "descriptionAr": "درجات النار السبع - محتوى تعليمي إسلامي"
+          "descriptionAr": "درجات النار السبع - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -4946,10 +5214,198 @@
                 "naik"
               ],
               "channelHandle": "@zakirnaik1"
+            },
+            {
+              "id": "lgO9sE4KiV4",
+              "title": "Keyboard shortcuts",
+              "speaker": "Sheikh Mohamed Shaibani",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLSFZjjKC3qPZzB5QG8gj9W4Bg5Llp3Kjo"
+            },
+            {
+              "id": "I5TqrYSG0GY",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLXTPClsX2hdDAJXE-FPkRXeZKXLnvAIPB"
+            },
+            {
+              "id": "xrDxvpCvcuM",
+              "title": "Keyboard shortcuts",
+              "speaker": "Imam Mohammad Yahia",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLX35JLC3MM-cEePrxZWjGpsXSye7tAEsy"
+            },
+            {
+              "id": "zB9-1bVHBFw",
+              "title": "Keyboard shortcuts",
+              "speaker": "Prof. Kamali",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLv5Bf8DRI9C7VWTvBD7u8Cu4Et2lNpkDk"
+            },
+            {
+              "id": "sfXG_z_i13c",
+              "title": "Keyboard shortcuts",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLfEZ0T_iZBupuRULXmOx_1-RtmzWsFmt9"
+            },
+            {
+              "id": "Sp5UNOyqiFU",
+              "title": "Keyboard shortcuts",
+              "speaker": "Jamal Zarabozo",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLY8If6OHclJY0Am22O16eKGF3uNOhXReO"
             }
           ],
           "description": "PRAYER (Salah): The Pillar of Islam - Islamic educational content",
-          "descriptionAr": "الصلاة: ركن الإسلام - محتوى تعليمي إسلامي"
+          "descriptionAr": "الصلاة: ركن الإسلام - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-lessons-in-fiqh",
+              "title": "Lessons In Fiqh — Sheikh Mohamed Shaibani",
+              "speaker": "Sheikh Mohamed Shaibani",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "jurisprudence",
+                "lessons",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLSFZjjKC3qPZzB5QG8gj9W4Bg5Llp3Kjo"
+            },
+            {
+              "id": "pl-islamic-jurisprudence",
+              "title": "Islamic Jurisprudence — LLB Lecture Series",
+              "speaker": "Various",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "jurisprudence",
+                "llb",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLXTPClsX2hdDAJXE-FPkRXeZKXLnvAIPB"
+            },
+            {
+              "id": "pl-fiqh-lecture",
+              "title": "Fiqh Lecture — WCMA Series",
+              "speaker": "Imam Mohammad Yahia",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "lecture",
+                "wcma",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLX35JLC3MM-cEePrxZWjGpsXSye7tAEsy"
+            },
+            {
+              "id": "pl-principles-jurisprudence",
+              "title": "Principles of Islamic Jurisprudence — Prof. Kamali",
+              "speaker": "Prof. Kamali",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "usul",
+                "fiqh",
+                "principles",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLv5Bf8DRI9C7VWTvBD7u8Cu4Et2lNpkDk"
+            },
+            {
+              "id": "pl-learn-fiqh-alhakeem",
+              "title": "Learn Fiqh with Al-Hakeem",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "alhakeem",
+                "learn",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLfEZ0T_iZBupuRULXmOx_1-RtmzWsFmt9"
+            },
+            {
+              "id": "pl-principles-fiqh-zarabozo",
+              "title": "Principles of Fiqh (24 parts) — Jamal Zarabozo",
+              "speaker": "Jamal Zarabozo",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "principles",
+                "zarabozo",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLY8If6OHclJY0Am22O16eKGF3uNOhXReO"
+            }
+          ]
         },
         {
           "id": "sawm-fasting",
@@ -5056,7 +5512,8 @@
             }
           ],
           "description": "FASTING (Sawm): Ramadan & Beyond - Islamic educational content",
-          "descriptionAr": "الصيام: رمضان وما وراءه - محتوى تعليمي إسلامي"
+          "descriptionAr": "الصيام: رمضان وما وراءه - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "zakat-charity",
@@ -5149,7 +5606,8 @@
             }
           ],
           "description": "ZAKAT: Charity & Purification of Wealth - Islamic educational content",
-          "descriptionAr": "الزكاة: الصدقة وتطهير المال - محتوى تعليمي إسلامي"
+          "descriptionAr": "الزكاة: الصدقة وتطهير المال - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "hajj-umrah",
@@ -5285,7 +5743,8 @@
             }
           ],
           "description": "HAJJ & UMRAH: The Pilgrimage - Islamic educational content",
-          "descriptionAr": "الحج والعمرة: الرحلة المقدسة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الحج والعمرة: الرحلة المقدسة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "marriage-family",
@@ -5519,7 +5978,8 @@
             }
           ],
           "description": "MARRIAGE & FAMILY: The Sacred Bond - Islamic educational content",
-          "descriptionAr": "الزواج والأسرة: العهد المقدس - محتوى تعليمي إسلامي"
+          "descriptionAr": "الزواج والأسرة: العهد المقدس - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -5623,10 +6083,43 @@
                 "qadhi"
               ],
               "channelHandle": "@YasirQadhi"
+            },
+            {
+              "id": "bYdtU8H8cZ4",
+              "title": "Keyboard shortcuts",
+              "speaker": "Dr. Hatem AlHaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL0qx-zGh1v_uIlSLh__Y8mE_sP3lFXmZ3"
             }
           ],
           "description": "TASAWWUF: The Science of the Heart - Islamic educational content",
-          "descriptionAr": "التصوف: علم القلب - محتوى تعليمي إسلامي"
+          "descriptionAr": "التصوف: علم القلب - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-tazkiyah-lecture",
+              "title": "Tazkiyah I — A Lecture Series by Dr. Hatem AlHaj",
+              "speaker": "Dr. Hatem AlHaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tazkiyah",
+                "purification",
+                "tasawwuf",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL0qx-zGh1v_uIlSLh__Y8mE_sP3lFXmZ3"
+            }
+          ]
         },
         {
           "id": "dhikr-remembrance",
@@ -5677,7 +6170,8 @@
             }
           ],
           "description": "DHIKR: Remembrance of Allah - Islamic educational content",
-          "descriptionAr": "الذكر: تذكير الله - محتوى تعليمي إسلامي"
+          "descriptionAr": "الذكر: تذكير الله - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "tazkiyah",
@@ -5728,7 +6222,8 @@
             }
           ],
           "description": "TAZKIYAH: Purification of the Soul - Islamic educational content",
-          "descriptionAr": "التزكية: تطهير النفس - محتوى تعليمي إسلامي"
+          "descriptionAr": "التزكية: تطهير النفس - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "ihsan-excellence",
@@ -5779,7 +6274,8 @@
             }
           ],
           "description": "IHSAN: The Pursuit of Excellence - Islamic educational content",
-          "descriptionAr": "الإحسان: السعي إلى الكمال - محتوى تعليمي إسلامي"
+          "descriptionAr": "الإحسان: السعي إلى الكمال - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -5981,10 +6477,260 @@
                 "deeper-look"
               ],
               "channelHandle": "@bayyinah"
+            },
+            {
+              "id": "6zIsg7OfJXg",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLxzoP5nIE04BlY9v1Z3twdUUVU0ZE9j5M"
+            },
+            {
+              "id": "ylYpFtGHKqE",
+              "title": "Description",
+              "speaker": "Taimiyyah Zubair",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLSoSDrlkeIA25kcvnPOoglGWZvnXJJhge"
+            },
+            {
+              "id": "YQUVMA7TKuQ",
+              "title": "Keyboard shortcuts",
+              "speaker": "Mufti Qasim Attari",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL76IFqajXNVREBmyP5W8uRwDXYjZAQKHO"
+            },
+            {
+              "id": "7V1aRRfi7pg",
+              "title": "Description",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL2nw7AZ9DxdFHHX9g7ObgILokWWSeqOrS"
+            },
+            {
+              "id": "sTzH0vNh_nQ",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL2B540B867081F7F6"
+            },
+            {
+              "id": "1R8lzq7-Oa4",
+              "title": "Keyboard shortcuts",
+              "speaker": "Sheikh Yusuf Hassan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLoHSM0qQQk5cQB_mHJQQuIxsfmWILoHRc"
+            },
+            {
+              "id": "F3hTqGzm9Wc",
+              "title": "Description",
+              "speaker": "Sh. Mamdouh Mahmoud",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLm1B0Yge3Fj_ZXqSwEJfQQ8ctukqrqgHX"
+            },
+            {
+              "id": "z6K6LZizgq8",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLm9Mw-uwt9mW1pjMxxuSUgsd8NhW8TAYE"
             }
           ],
           "description": "TAFSIR: Quranic Interpretation - Islamic educational content",
-          "descriptionAr": "التفسير: تفسير القرآن - محتوى تعليمي إسلامي"
+          "descriptionAr": "التفسير: تفسير القرآن - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-quran-lectures",
+              "title": "Quran Lectures — Tafseer-e-Quran",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "tafseer",
+                "lectures",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLxzoP5nIE04BlY9v1Z3twdUUVU0ZE9j5M"
+            },
+            {
+              "id": "pl-quran-tafsir-english",
+              "title": "Quran Tafsir in English — Taimiyyah Zubair",
+              "speaker": "Taimiyyah Zubair",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "tafsir",
+                "english",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLSoSDrlkeIA25kcvnPOoglGWZvnXJJhge"
+            },
+            {
+              "id": "pl-english-programs",
+              "title": "English Programs — In The Light of Quran",
+              "speaker": "Mufti Qasim Attari",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "english",
+                "programs",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL76IFqajXNVREBmyP5W8uRwDXYjZAQKHO"
+            },
+            {
+              "id": "pl-quran-recitation-beautiful",
+              "title": "Quran Recitation Beautiful Voices — Islamic Scholar Lectures",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "recitation",
+                "beautiful",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL2nw7AZ9DxdFHHX9g7ObgILokWWSeqOrS"
+            },
+            {
+              "id": "pl-islamic-lectures",
+              "title": "Islamic Lectures — Blessings In Islam Series",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "lectures",
+                "blessings",
+                "islam",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL2B540B867081F7F6"
+            },
+            {
+              "id": "pl-tafsir-english",
+              "title": "Tafsir of Quran English — Sheikh Yusuf Hassan",
+              "speaker": "Sheikh Yusuf Hassan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tafsir",
+                "quran",
+                "english",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLoHSM0qQQk5cQB_mHJQQuIxsfmWILoHRc"
+            },
+            {
+              "id": "pl-paragons-quran",
+              "title": "Paragons of the Quran by Ibn Al-Qayyim",
+              "speaker": "Sh. Mamdouh Mahmoud",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "ibn-qayyim",
+                "paragons",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLm1B0Yge3Fj_ZXqSwEJfQQ8ctukqrqgHX"
+            },
+            {
+              "id": "pl-international-quran-conference",
+              "title": "International Quran Conference — Beautiful Recitations",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "conference",
+                "recitation",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLm9Mw-uwt9mW1pjMxxuSUgsd8NhW8TAYE"
+            }
+          ]
         },
         {
           "id": "asbab-nuzul",
@@ -6077,7 +6823,8 @@
             }
           ],
           "description": "ASBAB AL-NUZUL: Reasons of Revelation - Islamic educational content",
-          "descriptionAr": "أسباب النزول: أسباب النزول - محتوى تعليمي إسلامي"
+          "descriptionAr": "أسباب النزول: أسباب النزول - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "qiraat-recitations",
@@ -6170,7 +6917,8 @@
             }
           ],
           "description": "QIRA'AT: The Recitations of the Quran - Islamic educational content",
-          "descriptionAr": "القراءات: قراءات القرآن - محتوى تعليمي إسلامي"
+          "descriptionAr": "القراءات: قراءات القرآن - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "ulum-overview",
@@ -6207,7 +6955,8 @@
             }
           ],
           "description": "ULUM AL-QURAN: Sciences Overview - Islamic educational content",
-          "descriptionAr": "علوم القرآن: نظرة عامة - محتوى تعليمي إسلامي"
+          "descriptionAr": "علوم القرآن: نظرة عامة - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -6383,7 +7132,8 @@
             }
           ],
           "description": "THE SIX BOOKS: Major Hadith Collections - Islamic educational content",
-          "descriptionAr": "الكتب الستة: المجموعات الحديثية الكبرى - محتوى تعليمي إسلامي"
+          "descriptionAr": "الكتب الستة: المجموعات الحديثية الكبرى - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "hadith-terminology",
@@ -6476,7 +7226,8 @@
             }
           ],
           "description": "HADITH TERMINOLOGY: Science of Classification - Islamic educational content",
-          "descriptionAr": "مصطلح الحديث: علم التصنيف - محتوى تعليمي إسلامي"
+          "descriptionAr": "مصطلح الحديث: علم التصنيف - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "hadith-authenticity",
@@ -6540,7 +7291,8 @@
             }
           ],
           "description": "HADITH AUTHENTICITY: How to Verify - Islamic educational content",
-          "descriptionAr": "صحة الحديث: كيفية التحقق - محتوى تعليمي إسلامي"
+          "descriptionAr": "صحة الحديث: كيفية التحقق - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -7223,7 +7975,8 @@
             }
           ],
           "description": "CHARACTER & MANNERS: The Islamic Way - Islamic educational content",
-          "descriptionAr": "السلوك والآداب: الطريقة الإسلامية - محتوى تعليمي إسلامي"
+          "descriptionAr": "السلوك والآداب: الطريقة الإسلامية - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "patience-sabr",
@@ -7274,7 +8027,8 @@
             }
           ],
           "description": "PATIENCE (Sabr): Endurance & Strength - Islamic educational content",
-          "descriptionAr": "الصبر: التحمل والقوة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الصبر: التحمل والقوة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "gratitude-shukr",
@@ -7325,7 +8079,8 @@
             }
           ],
           "description": "GRATITUDE (Shukr): Thankfulness to Allah - Islamic educational content",
-          "descriptionAr": "الشكر: الامتنان لله - محتوى تعليمي إسلامي"
+          "descriptionAr": "الشكر: الامتنان لله - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "trust-tawakkul",
@@ -7403,7 +8158,8 @@
             }
           ],
           "description": "TRUST (Tawakkul): Reliance on Allah - Islamic educational content",
-          "descriptionAr": "التوكل: الاعتماد على الله - محتوى تعليمي إسلامي"
+          "descriptionAr": "التوكل: الاعتماد على الله - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -7579,7 +8335,8 @@
             }
           ],
           "description": "TAJWEED: Rules of Recitation - Islamic educational content",
-          "descriptionAr": "التجويد: قواعد التلاوة - محتوى تعليمي إسلامي"
+          "descriptionAr": "التجويد: قواعد التلاوة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "hifz-memorization",
@@ -7686,7 +8443,8 @@
             }
           ],
           "description": "HIFZ: Memorization of the Quran - Islamic educational content",
-          "descriptionAr": "الحفظ: حفظ القرآن - محتوى تعليمي إسلامي"
+          "descriptionAr": "الحفظ: حفظ القرآن - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -7835,7 +8593,8 @@
             }
           ],
           "description": "HALAL INVESTING: Permissible Finance - Islamic educational content",
-          "descriptionAr": "الاستثمار الحلال: المالية المباحة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الاستثمار الحلال: المالية المباحة - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "riba-interest",
@@ -7928,7 +8687,8 @@
             }
           ],
           "description": "RIBA: The Prohibition of Interest - Islamic educational content",
-          "descriptionAr": "الربا: تحريم الفائدة - محتوى تعليمي إسلامي"
+          "descriptionAr": "الربا: تحريم الفائدة - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -8090,7 +8850,8 @@
             }
           ],
           "description": "DU'A: The Weapon of the Believer - Islamic educational content",
-          "descriptionAr": "الدعاء: سلاح المؤمن - محتوى تعليمي إسلامي"
+          "descriptionAr": "الدعاء: سلاح المؤمن - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "adhkar-morning-evening",
@@ -8239,7 +9000,8 @@
             }
           ],
           "description": "ADHKAR: Morning & Evening Remembrance - Islamic educational content",
-          "descriptionAr": "الأذكار: ذكر الصباح والمساء - محتوى تعليمي إسلامي"
+          "descriptionAr": "الأذكار: ذكر الصباح والمساء - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -8527,10 +9289,291 @@
                 "battles"
               ],
               "channelHandle": "@HistoricWarLens"
+            },
+            {
+              "id": "R_7FXu6OQzI",
+              "title": "Description",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLWV9AumpGdP9zadagjK0qHE3y_UWPfG77"
+            },
+            {
+              "id": "A400SS1x0XE",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLtnYF2Yq2l32_7s3A_yMhXtpKbmnGOOP0"
+            },
+            {
+              "id": "qBLzTpu-1Lo",
+              "title": "Keyboard shortcuts",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLcKibz1AWfACNQPZQMNBzDPSwCjX3Neh"
+            },
+            {
+              "id": "sWcJ0YLtiNY",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLqDARat-QftKN0l5Ml8lxVWkvHjcbig5d"
+            },
+            {
+              "id": "z6nONOS9yGQ",
+              "title": "Description",
+              "speaker": "Shaykh Belal Assaad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLOlaiHoIQfAgjZPZdk_RNUVFBlBSdzu4C"
+            },
+            {
+              "id": "iar5BO9o9AI",
+              "title": "Keyboard shortcuts",
+              "speaker": "Astaana-e-Zehra",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PL2899180A42B02105"
+            },
+            {
+              "id": "Y5LMEwv6XLM",
+              "title": "Keyboard shortcuts",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLtF4dwU4sIJ5g0GVXyLYj4WYorCuQtbvd"
+            },
+            {
+              "id": "qpwqNtzfS7M",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLEqyTTz-iOv-ndFg-cp1rB_bLrE1cDvEQ"
+            },
+            {
+              "id": "LVNGCJiBEw8",
+              "title": "Keyboard shortcuts",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLSU_CfrNJmMVBmAP1EEGPM_AomjA8MMhU"
             }
           ],
           "description": "RASHIDUN CALIPHS: The Rightly Guided - Islamic educational content",
-          "descriptionAr": "الخلفاء الراشدون: المهتدون - محتوى تعليمي إسلامي"
+          "descriptionAr": "الخلفاء الراشدون: المهتدون - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-mufti-menk-seerah",
+              "title": "Mufti Menk — Life Of The Final Messenger (Seerah)",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "muhammad",
+                "mufti-menk",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLWV9AumpGdP9zadagjK0qHE3y_UWPfG77"
+            },
+            {
+              "id": "pl-seerah-prophet",
+              "title": "Seerah of the Prophet Muhammad — Complete Lecture Series",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "muhammad",
+                "lecture",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLtnYF2Yq2l32_7s3A_yMhXtpKbmnGOOP0"
+            },
+            {
+              "id": "pl-islamic-history-lectures",
+              "title": "Islamic History Lectures — Yasir Qadhi",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "qadhi",
+                "lectures",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLLcKibz1AWfACNQPZQMNBzDPSwCjX3Neh"
+            },
+            {
+              "id": "pl-seerah-prophet-new",
+              "title": "Seerah of the Prophet ﷺ (NEW) — Complete Series",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "muhammad",
+                "new",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLqDARat-QftKN0l5Ml8lxVWkvHjcbig5d"
+            },
+            {
+              "id": "pl-belal-assaad-seerah",
+              "title": "Shaykh Belal Assaad — The Seerah of the Prophet",
+              "speaker": "Shaykh Belal Assaad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "belal-assaad",
+                "prophet",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLOlaiHoIQfAgjZPZdk_RNUVFBlBSdzu4C"
+            },
+            {
+              "id": "pl-quran-hadith-imamat",
+              "title": "Quran and Hadith Lecture Series — Imamat",
+              "speaker": "Astaana-e-Zehra",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "hadith",
+                "imamat",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL2899180A42B02105"
+            },
+            {
+              "id": "pl-seerah-prophet-pbuh",
+              "title": "Seerah Of Prophet (PBUH) — Complete Series",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "muhammad",
+                "mufti-menk",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLtF4dwU4sIJ5g0GVXyLYj4WYorCuQtbvd"
+            },
+            {
+              "id": "pl-seerah-conference",
+              "title": "SEERAH CONFERENCE — Complete Series",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "conference",
+                "history",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLEqyTTz-iOv-ndFg-cp1rB_bLrE1cDvEQ"
+            },
+            {
+              "id": "pl-islamic-history-css",
+              "title": "Islamic History Lectures Series For CSS",
+              "speaker": "Various",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "css",
+                "lectures",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLSU_CfrNJmMVBmAP1EEGPM_AomjA8MMhU"
+            }
+          ]
         },
         {
           "id": "golden-age",
@@ -8637,7 +9680,8 @@
             }
           ],
           "description": "ISLAMIC GOLDEN AGE: Civilization & Science - Islamic educational content",
-          "descriptionAr": "العصر الذهبي: الحضارة والعلم - محتوى تعليمي إسلامي"
+          "descriptionAr": "العصر الذهبي: الحضارة والعلم - محتوى تعليمي إسلامي",
+          "playlists": []
         },
         {
           "id": "umayyad-abbasid",
@@ -8773,7 +9817,8 @@
             }
           ],
           "description": "UMAYYAD & ABBASID CALIPHATES - Islamic educational content",
-          "descriptionAr": "الخلافة الأموية والعباسية - محتوى تعليمي إسلامي"
+          "descriptionAr": "الخلافة الأموية والعباسية - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -9118,111 +10163,6 @@
                 "end"
               ],
               "channelHandle": "@THINKMuslim"
-            },
-            {
-              "id": "pl-seerah-full",
-              "title": "The Entire Seerah of the Prophet (SAW) — Full Playlist (40+ Lectures)",
-              "speaker": "Various Scholars",
-              "difficulty": 2,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "seerah",
-                "playlist",
-                "complete",
-                "muhammad"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLWIRFDFSWZPt2M_3AIMo23V52uy8lk59f"
-            },
-            {
-              "id": "pl-arabic-roots-shorts",
-              "title": "200 Arabic Roots Series (Shorts) | The Arabic Academy — Full Playlist",
-              "speaker": "The Arabic Academy",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "arabic",
-                "language",
-                "roots",
-                "playlist",
-                "shorts"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL-l9lo3mVheLo-4KNsGwKgWN2KoftShhI"
-            },
-            {
-              "id": "pl-arabic-beginners",
-              "title": "Arabic Series For Beginners | 200 Arabic Roots Lessons — Full Playlist",
-              "speaker": "The Arabic Academy",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "arabic",
-                "beginners",
-                "language",
-                "roots",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL-l9lo3mVheI0LxWe4nmvO7e7P9H3ngvs"
-            },
-            {
-              "id": "pl-tajweed-beginner",
-              "title": "Learn Tajweed Easily (Beginner) — Full Playlist",
-              "speaker": "Various Scholars",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "tajweed",
-                "quran",
-                "beginner",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL6TlMIZ5ylgqM4Uuu7iAhIeuSdF0v9yxo"
-            },
-            {
-              "id": "pl-early-muslim-wars",
-              "title": "Early Muslim Wars (Season 1) — Full Playlist",
-              "speaker": "Historic War Lens",
-              "difficulty": 2,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "history",
-                "battles",
-                "islamic-history",
-                "wars",
-                "playlist"
-              ],
-              "channelHandle": "@HistoricWarLens",
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL3_xd3-vE5mhwB2BW-8HpqC80tdgdKzcp"
-            },
-            {
-              "id": "pl-background-halal-sound",
-              "title": "Background Halal Sound — Full Playlist",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nasheed",
-                "background",
-                "halal-sound",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLzPxIZl0Ji3zzpI7Kqc_ynLI8THYJxeiO"
             },
             {
               "id": "ch-muslim-reverts",
@@ -10851,7 +11791,114 @@
             }
           ],
           "description": "COMPARATIVE RELIGION: Islam & Other Faiths - Islamic educational content",
-          "descriptionAr": "المقارنة بين الأديان: الإسلام والأديان الأخرى - محتوى تعليمي إسلامي"
+          "descriptionAr": "المقارنة بين الأديان: الإسلام والأديان الأخرى - محتوى تعليمي إسلامي",
+          "playlists": [
+            {
+              "id": "pl-seerah-full",
+              "title": "The Entire Seerah of the Prophet (SAW) — Full Playlist (40+ Lectures)",
+              "speaker": "Various Scholars",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "playlist",
+                "complete",
+                "muhammad"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLWIRFDFSWZPt2M_3AIMo23V52uy8lk59f"
+            },
+            {
+              "id": "pl-arabic-roots-shorts",
+              "title": "200 Arabic Roots Series (Shorts) | The Arabic Academy — Full Playlist",
+              "speaker": "The Arabic Academy",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "arabic",
+                "language",
+                "roots",
+                "playlist",
+                "shorts"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL-l9lo3mVheLo-4KNsGwKgWN2KoftShhI"
+            },
+            {
+              "id": "pl-arabic-beginners",
+              "title": "Arabic Series For Beginners | 200 Arabic Roots Lessons — Full Playlist",
+              "speaker": "The Arabic Academy",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "arabic",
+                "beginners",
+                "language",
+                "roots",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL-l9lo3mVheI0LxWe4nmvO7e7P9H3ngvs"
+            },
+            {
+              "id": "pl-tajweed-beginner",
+              "title": "Learn Tajweed Easily (Beginner) — Full Playlist",
+              "speaker": "Various Scholars",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tajweed",
+                "quran",
+                "beginner",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL6TlMIZ5ylgqM4Uuu7iAhIeuSdF0v9yxo"
+            },
+            {
+              "id": "pl-early-muslim-wars",
+              "title": "Early Muslim Wars (Season 1) — Full Playlist",
+              "speaker": "Historic War Lens",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "battles",
+                "islamic-history",
+                "wars",
+                "playlist"
+              ],
+              "channelHandle": "@HistoricWarLens",
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL3_xd3-vE5mhwB2BW-8HpqC80tdgdKzcp"
+            },
+            {
+              "id": "pl-background-halal-sound",
+              "title": "Background Halal Sound — Full Playlist",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nasheed",
+                "background",
+                "halal-sound",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLzPxIZl0Ji3zzpI7Kqc_ynLI8THYJxeiO"
+            }
+          ]
         },
         {
           "id": "dawah-outreach",
@@ -11327,7 +12374,8 @@
             }
           ],
           "description": "DA'WAH: Inviting to Islam - Islamic educational content",
-          "descriptionAr": "الدعوة: دعوة الناس إلى الإسلام - محتوى تعليمي إسلامي"
+          "descriptionAr": "الدعوة: دعوة الناس إلى الإسلام - محتوى تعليمي إسلامي",
+          "playlists": []
         }
       ],
       "baseTopics": [
@@ -12788,348 +13836,6 @@
                 "learning"
               ],
               "channelHandle": "@kalamkids"
-            },
-            {
-              "id": "pl-kalam-kids-arabic",
-              "title": "Arabic Learning Videos — Kalam Kids Full Playlist",
-              "speaker": "Kalam Kids",
-              "difficulty": 1,
-              "language": "ar",
-              "duration": 0,
-              "tags": [
-                "kalam-kids",
-                "arabic",
-                "learning",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL6iq6tW99WGhr2tz7Sx9WHUSPd7-3HEjR"
-            },
-            {
-              "id": "pl-kalam-kids-english",
-              "title": "English Learning Videos — Kalam Kids Full Playlist",
-              "speaker": "Kalam Kids",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "kalam-kids",
-                "english",
-                "learning",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL6iq6tW99WGgd0v0Cm_6CmsIrdDTguDs9"
-            },
-            {
-              "id": "pl-nussa-rarra-turkish-s1",
-              "title": "Nussa ve Rarra Türkçe - Sezon 1 | Çocuklar için İslami Çizgi Filmler",
-              "speaker": "Feyyaz Çocuk",
-              "difficulty": 1,
-              "language": "tr",
-              "duration": 0,
-              "tags": [
-                "nussa",
-                "rarra",
-                "turkish",
-                "season-1",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn84oiA0kUxbKBA1oEymr8mi"
-            },
-            {
-              "id": "pl-omer-hana-turkish",
-              "title": "Ömer ve Hana Türkçe - Derleme/Uzun Bölümler | Çocuklar için İslami Çizgi Filmler",
-              "speaker": "Feyyaz Çocuk",
-              "difficulty": 1,
-              "language": "tr",
-              "duration": 0,
-              "tags": [
-                "omer",
-                "hana",
-                "turkish",
-                "compilation",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn-FDmmRV5_ccx4JAGMQlrCW"
-            },
-            {
-              "id": "pl-feyyaz-cocuk-songs",
-              "title": "Feyyaz Çocuk Şarkıları — Turkish Islamic Kids Songs",
-              "speaker": "Feyyaz Çocuk",
-              "difficulty": 1,
-              "language": "tr",
-              "duration": 0,
-              "tags": [
-                "feyyaz",
-                "turkish",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn-gCADwKXUIsDN6-KiinspL"
-            },
-            {
-              "id": "pl-feyyaz-ramadan",
-              "title": "Feyyaz Çocuk Ramazan Özel — Turkish Ramadan Specials",
-              "speaker": "Feyyaz Çocuk",
-              "difficulty": 1,
-              "language": "tr",
-              "duration": 0,
-              "tags": [
-                "feyyaz",
-                "turkish",
-                "ramadan",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn89VK4f0IKkZE7HppqoZyzV"
-            },
-            {
-              "id": "pl-omer-hana-turkish-music",
-              "title": "Ömer ve Hana Türkçe - 2 Dakikalık Müzikli Bölümler",
-              "speaker": "Feyyaz Çocuk",
-              "difficulty": 1,
-              "language": "tr",
-              "duration": 0,
-              "tags": [
-                "omer",
-                "hana",
-                "turkish",
-                "music",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn-PFxghTvBaL80vAEuBeFpO"
-            },
-            {
-              "id": "pl-nussa-rarra-turkish-songs",
-              "title": "Çocuklar İçin Şarkılar | Çocuklar için İslami Çizgi Filmler",
-              "speaker": "Feyyaz Çocuk",
-              "difficulty": 1,
-              "language": "tr",
-              "duration": 0,
-              "tags": [
-                "nussa",
-                "rarra",
-                "turkish",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn9yINYZHAWgpL-F4k39GDjw"
-            },
-            {
-              "id": "pl-bangla-islamic-cartoon",
-              "title": "bangla islamic cartoon — Full Playlist",
-              "speaker": "Islamic Cartoon Bangla",
-              "difficulty": 1,
-              "language": "bn",
-              "duration": 0,
-              "tags": [
-                "bangla",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLuGp_WKyOv5bMrBOfpKhg4L8_Eqpyc7Es"
-            },
-            {
-              "id": "pl-golam-rasool-bangla-2025",
-              "title": "Golam Rasool 2025 — Bangla Islamic Cartoon Full Playlist",
-              "speaker": "Madani Channel Bangla Official",
-              "difficulty": 1,
-              "language": "bn",
-              "duration": 0,
-              "tags": [
-                "golam-rasool",
-                "bangla",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLd4KNFZy4bSB76IbXP9Yg7CJAstYjGLKb"
-            },
-            {
-              "id": "pl-golam-rasool-madani",
-              "title": "গোলাম রাসূলের মাদানী ফুল — Golam Rasool Bangla Madani Playlist",
-              "speaker": "Madani Channel Bangla Official",
-              "difficulty": 1,
-              "language": "bn",
-              "duration": 0,
-              "tags": [
-                "golam-rasool",
-                "bangla",
-                "madani",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLd4KNFZy4bSCrTfM8mcqJDzM73vplSIkD"
-            },
-            {
-              "id": "pl-islamic-cartoon-bangla",
-              "title": "Islamic Cartoon Bangla All Video — Full Playlist",
-              "speaker": "Islamic Cartoon Bangla",
-              "difficulty": 1,
-              "language": "bn",
-              "duration": 0,
-              "tags": [
-                "bangla",
-                "cartoon",
-                "compilation",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLuGp_WKyOv5bMrBOfpKhg4L8_Eqpyc7Es"
-            },
-            {
-              "id": "pl-muslim-kids-tv",
-              "title": "Muslim Kids TV — Islamic Cartoons for Kids Full Playlist",
-              "speaker": "Muslim Kids TV",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "muslim-kids-tv",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=UUDz4xz5CW-9n4NJ5mrn7RZA"
-            },
-            {
-              "id": "pl-noor-kids",
-              "title": "Noor Kids — Islamic Stories for Kids Full Playlist",
-              "speaker": "Noor Kids",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "noor-kids",
-                "stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/@NoorKids/shorts"
-            },
-            {
-              "id": "pl-islamic-songs-kids",
-              "title": "Islamic Songs for Kids — Fun Nasheed & Educational Music Full Playlist",
-              "speaker": "Muslim Kids Universe",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "islamic-songs",
-                "nasheed",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpS6AFccI9CVoL43E6xhbvJUwd1LCRqzQ"
-            },
-            {
-              "id": "pl-omar-hana-compilation",
-              "title": "Omar & Hana — Islamic Cartoons for Kids Full Playlist",
-              "speaker": "Omar & Hana",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "omar-hana",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLw37Cz21Cob1sLTuI8ytEtCqDauRkad_Y"
-            },
-            {
-              "id": "pl-madani-channel-bangla",
-              "title": "Madani Channel Bangla — Islamic Cartoons for Kids Full Playlist",
-              "speaker": "Madani Channel Bangla Official",
-              "difficulty": 1,
-              "language": "bn",
-              "duration": 0,
-              "tags": [
-                "madani",
-                "bangla",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLdn9K-wluuaokpJUtoT_o5AJnVJ9q8iov"
-            },
-            {
-              "id": "pl-nussa-rarra-indonesian",
-              "title": "Nussa & Rarra — Indonesian Islamic Cartoon Full Playlist",
-              "speaker": "NussaOfficial",
-              "difficulty": 1,
-              "language": "id",
-              "duration": 0,
-              "tags": [
-                "nussa",
-                "rarra",
-                "indonesian",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/@NussaOfficialSeries"
-            },
-            {
-              "id": "pl-omer-hana-malay",
-              "title": "Omar & Hana — Islamic Cartoons for Kids (Malay) Full Playlist",
-              "speaker": "Omar & Hana",
-              "difficulty": 1,
-              "language": "ms",
-              "duration": 0,
-              "tags": [
-                "omar-hana",
-                "malay",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/@OmarAndHana"
             },
             {
               "id": "AwccZotbJS4",
@@ -18466,108 +19172,6 @@
               "playlistSource": "PLdn9K-wluuaokpJUtoT_o5AJnVJ9q8iov"
             },
             {
-              "id": "pl-omer-hana-quran",
-              "title": "Omar & Hana — Learn Quran with Songs",
-              "speaker": "Omar & Hana",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "quran",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLw37Cz21Cob1sLTuI8ytEtCqDauRkad_Y"
-            },
-            {
-              "id": "pl-muslim-kids-tv-quran",
-              "title": "Muslim Kids TV — Quran Stories for Children",
-              "speaker": "Muslim Kids TV",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "quran",
-                "stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=UUDz4xz5CW-9n4NJ5mrn7RZA"
-            },
-            {
-              "id": "pl-iqra-cartoon-quran",
-              "title": "IQRA Cartoon — Quran Stories for Kids",
-              "speaker": "IQRA Cartoon",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "quran",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysBr-vhSyYZL8DcXTmNgWkeO"
-            },
-            {
-              "id": "pl-kids-quran-recitation",
-              "title": "Kids Quran Recitation — Learn to Read Quran",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "quran",
-                "recitation",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL6TlMIZ5ylgqM4Uuu7iAhIeuSdF0v9yxo"
-            },
-            {
-              "id": "pl-kids-nasheed-quran",
-              "title": "Nasheed (No Music) — Islamic Songs for Kids",
-              "speaker": "IQRA Cartoon",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nasheed",
-                "quran",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysBHK-7NDQW8IjP9pBYM-POt"
-            },
-            {
-              "id": "pl-islamic-songs-no-music",
-              "title": "Islamic Songs Without Music — Nasheeds, Naats & Hamds",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nasheed",
-                "no-music",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLN4STc5sAZYYnxxnOw1lkhTIh51DZ69WM"
-            },
-            {
               "id": "XZuz1eWsE74",
               "title": "General",
               "speaker": "Madani Channel Bangla Official",
@@ -19532,6 +20136,340 @@
               ],
               "channelHandle": null,
               "playlistSource": "PLN4STc5sAZYYnxxnOw1lkhTIh51DZ69WM"
+            },
+            {
+              "id": "G0kRChJfGu4",
+              "title": "Description",
+              "speaker": "Muslim Kids Universe",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLpS6AFccI9CVoL43E6xhbvJUwd1LCRqzQ"
+            },
+            {
+              "id": "l7s8R9ugb98",
+              "title": "Description",
+              "speaker": "IQRA Cartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLs6YIr-PdysBr-vhSyYZL8DcXTmNgWkeO"
+            }
+          ],
+          "playlists": [
+            {
+              "id": "pl-kalam-kids-arabic",
+              "title": "Arabic Learning Videos — Kalam Kids Full Playlist",
+              "speaker": "Kalam Kids",
+              "difficulty": 1,
+              "language": "ar",
+              "duration": 0,
+              "tags": [
+                "kalam-kids",
+                "arabic",
+                "learning",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL6iq6tW99WGhr2tz7Sx9WHUSPd7-3HEjR"
+            },
+            {
+              "id": "pl-kalam-kids-english",
+              "title": "English Learning Videos — Kalam Kids Full Playlist",
+              "speaker": "Kalam Kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "kalam-kids",
+                "english",
+                "learning",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL6iq6tW99WGgd0v0Cm_6CmsIrdDTguDs9"
+            },
+            {
+              "id": "pl-nussa-rarra-turkish-s1",
+              "title": "Nussa ve Rarra Türkçe - Sezon 1 | Çocuklar için İslami Çizgi Filmler",
+              "speaker": "Feyyaz Çocuk",
+              "difficulty": 1,
+              "language": "tr",
+              "duration": 0,
+              "tags": [
+                "nussa",
+                "rarra",
+                "turkish",
+                "season-1",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn84oiA0kUxbKBA1oEymr8mi"
+            },
+            {
+              "id": "pl-omer-hana-turkish",
+              "title": "Ömer ve Hana Türkçe - Derleme/Uzun Bölümler | Çocuklar için İslami Çizgi Filmler",
+              "speaker": "Feyyaz Çocuk",
+              "difficulty": 1,
+              "language": "tr",
+              "duration": 0,
+              "tags": [
+                "omer",
+                "hana",
+                "turkish",
+                "compilation",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn-FDmmRV5_ccx4JAGMQlrCW"
+            },
+            {
+              "id": "pl-feyyaz-cocuk-songs",
+              "title": "Feyyaz Çocuk Şarkıları — Turkish Islamic Kids Songs",
+              "speaker": "Feyyaz Çocuk",
+              "difficulty": 1,
+              "language": "tr",
+              "duration": 0,
+              "tags": [
+                "feyyaz",
+                "turkish",
+                "songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn-gCADwKXUIsDN6-KiinspL"
+            },
+            {
+              "id": "pl-feyyaz-ramadan",
+              "title": "Feyyaz Çocuk Ramazan Özel — Turkish Ramadan Specials",
+              "speaker": "Feyyaz Çocuk",
+              "difficulty": 1,
+              "language": "tr",
+              "duration": 0,
+              "tags": [
+                "feyyaz",
+                "turkish",
+                "ramadan",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn89VK4f0IKkZE7HppqoZyzV"
+            },
+            {
+              "id": "pl-omer-hana-turkish-music",
+              "title": "Ömer ve Hana Türkçe - 2 Dakikalık Müzikli Bölümler",
+              "speaker": "Feyyaz Çocuk",
+              "difficulty": 1,
+              "language": "tr",
+              "duration": 0,
+              "tags": [
+                "omer",
+                "hana",
+                "turkish",
+                "music",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn-PFxghTvBaL80vAEuBeFpO"
+            },
+            {
+              "id": "pl-nussa-rarra-turkish-songs",
+              "title": "Çocuklar İçin Şarkılar | Çocuklar için İslami Çizgi Filmler",
+              "speaker": "Feyyaz Çocuk",
+              "difficulty": 1,
+              "language": "tr",
+              "duration": 0,
+              "tags": [
+                "nussa",
+                "rarra",
+                "turkish",
+                "songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn9yINYZHAWgpL-F4k39GDjw"
+            },
+            {
+              "id": "pl-bangla-islamic-cartoon",
+              "title": "bangla islamic cartoon — Full Playlist",
+              "speaker": "Islamic Cartoon Bangla",
+              "difficulty": 1,
+              "language": "bn",
+              "duration": 0,
+              "tags": [
+                "bangla",
+                "cartoon",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLuGp_WKyOv5bMrBOfpKhg4L8_Eqpyc7Es"
+            },
+            {
+              "id": "pl-golam-rasool-bangla-2025",
+              "title": "Golam Rasool 2025 — Bangla Islamic Cartoon Full Playlist",
+              "speaker": "Madani Channel Bangla Official",
+              "difficulty": 1,
+              "language": "bn",
+              "duration": 0,
+              "tags": [
+                "golam-rasool",
+                "bangla",
+                "cartoon",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLd4KNFZy4bSB76IbXP9Yg7CJAstYjGLKb"
+            },
+            {
+              "id": "pl-golam-rasool-madani",
+              "title": "গোলাম রাসূলের মাদানী ফুল — Golam Rasool Bangla Madani Playlist",
+              "speaker": "Madani Channel Bangla Official",
+              "difficulty": 1,
+              "language": "bn",
+              "duration": 0,
+              "tags": [
+                "golam-rasool",
+                "bangla",
+                "madani",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLd4KNFZy4bSCrTfM8mcqJDzM73vplSIkD"
+            },
+            {
+              "id": "pl-islamic-songs-kids",
+              "title": "Islamic Songs for Kids — Fun Nasheed & Educational Music Full Playlist",
+              "speaker": "Muslim Kids Universe",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "islamic-songs",
+                "nasheed",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpS6AFccI9CVoL43E6xhbvJUwd1LCRqzQ"
+            },
+            {
+              "id": "pl-omar-hana-compilation",
+              "title": "Omar & Hana — Islamic Cartoons for Kids Full Playlist",
+              "speaker": "Omar & Hana",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "omar-hana",
+                "cartoon",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLw37Cz21Cob1sLTuI8ytEtCqDauRkad_Y"
+            },
+            {
+              "id": "pl-madani-channel-bangla",
+              "title": "Madani Channel Bangla — Islamic Cartoons for Kids Full Playlist",
+              "speaker": "Madani Channel Bangla Official",
+              "difficulty": 1,
+              "language": "bn",
+              "duration": 0,
+              "tags": [
+                "madani",
+                "bangla",
+                "cartoon",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLdn9K-wluuaokpJUtoT_o5AJnVJ9q8iov"
+            },
+            {
+              "id": "pl-iqra-cartoon-quran",
+              "title": "IQRA Cartoon — Quran Stories for Kids",
+              "speaker": "IQRA Cartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "cartoon",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysBr-vhSyYZL8DcXTmNgWkeO"
+            },
+            {
+              "id": "pl-kids-nasheed-quran",
+              "title": "Nasheed (No Music) — Islamic Songs for Kids",
+              "speaker": "IQRA Cartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nasheed",
+                "quran",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysBHK-7NDQW8IjP9pBYM-POt"
+            },
+            {
+              "id": "pl-islamic-songs-no-music",
+              "title": "Islamic Songs Without Music — Nasheeds, Naats & Hamds",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nasheed",
+                "no-music",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLN4STc5sAZYYnxxnOw1lkhTIh51DZ69WM"
             }
           ]
         },
@@ -19932,161 +20870,6 @@
                 "learning"
               ],
               "channelHandle": "@ElamSeba"
-            },
-            {
-              "id": "pl-deen-kids-tv",
-              "title": "Best of Deen Kids TV — Islamic Songs for Kids",
-              "speaker": "Deen Kids TV",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nasheed",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLkUCxNOjsOuJbC3VnC9yoYUuLZxu-K_rA"
-            },
-            {
-              "id": "pl-muslim-kids-songs",
-              "title": "Muslim Kids Songs Compilation — Raising 4Caliphs",
-              "speaker": "Raising 4Caliphs",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "songs",
-                "compilation",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLm-MBPSCiNRKd1yOknYbO5Jw2FFyH-CY7"
-            },
-            {
-              "id": "pl-islamic-kids-songs-compilation",
-              "title": "Islamic Kids Songs Compilation — Nasheed for Children",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "songs",
-                "compilation",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLXpnf2lW6_kaVcsbGgxiVQkET-YS2W3Zc"
-            },
-            {
-              "id": "pl-layth-layan-nasheeds",
-              "title": "Layth & Layan — Islamic Kids Songs & Nasheeds",
-              "speaker": "Layth & Layan",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nasheed",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL8qk49X6ScJ9wwwQ4uGNNNr8IbZ0MtzQo"
-            },
-            {
-              "id": "pl-islamic-educational-fun",
-              "title": "Islamic Educational & Fun Videos (No Music)",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "educational",
-                "fun",
-                "no-music",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
-            },
-            {
-              "id": "pl-muslim-kids-international",
-              "title": "Muslim Kids Videos (International) — 700+ Videos",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "international",
-                "compilation",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpoScIE-A7w0cqnRG9X2rnxYGhxzWrMbr"
-            },
-            {
-              "id": "pl-faith-fun-dua",
-              "title": "Faith & Fun — Islamic Kids Dua Series",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "dua",
-                "faith",
-                "fun",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLg_dF1rjPDVKMyuQcGHlO0kGf3s65ayLK"
-            },
-            {
-              "id": "pl-islamic-cartoon-kids",
-              "title": "Islamic Cartoon — Kids Stories & Songs",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "cartoon",
-                "stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLZi6bQogreEQ"
-            },
-            {
-              "id": "pl-best-islamic-songs-kids",
-              "title": "Best Islamic Songs for Kids — Muslim Children Nasheeds",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "best",
-                "nasheed",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLH_D6j2625wUwtoeyYLUZ0x7hE4ak_-zx"
             },
             {
               "id": "D6UlvqD_Fw4",
@@ -22145,6 +22928,524 @@
               ],
               "channelHandle": null,
               "playlistSource": "PLH_D6j2625wUwtoeyYLUZ0x7hE4ak_-zx"
+            },
+            {
+              "id": "VgVKOBSDOlg",
+              "title": "Description",
+              "speaker": "Raising 4Caliphs",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLm-MBPSCiNRKd1yOknYbO5Jw2FFyH-CY7"
+            },
+            {
+              "id": "sPObnEvO0Mw",
+              "title": "Babybus Cartoon ARABIC NO MUSIC كرتون بيبي باص بالعربية بدون موسيقى",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "v-I0W-jHC6E",
+              "title": "[NO MUSIC] 3 Hours Color Crew Compilation   Educational Videos for Toddlers",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "aDyt_kvOTB0",
+              "title": "[NO MUSIC] Episode 2   The MiniMuslims Islamic Cartoon Series for Kids ☀️",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "OPYnuYpDIuc",
+              "title": "Prophet Dawud(AS) against Giant King Jalut | Islamic Animated Story",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "D22G5RFef1M",
+              "title": "[NO MUSIC] Maulaya Salli Wa Sallim   Mohamed Youssef x Omar & Hana",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "S_-0w7GoT14",
+              "title": "The Giant VS Small Boy",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "mJ98EcL1XfU",
+              "title": "Exploring the Adorable World of Baby Animals | BBC Earth Kids",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "bjRpNYq8Ts0",
+              "title": "The Wheels On The Bus - Kids Song (Nasheed) - Vocals Only - Muslim Version - @supermuslimkids",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "qGk6on_CDkg",
+              "title": "The Story of Khalid Ibn Walid | The Sword of Allah",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "2_eCG8jj2-I",
+              "title": "Octonauts - The Oarfish - [No Music]",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "BghyavxhlLA",
+              "title": "Octonauts - The Combtooth Blenny - [No Music]",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "8YrA9fgHua8",
+              "title": "The Bear & the Bee🌲 | Islamic Stories for Kids",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "dBwi8QFfomg",
+              "title": "Surah At Takathur - Yusuf & The Quran",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "iWjcg32h26w",
+              "title": "The Bumble Nums - Make Streaming Stir Fry - [No Music]",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "fBlPyDW2KMg",
+              "title": "The Bumble Nums - Make Underwater Watermelon Salad - [No Music]",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "J_53VbktsIk",
+              "title": "[No Music] Helper cars & Emergency vehicles for kids",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "Cc14a56vgiY",
+              "title": "Ruqyah by Mishary Al Afaasy (Without Ads)",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "Oa-ITKBeu7c",
+              "title": "The 5 PILLARS of ISLAM for Kids! | FULL Detailed VIDEO | Islamic Kids National",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "Cx29hRLV2i8",
+              "title": "caillou in english no music 1",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "Zd5JOANfUjw",
+              "title": "Last Ten (10) Surahs of the Holy Quran | Mishary bin Rashid Alafasy | Pacific Media | Quran English",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "96IXslkXStg",
+              "title": "2 of Islam's Greatest Heroes: Khalid Bin Waleed (رضي الله عنه) and Salahudin Ayubi",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "9wUsa25NL_g",
+              "title": "The Woman Who Hated Muhammad ﷺ | Islamic Stories | Prophet Stories | Islamic Cartoon",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "ZzRuQpFjgb8",
+              "title": "Sleepytime | Voice only  | Zain Bhikha",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "nZ4zRaMtWLw",
+              "title": "Shapes - Little Adam",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "D6L4gdsI1Yg",
+              "title": "Description",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLpoScIE-A7w0cqnRG9X2rnxYGhxzWrMbr"
+            },
+            {
+              "id": "jn1itDA-XxQ",
+              "title": "Description",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLg_dF1rjPDVKMyuQcGHlO0kGf3s65ayLK"
+            }
+          ],
+          "playlists": [
+            {
+              "id": "pl-deen-kids-tv",
+              "title": "Best of Deen Kids TV — Islamic Songs for Kids",
+              "speaker": "Deen Kids TV",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nasheed",
+                "songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLkUCxNOjsOuJbC3VnC9yoYUuLZxu-K_rA"
+            },
+            {
+              "id": "pl-muslim-kids-songs",
+              "title": "Muslim Kids Songs Compilation — Raising 4Caliphs",
+              "speaker": "Raising 4Caliphs",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "songs",
+                "compilation",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLm-MBPSCiNRKd1yOknYbO5Jw2FFyH-CY7"
+            },
+            {
+              "id": "pl-islamic-kids-songs-compilation",
+              "title": "Islamic Kids Songs Compilation — Nasheed for Children",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "songs",
+                "compilation",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLXpnf2lW6_kaVcsbGgxiVQkET-YS2W3Zc"
+            },
+            {
+              "id": "pl-layth-layan-nasheeds",
+              "title": "Layth & Layan — Islamic Kids Songs & Nasheeds",
+              "speaker": "Layth & Layan",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nasheed",
+                "songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL8qk49X6ScJ9wwwQ4uGNNNr8IbZ0MtzQo"
+            },
+            {
+              "id": "pl-islamic-educational-fun",
+              "title": "Islamic Educational & Fun Videos (No Music)",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "educational",
+                "fun",
+                "no-music",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLH06vahUAnA3dnIq8XTYWTa6FUJdvUWiA"
+            },
+            {
+              "id": "pl-muslim-kids-international",
+              "title": "Muslim Kids Videos (International) — 700+ Videos",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "international",
+                "compilation",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLpoScIE-A7w0cqnRG9X2rnxYGhxzWrMbr"
+            },
+            {
+              "id": "pl-faith-fun-dua",
+              "title": "Faith & Fun — Islamic Kids Dua Series",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "dua",
+                "faith",
+                "fun",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLg_dF1rjPDVKMyuQcGHlO0kGf3s65ayLK"
+            },
+            {
+              "id": "pl-best-islamic-songs-kids",
+              "title": "Best Islamic Songs for Kids — Muslim Children Nasheeds",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "best",
+                "nasheed",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLH_D6j2625wUwtoeyYLUZ0x7hE4ak_-zx"
             }
           ]
         },
@@ -22155,125 +23456,6 @@
           "description": "Animated stories of the Prophets from the Quran — Prophet Ibrahim, Yusuf, Musa, and more brought to life through IQRA Cartoon, KAZ School, and MiniMuslims",
           "descriptionAr": "قصص متحركة للأنبياء من القرآن — النبي إبراهيم ويوسف وموسى وغيرهم من خلال IQRA Cartoon وKAZ School وMiniMuslims",
           "videos": [
-            {
-              "id": "pl-kids-quran-stories",
-              "title": "Quran Stories For Children — Full Playlist (IQRA Cartoon)",
-              "speaker": "IQRA Cartoon",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "prophets",
-                "quran-stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysBr-vhSyYZL8DcXTmNgWkeO"
-            },
-            {
-              "id": "pl-kids-prophet-muhammad",
-              "title": "Prophet Muhammad (s) Entire Life Story — Full Playlist (55 Episodes)",
-              "speaker": "IQRA Cartoon",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "prophet-muhammad",
-                "seerah",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysCGsvQj4BwHa81qYE_XMnWp"
-            },
-            {
-              "id": "pl-kids-islamic-history",
-              "title": "Islamic History & Prophet Stories — Full Playlist (IQRA Cartoon)",
-              "speaker": "IQRA Cartoon",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "islamic-history",
-                "prophets",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysB6IFsajaczscqfqo27O3cr"
-            },
-            {
-              "id": "pl-kaz-prophet-stories",
-              "title": "Prophet Stories — KAZ School Full Playlist",
-              "speaker": "KAZ School",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "prophets",
-                "kaz-school",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBWH8cspc1cdw9h_csJL7Wym"
-            },
-            {
-              "id": "pl-kids-islamic-stories",
-              "title": "Islamic Stories — KAZ School Full Playlist (86 Videos)",
-              "speaker": "KAZ School",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "islamic-stories",
-                "kaz-school",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBUlad6auDyy35tsedLyb_N0"
-            },
-            {
-              "id": "pl-kids-prophet-stories-moral",
-              "title": "Prophet Stories — Kids Way to Islam",
-              "speaker": "Kids Way to Islam",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "prophets",
-                "moral-stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLoikBUSfOB1N4ggQx1hVm6UMtLgcJeHYV"
-            },
-            {
-              "id": "pl-kids-islamic-cartoon-stories",
-              "title": "Islamic Cartoons | Animated Stories of Islam — Full Playlist",
-              "speaker": "Songs & Stories for Muslim Children",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "islamic-cartoons",
-                "animated-stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLdrkhg4_MMPl_gO1JXlBthTpoYNeBXENQ"
-            },
             {
               "id": "lSqgUD-BVIo",
               "title": "Islamic Stories for Kids Compilation | MiniMuslims",
@@ -24979,74 +26161,6 @@
               "playlistSource": "PLZ2eYRn8LFBUlad6auDyy35tsedLyb_N0"
             },
             {
-              "id": "pl-iqra-prophet-stories",
-              "title": "IQRA Cartoon — Prophet Stories for Kids",
-              "speaker": "IQRA Cartoon",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "prophets",
-                "stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysBr-vhSyYZL8DcXTmNgWkeO"
-            },
-            {
-              "id": "pl-kids-way-prophet-stories",
-              "title": "Kids Way to Islam — Prophet Stories",
-              "speaker": "Kids Way to Islam",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "prophets",
-                "stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLoikBUSfOB1N4ggQx1hVm6UMtLgcJeHYV"
-            },
-            {
-              "id": "pl-islamic-stories-kids",
-              "title": "Islamic Stories for Kids — Animated Cartoon",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "stories",
-                "animated",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLdrkhg4_MMPl_gO1JXlBthTpoYNeBXENQ"
-            },
-            {
-              "id": "pl-kids-islamic-moral-stories",
-              "title": "Islamic Moral Stories — Kids Way to Islam",
-              "speaker": "Kids Way to Islam",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "moral",
-                "stories",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL9_7cmOisPnvn0Zs4XeyxdB0pYW4KxYuq"
-            },
-            {
               "id": "OGEMDa9NZDQ",
               "title": "Video OGEMDa9NZDQ",
               "speaker": "IQRA Cartoon",
@@ -25409,6 +26523,141 @@
               ],
               "channelHandle": null,
               "playlistSource": "PL9_7cmOisPnvn0Zs4XeyxdB0pYW4KxYuq"
+            },
+            {
+              "id": "fzOBRSvmSC8",
+              "title": "Description",
+              "speaker": "IQRA Cartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLs6YIr-PdysB6IFsajaczscqfqo27O3cr"
+            }
+          ],
+          "playlists": [
+            {
+              "id": "pl-kids-prophet-muhammad",
+              "title": "Prophet Muhammad (s) Entire Life Story — Full Playlist (55 Episodes)",
+              "speaker": "IQRA Cartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "prophet-muhammad",
+                "seerah",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysCGsvQj4BwHa81qYE_XMnWp"
+            },
+            {
+              "id": "pl-kids-islamic-history",
+              "title": "Islamic History & Prophet Stories — Full Playlist (IQRA Cartoon)",
+              "speaker": "IQRA Cartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "islamic-history",
+                "prophets",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLs6YIr-PdysB6IFsajaczscqfqo27O3cr"
+            },
+            {
+              "id": "pl-kaz-prophet-stories",
+              "title": "Prophet Stories — KAZ School Full Playlist",
+              "speaker": "KAZ School",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "prophets",
+                "kaz-school",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBWH8cspc1cdw9h_csJL7Wym"
+            },
+            {
+              "id": "pl-kids-islamic-stories",
+              "title": "Islamic Stories — KAZ School Full Playlist (86 Videos)",
+              "speaker": "KAZ School",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "islamic-stories",
+                "kaz-school",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBUlad6auDyy35tsedLyb_N0"
+            },
+            {
+              "id": "pl-kids-prophet-stories-moral",
+              "title": "Prophet Stories — Kids Way to Islam",
+              "speaker": "Kids Way to Islam",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "prophets",
+                "moral-stories",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLoikBUSfOB1N4ggQx1hVm6UMtLgcJeHYV"
+            },
+            {
+              "id": "pl-kids-islamic-cartoon-stories",
+              "title": "Islamic Cartoons | Animated Stories of Islam — Full Playlist",
+              "speaker": "Songs & Stories for Muslim Children",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "islamic-cartoons",
+                "animated-stories",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLdrkhg4_MMPl_gO1JXlBthTpoYNeBXENQ"
+            },
+            {
+              "id": "pl-kids-islamic-moral-stories",
+              "title": "Islamic Moral Stories — Kids Way to Islam",
+              "speaker": "Kids Way to Islam",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "moral",
+                "stories",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL9_7cmOisPnvn0Zs4XeyxdB0pYW4KxYuq"
             }
           ]
         },
@@ -25419,143 +26668,6 @@
           "description": "Step-by-step guides to learning Salah, Wudu, and daily duas through animated cartoons and songs in multiple languages",
           "descriptionAr": "أدلة خطوة بخطوة لتعلم الصلاة والوضوء والأدعية اليومية من خلال الرسوم المتحركة والأغاني بلغات متعددة",
           "videos": [
-            {
-              "id": "pl-kids-dua-songs",
-              "title": "Kids Dua Song — Full Playlist (Muslim Reminder Kids)",
-              "speaker": "Muslim Reminder Kids",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "dua",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW3sLdqyGe7ncUjd34I6iMXY"
-            },
-            {
-              "id": "pl-kids-nursery-rhymes",
-              "title": "Muslim Nursery Rhyme Songs — Full Playlist",
-              "speaker": "Muslim Reminder Kids",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nursery-rhymes",
-                "songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW0A6arg5CwmTNSSENO6QpMU"
-            },
-            {
-              "id": "pl-islamic-nursery-rhymes",
-              "title": "Islamic Nursery Rhymes for Kids — Full Playlist",
-              "speaker": "Muslim Reminder Kids",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nursery-rhymes",
-                "islamic",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW2LqSb3k-VwnGDKAxsfOJaT"
-            },
-            {
-              "id": "pl-mini-believers-rhymes",
-              "title": "Mini Believers Rhymes — Full Playlist",
-              "speaker": "Muslim Kids Cartoon Mini Believers",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "mini-believers",
-                "rhymes",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLgaMqa2ua2dk-giADOrlV-jxCN8QIghkb"
-            },
-            {
-              "id": "pl-kids-3d-islamic-cartoons",
-              "title": "Islamic Cartoons with 3D Animation for Kids — Full Playlist",
-              "speaker": "Various Islamic Channels",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "3d-animation",
-                "islamic-cartoons",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
-            },
-            {
-              "id": "pl-kids-abc-nasheeds",
-              "title": "Nasheeds for Kids: ABC, Phonics & Dua Songs — Full Playlist",
-              "speaker": "Muslim Reminder Kids",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "abc",
-                "phonics",
-                "nasheeds",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLuK6G7nC6tZfm-g5dPiF48RvOerQr0lMn"
-            },
-            {
-              "id": "pl-kids-islamic-songs-international",
-              "title": "Muslim Kids Videos (International) — Full Playlist",
-              "speaker": "Various Islamic Channels",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "international",
-                "muslim-kids",
-                "videos",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpoScIE-A7w0cqnRG9X2rnxYGhxzWrMbr"
-            },
-            {
-              "id": "pl-kids-songs-compilation",
-              "title": "Compilation 59 Mins | Islamic Songs for Kids — Full Playlist",
-              "speaker": "Omar & Hana / Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "compilation",
-                "islamic-songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLuK6G7nC6tZfnvVmLVSg57MqutNjIF-sQ"
-            },
             {
               "id": "uWi0Zqq8cto",
               "title": "Description",
@@ -28833,57 +29945,6 @@
               "playlistSource": "PLpoScIE-A7w0cqnRG9X2rnxYGhxzWrMbr"
             },
             {
-              "id": "pl-kids-salah-learning",
-              "title": "Kids Salah Learning — How to Pray",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "salah",
-                "prayer",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW3sLdqyGe7ncUjd34I6iMXY"
-            },
-            {
-              "id": "pl-kids-wudu-learning",
-              "title": "Kids Wudu Learning — How to Make Ablution",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "wudu",
-                "ablution",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW0A6arg5CwmTNSSENO6QpMU"
-            },
-            {
-              "id": "pl-kids-islamic-nursery-rhymes",
-              "title": "Islamic Nursery Rhymes for Kids",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "nursery",
-                "rhymes",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW2LqSb3k-VwnGDKAxsfOJaT"
-            },
-            {
               "id": "8lJCuRWvpqs",
               "title": "General",
               "speaker": "Muslim Kids Cartoon Mini Believers",
@@ -29064,6 +30125,254 @@
               ],
               "channelHandle": null,
               "playlistSource": "PLuK6G7nC6tZfm-g5dPiF48RvOerQr0lMn"
+            },
+            {
+              "id": "qDwddIO5GQs",
+              "title": "Muhammad Nabina (محمد نبينا) | 3D Animated Islamic cartoon | Beautiful Arabic Nasheed for Kids",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "TB_Y5Nsqvfs",
+              "title": "Rahmatun Lil’Alameen رحمةٌ للعالمين | Maher Zain | Beautiful Nasheed Naat | Mind Relaxing Naat",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "R_qUanlbOmQ",
+              "title": "5 Pillars of Islam | Islamic poem | Urdu Poems | Nursery Rhymes | Kids 3d Animation 2024",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "B1mOYGyZ0WE",
+              "title": "Tasbih | Ayisha Abdul Basith | Subhanallah Walhamdulillah Wala Ilaha Illallah Wallahu Akbar | Zikr",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "Lz9mvm14wZw",
+              "title": "Eid Song for Kids | Eid Mubarak Nasheed | Islamic Songs for Children | Kids Cartoon | Muslim Songs",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "5bbrtIeRVhg",
+              "title": "Hasbi Rabbi Jallallah🌙 La Ilaha Illallah Song | Islamic Lullaby for Kids | حسبي ربي جل الله",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "rcI3SOih4UE",
+              "title": "Ya Rab e Mustafa | New Hajj Kalam for kids | Islamic Kids Naat | Islamic Kids Animation",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "wsxvLQ20zLI",
+              "title": "Surah Al-Kafiroon سورة الكافرون ☀️| Easy Quran Learning for Kids | Quran for Kids | The Four Quls",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "GZgHAAnJI0Q",
+              "title": "Keyboard shortcuts",
+              "speaker": "Omar & Hana / Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fetched",
+                "playlist-video"
+              ],
+              "channelHandle": null,
+              "playlistId": "PLuK6G7nC6tZfnvVmLVSg57MqutNjIF-sQ"
+            }
+          ],
+          "playlists": [
+            {
+              "id": "pl-kids-dua-songs",
+              "title": "Kids Dua Song — Full Playlist (Muslim Reminder Kids)",
+              "speaker": "Muslim Reminder Kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "dua",
+                "songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW3sLdqyGe7ncUjd34I6iMXY"
+            },
+            {
+              "id": "pl-kids-nursery-rhymes",
+              "title": "Muslim Nursery Rhyme Songs — Full Playlist",
+              "speaker": "Muslim Reminder Kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nursery-rhymes",
+                "songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW0A6arg5CwmTNSSENO6QpMU"
+            },
+            {
+              "id": "pl-islamic-nursery-rhymes",
+              "title": "Islamic Nursery Rhymes for Kids — Full Playlist",
+              "speaker": "Muslim Reminder Kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nursery-rhymes",
+                "islamic",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLNsYwGpk8GW2LqSb3k-VwnGDKAxsfOJaT"
+            },
+            {
+              "id": "pl-mini-believers-rhymes",
+              "title": "Mini Believers Rhymes — Full Playlist",
+              "speaker": "Muslim Kids Cartoon Mini Believers",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "mini-believers",
+                "rhymes",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLgaMqa2ua2dk-giADOrlV-jxCN8QIghkb"
+            },
+            {
+              "id": "pl-kids-3d-islamic-cartoons",
+              "title": "Islamic Cartoons with 3D Animation for Kids — Full Playlist",
+              "speaker": "Various Islamic Channels",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "3d-animation",
+                "islamic-cartoons",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLLRiCtBbDZwNG-MyMY-N8S_UF2OFOLnv-"
+            },
+            {
+              "id": "pl-kids-abc-nasheeds",
+              "title": "Nasheeds for Kids: ABC, Phonics & Dua Songs — Full Playlist",
+              "speaker": "Muslim Reminder Kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "abc",
+                "phonics",
+                "nasheeds",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLuK6G7nC6tZfm-g5dPiF48RvOerQr0lMn"
+            },
+            {
+              "id": "pl-kids-songs-compilation",
+              "title": "Compilation 59 Mins | Islamic Songs for Kids — Full Playlist",
+              "speaker": "Omar & Hana / Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "compilation",
+                "islamic-songs",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLuK6G7nC6tZfnvVmLVSg57MqutNjIF-sQ"
             }
           ]
         },
@@ -29074,41 +30383,6 @@
           "description": "Celebrate Ramadan and Eid with special songs, stories, and reminders for kids — fasting lessons, Eid nasheeds, and holiday compilations",
           "descriptionAr": "احتفال رمضان والأعياد بأغاني وقصص وتذكيرات خاصة للأطفال — دروس الصيام وأناشيد العيد و compilations العطلات",
           "videos": [
-            {
-              "id": "pl-kids-ramadan-compilation",
-              "title": "Omar & Hana Islamic Songs Compilation — Ramadan & Eid Specials",
-              "speaker": "Omar & Hana",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "omar-hana",
-                "ramadan",
-                "eid",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbVVjJNWBoJDcnDP-YCA0yohXEzFYHgP"
-            },
-            {
-              "id": "pl-kids-ai-animated-songs",
-              "title": "AI Animated Muslim Songs for Kids — Full Playlist",
-              "speaker": "Little Muslims TV",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "ai-animated",
-                "muslim-songs",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLJnHpHDB2YGVJEc4gjNoRMaZlWOBCJS7A"
-            },
             {
               "id": "o-Sp3d2sn3I",
               "title": "Description",
@@ -29500,17 +30774,20 @@
               ],
               "channelHandle": null,
               "playlistSource": "PLJnHpHDB2YGVJEc4gjNoRMaZlWOBCJS7A"
-            },
+            }
+          ],
+          "playlists": [
             {
-              "id": "pl-kids-ramadan-songs",
-              "title": "Kids Ramadan Songs — Islamic Songs for Ramadan",
-              "speaker": "Various",
+              "id": "pl-kids-ramadan-compilation",
+              "title": "Omar & Hana Islamic Songs Compilation — Ramadan & Eid Specials",
+              "speaker": "Omar & Hana",
               "difficulty": 1,
               "language": "en",
               "duration": 0,
               "tags": [
+                "omar-hana",
                 "ramadan",
-                "songs",
+                "eid",
                 "kids",
                 "playlist"
               ],
@@ -29519,21 +30796,21 @@
               "playlistUrl": "https://www.youtube.com/playlist?list=PLpbVVjJNWBoJDcnDP-YCA0yohXEzFYHgP"
             },
             {
-              "id": "pl-kids-eid-celebrations",
-              "title": "Kids Eid Celebrations — Islamic Eid Songs & Stories",
-              "speaker": "Various",
+              "id": "pl-kids-ai-animated-songs",
+              "title": "AI Animated Muslim Songs for Kids — Full Playlist",
+              "speaker": "Little Muslims TV",
               "difficulty": 1,
               "language": "en",
               "duration": 0,
               "tags": [
-                "eid",
-                "celebrations",
+                "ai-animated",
+                "muslim-songs",
                 "kids",
                 "playlist"
               ],
               "channelHandle": null,
               "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLpbDUvx-RHn89VK4f0IKkZE7HppqoZyzV"
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLJnHpHDB2YGVJEc4gjNoRMaZlWOBCJS7A"
             }
           ]
         },
@@ -29544,59 +30821,6 @@
           "description": "Learn about Islamic family values — kindness to parents, respect for elders, love for siblings, and building strong family bonds through moral stories and cartoons",
           "descriptionAr": "تعلم القيم الأسرية الإسلامية — البر بالوالدين واحترام الكبار وحب الإخوة وبناء عائلة قوية من خلال القصص الخلقية والرسوم المتحركة",
           "videos": [
-            {
-              "id": "pl-kids-family-islam",
-              "title": "Family In Islam — KAZ School Full Playlist",
-              "speaker": "KAZ School",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "family",
-                "parents",
-                "elders",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBWDqRfEauXrwYVOx5eAMPSC"
-            },
-            {
-              "id": "pl-kids-moral-stories",
-              "title": "Islamic Moral Stories — Kids Way to Islam Full Playlist",
-              "speaker": "Kids Way to Islam",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "moral-stories",
-                "kids",
-                "islamic",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PL9_7cmOisPnvn0Zs4XeyxdB0pYW4KxYuq"
-            },
-            {
-              "id": "pl-little-ammar",
-              "title": "Durioo Little Ammar — Islamic Cartoon for Kids (Full Playlist)",
-              "speaker": "Durioo+ (Makers of Omar & Hana)",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "little-ammar",
-                "durioo",
-                "adab",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLKpMIEEBvndW_Vk4Bu4soW9IsdwCCcd8C"
-            },
             {
               "id": "SrMSsz9Sq_w",
               "title": "Be Kind To Your Parents | Family In Islam | Kids Islamic Stories | Animated Video | KAZSchool | 2023",
@@ -30438,40 +31662,6 @@
               "playlistSource": "PLKpMIEEBvndW_Vk4Bu4soW9IsdwCCcd8C"
             },
             {
-              "id": "pl-kids-family-values",
-              "title": "Islamic Family Values — Kids Learn About Family",
-              "speaker": "Various",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "family",
-                "values",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBWDqRfEauXrwYVOx5eAMPSC"
-            },
-            {
-              "id": "pl-kids-little-ammar",
-              "title": "Durioo Little Ammar — Islamic Cartoon for Kids",
-              "speaker": "Durioo+",
-              "difficulty": 1,
-              "language": "en",
-              "duration": 0,
-              "tags": [
-                "little-ammar",
-                "cartoon",
-                "kids",
-                "playlist"
-              ],
-              "channelHandle": null,
-              "isPlaylistRef": true,
-              "playlistUrl": "https://www.youtube.com/playlist?list=PLKpMIEEBvndW_Vk4Bu4soW9IsdwCCcd8C"
-            },
-            {
               "id": "WFhuHuC2LK8",
               "title": "Video WFhuHuC2LK8",
               "speaker": "Durioo+ (Makers of Omar & Hana)",
@@ -30484,6 +31674,44 @@
               ],
               "channelHandle": null,
               "playlistSource": "PLKpMIEEBvndW_Vk4Bu4soW9IsdwCCcd8C"
+            }
+          ],
+          "playlists": [
+            {
+              "id": "pl-kids-family-islam",
+              "title": "Family In Islam — KAZ School Full Playlist",
+              "speaker": "KAZ School",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "family",
+                "parents",
+                "elders",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLZ2eYRn8LFBWDqRfEauXrwYVOx5eAMPSC"
+            },
+            {
+              "id": "pl-little-ammar",
+              "title": "Durioo Little Ammar — Islamic Cartoon for Kids (Full Playlist)",
+              "speaker": "Durioo+ (Makers of Omar & Hana)",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "little-ammar",
+                "durioo",
+                "adab",
+                "kids",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLKpMIEEBvndW_Vk4Bu4soW9IsdwCCcd8C"
             }
           ]
         }
