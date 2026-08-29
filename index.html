@@ -82,31 +82,71 @@
         </a>
       </nav>
       <div class="yt-guide-divider"></div>
+      <div class="yt-guide-section yt-guide-search-section">
+        <input id="sidebarFilter" class="yt-guide-filter" type="text" placeholder="🔍 Filter sidebar…" aria-label="Filter sidebar">
+      </div>
+      <div class="yt-guide-divider"></div>
       <div class="yt-guide-section">
-        <div class="yt-guide-heading">
-          BASE TOPICS
-          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected">(multi-AND)</span>
-        </div>
-        <div id="sidebarBaseTopics"></div>
-        <div id="sidebarBaseActions" class="yt-guide-actions" style="display:none">
-          <button class="yt-guide-action" id="clearBaseTopics">Clear base topics</button>
+        <div class="yt-guide-heading">QUICK FILTERS</div>
+        <div class="yt-guide-quick">
+          <button class="yt-guide-quick-btn" id="qfContinue" data-active="false" title="Videos you've started watching">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span>Continue</span>
+            <span class="yt-guide-quick-count" id="qfContinueCount">0</span>
+          </button>
+          <button class="yt-guide-quick-btn" id="qfBookmarks" data-active="false" title="Only your bookmarks">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+            <span>Bookmarks</span>
+            <span class="yt-guide-quick-count" id="qfBookmarksCount">0</span>
+          </button>
+          <button class="yt-guide-quick-btn" id="qfNew" data-active="false" title="Recently added videos">
+            <span>✨</span>
+            <span>New</span>
+            <span class="yt-guide-quick-count" id="qfNewCount">0</span>
+          </button>
         </div>
       </div>
       <div class="yt-guide-divider"></div>
       <div class="yt-guide-section">
         <div class="yt-guide-heading">
+          BASE TOPICS
+          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected">(AND)</span>
+        </div>
+        <div id="sidebarBaseTopics"></div>
+      </div>
+      <div class="yt-guide-divider"></div>
+      <div class="yt-guide-section">
+        <div class="yt-guide-heading">
+          DIFFICULTY
+          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected">(AND)</span>
+        </div>
+        <div id="sidebarDifficulty"></div>
+      </div>
+      <div class="yt-guide-divider"></div>
+      <div class="yt-guide-section">
+        <div class="yt-guide-heading">
           SUBTOPICS
-          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected subtopics">(multi-AND)</span>
+          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected subtopics">(AND)</span>
           <button class="yt-guide-action yt-guide-action--inline" id="expandAllSubs" title="Expand all">▾</button>
           <button class="yt-guide-action yt-guide-action--inline" id="collapseAllSubs" title="Collapse all">▴</button>
         </div>
         <div id="sidebarTopics"></div>
-        <div id="sidebarSubActions" class="yt-guide-actions" style="display:none">
-          <button class="yt-guide-action" id="clearSubtopics">Clear subtopics</button>
+      </div>
+      <div class="yt-guide-divider"></div>
+      <div class="yt-guide-section">
+        <div class="yt-guide-heading">
+          SPEAKERS
+          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected">(AND)</span>
         </div>
+        <div id="sidebarSpeakers"></div>
+      </div>
+      <div class="yt-guide-divider"></div>
+      <div class="yt-guide-section yt-guide-footer">
+        <div class="yt-guide-result-count" id="sidebarResultCount" aria-live="polite">0 videos</div>
+        <button class="yt-guide-action yt-guide-clear-all" id="clearAllFilters" title="Clear all filters">✕ Clear all filters</button>
       </div>
     </div>
-    <div class="yt-guide-resizer" id="guideResizer" aria-label="Resize sidebar" role="separator" aria-orientation="vertical"></div>
+    <div class="yt-guide-resizer" id="guideResizer" aria-label="Resize sidebar" role="separator" aria-orientation="vertical" tabindex="0"></div>
   </aside>
 
   <!-- MAIN -->

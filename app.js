@@ -5,6 +5,10 @@ let db=null,allV=[],filtV=[],dispCnt=0;const PS=20;
 let actTid=null,actSid=null,actLang=null,curV=null;
 let actBts=new Set(); // multi-select base topics (AND filter)
 let actSids=new Set(); // multi-select subtopics (AND filter across all topics)
+let actDiffs=new Set(); // multi-select difficulties (1-4) (AND filter)
+let actSpeakers=new Set(); // multi-select speakers (AND filter)
+let actQf={continue:false,bookmarks:false,new:false}; // quick filter toggles
+let sidebarFilter=''; // text filter for sidebar items
 let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
 let progMap=JSON.parse(localStorage.getItem('ym_prog')||'{}'); // {vid: {pct:0-100, ts:number}}
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
@@ -12,6 +16,9 @@ const E={
   si:$('#searchInput'),sb:$('#searchBtn'),st:$('#sidebarToggle'),
   sbx:$('#sidebar'),sbt:$('#sidebarTopics'),
   sbb:$('#sidebarBaseTopics'),
+  sbd:$('#sidebarDifficulty'),
+  sbp:$('#sidebarSpeakers'),
+  sbf:$('#sidebarFilter'),
   cb:$('#chipsBar'),sc:$('#subtopicChips'),
   vg:$('#videoGrid'),nr:$('#noResults'),
   hv:$('#homeView'),bv:$('#bookmarksView'),bg:$('#bookmarksGrid'),nb:$('#noBookmarks'),bc:$('#bookmarkCount'),
@@ -69,42 +76,62 @@ function renderChips(){
 }
 
 function renderSide(){
-  // Base topics (multi-select, AND filter)
+  // ===== Base Topics =====
   const bts=db.baseTopics||{};
   if(E.sbb){
     E.sbb.innerHTML=Object.entries(bts).map(([id,bt])=>{
       const n=db.topics.filter(t=>(t.baseTopics||[]).includes(id))
         .reduce((a,t)=>a+t.subtopics.reduce((b,s)=>b+s.videos.length,0),0);
-      return `<div class="yt-guide-topic yt-guide-base" data-base-id="${id}" role="checkbox" aria-checked="false" tabindex="0">
+      return `<div class="yt-guide-topic yt-guide-base ${actBts.has(id)?'active':''}" data-base-id="${id}" role="checkbox" aria-checked="${actBts.has(id)}" tabindex="0">
         <span class="g-emoji">${bt.icon}</span>
         <span>${bt.name}</span>
         <span class="g-count">${n}</span>
       </div>`;
     }).join('');
     $$('.yt-guide-base').forEach(el=>el.addEventListener('click',()=>toggleBase(el.dataset.baseId)));
-    // Keyboard accessibility
     $$('.yt-guide-base').forEach(el=>el.addEventListener('keydown',e=>{
       if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleBase(el.dataset.baseId);}
     }));
   }
-  // Clear base topics
-  const clearBtn=document.getElementById('clearBaseTopics');
-  if(clearBtn)clearBtn.addEventListener('click',()=>{actBts.clear();updateBaseUI();applyF();});
 
-  // Subtopics — collapsible topic groups, multi-select subtopic checkboxes (AND)
+  // ===== Difficulty =====
+  if(E.sbd){
+    const diffs=[1,2,3,4];
+    E.sbd.innerHTML=diffs.map(d=>{
+      const on=actDiffs.has(d);
+      const info=D[d]||D[1];
+      const n=allV.filter(v=>(v.difficulty||1)===d).length;
+      return `<div class="yt-guide-topic yt-guide-diff ${on?'active':''}" data-diff="${d}" role="checkbox" aria-checked="${on}" tabindex="0" title="Difficulty: ${info.l}">
+        <span class="g-dot" style="background:${info.c}"></span>
+        <span>${info.l}</span>
+        <span class="g-count">${n}</span>
+      </div>`;
+    }).join('');
+    $$('.yt-guide-diff').forEach(el=>el.addEventListener('click',()=>toggleDiff(+el.dataset.diff,el)));
+    $$('.yt-guide-diff').forEach(el=>el.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleDiff(+el.dataset.diff,el);}
+    }));
+  }
+
+  // ===== Subtopics (collapsible topic groups) =====
+  const filter=sidebarFilter.toLowerCase();
   E.sbt.innerHTML=db.topics.map(t=>{
+    const subs=t.subtopics.filter(s=>!filter||s.name.toLowerCase().includes(filter)||(s.nameAr||'').toLowerCase().includes(filter));
+    if(filter&&subs.length===0)return '';
     const total=t.subtopics.reduce((a,s)=>a+s.videos.length,0);
+    const selectedInTopic=subs.filter(s=>actSids.has(s.id)).length;
     return `<div class="yt-guide-group" data-topic-id="${t.id}">
       <div class="yt-guide-group-head" data-topic-id="${t.id}" role="button" tabindex="0" aria-expanded="false">
         <span class="g-caret">▸</span>
         <span class="g-emoji">${t.icon}</span>
         <span class="g-label">${esc(t.name.replace(/^[IVX]+\.\s*/,''))}</span>
+        ${selectedInTopic?`<span class="g-badge">${selectedInTopic}</span>`:''}
         <span class="g-count">${total}</span>
       </div>
       <div class="yt-guide-group-body" data-topic-id="${t.id}" hidden>
-        ${t.subtopics.map(s=>{
+        ${subs.map(s=>{
           const on=actSids.has(s.id);
-          return `<div class="yt-guide-sub ${on?'active':''}" data-sub-id="${s.id}" data-topic-id="${t.id}" role="checkbox" tabindex="0" aria-checked="${on?'true':'false'}" title="${esc(s.name)} — ${s.videos.length} videos">
+          return `<div class="yt-guide-sub ${on?'active':''}" data-sub-id="${s.id}" data-topic-id="${t.id}" role="checkbox" tabindex="0" aria-checked="${on}" title="${esc(s.name)} — ${s.videos.length} videos">
             <span class="g-check">${on?'☑':'☐'}</span>
             <span class="g-sub-label">${esc(s.name.replace(/^THE\s+/i,'').replace(/^AL-/,'').replace(/\s*\(.*\)\s*/g,''))}</span>
             <span class="g-count">${s.videos.length}</span>
@@ -114,12 +141,10 @@ function renderSide(){
     </div>`;
   }).join('');
 
-  // Group head click: toggle expand
   $$('.yt-guide-group-head').forEach(h=>h.addEventListener('click',()=>toggleGroup(h.dataset.topicId)));
   $$('.yt-guide-group-head').forEach(h=>h.addEventListener('keydown',e=>{
     if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleGroup(h.dataset.topicId);}
   }));
-  // Subtopic click: multi-select toggle
   $$('.yt-guide-sub').forEach(el=>el.addEventListener('click',()=>toggleSub(el.dataset.subId,el)));
   $$('.yt-guide-sub').forEach(el=>el.addEventListener('keydown',e=>{
     if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleSub(el.dataset.subId,el);}
@@ -131,11 +156,47 @@ function renderSide(){
   if(exp)exp.onclick=()=>{$$('.yt-guide-group-body').forEach(b=>{b.hidden=false;const h=$$('.yt-guide-group-head').find(x=>x.dataset.topicId===b.dataset.topicId);if(h){h.setAttribute('aria-expanded','true');h.querySelector('.g-caret').textContent='▾';}});};
   if(col)col.onclick=()=>{$$('.yt-guide-group-body').forEach(b=>{b.hidden=true;const h=$$('.yt-guide-group-head').find(x=>x.dataset.topicId===b.dataset.topicId);if(h){h.setAttribute('aria-expanded','false');h.querySelector('.g-caret').textContent='▸';}});};
 
-  // Clear subtopics
-  const clearSubBtn=document.getElementById('clearSubtopics');
-  if(clearSubBtn)clearSubBtn.onclick=()=>{actSids.clear();renderSide();applyF();};
+  // ===== Speakers (top 40 by video count) =====
+  if(E.sbp){
+    const spCount={};
+    allV.forEach(v=>{const sp=v.speaker||'Unknown';spCount[sp]=(spCount[sp]||0)+1;});
+    const sorted=Object.entries(spCount).sort((a,b)=>b[1]-a[1]).slice(0,60);
+    const filtered=sorted.filter(([sp])=>!filter||sp.toLowerCase().includes(filter));
+    E.sbp.innerHTML=filtered.map(([sp,n])=>{
+      const on=actSpeakers.has(sp);
+      return `<div class="yt-guide-topic yt-guide-speaker ${on?'active':''}" data-speaker="${esc(sp)}" role="checkbox" aria-checked="${on}" tabindex="0" title="${esc(sp)} — ${n} videos">
+        <span class="g-check">${on?'☑':'☐'}</span>
+        <span class="g-speaker-name">${esc(sp)}</span>
+        <span class="g-count">${n}</span>
+      </div>`;
+    }).join('');
+    $$('.yt-guide-speaker').forEach(el=>el.addEventListener('click',()=>toggleSpeaker(el.dataset.speaker,el)));
+    $$('.yt-guide-speaker').forEach(el=>el.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleSpeaker(el.dataset.speaker,el);}
+    }));
+  }
 
-  // Auto-expand any group that has a selected subtopic
+  // ===== Quick filter counts =====
+  const cwc=document.getElementById('qfContinueCount');
+  const bmc=document.getElementById('qfBookmarksCount');
+  const newc=document.getElementById('qfNewCount');
+  if(cwc)cwc.textContent=allV.filter(v=>(progMap[v.id]?.pct||0)>0).length;
+  if(bmc)bmc.textContent=bms.length;
+  if(newc)newc.textContent=allV.filter(v=>(v.tags||[]).includes('doc-import')).length;
+
+  // Quick filter button states
+  const qfc=document.getElementById('qfContinue');
+  const qfb=document.getElementById('qfBookmarks');
+  const qfn=document.getElementById('qfNew');
+  if(qfc)qfc.dataset.active=actQf.continue;
+  if(qfb)qfb.dataset.active=actQf.bookmarks;
+  if(qfn)qfn.dataset.active=actQf.new;
+
+  // Clear-all button
+  const clearAll=document.getElementById('clearAllFilters');
+  if(clearAll)clearAll.onclick=()=>clearAllFilters();
+
+  // Auto-expand groups with selected subtopics
   actSids.forEach(sid=>{
     const t=db.topics.find(tt=>tt.subtopics.some(s=>s.id===sid));
     if(t){
@@ -153,6 +214,40 @@ function toggleGroup(tid){
   body.hidden=open;
   head.setAttribute('aria-expanded',open?'false':'true');
   head.querySelector('.g-caret').textContent=open?'▸':'▾';
+}
+
+function toggleDiff(d,el){
+  if(actDiffs.has(d))actDiffs.delete(d);else actDiffs.add(d);
+  if(el){
+    const on=actDiffs.has(d);
+    el.classList.toggle('active',on);
+    el.setAttribute('aria-checked',on);
+  }else renderSide();
+  applyF();
+}
+
+function toggleSpeaker(sp,el){
+  if(actSpeakers.has(sp))actSpeakers.delete(sp);else actSpeakers.add(sp);
+  if(el){
+    const on=actSpeakers.has(sp);
+    el.classList.toggle('active',on);
+    el.setAttribute('aria-checked',on);
+    const c=el.querySelector('.g-check');
+    if(c)c.textContent=on?'☑':'☐';
+  }else renderSide();
+  applyF();
+}
+
+function clearAllFilters(){
+  actBts.clear();
+  actSids.clear();
+  actDiffs.clear();
+  actSpeakers.clear();
+  actQf={continue:false,bookmarks:false,new:false};
+  sidebarFilter='';
+  if(E.sbf)E.sbf.value='';
+  renderSide();
+  applyF();
 }
 
 function toggleSub(sid,el){
@@ -217,24 +312,31 @@ function applyF(){
   const q=E.si.value.toLowerCase().trim();
   // Multi-term AND: split on whitespace, each term must appear in haystack
   const terms=q?q.split(/\s+/).filter(Boolean):[];
-  // AND filter: video's baseTopics must contain every selected base topic
   const btsArr=Array.from(actBts);
-  // AND filter: video's subtopicId must be in the selected subtopic set (or none selected)
   const sidsArr=Array.from(actSids);
+  const diffsArr=Array.from(actDiffs);
+  const spArr=Array.from(actSpeakers);
   filtV=allV.filter(v=>{
     if(actTid&&v.topicId!==actTid)return false;
     if(actLang&&v.language!==actLang)return false;
     if(btsArr.length){for(const bt of btsArr){if(!v.baseTopics.includes(bt))return false;}}
     if(sidsArr.length){if(!sidsArr.includes(v.subtopicId))return false;}
+    if(diffsArr.length){if(!diffsArr.includes(v.difficulty||1))return false;}
+    if(spArr.length){if(!spArr.includes(v.speaker||''))return false;}
+    if(actQf.continue&&!(progMap[v.id]?.pct>0))return false;
+    if(actQf.bookmarks&&!bms.some(b=>b.id===v.id&&b.topicId===v.topicId))return false;
+    if(actQf.new&&!(v.tags||[]).includes('doc-import'))return false;
     if(terms.length){
       const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();
       for(const t of terms){if(!s.includes(t))return false;}
     }
     return true;
   });
-  // Update live result count for screen readers
+  // Update live result count for screen readers + sidebar
   const live=document.getElementById('yt-search-live');
   if(live)live.textContent=filtV.length+' videos';
+  const rcount=document.getElementById('sidebarResultCount');
+  if(rcount)rcount.textContent=filtV.length+(filtV.length===1?' video':' videos');
   renderGrid(true);
 }
 
@@ -458,6 +560,18 @@ function bindEv(){
   E.tt.addEventListener('click',toggleTheme);
   E.rb.addEventListener('click',window.randomVideo);
   E.bkb.addEventListener('click',()=>{if(E.bv.style.display==='none'||!E.bv.style.display)window.showBookmarks();else window.showHome();});
+
+  // Sidebar text filter
+  if(E.sbf)E.sbf.addEventListener('input',()=>{sidebarFilter=E.sbf.value;renderSide();});
+
+  // Quick filters
+  const qfContinue=document.getElementById('qfContinue');
+  const qfBookmarks=document.getElementById('qfBookmarks');
+  const qfNew=document.getElementById('qfNew');
+  if(qfContinue)qfContinue.addEventListener('click',()=>{actQf.continue=!actQf.continue;renderSide();applyF();});
+  if(qfBookmarks)qfBookmarks.addEventListener('click',()=>{actQf.bookmarks=!actQf.bookmarks;renderSide();applyF();});
+  if(qfNew)qfNew.addEventListener('click',()=>{actQf.new=!actQf.new;renderSide();applyF();});
+
   document.addEventListener('keydown',e=>{
     if(e.key==='Escape')closeModal();
     if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&document.activeElement!==E.si){e.preventDefault();E.si.focus();}
