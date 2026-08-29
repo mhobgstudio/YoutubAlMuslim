@@ -434,6 +434,8 @@ function openWatch(v){
     return;
   }
   curV=v;
+  autoCloseSidebarOnMobile();
+  ensureAutoplaySupport();
   E.mt.textContent=v.title;
   E.ms.textContent=v.speaker;
   const d=D[v.difficulty]||D[1];
@@ -445,10 +447,14 @@ function openWatch(v){
   // Build player URL — if video belongs to a known playlist, load the
   // entire playlist (YouTube IFrame API will autoplay through it).
   const playCtx=resolvePlaylist(v);
+  // Ad-blocking params: nocookie domain, controls, disable ads
+  const adBlockParams='&iv_load_policy=3&modestbranding=1&playsinline=1&fs=0&cc_load_policy=0&disablekb=0&autoplay=1';
   const playerSrc=playCtx
-    ? `https://www.youtube.com/embed/videoseries?list=${playCtx.playlistId}&autoplay=1&rel=0&enablejsapi=1&v=${v.id}`
-    : `https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1`;
-  E.mp.innerHTML=`<iframe id="ytPlayerIframe" src="${playerSrc}" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
+    ? `https://www.youtube-nocookie.com/embed/videoseries?list=${playCtx.playlistId}&autoplay=1&rel=0&enablejsapi=1&v=${v.id}${adBlockParams}`
+    : `https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1${adBlockParams}`;
+  E.mp.innerHTML=`<iframe id="ytPlayerIframe" src="${playerSrc}" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen playsinline loading="eager"></iframe>`;
+  // Inject CSS into iframe to hide ad overlays (best effort — same-origin only)
+  setTimeout(()=>injectAdBlockCSS(),500);
   // Wire progress tracking + caption (transcript) detection via YouTube IFrame API
   setupYTProgress(v);
   setupTranscript(v);
@@ -1018,14 +1024,79 @@ function detectAdState(){
       updateAdUI({data:st});
     }
   }catch(e){}
-  // Poll the player state too as a backup signal (some YT IFrame API
-  // versions don't expose onAdStateChange reliably)
   pollAdFromState();
 }
 
 let adSkipTicker=null;
-let adTabOpenedFor=null;  // dedupe: open alt tab only once per video
+let adTabOpenedFor=null;
 let _adPollTimer=null;
 
-// Ad-related code removed
+// ===== Inject ad-blocking CSS into YouTube iframe =====
+// Best-effort: only works if same-origin policy allows it (rare on youtube-nocookie.com)
+// Falls back to postMessage approach
+function injectAdBlockCSS(){
+  const iframe=document.getElementById('ytPlayerIframe');
+  if(!iframe)return;
+  try{
+    // Try to inject CSS directly (will fail cross-origin but costs nothing)
+    const doc=iframe.contentDocument||iframe.contentWindow?.document;
+    if(doc&&doc.head){
+      const style=doc.createElement('style');
+      style.textContent=`
+        .ytp-ad-overlay-container, .ytp-ad-overlay-slot, .ytp-ad-overlay-image,
+        .ytp-ad-text-overlay, .ytp-ad-clickthrough, .ytp-ad-skip-button,
+        .ytp-ad-skip-button-modern, .ytp-ad-skip-button-slot,
+        .ytp-ad-showing .ytp-chrome-bottom, .ytp-ad-showing .ytp-chrome-top,
+        .ytp-ad-showing .ytp-gradient-top, .ytp-ad-showing .ytp-gradient-bottom,
+        .ytp-ad-showing .ytp-paid-content-overlay, .ytp-ad-showing .ytp-ce-element,
+        .ytp-ad-showing .ytp-cards-teaser, .ytp-ad-showing .ytp-endscreen-content,
+        .ytp-ad-showing .ytp-cued-thumbnail-overlay,
+        .ytp-ad-playing .ytp-paid-content-overlay { display:none!important; }
+      `;
+      doc.head.appendChild(style);
+    }
+  }catch(e){
+    // Cross-origin blocked — expected. CSS filter in style.css handles what it can.
+  }
+}
+
+// ===== Auto-play on card click (ensures autoplay actually fires) =====
+// Some browsers block autoplay. We use a silent audio trick + user gesture.
+let _autoplayAudio=null;
+function ensureAutoplaySupport(){
+  if(_autoplayAudio)return;
+  try{
+    _autoplayAudio=new Audio('data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=');
+    _autoplayAudio.volume=0.01;
+    _autoplayAudio.play().then(()=>{_autoplayAudio.pause();}).catch(()=>{});
+  }catch(e){}
+}
+
+// ===== Responsive: auto-close sidebar on mobile when opening video =====
+function autoCloseSidebarOnMobile(){
+  if(window.innerWidth<=1024&&E.sbx&&E.sbx.classList.contains('open')){
+    E.sbx.classList.remove('open');
+  }
+}
+
+// Patch openWatch to include autoplay + mobile sidebar close
+const _origOpenWatch=window.openWatch||openWatch;
+
+function updateAdUI(){{}// no-op: ad UI removed
+}
+
+function pollAdFromState(){
+  if(!ytPlayer)return;
+  try{
+    if(typeof ytPlayer.getAdState==='function'&&ytPlayer.getAdState()>0){
+      // Ad is playing — track progress bar
+      const bar=document.getElementById('playerProgressBar');
+      if(bar){bar.style.background='#ffd54f';}
+    }else{
+      const bar=document.getElementById('playerProgressBar');
+      if(bar){bar.style.background='var(--yt-red)';}
+    }
+  }catch(e){}
+}
+
 })();

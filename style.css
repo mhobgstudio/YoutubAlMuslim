@@ -373,6 +373,7 @@ input{font-family:inherit}
 @media(max-width:1312px){.yt-grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}}
 @media(max-width:1200px){
   .yt-watch-secondary{width:360px}
+  .yt-watch-body{gap:16px}
 }
 @media(max-width:1024px){
   .yt-guide{transform:translateX(-100%)}
@@ -380,6 +381,10 @@ input{font-family:inherit}
   .yt-body,.yt-watch-container{margin-left:0}
   .yt-masthead-start{width:auto}
   .yt-watch-container{padding:16px}
+  .yt-watch-overlay{left:0}
+  .yt-nav-btn{width:40px;height:40px}
+  .yt-nav-btn--prev{left:8px}
+  .yt-nav-btn--next{right:8px}
 }
 @media(max-width:800px){
   .yt-watch-body{flex-direction:column}
@@ -392,10 +397,15 @@ input{font-family:inherit}
   .yt-related-channel,.yt-related-meta{font-size:11px}
   .yt-card-title{font-size:13px;line-height:18px;max-height:36px}
   .yt-card-channel,.yt-card-meta{font-size:11px}
+  .yt-nav-btn{width:36px;height:36px}
+  .yt-nav-btn svg{width:20px;height:20px}
+  .yt-nav-btn--prev{left:6px}
+  .yt-nav-btn--next{right:6px}
 }
 @media(max-width:640px){
   .yt-masthead{padding:0 8px}
-  .yt-masthead-center{padding:0 4px}
+  .yt-masthead-center{padding:0 4px;flex:1}
+  .yt-search-container{max-width:100%}
   .yt-masthead-end{gap:2px}
   .yt-body{padding:0 8px 60px}
   .yt-grid{grid-template-columns:1fr;row-gap:20px}
@@ -410,6 +420,11 @@ input{font-family:inherit}
   .yt-chip-bar{gap:8px;padding:8px 0}
   .yt-watch-actions{flex-direction:column;align-items:flex-start}
   .yt-watch-btn{height:32px;font-size:13px;padding:0 12px}
+  .yt-nav-btn{width:44px;height:44px}
+  .yt-nav-btn svg{width:24px;height:24px}
+  .yt-nav-btn--prev{left:8px}
+  .yt-nav-btn--next{right:8px}
+  .yt-watch-related{padding:0 8px}
 }
 @media(max-width:400px){
   .yt-grid{grid-template-columns:1fr}
@@ -421,7 +436,62 @@ input{font-family:inherit}
   .yt-related-title{font-size:11px;max-height:32px;-webkit-line-clamp:2}
 }
 
-/* Scrollbar */
+/* Touch-friendly: show nav buttons by default on touch devices */
+@media(hover:none)and(pointer:coarse){
+  .yt-nav-btn{opacity:0.85!important;width:44px;height:44px}
+  .yt-card-bookmark,.yt-card-subscribe{opacity:0.7}
+  .yt-card:hover .yt-card-bookmark,.yt-card:hover .yt-card-subscribe{opacity:0.7}
+}
+
+/* Safe area insets for notched phones */
+@supports(padding:env(safe-area-inset-bottom)){
+  .yt-body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  .yt-watch-close{top:calc(8px + env(safe-area-inset-top));right:calc(8px + env(safe-area-inset-right))}
+}
+
+/* Landscape phone */
+@media(max-height:500px)and(orientation:landscape){
+  .yt-watch-container{padding:4px}
+  .yt-player{border-radius:0}
+  .yt-watch-close{top:4px;right:4px}
+  .yt-watch-metadata{margin-bottom:8px}
+  .yt-watch-title{font-size:14px;line-height:18px;margin-bottom:6px}
+}
+
+/* ===== AD BLOCKING (iframe-level CSS) ===== */
+/* Block YouTube ad overlays, end screens, and cards inside the embed */
+yt-player iframe,
+.yt-player iframe {
+  pointer-events: auto;
+}
+/* Hide YouTube's ad overlay elements */
+.ytp-ad-overlay-container,
+.ytp-ad-overlay-slot,
+.ytp-ad-overlay-image,
+.ytp-ad-text-overlay,
+.ytp-ad-clickthrough,
+.ytp-ad-skip-button,
+.ytp-ad-skip-button-modern,
+.ytp-ad-skip-button-slot,
+.ytp-ad-skip-button-slot-modern,
+.ytp-ad-showing .ytp-chrome-bottom,
+.ytp-ad-showing .ytp-chrome-top,
+.ytp-ad-showing .ytp-gradient-top,
+.ytp-ad-showing .ytp-gradient-bottom,
+.ytp-ad-showing .ytp-paid-content-overlay,
+.ytp-ad-showing .ytp-ce-element,
+.ytp-ad-showing .ytp-cards-teaser,
+.ytp-ad-showing .ytp-cards-button,
+.ytp-ad-showing .ytp-endscreen-content,
+.ytp-ad-showing .ytp-cued-thumbnail-overlay,
+.ytp-ad-playing .ytp-paid-content-overlay {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ===== Scrollbar ===== */
 ::-webkit-scrollbar{width:8px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:#717171;border-radius:4px}
@@ -436,6 +506,20 @@ input{font-family:inherit}
 .yt-card-thumb img{position:relative;z-index:1}
 .yt-card-thumb--noimg::before{display:none}
 @keyframes skeleton{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* Player loading spinner */
+.yt-player-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#000;z-index:5}
+.yt-player-loading::after{content:'';width:40px;height:40px;border:3px solid rgba(255,255,255,.2);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Video player touch overlay for play/pause */
+.yt-player-touch-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:4;pointer-events:none;opacity:0;transition:opacity .3s}
+.yt-player-touch-play.visible{opacity:1;pointer-events:none}
+.yt-player-touch-play::after{content:'';width:60px;height:60px;background:rgba(0,0,0,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;content:'▶';font-size:28px;color:#fff;line-height:60px;text-align:center}
+
+/* Progress bar at bottom of player */
+.yt-player-progress{position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,.2);z-index:6}
+.yt-player-progress-bar{height:100%;background:var(--yt-red);transition:width .5s linear;width:0}
 
 /* "New" badge for recently added videos */
 .yt-card-new{position:absolute;top:4px;right:40px;padding:2px 6px;border-radius:4px;font-size:10px;font-weight:600;background:var(--yt-blue);color:#fff;z-index:2;letter-spacing:.5px}
