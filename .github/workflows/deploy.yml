@@ -10,7 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Validate HTML
         run: test -f index.html && echo "✅ index.html" || exit 1
@@ -24,30 +24,27 @@ jobs:
       - name: Validate app.js syntax
         run: node --check app.js && echo "✅ app.js valid" || exit 1
 
-      - name: Check data file
-        run: test -f data/topics.json && echo "✅ topics.json" || echo "⚠️ topics.json missing"
+      - name: Validate data file
+        run: node -e "JSON.parse(require('fs').readFileSync('data/topics.json','utf8'))" && echo "✅ topics.json valid" || exit 1
 
   deploy:
     needs: validate
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .
+          force_orphan: true
+          exclude_assets: |
+            .claude/
+            .git/
+            tests/
+            node_modules/
