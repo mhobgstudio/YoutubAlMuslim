@@ -10896,6 +10896,357 @@
         "knowledge",
         "akhlaq"
       ]
+    },
+    {
+      "id": "islamic-children",
+      "name": "XVII. ISLAMIC CHILDREN: Cartoons, Nasheeds & Stories",
+      "nameAr": "أطفال المسلمين: كرتون وأناشيد وقصص",
+      "icon": "🧒",
+      "color": "#e91e63",
+      "baseTopics": [
+        "akhlaq",
+        "knowledge"
+      ],
+      "subtopics": [
+        {
+          "id": "kids-animated-cartoons",
+          "name": "ANIMATED CARTOONS: MiniMuslims, Nussa, Omar & Hana, ABD Kids",
+          "nameAr": "الرسوم المتحركة الإسلامية",
+          "videos": [
+            {
+              "id": "yW3bgiFmC1w",
+              "title": "Zaky & Friends Compilation | Islamic Cartoons For Kids",
+              "speaker": "One4kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "zaky",
+                "compilation",
+                "cartoons",
+                "quran-for-kids"
+              ],
+              "channelHandle": "@One4kids"
+            },
+            {
+              "id": "fJ1ALL0G5Uc",
+              "title": "CERITA NUSSA & RARRA: KOSTUM BULAN",
+              "speaker": "NussaOfficial",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nussa",
+                "rarra",
+                "kostum-bulan",
+                "indonesian",
+                "animation"
+              ],
+              "channelHandle": "@NussaOfficial"
+            },
+            {
+              "id": "tdhK3-yeRjk",
+              "title": "OFFICIAL TEASER TRAILER NUSSA & RARRA: MENJAGA WUDHU",
+              "speaker": "NussaOfficial",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nussa",
+                "rarra",
+                "wudhu",
+                "teaser",
+                "indonesian"
+              ],
+              "channelHandle": "@NussaOfficial"
+            },
+            {
+              "id": "Ko_p292X6fA",
+              "title": "Islamic Kids Cartoon | Quran Stories for Children | Moral Islamic Animation",
+              "speaker": "kids islamic TV",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran-stories",
+                "animation",
+                "moral-lessons",
+                "kids-islamic-tv"
+              ],
+              "channelHandle": "@KidsIslamicTV"
+            },
+            {
+              "id": "oqJAbNhJegQ",
+              "title": "Ahmad Cartoon Series Compilation 2025 | 3D Animation | ABD Kids",
+              "speaker": "ABD KIDS",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ahmad",
+                "3d-animation",
+                "compilation",
+                "abd-kids",
+                "manners"
+              ],
+              "channelHandle": "@ABDKids"
+            },
+            {
+              "id": "Z7r2ggaWofw",
+              "title": "Islamic Cartoon For Kids | Best Islamic Cartoon in 1 Hour | Yusuf aur Maryam",
+              "speaker": "Yusuf aur Maryam",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "yusuf",
+                "maryam",
+                "urdu",
+                "1-hour",
+                "compilation"
+              ],
+              "channelHandle": "@yusufaurmaryam"
+            },
+            {
+              "id": "5iT-tdtEpa4",
+              "title": "TV Islami terbaik untuk anak-anak. Berlangganan hari ini!",
+              "speaker": "Muslim Kids TV - Islamic Cartoon For Kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "muslim-kids-tv",
+                "subscription",
+                "promo",
+                "indonesian"
+              ],
+              "channelHandle": "@MuslimKidsTV"
+            },
+            {
+              "id": "jTqVSnXp5BU",
+              "title": "Noor Kids TV - English Live Stream",
+              "speaker": "Iqra Kids TV - English",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "noor-kids",
+                "live-stream",
+                "english",
+                "family"
+              ],
+              "channelHandle": "@IqraKidsTVEnglish"
+            }
+          ]
+        },
+        {
+          "id": "kids-quran-learning",
+          "name": "QURAN LEARNING FOR KIDS: Zaky & Friends Tafsir",
+          "nameAr": "تعلم القرآن للأطفال",
+          "videos": [
+            {
+              "id": "3wiB3i6rrEc",
+              "title": "Learn Surah Al-Humazah with Zaky! | Fun & Easy Quran for Kids",
+              "speaker": "One4kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "zaky",
+                "surah",
+                "al-humazah",
+                "quran",
+                "learning",
+                "kids"
+              ],
+              "channelHandle": "@One4kids"
+            },
+            {
+              "id": "D3SPvJ8QLhc",
+              "title": "Learn Suratul Asr with Zaky! | Quran for Kids",
+              "speaker": "One4kids",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "zaky",
+                "suratul-asr",
+                "quran",
+                "learning",
+                "kids"
+              ],
+              "channelHandle": "@One4kids"
+            }
+          ]
+        },
+        {
+          "id": "kids-core-values",
+          "name": "CORE VALUES: Courage, Honesty, Patience, Tawakkul, Kindness, Leadership, Gratitude, Forgiveness",
+          "nameAr": "القيم الأساسية للأطفال",
+          "videos": [
+            {
+              "id": "RPL7HNerqZY",
+              "title": "Courage | The MiniMuslims Islamic Cartoon Series for Kids | Episode 1",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "courage",
+                "values",
+                "minimuslims",
+                "episode-1"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "_iPUZS63krA",
+              "title": "Honesty | The MiniMuslims Islamic Cartoon Series for Kids | Episode 2",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "honesty",
+                "values",
+                "minimuslims",
+                "episode-2"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "E1PJnE45xtU",
+              "title": "Patience | The MiniMuslims Islamic Cartoon Series for Kids | Episode 3",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "patience",
+                "values",
+                "minimuslims",
+                "episode-3"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "uVwBbdJLZAs",
+              "title": "Tawakkul | The MiniMuslims Islamic Cartoon Series for Kids | Episode 4",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tawakkul",
+                "values",
+                "minimuslims",
+                "episode-4"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "MCGdv56bQBM",
+              "title": "Kindness | The MiniMuslims – Season 2 Episode 1 | Islamic Cartoon for Kids",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "kindness",
+                "values",
+                "minimuslims",
+                "season-2"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "dL1R0cQrge0",
+              "title": "Leadership | The MiniMuslims – Season 2 Episode 2 | Islamic Cartoon for Kids",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "leadership",
+                "values",
+                "minimuslims",
+                "season-2"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "5R5-jrxBtaA",
+              "title": "Gratitude | The MiniMuslims – Season 2 Episode 3 | Islamic Cartoon for Kids",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "gratitude",
+                "values",
+                "minimuslims",
+                "season-2"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            },
+            {
+              "id": "4rWoKBecS0Y",
+              "title": "Forgiveness | The MiniMuslims – Season 2 Episode 4 | Islamic Cartoon for Kids",
+              "speaker": "MiniMuslims",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "forgiveness",
+                "values",
+                "minimuslims",
+                "season-2"
+              ],
+              "channelHandle": "@theMiniMuslims"
+            }
+          ]
+        },
+        {
+          "id": "kids-nasheeds-rhymes",
+          "name": "NASHEEDS & RHYMES: A-Z of Islam, Madina Songs",
+          "nameAr": "أناشيد وأغاني إسلامية",
+          "videos": [
+            {
+              "id": "XRK_hAfGka4",
+              "title": "30 Minutes of Islamic Kids Rhymes – A to Z of Islam, Madina Songs & Fun Halal Cartoons",
+              "speaker": "Islamiqcartoon",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "rhymes",
+                "a-to-z",
+                "madina",
+                "songs",
+                "cartoon"
+              ],
+              "channelHandle": "@Islamiqcartoon"
+            },
+            {
+              "id": "RMY-SOrj6OI",
+              "title": "Omar and Hana - Mamah Semangat | New Song | Drawing and Coloring",
+              "speaker": "TensikloPedia",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "omar",
+                "hana",
+                "mamah-semangat",
+                "song",
+                "drawing",
+                "malay"
+              ],
+              "channelHandle": "@OmarHanaLaguKanakKanakIslam"
+            }
+          ]
+        }
+      ]
     }
   ],
   "baseTopics": {
