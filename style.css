@@ -254,6 +254,20 @@ input{font-family:inherit}
 .yt-nav-btn--next{right:12px}
 .yt-nav-btn--fullscreen{bottom:12px;top:auto;right:12px;transform:none}
 .yt-nav-btn--fullscreen:hover{transform:scale(1.1)}
+
+/* ===== FLOATING MINI-PLAYER ===== */
+.yt-mini-player{position:fixed;bottom:20px;right:20px;z-index:9999;width:360px;background:#0f0f0f;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.1);overflow:hidden;transition:opacity .3s,transform .3s;cursor:default}
+.yt-mini-player.hidden{opacity:0;transform:translateY(20px);pointer-events:none}
+.yt-mini-player-header{display:flex;align-items:center;justify-content:space-between;padding:6px 8px;background:#1a1a1a;cursor:grab;user-select:none}
+.yt-mini-player-header:active{cursor:grabbing}
+.yt-mini-player-title{flex:1;min-width:0;font-size:12px;color:#f1f1f1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 8px}
+.yt-mini-player-controls{display:flex;gap:2px;flex-shrink:0}
+.yt-mini-btn{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:transparent;color:#aaa;border:none;cursor:pointer;transition:background .15s,color .15s}
+.yt-mini-btn:hover{background:rgba(255,255,255,.1);color:#fff}
+.yt-mini-player-body{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.yt-mini-player-player{width:100%;height:100%}
+.yt-mini-player-player iframe{width:100%;height:100%;border:none}
+@media(max-width:480px){.yt-mini-player{width:calc(100vw - 24px);bottom:12px;right:12px;border-radius:8px}}
 .yt-nav-btn:disabled{opacity:.3;cursor:not-allowed}
 
 /* Masthead badge styles removed */

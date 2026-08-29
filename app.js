@@ -523,6 +523,9 @@ function openWatch(v){
   updateNavButtons();
   wireFullscreenBtn();
   updateFullscreenIcon();
+  // Wire mini-player
+  initMiniPlayer();
+  setTimeout(setupMiniPlayerScrollObserver, 500);
 }
 
 // ===== Playlist resolution =====
@@ -782,6 +785,9 @@ function closeModal(){
   if(_adPollTimer){clearInterval(_adPollTimer);_adPollTimer=null;}
   adTabOpenedFor=null;
   autoUnmuteIfNeeded();
+  // Hide mini-player
+  hideMiniPlayer();
+  if(miniScrollObserver){miniScrollObserver.disconnect();miniScrollObserver=null;}
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
   updateNavButtons();
 }
@@ -842,6 +848,147 @@ function wireFullscreenBtn() {
   if (!btn || btn._wired) return;
   btn._wired = true;
   btn.addEventListener('click', toggleFullscreen);
+}
+
+// ===== FLOATING MINI-PLAYER (PiP style) =====
+let miniPlayerActive = false;
+let miniPlayerVideo = null;
+let miniScrollObserver = null;
+
+function initMiniPlayer() {
+  const miniEl = document.getElementById('miniPlayer');
+  if (!miniEl || miniEl._wired) return;
+  miniEl._wired = true;
+
+  // Expand button — scroll back to main player
+  document.getElementById('miniPlayerExpand')?.addEventListener('click', () => {
+    if (!curV) return;
+    hideMiniPlayer();
+    E.vm.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    E.vm.scrollTop = 0;
+    wireFullscreenBtn();
+    updateFullscreenIcon();
+  });
+
+  // Close button — stop playing and hide
+  document.getElementById('miniPlayerClose')?.addEventListener('click', () => {
+    hideMiniPlayer();
+  });
+
+  // Drag functionality
+  setupMiniPlayerDrag(miniEl);
+}
+
+function showMiniPlayer(video) {
+  if (!video || video.isPlaylistRef || video.isChannelRef) return;
+  const miniEl = document.getElementById('miniPlayer');
+  const container = document.getElementById('miniPlayerContainer');
+  const titleEl = document.getElementById('miniPlayerTitle');
+  if (!miniEl || !container) return;
+
+  // Don't restart if same video
+  if (miniPlayerVideo && miniPlayerVideo.id === video.id && miniPlayerActive) return;
+  miniPlayerVideo = video;
+  miniPlayerActive = true;
+
+  titleEl.textContent = video.title;
+  const src = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&enablejsapi=1&iv_load_policy=3&modestbranding=1&playsinline=1`;
+  container.innerHTML = `<iframe src="${src}" allow="autoplay;encrypted-media" allowfullscreen playsinline></iframe>`;
+
+  miniEl.style.display = '';
+  miniEl.classList.remove('hidden');
+  // Animate in
+  requestAnimationFrame(() => {
+    miniEl.style.opacity = '1';
+    miniEl.style.transform = 'translateY(0)';
+  });
+}
+
+function hideMiniPlayer() {
+  const miniEl = document.getElementById('miniPlayer');
+  const container = document.getElementById('miniPlayerContainer');
+  if (!miniEl) return;
+  miniEl.classList.add('hidden');
+  miniPlayerActive = false;
+  miniPlayerVideo = null;
+  setTimeout(() => {
+    miniEl.style.display = 'none';
+    if (container) container.innerHTML = '';
+  }, 300);
+}
+
+function setupMiniPlayerDrag(el) {
+  const header = document.getElementById('miniPlayerDrag');
+  if (!header) return;
+  let dragging = false, startX, startY, startLeft, startTop;
+
+  const onMove = (e) => {
+    if (!dragging) return;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    const newLeft = startLeft - (startX - clientX);
+    const newTop = startTop - (startY - clientY);
+    // Constrain to viewport
+    const maxLeft = window.innerWidth - el.offsetWidth;
+    const maxTop = window.innerHeight - el.offsetHeight;
+    el.style.left = Math.max(0, Math.min(maxLeft, newLeft)) + 'px';
+    el.style.top = Math.max(0, Math.min(maxTop, newTop)) + 'px';
+    el.style.right = 'auto';
+    el.style.bottom = 'auto';
+  };
+
+  const onUp = () => {
+    dragging = false;
+    el.style.transition = '';
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('mouseup', onUp);
+    document.removeEventListener('touchmove', onMove);
+    document.removeEventListener('touchend', onUp);
+  };
+
+  const onDown = (e) => {
+    // Don't drag on buttons
+    if (e.target.closest('.yt-mini-btn')) return;
+    dragging = true;
+    el.style.transition = 'none';
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    const rect = el.getBoundingClientRect();
+    startX = clientX;
+    startY = clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+    document.addEventListener('touchmove', onMove, { passive: true });
+    document.addEventListener('touchend', onUp);
+    e.preventDefault();
+  };
+
+  header.addEventListener('mousedown', onDown);
+  header.addEventListener('touchstart', onDown, { passive: false });
+}
+
+// Observe when main player scrolls out of view
+function setupMiniPlayerScrollObserver() {
+  if (miniScrollObserver) miniScrollObserver.disconnect();
+  const player = document.querySelector('.yt-player');
+  if (!player) return;
+
+  miniScrollObserver = new IntersectionObserver((entries) => {
+    const entry = entries[0];
+    // Show mini-player when main player is NOT visible and a video is playing
+    if (!entry.isIntersecting && curV && E.vm.style.display === 'block') {
+      showMiniPlayer(curV);
+    }
+    // Hide mini-player when main player comes back into view
+    if (entry.isIntersecting && miniPlayerActive) {
+      hideMiniPlayer();
+    }
+  }, { threshold: 0.3 });
+
+  miniScrollObserver.observe(player);
 }
 
 function toggleBm(v){
