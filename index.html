@@ -83,18 +83,30 @@
       </nav>
       <div class="yt-guide-divider"></div>
       <div class="yt-guide-section">
-        <div class="yt-guide-heading">BASE TOPICS <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected">(multi)</span></div>
+        <div class="yt-guide-heading">
+          BASE TOPICS
+          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected">(multi-AND)</span>
+        </div>
         <div id="sidebarBaseTopics"></div>
         <div id="sidebarBaseActions" class="yt-guide-actions" style="display:none">
-          <button class="yt-guide-action" id="clearBaseTopics">Clear</button>
+          <button class="yt-guide-action" id="clearBaseTopics">Clear base topics</button>
         </div>
       </div>
       <div class="yt-guide-divider"></div>
       <div class="yt-guide-section">
-        <div class="yt-guide-heading">SUBSCRIPTIONS</div>
+        <div class="yt-guide-heading">
+          SUBTOPICS
+          <span class="yt-guide-hint" title="Click multiple — videos must match ALL selected subtopics">(multi-AND)</span>
+          <button class="yt-guide-action yt-guide-action--inline" id="expandAllSubs" title="Expand all">▾</button>
+          <button class="yt-guide-action yt-guide-action--inline" id="collapseAllSubs" title="Collapse all">▴</button>
+        </div>
         <div id="sidebarTopics"></div>
+        <div id="sidebarSubActions" class="yt-guide-actions" style="display:none">
+          <button class="yt-guide-action" id="clearSubtopics">Clear subtopics</button>
+        </div>
       </div>
     </div>
+    <div class="yt-guide-resizer" id="guideResizer" aria-label="Resize sidebar" role="separator" aria-orientation="vertical"></div>
   </aside>
 
   <!-- MAIN -->

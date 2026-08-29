@@ -4,6 +4,7 @@
 let db=null,allV=[],filtV=[],dispCnt=0;const PS=20;
 let actTid=null,actSid=null,actLang=null,curV=null;
 let actBts=new Set(); // multi-select base topics (AND filter)
+let actSids=new Set(); // multi-select subtopics (AND filter across all topics)
 let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
 let progMap=JSON.parse(localStorage.getItem('ym_prog')||'{}'); // {vid: {pct:0-100, ts:number}}
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
@@ -86,20 +87,91 @@ function renderSide(){
       if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleBase(el.dataset.baseId);}
     }));
   }
-  // Clear button
+  // Clear base topics
   const clearBtn=document.getElementById('clearBaseTopics');
   if(clearBtn)clearBtn.addEventListener('click',()=>{actBts.clear();updateBaseUI();applyF();});
 
-  // Subscriptions (single-select sub-topic filter)
+  // Subtopics — collapsible topic groups, multi-select subtopic checkboxes (AND)
   E.sbt.innerHTML=db.topics.map(t=>{
-    const n=t.subtopics.reduce((a,s)=>a+s.videos.length,0);
-    return `<div class="yt-guide-topic" data-topic-id="${t.id}"><span class="g-emoji">${t.icon}</span><span>${t.name}</span><span class="g-count">${n}</span></div>`;
+    const total=t.subtopics.reduce((a,s)=>a+s.videos.length,0);
+    return `<div class="yt-guide-group" data-topic-id="${t.id}">
+      <div class="yt-guide-group-head" data-topic-id="${t.id}" role="button" tabindex="0" aria-expanded="false">
+        <span class="g-caret">▸</span>
+        <span class="g-emoji">${t.icon}</span>
+        <span class="g-label">${esc(t.name.replace(/^[IVX]+\.\s*/,''))}</span>
+        <span class="g-count">${total}</span>
+      </div>
+      <div class="yt-guide-group-body" data-topic-id="${t.id}" hidden>
+        ${t.subtopics.map(s=>{
+          const on=actSids.has(s.id);
+          return `<div class="yt-guide-sub ${on?'active':''}" data-sub-id="${s.id}" data-topic-id="${t.id}" role="checkbox" tabindex="0" aria-checked="${on?'true':'false'}" title="${esc(s.name)} — ${s.videos.length} videos">
+            <span class="g-check">${on?'☑':'☐'}</span>
+            <span class="g-sub-label">${esc(s.name.replace(/^THE\s+/i,'').replace(/^AL-/,'').replace(/\s*\(.*\)\s*/g,''))}</span>
+            <span class="g-count">${s.videos.length}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
   }).join('');
-  $$('.yt-guide-topic:not(.yt-guide-base)').forEach(el=>el.addEventListener('click',()=>{
-    const tid=el.dataset.topicId;
-    if(actTid===tid)deselect();else select(tid);
-    showHome();window.scrollTo({top:0,behavior:'smooth'});
+
+  // Group head click: toggle expand
+  $$('.yt-guide-group-head').forEach(h=>h.addEventListener('click',()=>toggleGroup(h.dataset.topicId)));
+  $$('.yt-guide-group-head').forEach(h=>h.addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleGroup(h.dataset.topicId);}
   }));
+  // Subtopic click: multi-select toggle
+  $$('.yt-guide-sub').forEach(el=>el.addEventListener('click',()=>toggleSub(el.dataset.subId,el)));
+  $$('.yt-guide-sub').forEach(el=>el.addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleSub(el.dataset.subId,el);}
+  }));
+
+  // Expand/Collapse all
+  const exp=document.getElementById('expandAllSubs');
+  const col=document.getElementById('collapseAllSubs');
+  if(exp)exp.onclick=()=>{$$('.yt-guide-group-body').forEach(b=>{b.hidden=false;const h=$$('.yt-guide-group-head').find(x=>x.dataset.topicId===b.dataset.topicId);if(h){h.setAttribute('aria-expanded','true');h.querySelector('.g-caret').textContent='▾';}});};
+  if(col)col.onclick=()=>{$$('.yt-guide-group-body').forEach(b=>{b.hidden=true;const h=$$('.yt-guide-group-head').find(x=>x.dataset.topicId===b.dataset.topicId);if(h){h.setAttribute('aria-expanded','false');h.querySelector('.g-caret').textContent='▸';}});};
+
+  // Clear subtopics
+  const clearSubBtn=document.getElementById('clearSubtopics');
+  if(clearSubBtn)clearSubBtn.onclick=()=>{actSids.clear();renderSide();applyF();};
+
+  // Auto-expand any group that has a selected subtopic
+  actSids.forEach(sid=>{
+    const t=db.topics.find(tt=>tt.subtopics.some(s=>s.id===sid));
+    if(t){
+      const body=document.querySelector(`.yt-guide-group-body[data-topic-id="${t.id}"]`);
+      if(body&&body.hidden)toggleGroup(t.id);
+    }
+  });
+}
+
+function toggleGroup(tid){
+  const body=document.querySelector(`.yt-guide-group-body[data-topic-id="${tid}"]`);
+  const head=document.querySelector(`.yt-guide-group-head[data-topic-id="${tid}"]`);
+  if(!body||!head)return;
+  const open=!body.hidden;
+  body.hidden=open;
+  head.setAttribute('aria-expanded',open?'false':'true');
+  head.querySelector('.g-caret').textContent=open?'▸':'▾';
+}
+
+function toggleSub(sid,el){
+  if(actSids.has(sid))actSids.delete(sid);else actSids.add(sid);
+  // Update this element's visual state
+  if(el){
+    const on=actSids.has(sid);
+    el.classList.toggle('active',on);
+    el.setAttribute('aria-checked',on?'true':'false');
+    const check=el.querySelector('.g-check');
+    if(check)check.textContent=on?'☑':'☐';
+  }else{
+    // Re-render to update all checkboxes
+    renderSide();
+  }
+  // Show/hide clear button
+  const actions=document.getElementById('sidebarSubActions');
+  if(actions)actions.style.display=actSids.size>0?'block':'none';
+  applyF();
 }
 
 function toggleBase(btid){
@@ -147,11 +219,13 @@ function applyF(){
   const terms=q?q.split(/\s+/).filter(Boolean):[];
   // AND filter: video's baseTopics must contain every selected base topic
   const btsArr=Array.from(actBts);
+  // AND filter: video's subtopicId must be in the selected subtopic set (or none selected)
+  const sidsArr=Array.from(actSids);
   filtV=allV.filter(v=>{
     if(actTid&&v.topicId!==actTid)return false;
-    if(actSid&&v.subtopicId!==actSid)return false;
     if(actLang&&v.language!==actLang)return false;
     if(btsArr.length){for(const bt of btsArr){if(!v.baseTopics.includes(bt))return false;}}
+    if(sidsArr.length){if(!sidsArr.includes(v.subtopicId))return false;}
     if(terms.length){
       const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();
       for(const t of terms){if(!s.includes(t))return false;}
@@ -244,9 +318,14 @@ function openWatch(v){
   E.mb.classList.toggle('bookmarked',isBm);
   E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
   // Related: same topic first, then cross-topic by language + difficulty, exclude self.
-  // Also honor current base topic filter so recommendations stay in the user's chosen scope.
+  // Also honor current base topic + subtopic filters so recommendations stay in the user's chosen scope.
   const btsArr=Array.from(actBts);
-  const inScope=rv=>btsArr.length===0||btsArr.every(b=>rv.baseTopics.includes(b));
+  const sidsArr=Array.from(actSids);
+  const inScope=rv=>{
+    if(btsArr.length&&!btsArr.every(b=>rv.baseTopics.includes(b)))return false;
+    if(sidsArr.length&&!sidsArr.includes(rv.subtopicId))return false;
+    return true;
+  };
   const sameTopic=allV.filter(rv=>rv.topicId===v.topicId&&rv.id!==v.id&&inScope(rv));
   const others=allV.filter(rv=>rv.topicId!==v.topicId&&rv.id!==v.id&&inScope(rv)&&(rv.language===v.language||rv.difficulty===v.difficulty));
   const rel=[...sameTopic,...others].slice(0,10);
@@ -350,6 +429,55 @@ function bindEv(){
   });
   document.addEventListener('click',e=>{
     if(window.innerWidth<=1024&&E.sbx.classList.contains('open')&&!E.sbx.contains(e.target)&&!E.st.contains(e.target))E.sbx.classList.remove('open');
+  });
+  initResizer();
+}
+
+function initResizer(){
+  const r=document.getElementById('guideResizer');
+  if(!r)return;
+  // Restore saved width
+  const saved=parseInt(localStorage.getItem('ym_guide_w')||'',10);
+  if(saved>=160&&saved<=560)document.documentElement.style.setProperty('--yt-guide-width',saved+'px');
+  let dragging=false,startX=0,startW=0;
+  const onMove=e=>{
+    if(!dragging)return;
+    const w=Math.max(160,Math.min(560,startW+(e.clientX-startX)));
+    document.documentElement.style.setProperty('--yt-guide-width',w+'px');
+  };
+  const onUp=()=>{
+    if(!dragging)return;
+    dragging=false;
+    document.body.style.cursor='';
+    const w=getComputedStyle(document.documentElement).getPropertyValue('--yt-guide-width');
+    localStorage.setItem('ym_guide_w',parseInt(w,10));
+  };
+  r.addEventListener('mousedown',e=>{
+    dragging=true;startX=e.clientX;
+    startW=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--yt-guide-width'),10);
+    document.body.style.cursor='col-resize';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove',onMove);
+  document.addEventListener('mouseup',onUp);
+  // Touch support
+  r.addEventListener('touchstart',e=>{
+    dragging=true;startX=e.touches[0].clientX;
+    startW=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--yt-guide-width'),10);
+  },{passive:true});
+  document.addEventListener('touchmove',e=>{if(dragging){const w=Math.max(160,Math.min(560,startW+(e.touches[0].clientX-startX)));document.documentElement.style.setProperty('--yt-guide-width',w+'px');}},{passive:true});
+  document.addEventListener('touchend',onUp);
+  // Keyboard accessibility: arrow keys when focused
+  r.addEventListener('keydown',e=>{
+    const cur=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--yt-guide-width'),10);
+    let n=cur;
+    if(e.key==='ArrowLeft')n=cur-16;
+    else if(e.key==='ArrowRight')n=cur+16;
+    else return;
+    e.preventDefault();
+    n=Math.max(160,Math.min(560,n));
+    document.documentElement.style.setProperty('--yt-guide-width',n+'px');
+    localStorage.setItem('ym_guide_w',n);
   });
 }
 
