@@ -729,6 +729,34 @@
                 "zaytuna"
               ],
               "channelHandle": null
+            },
+            {
+              "id": "PYVkb-6ZUdM",
+              "title": "Listen Carefully - Islamic Reminder",
+              "speaker": "islamicscholar",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "reminder",
+                "short",
+                "islamic-scholar"
+              ],
+              "channelHandle": "@islamicscholar"
+            },
+            {
+              "id": "9A2uBYhtIww",
+              "title": "Listen Carefully - Islamic Reminder",
+              "speaker": "islamicscholar",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "reminder",
+                "short",
+                "islamic-scholar"
+              ],
+              "channelHandle": "@islamicscholar"
             }
           ]
         },
@@ -2773,6 +2801,21 @@
                 "iman"
               ],
               "channelHandle": "@hudatv"
+            },
+            {
+              "id": "5IwXDBGF5Kg",
+              "title": "4 Types of Jinn Explained in 13 Minutes (What Islam Actually Says)",
+              "speaker": "Brother Aqib",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "jinn",
+                "types",
+                "aqib",
+                "explained"
+              ],
+              "channelHandle": "@BrotherAqib"
             }
           ]
         },
@@ -6152,6 +6195,20 @@
                 "science"
               ],
               "channelHandle": null
+            },
+            {
+              "id": "ZTV6euBjvEE",
+              "title": "How to Maximize Health Benefits from Fasting",
+              "speaker": "Dr Saiyed Ahmad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fasting",
+                "health",
+                "sawm"
+              ],
+              "channelHandle": "@ThePropheticPrescription"
             }
           ]
         },
@@ -6362,6 +6419,21 @@
                 "mahram"
               ],
               "channelHandle": "@assimalhakeem"
+            },
+            {
+              "id": "n4wK5yRZQoU",
+              "title": "Every Mistake in Sacrifice Explained",
+              "speaker": "Visual Deen",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "sacrifice",
+                "hadi",
+                "dhu-al-hijjah",
+                "mistakes"
+              ],
+              "channelHandle": "@VisualDeen"
             }
           ]
         },
@@ -6580,6 +6652,20 @@
                 "beauty"
               ],
               "channelHandle": "@zakirnaik1"
+            },
+            {
+              "id": "wYqRGI5VRso",
+              "title": "This is Hijab",
+              "speaker": "THINK Muslim",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hijab",
+                "women",
+                "fiqh"
+              ],
+              "channelHandle": "@THINKMuslim"
             }
           ]
         }
@@ -8287,6 +8373,21 @@
                 "graduation"
               ],
               "channelHandle": "@ZaytunaCollege"
+            },
+            {
+              "id": "5NT9m_VZruw",
+              "title": "Lost Skill of Muslims (Critical Thinking)",
+              "speaker": "THINK Muslim",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "critical-thinking",
+                "skill",
+                "muslims",
+                "iqra"
+              ],
+              "channelHandle": "@THINKMuslim"
             }
           ]
         },
@@ -8620,6 +8721,21 @@
                 "meem"
               ],
               "channelHandle": null
+            },
+            {
+              "id": "pRBMeToRXKs",
+              "title": "Do You Still Get Rewarded If You Struggle Reading Quran?",
+              "speaker": "DunyaTruth",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "reward",
+                "struggle",
+                "short"
+              ],
+              "channelHandle": "@DunyaTruth"
             }
           ]
         },
@@ -9544,6 +9660,21 @@
                 "hakeem"
               ],
               "channelHandle": "@assimalhakeem"
+            },
+            {
+              "id": "dDNXfln54uo",
+              "title": "The Deadliest Trap in History: Khalid ibn al-Walid at Walaja (633 AD)",
+              "speaker": "Historic War Lens",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "khalid",
+                "walaja",
+                "battles"
+              ],
+              "channelHandle": "@HistoricWarLens"
             }
           ]
         },
@@ -10113,6 +10244,176 @@
                 "zaytuna"
               ],
               "channelHandle": "@ZaytunaCollege"
+            },
+            {
+              "id": "w0ajcuyATPA",
+              "title": "Can be 100% Proven (NO Religion Needed)",
+              "speaker": "THINK Muslim",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "proof",
+                "aqeedah",
+                "no-religion",
+                "think"
+              ],
+              "channelHandle": "@THINKMuslim"
+            },
+            {
+              "id": "yu4U_uI74UU",
+              "title": "Slavery in Islam | End of This Topic",
+              "speaker": "THINK Muslim",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "slavery",
+                "islam",
+                "comparative",
+                "end"
+              ],
+              "channelHandle": "@THINKMuslim"
+            },
+            {
+              "id": "pl-seerah-full",
+              "title": "The Entire Seerah of the Prophet (SAW) — Full Playlist (40+ Lectures)",
+              "speaker": "Various Scholars",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "playlist",
+                "complete",
+                "muhammad"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLWIRFDFSWZPt2M_3AIMo23V52uy8lk59f"
+            },
+            {
+              "id": "pl-arabic-roots-shorts",
+              "title": "200 Arabic Roots Series (Shorts) | The Arabic Academy — Full Playlist",
+              "speaker": "The Arabic Academy",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "arabic",
+                "language",
+                "roots",
+                "playlist",
+                "shorts"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL-l9lo3mVheLo-4KNsGwKgWN2KoftShhI"
+            },
+            {
+              "id": "pl-arabic-beginners",
+              "title": "Arabic Series For Beginners | 200 Arabic Roots Lessons — Full Playlist",
+              "speaker": "The Arabic Academy",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "arabic",
+                "beginners",
+                "language",
+                "roots",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL-l9lo3mVheI0LxWe4nmvO7e7P9H3ngvs"
+            },
+            {
+              "id": "pl-tajweed-beginner",
+              "title": "Learn Tajweed Easily (Beginner) — Full Playlist",
+              "speaker": "Various Scholars",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tajweed",
+                "quran",
+                "beginner",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL6TlMIZ5ylgqM4Uuu7iAhIeuSdF0v9yxo"
+            },
+            {
+              "id": "pl-early-muslim-wars",
+              "title": "Early Muslim Wars (Season 1) — Full Playlist",
+              "speaker": "Historic War Lens",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "battles",
+                "islamic-history",
+                "wars",
+                "playlist"
+              ],
+              "channelHandle": "@HistoricWarLens",
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PL3_xd3-vE5mhwB2BW-8HpqC80tdgdKzcp"
+            },
+            {
+              "id": "pl-background-halal-sound",
+              "title": "Background Halal Sound — Full Playlist",
+              "speaker": "Various",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nasheed",
+                "background",
+                "halal-sound",
+                "playlist"
+              ],
+              "channelHandle": null,
+              "isPlaylistRef": true,
+              "playlistUrl": "https://www.youtube.com/playlist?list=PLzPxIZl0Ji3zzpI7Kqc_ynLI8THYJxeiO"
+            },
+            {
+              "id": "ch-muslim-reverts",
+              "title": "Muslim Reverts Classroom — Channel (Revert Stories & Testimonies)",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "channel",
+                "revert",
+                "stories",
+                "testimony",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom",
+              "isChannelRef": true,
+              "channelUrl": "https://www.youtube.com/@MuslimRevertsClassroom?sub_confirmation=1"
+            },
+            {
+              "id": "ch-markazus-salafiiya",
+              "title": "Markaz us-Salafiiya — Channel (Salafi Scholarship)",
+              "speaker": "Markaz us-Salafiiya",
+              "difficulty": 2,
+              "language": "ar",
+              "duration": 0,
+              "tags": [
+                "channel",
+                "salafi",
+                "scholarship",
+                "arabic"
+              ],
+              "channelHandle": "@markazus-salafiiya",
+              "isChannelRef": true,
+              "channelUrl": "https://www.youtube.com/@markazus-salafiiya"
             }
           ]
         },
@@ -10275,6 +10576,318 @@
                 "zaytuna"
               ],
               "channelHandle": "@ZaytunaCollege"
+            },
+            {
+              "id": "SsXHcObCLJw",
+              "title": "How to Say the Shahada - To Becoming a Muslim",
+              "speaker": "Adam - Islamic Animation",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "shahada",
+                "conversion",
+                "animation",
+                "new-muslim"
+              ],
+              "channelHandle": "@AdamIslamicAnimation"
+            },
+            {
+              "id": "d8AwPp1OOKQ",
+              "title": "Muslim Shop Owner foils a robbery, gives burglar money, burglar asks to be a Muslim!",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "1SLj1--gh0c",
+              "title": "Egyptian Christian Coptic family embrace Islam (English Sub)",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "79-P4zlMFo8",
+              "title": "MuslimReverts On Youtube Series: Sister Poet1Warrior",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "3ftiWL6AsfQ",
+              "title": "MuslimReverts On Youtube Series - Sister StAischaa",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "k4ouShJ8pZ4",
+              "title": "MuslimReverts On Youtube Series: Brother abusaranur",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "hSBalaxu-to",
+              "title": "MuslimReverts On Youtube Series - Br qwertyfshag/ISLAMDEBATE",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "TiE0hrYfZt4",
+              "title": "MuslimReverts On Youtube Series: Brother Converted2Islam",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "L2WPIw8Xus4",
+              "title": "MuslimReverts On Youtube Series - Sister Lmartella",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "hVDPFYgBWjM",
+              "title": "MuslimReverts On Youtube Series: Sister asalamalikoom",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "rUr_0y30OpU",
+              "title": "MuslimReverts On Youtube Series: Sis. RabiaAhmed 2/2",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "GvLd_KvZNMA",
+              "title": "MuslimReverts On Youtube Series: Sis. RabiaAhmed 1/2",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "i1vny92uwRo",
+              "title": "MuslimReverts On Youtube Series: Sis. KiwiMuslimNZ",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "L6ZPwh17Qns",
+              "title": "MuslimReverts On Youtube Series: Sis. WhisperOfDeen",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "x91HsiwgBtQ",
+              "title": "MuslimReverts On Youtube Series: Sis. AMIRAH75 2/2",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "EDUCJ6EzT_U",
+              "title": "MuslimReverts On Youtube Series: Sis. AMIRAH75 1/2",
+              "speaker": "Muslim Reverts",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "revert",
+                "conversion",
+                "story",
+                "muslim-reverts"
+              ],
+              "channelHandle": "@MuslimRevertsClassroom"
+            },
+            {
+              "id": "TjCb5dNSDOg",
+              "title": "Shu Sar Feek ya Ibn 3amy? Irja3 3ala deenak",
+              "speaker": "islamicscholar",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "arabic",
+                "urdu",
+                "return-to-islam",
+                "reminder",
+                "short"
+              ],
+              "channelHandle": "@islamicscholar"
+            },
+            {
+              "id": "kVcyVN27j-8",
+              "title": "Tuberculosis-PSA",
+              "speaker": "islamicscholar",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "public-service",
+                "health",
+                "islamic-awareness"
+              ],
+              "channelHandle": "@islamicscholar"
+            },
+            {
+              "id": "gZbTfCjUbm8",
+              "title": "PSA Tuberculosis",
+              "speaker": "islamicscholar",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "public-service",
+                "health",
+                "islamic-awareness"
+              ],
+              "channelHandle": "@islamicscholar"
+            },
+            {
+              "id": "othEOYchTSM",
+              "title": "End Racism-PSA",
+              "speaker": "islamicscholar",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "public-service",
+                "anti-racism",
+                "islamic-awareness"
+              ],
+              "channelHandle": "@islamicscholar"
+            },
+            {
+              "id": "Fp-flbgRWuo",
+              "title": "Faizan Syed Speech at Jefferson City",
+              "speaker": "islamicscholar",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "faizan-syed",
+                "khutbah",
+                "jefferson-city"
+              ],
+              "channelHandle": "@islamicscholar"
             }
           ]
         }

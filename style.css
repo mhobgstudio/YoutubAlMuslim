@@ -119,6 +119,7 @@ input{font-family:inherit}
 .yt-card-thumb{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#1a1a1a}
 .yt-card-thumb--noimg{background:linear-gradient(135deg,var(--yt-bg-elevated),var(--yt-bg-chips))}
 .yt-card-thumb--noimg::after{content:'▶';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:48px;color:var(--yt-text-secondary);opacity:.5}
+.yt-card-ext-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:600;color:#fff;z-index:1;background:linear-gradient(135deg,#1a5f2a,#2c3e50);opacity:.85;text-align:center;padding:12px}
 .yt-card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .yt-card-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .2s}
 .yt-card:hover .yt-card-overlay{background:rgba(0,0,0,0.2)}

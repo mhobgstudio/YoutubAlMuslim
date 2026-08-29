@@ -271,10 +271,12 @@ function mkCard(v){
   const el=document.createElement('div');el.className='yt-card';el.setAttribute('role','listitem');el.setAttribute('tabindex','0');el.setAttribute('aria-label',`${v.title} by ${v.speaker}`);
   el.style.setProperty('--progress',prog+'%');
   el.innerHTML=`
-    <div class="yt-card-thumb">
-      <img src="${thumb}" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${v.id}/hqdefault.jpg';this.onerror=function(){this.style.display='none';this.parentNode.classList.add('yt-card-thumb--noimg');};">
+    <div class="yt-card-thumb ${(v.isPlaylistRef||v.isChannelRef)?'yt-card-thumb--noimg':''}">
+      ${(v.isPlaylistRef||v.isChannelRef)
+        ? `<div class="yt-card-ext-icon">${v.isPlaylistRef?'▶ PLAYLIST':'📡 CHANNEL'}</div>`
+        : `<img src="${thumb}" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${v.id}/hqdefault.jpg';this.onerror=function(){this.style.display='none';this.parentNode.classList.add('yt-card-thumb--noimg');};">`}
       <div class="yt-card-overlay"></div>
-      <span class="yt-card-duration">${dur}</span>
+      <span class="yt-card-duration">${v.isPlaylistRef?'PLAYLIST':v.isChannelRef?'CHANNEL':dur}</span>
       <span class="yt-card-difficulty" style="background:${d.c}">${d.l}</span>
       ${isNew?'<span class="yt-card-new">NEW</span>':''}
       <div class="yt-card-progress"></div>
@@ -294,6 +296,16 @@ function mkCard(v){
       </div>
     </div>`;
   el.querySelector('.yt-card-thumb').addEventListener('click',e=>{if(e.target.closest('.yt-card-bookmark')||e.target.closest('.yt-card-subscribe'))return;openWatch(v);});
+
+  // Playlist/channel reference entries: open the source URL in a new tab
+  if(v.isPlaylistRef||v.isChannelRef){
+    const url=v.playlistUrl||v.channelUrl;
+    if(url){
+      el.querySelector('.yt-card-thumb').addEventListener('click',e=>{window.open(url,'_blank','noopener,noreferrer');});
+      // Override duration/difficulty to show 'PLAYLIST' or 'CHANNEL' badge
+      el.querySelector('.yt-card-duration').textContent=v.isPlaylistRef?'PLAYLIST':'CHANNEL';
+    }
+  }
   el.querySelector('.yt-card-bookmark').addEventListener('click',e=>{e.stopPropagation();e.preventDefault();toggleBm(v);e.currentTarget.classList.toggle('bookmarked');});
   // Subscribe link — stop the thumb's click from firing, but let the link open normally
   const subEl=el.querySelector('.yt-card-subscribe');
@@ -308,6 +320,12 @@ function mkCard(v){
 }
 
 function openWatch(v){
+  // Playlist/channel reference entries: open the source URL in a new tab and don't show modal
+  if(v.isPlaylistRef||v.isChannelRef){
+    const url=v.playlistUrl||v.channelUrl;
+    if(url)window.open(url,'_blank','noopener,noreferrer');
+    return;
+  }
   curV=v;
   E.mt.textContent=v.title;
   E.ms.textContent=v.speaker;
