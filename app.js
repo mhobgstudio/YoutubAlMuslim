@@ -784,7 +784,6 @@ function closeModal(){
   if(_adPollTimer){clearInterval(_adPollTimer);_adPollTimer=null;}
   adTabOpenedFor=null;
   // Show mini-player if video was playing
-  console.log('closeModal curV:', curV ? curV.id : 'null', 'isPlaylistRef:', curV?.isPlaylistRef, 'isChannelRef:', curV?.isChannelRef);
   if(curV && !curV.isPlaylistRef && !curV.isChannelRef) {
     showMiniPlayer(curV);
   } else {
@@ -867,7 +866,37 @@ function initMiniPlayer() {
   document.getElementById('miniPlayerExpand')?.addEventListener('click', () => {
     const video = miniPlayerVideo;
     hideMiniPlayer();
-    if (video) openWatch(video);
+    if (video) {
+      curV = video;
+      E.mt.textContent = video.title;
+      E.ms.textContent = video.speaker;
+      const d = D[video.difficulty] || D[1];
+      const ini = (video.speaker || '?')[0].toUpperCase();
+      E.ma.textContent = ini;
+      E.ma.style.background = video.topicColor || '#3ea6ff';
+      const tags = (video.tags || []).map(t => `<span class="yt-watch-tag">${esc(t)}</span>`).join('');
+      E.mm.innerHTML = `<span style="color:var(--yt-text)">${d.l}</span> • ${LANG[video.language] || video.language} • ${fmtD(video.duration)}${tags ? '  •  ' + tags : ''}`;
+      E.mtg.innerHTML = tags;
+      const playCtx = resolvePlaylist(video);
+      const adBlockParams = '&iv_load_policy=3&modestbranding=1&playsinline=1&fs=0&cc_load_policy=0&disablekb=0&autoplay=1';
+      const playerSrc = playCtx
+        ? `https://www.youtube-nocookie.com/embed/videoseries?list=${playCtx.playlistId}&autoplay=1&rel=0&enablejsapi=1&v=${video.id}${adBlockParams}`
+        : `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&enablejsapi=1${adBlockParams}`;
+      E.mp.innerHTML = `<iframe id="ytPlayerIframe" src="${playerSrc}" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen playsinline loading="eager"></iframe>`;
+      setupYTProgress(video);
+      setupTranscript(video);
+      const isBm = bms.some(b => b.id === video.id && b.topicId === video.topicId);
+      E.mb.classList.toggle('bookmarked', isBm);
+      E.mb.querySelector('span').textContent = isBm ? 'Saved' : 'Save';
+      renderPlaylistPanel(video, playCtx);
+      E.vm.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+      E.vm.scrollTop = 0;
+      updateNavButtons();
+      wireFullscreenBtn();
+      updateFullscreenIcon();
+      initMiniPlayer();
+    }
   });
 
   // Close button — stop playing and hide
@@ -880,7 +909,6 @@ function initMiniPlayer() {
 }
 
 function showMiniPlayer(video) {
-  console.log('showMiniPlayer called:', video?.id, video?.title?.substring(0,30));
   if (!video || video.isPlaylistRef || video.isChannelRef) return;
   const miniEl = document.getElementById('miniPlayer');
   const container = document.getElementById('miniPlayerContainer');
@@ -896,10 +924,8 @@ function showMiniPlayer(video) {
   const src = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&enablejsapi=1&iv_load_policy=3&modestbranding=1&playsinline=1`;
   container.innerHTML = `<iframe src="${src}" allow="autoplay;encrypted-media" allowfullscreen playsinline></iframe>`;
 
-  console.log('showMiniPlayer: setting display, el:', !!miniEl, 'container:', !!container);
   miniEl.style.display = '';
   miniEl.classList.remove('hidden');
-  console.log('showMiniPlayer: display after:', miniEl.style.display, 'hidden:', miniEl.classList.contains('hidden'));
   // Animate in
   requestAnimationFrame(() => {
     miniEl.style.opacity = '1';
