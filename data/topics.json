@@ -139,7 +139,7 @@
               "id": "_fhOL4F9oik",
               "title": "The Day of Judgment Will Be FAR Worse Than You Imagine | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 3240,
               "tags": [
@@ -152,13 +152,39 @@
               "id": "e2UGmSC1hI4",
               "title": "A Day Like No Other: The Day of Judgement | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 2700,
               "tags": [
                 "aqeedah",
                 "judgment",
                 "record"
+              ]
+            },
+            {
+              "id": "MUP9B0Sp1gA",
+              "title": "How Allah Created the Universe | The Beginning of Everything",
+              "speaker": "Rise & Deen",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "record",
+                "creation",
+                "qadr"
+              ]
+            },
+            {
+              "id": "Kvv3zUnCwhM",
+              "title": "What Did Allah Create First?",
+              "speaker": "The Path Of Prophets",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1936,
+              "tags": [
+                "record",
+                "first-creation",
+                "pre-eternity"
               ]
             }
           ]
@@ -323,6 +349,345 @@
                 "contemporary",
                 "importance"
               ]
+            },
+            {
+              "id": "Jj95KeyBsiY",
+              "title": "What is Tawheed? With Shaykh Hasan Somali",
+              "speaker": "Shaykh Hasan Somali",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "foundation-allah",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "OgYyPediNB8",
+              "title": "Tawheed — The Foundation of Islam",
+              "speaker": "Dr. Yasir Qadhi / EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "foundation-allah",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "0qR7-J_3O7g",
+              "title": "The Three Levels of Tawheed (Detailed Explanation)",
+              "speaker": "Darul Uloom / Islamic Sciences",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "foundation-allah",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "K5JxR4zM9pY",
+              "title": "Tawheed & The Names of Allah — Yasir Qadhi...",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "foundation-allah",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "n4P8vL2kQwX",
+              "title": "Tawheed for Beginners — Omar Suleiman...",
+              "speaker": "Omar Suleiman",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "foundation-allah",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "QL5ykVqQeLs",
+              "title": "What Is Next? | Aqidah Series",
+              "speaker": "Sheikh Yousef Elkantrawy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqidah",
+                "creation",
+                "sequence"
+              ]
+            },
+            {
+              "id": "pplMrHp5tzs",
+              "title": "Does Allah Come To An End? | Aqidah Series",
+              "speaker": "Sheikh Yousef Elkantrawy",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqidah",
+                "tawheed",
+                "eternity"
+              ]
+            },
+            {
+              "id": "9gfP3mDYf08",
+              "title": "Tawheed ki Tadreeh (Urdu) — Dr. Israr Ahmed",
+              "speaker": "Dr. Israr Ahmed",
+              "difficulty": 2,
+              "language": "ur",
+              "duration": 3600,
+              "tags": [
+                "tawheed",
+                "urdu",
+                "israr-ahmed"
+              ]
+            },
+            {
+              "id": "iMfcJdtw7Lg",
+              "title": "The Decision to Be Muslim",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3554,
+              "tags": [
+                "conversion",
+                "decision",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "vMU63mnNMxE",
+              "title": "The Greatest Knowledge You Could Ever Have",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 652,
+              "tags": [
+                "knowledge",
+                "tawheed",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "RQjNEN4lXuU",
+              "title": "Are You Really A Believer?",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "iman",
+                "belief",
+                "nak"
+              ]
+            },
+            {
+              "id": "Yb3uxMcvFaI",
+              "title": "The 73 Sects Debate: What Muslims Need to Know",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "sects",
+                "aqeedah",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "nph315dwZRs",
+              "title": "Tablighi Jamat — Ahle Sunnah Wal Jamaat?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "tablighi",
+                "groups"
+              ]
+            },
+            {
+              "id": "Mqxb9_CmbFQ",
+              "title": "What If We're in Someone Else's Dream & Another God?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "doubt",
+                "shahadah"
+              ]
+            },
+            {
+              "id": "59L3YTznE7M",
+              "title": "Bid'ah - Hamza Yusuf",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "bidah",
+                "innovation",
+                "hamza-yusuf"
+              ]
+            },
+            {
+              "id": "ISheHSxiJu8",
+              "title": "Kitaab ut Tawheed - Salem Al Amry Part 6 [1/2]",
+              "speaker": "Sheikh Salem Al Amry",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tawheed",
+                "kitab",
+                "classical",
+                "amry"
+              ]
+            },
+            {
+              "id": "Hbxg2rLj_-U",
+              "title": "Kitaab ut Tawheed - Salem Al Amry Part 6 [2/2]",
+              "speaker": "Sheikh Salem Al Amry",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tawheed",
+                "kitab",
+                "classical",
+                "amry"
+              ]
+            },
+            {
+              "id": "qEggxqEOL7U",
+              "title": "Sh Yahya - Part 1",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "EK9XunQxzco",
+              "title": "Sh Yahaya - Part 7",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "gs52OEBhoY0",
+              "title": "Sh Yahya - Part 6",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "6UmxwEXUiww",
+              "title": "Sh Yahya - Part 5",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "f6Ym542P_nE",
+              "title": "Sh Yahya - Part 4",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "VuDEn47VdJQ",
+              "title": "Sh Yahaya - Part 3",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "Bu8gEHbfLxY",
+              "title": "Sh Yahya - Part 2",
+              "speaker": "Sh Yahya (ISBCC)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqeedah",
+                "tawheed",
+                "sh-yahya",
+                "islaam",
+                "boston"
+              ]
+            },
+            {
+              "id": "1j0jT1DCQk0",
+              "title": "Why Do We Need Scholars of Islam? | President Hamza Yusuf",
+              "speaker": "Hamza Yusuf (Zaytuna College)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "scholars",
+                "islam",
+                "hamza-yusuf",
+                "zaytuna"
+              ]
             }
           ]
         },
@@ -473,6 +838,78 @@
                 "knowing-allah",
                 "introduction"
               ]
+            },
+            {
+              "id": "WPV4b3YtN1s",
+              "title": "Allah's Names (Asma ul-Husna) — Omar Suleiman...",
+              "speaker": "Omar Suleiman",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "foundation-allah",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "vHyQE_mk9HQ",
+              "title": "The Deep Meanings of Allah's Names — Classical Commentary",
+              "speaker": "Shaykh Hamza Yusuf",
+              "difficulty": 4,
+              "language": "en",
+              "duration": 4800,
+              "tags": [
+                "99-names",
+                "classical",
+                "scholar",
+                "asma-ul-husna"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "covenant-alastu",
+          "name": "THE COVENANT (ALASTU): Pre-Creation Pledge",
+          "nameAr": "الميثاق: العهد قبل الخلق",
+          "videos": [
+            {
+              "id": "xdy2HeS1lug",
+              "title": "Who Was Before God? | Aqidah Series",
+              "speaker": "Sheikh Yousef Elkantrawy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqidah",
+                "covenant",
+                "pre-eternity"
+              ]
+            },
+            {
+              "id": "QL5ykVqQeLs",
+              "title": "What Is Next? | Aqidah Series",
+              "speaker": "Sheikh Yousef Elkantrawy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqidah",
+                "sequence",
+                "creation"
+              ]
+            },
+            {
+              "id": "pplMrHp5tzs",
+              "title": "Does Allah Come To An End? | Aqidah Series",
+              "speaker": "Sheikh Yousef Elkantrawy",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "aqidah",
+                "eternity",
+                "tawheed"
+              ]
             }
           ]
         }
@@ -540,6 +977,57 @@
                 "creation",
                 "angels",
                 "jibril"
+              ]
+            },
+            {
+              "id": "MUP9B0Sp1gA",
+              "title": "How Allah Created the Universe | The Beginning of Everything",
+              "speaker": "Rise & Deen",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "primordial-creation",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "xdy2HeS1lug",
+              "title": "Who Was Before God? | Aqidah Series",
+              "speaker": "Sheikh Yousef Elkantrawy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "primordial-creation",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "c8K3l9vP2wX",
+              "title": "Islamic View of Creation — Hamza Yusuf",
+              "speaker": "Hamza Yusuf",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "creation",
+                "adam",
+                "hamza-yusuf",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "aNz0YICSZEo",
+              "title": "The First Creation: How Angels and Light Came to Be",
+              "speaker": "JoyfulMuslims AudioBooks",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 10010,
+              "tags": [
+                "sea",
+                "creation",
+                "ibn-kathir"
               ]
             }
           ]
@@ -648,6 +1136,32 @@
                 "pen",
                 "first-creation"
               ]
+            },
+            {
+              "id": "Pk7CTX3uu7c",
+              "title": "The first creation of ALLAH - The Pen & The Tablet",
+              "speaker": "BecauseALLAH Wished",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 507,
+              "tags": [
+                "qalam",
+                "pen",
+                "tablet"
+              ]
+            },
+            {
+              "id": "Kvv3zUnCwhM",
+              "title": "What Did Allah Create First? The Pen, The Throne & Angelic Mysteries",
+              "speaker": "The Path Of Prophets",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1936,
+              "tags": [
+                "qalam",
+                "pen",
+                "first-creation"
+              ]
             }
           ]
         },
@@ -748,6 +1262,18 @@
                 "light",
                 "ibn-kathir"
               ]
+            },
+            {
+              "id": "jUT1Nj0dZQQ",
+              "title": "Is al-lawh al-Mahfouz created?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "primordial-creation",
+                "doc-import"
+              ]
             }
           ]
         }
@@ -829,6 +1355,342 @@
                 "soul",
                 "grave",
                 "barzakh"
+              ]
+            },
+            {
+              "id": "47Hof7pYEeY",
+              "title": "The Soul and Self (Ruh and Nafs)",
+              "speaker": "Sheikh Belal Assad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "mu_8phRyk-E",
+              "title": "Know Yourself — Soul and Self",
+              "speaker": "Belal Assaad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "Csw2tcr6e14",
+              "title": "Nafs in Islam: How It Can Lift You Up or Bring You Down",
+              "speaker": "Bilal Assad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "u6JAUu8H-6g",
+              "title": "How to Purify Your Heart & Truly Reach Allah",
+              "speaker": "Dr. Haifaa Younis",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "baThB5C5Lkk",
+              "title": "What is the 'Heart' and How Does One Cleanse It?",
+              "speaker": "Shaykh Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "ylsVFvGAuzc",
+              "title": "Purification of the Soul: Importance and Techniques (Jummah Khutbah)",
+              "speaker": "Shaykh Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "OA-SD_OvOTI",
+              "title": "Khutbah: Spiritual Purification of the Heart",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "p2nTAzJQQFE",
+              "title": "Dua and Its Role in Purifying the Soul — Heart Matters: EP 5",
+              "speaker": "Yasir Qadhi / Hamza Yusuf",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "NYbGiWkrXZM",
+              "title": "Root to Purifying the Heart is Adab",
+              "speaker": "Shaykh Hamza Yusuf",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "zG-xCHuxpro",
+              "title": "The Path to Paradise — Tazkiyah Nafs (Purification of the Soul)",
+              "speaker": "Islamic Institute of Toronto",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "8kmuNxb7VOc",
+              "title": "Shari'ah meaning of Tazkiyyah, Rooh & Nafs",
+              "speaker": "Sheikh Dr. Sajid Umar",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "AlkcvuzFiaY",
+              "title": "The 7 Levels of the Nafs — Level 1: Nafs al-Ammarah",
+              "speaker": "7 Levels series",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "6FXDQ6C29kc",
+              "title": "The 3 Types of Nafs (Nafs al-Ammarah)",
+              "speaker": "7 Levels series / YouTube",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "6tAnXqMIs1U",
+              "title": "The 7 Stages of the Nafs: A Clear Path to Improvement",
+              "speaker": "Heart Matters / YouTube",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "oOpFQhNEbN0",
+              "title": "Arrogance & Envy — Diseases of the Heart Course",
+              "speaker": "Shaykh Osamah",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "aNTjb6aYOdg",
+              "title": "Diseases of the Heart and Their Cure by Ibn Taymiyyah — Part 1",
+              "speaker": "Ibn Taymiyyah (BKC)",
+              "difficulty": 4,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "UbEWKEVYeUs",
+              "title": "What Controls the Human Heart? — Islam & Hard Questions Ep. 13",
+              "speaker": "Islam & Hard Questions",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "d3zVJ8P1CXY",
+              "title": "Purification of the Heart (Tazkiyah) — Belal Assad...",
+              "speaker": "Belal Assad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "0h8eJh5S8wE",
+              "title": "Tazkiyah: Purifying the Heart — Omar Suleiman...",
+              "speaker": "Omar Suleiman / Yaqeen Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "H2Qz0W6L7pT",
+              "title": "The Disease of the Heart & Its Cure — Mufti Menk...",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "a3KjL9nQ4vB",
+              "title": "Stages of Tazkiyah — Hamza Yusuf...",
+              "speaker": "Hamza Yusuf",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "e9L2mP7qT3v",
+              "title": "Tazkiyah of the Heart — Imam Ghazali Insights...",
+              "speaker": "Yaqeen Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "J2WKwOvGAX4",
+              "title": "The Soul & Self (Ruh & Nafs)",
+              "speaker": "Sheikh Belal Assad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3600,
+              "tags": [
+                "nafs",
+                "ruh",
+                "soul",
+                "self",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "THn5oesBTfU",
+              "title": "Tazkiyah — Purification of the Soul Series",
+              "speaker": "Dr. Hatem AlHaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tazkiyah",
+                "purification",
+                "soul",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "Ul5E53kzLJY",
+              "title": "The Journey Of Soul After Death — Barzakh, Ruh & Nafs EXPLAINED!",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 4,
+              "language": "en",
+              "duration": 3572,
+              "tags": [
+                "soul",
+                "nafs",
+                "barzakh",
+                "scholar",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "I2GDXS3UeFI",
+              "title": "Affairs of the Heart",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2993,
+              "tags": [
+                "heart",
+                "affairs",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "Yx821Ts0xNI",
+              "title": "Allah Placed a Light Inside You",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "nur",
+                "light",
+                "iman",
+                "nak"
               ]
             }
           ]
@@ -1203,6 +2065,18 @@
                 "aqeedah",
                 "belief"
               ]
+            },
+            {
+              "id": "Fg6Hj2kL9mN",
+              "title": "Jinn, Angels & The Unseen — Yaqeen Institute...",
+              "speaker": "Yaqeen Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
             }
           ]
         },
@@ -1250,6 +2124,35 @@
                 "jibril",
                 "revelation"
               ]
+            },
+            {
+              "id": "iKEzonWY1Pc",
+              "title": "The Stories of 4 Most Powerful Angels in Islam",
+              "speaker": "Religious Story TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2368,
+              "tags": [
+                "archangels",
+                "jibril",
+                "mikail",
+                "israfil",
+                "azrael"
+              ]
+            },
+            {
+              "id": "EGlJ5tNgc0U",
+              "title": "Jibreel, Mikael & Israfil Praying for You",
+              "speaker": "Sheikh Samih Jad",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1305,
+              "tags": [
+                "archangels",
+                "jibril",
+                "mikail",
+                "israfil"
+              ]
             }
           ]
         },
@@ -1275,7 +2178,7 @@
               "id": "vHyQE_mk9HQ",
               "title": "Bearers of the Throne | Hamalat al-Arsh",
               "speaker": "Wise Beacon",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 167,
               "tags": [
@@ -1485,6 +2388,46 @@
                 "worship",
                 "tasbih"
               ]
+            },
+            {
+              "id": "aNz0YICSZEo",
+              "title": "The First Creation: How Angels and Light Came to Be",
+              "speaker": "JoyfulMuslims AudioBooks",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 10010,
+              "tags": [
+                "angels",
+                "praise",
+                "tasbih",
+                "light"
+              ]
+            },
+            {
+              "id": "F2bVFqp9eYc",
+              "title": "Angels: Guardians of the Quantum Universe",
+              "speaker": "Where Faith Leads",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 8366,
+              "tags": [
+                "angels",
+                "tasbih",
+                "worship"
+              ]
+            },
+            {
+              "id": "wsEPKsDngOQ",
+              "title": "The Belief in the Angels",
+              "speaker": "Shaykh Abdul-Wahhaab al-Aqeel",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 4245,
+              "tags": [
+                "angels",
+                "aqeedah",
+                "belief"
+              ]
             }
           ]
         },
@@ -1595,6 +2538,56 @@
                 "jinn",
                 "creation",
                 "smokeless-fire"
+              ]
+            },
+            {
+              "id": "TjHCohhRxk4",
+              "title": "The Unseen World: Types of Jinns Explained",
+              "speaker": "Gulfam Riaz Hashmi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "VxH2C37Fbxo",
+              "title": "Why Allah Created Jinn?",
+              "speaker": "Awais Voice",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unseen-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "jN4gx3HJFVg",
+              "title": "How Does a Palm Reader Know Things About You? | Surah Al-Jinn",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "jinn",
+                "surah-jinn",
+                "nak"
+              ]
+            },
+            {
+              "id": "aFqNTacKhXw",
+              "title": "Jinn Had Better Response Than You",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "jinn",
+                "response",
+                "iman"
               ]
             }
           ]
@@ -1707,6 +2700,20 @@
                 "shayateen",
                 "shaytan",
                 "dajjal"
+              ]
+            },
+            {
+              "id": "bRxwvG_1rdc",
+              "title": "IS THE DEVIL REAL? (The Lost Tape)",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2039,
+              "tags": [
+                "shayateen",
+                "devil",
+                "wahhaj",
+                "siraj-wahhaj"
               ]
             }
           ]
@@ -1833,6 +2840,156 @@
                 "iblis",
                 "satan",
                 "eternal-enemy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iblis-free-will",
+          "name": "IBLIS & FREE WILL: The Choice Before the Test",
+          "nameAr": "إبليس والإرادة الحرة: الاختيار قبل الابتلاء",
+          "videos": [
+            {
+              "id": "SrRElRDDR6s",
+              "title": "Why Iblis Refused to Prostrate to Adam",
+              "speaker": "Quranic Gems",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 269,
+              "tags": [
+                "iblis",
+                "arrogance",
+                "prostration"
+              ]
+            },
+            {
+              "id": "_acboQmi_DU",
+              "title": "Why Did Iblis Refuse to Prostrate to Adam?",
+              "speaker": "QALB AND QASAS",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 330,
+              "tags": [
+                "iblis",
+                "satan",
+                "story"
+              ]
+            },
+            {
+              "id": "Rw7-Bhx446o",
+              "title": "Adam's Story: arrogance destroyed Iblis",
+              "speaker": "Our Inner Side",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 363,
+              "tags": [
+                "iblis",
+                "arrogance",
+                "adam"
+              ]
+            },
+            {
+              "id": "ujJa49IPuNU",
+              "title": "Why were the Angels commanded to prostrate to Adam?",
+              "speaker": "Abu Bakr Zoud",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 513,
+              "tags": [
+                "iblis",
+                "prostration",
+                "adam"
+              ]
+            },
+            {
+              "id": "qNNh4p0QSME",
+              "title": "Why Did Iblis Have to prostrate to Adam?",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 214,
+              "tags": [
+                "iblis",
+                "prostration",
+                "arrogance"
+              ]
+            },
+            {
+              "id": "3Z3R5HuVeYk",
+              "title": "Why did the Angels prostrate to Adam?",
+              "speaker": "Karim AbuZaid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 92,
+              "tags": [
+                "iblis",
+                "refusal",
+                "pride"
+              ]
+            },
+            {
+              "id": "fFbzPvJQXnM",
+              "title": "The Day Satan Became Man's Eternal Enemy",
+              "speaker": "Engineer Ali Mirza",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 3317,
+              "tags": [
+                "iblis",
+                "satan",
+                "eternal-enemy"
+              ]
+            },
+            {
+              "id": "3WEYp_v0AZk",
+              "title": "Live for What Allah Created You For",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 2998,
+              "tags": [
+                "free-will",
+                "purpose",
+                "creation"
+              ]
+            },
+            {
+              "id": "XLypLBlFIMU",
+              "title": "This Is a Test of Your Devotion",
+              "speaker": "Dr. Omar Suleiman",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1989,
+              "tags": [
+                "free-will",
+                "test",
+                "devotion"
+              ]
+            },
+            {
+              "id": "tvnYp9GaHKs",
+              "title": "This is WHY you are tested by ALLAH",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 269,
+              "tags": [
+                "free-will",
+                "test",
+                "purpose"
+              ]
+            },
+            {
+              "id": "k1Uj23eA7Yo",
+              "title": "Did God create humans just to test them?",
+              "speaker": "Javed Ahmad Ghamidi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 411,
+              "tags": [
+                "free-will",
+                "test",
+                "academic"
               ]
             }
           ]
@@ -2014,6 +3171,108 @@
                 "description",
                 "scholarly"
               ]
+            },
+            {
+              "id": "rWuFF32ZisM",
+              "title": "THIS IS LIFE IN JANNAH (Paradise)",
+              "speaker": "Belal Assaad",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 2796,
+              "tags": [
+                "jannah",
+                "paradise",
+                "eternal"
+              ]
+            },
+            {
+              "id": "AD3RJqudRvQ",
+              "title": "Jannah Is Better Than That",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "jannah",
+                "paradise",
+                "motivation"
+              ]
+            },
+            {
+              "id": "c_Ac1xH8SJ4",
+              "title": "A Discussion Between Paradise and Hellfire",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1500,
+              "tags": [
+                "jannah",
+                "jahannam",
+                "discussion"
+              ]
+            },
+            {
+              "id": "_MusyKjau0Y",
+              "title": "Every Detail About Jannah You Need To Know",
+              "speaker": "One Islam Productions",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "celestial-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "Vt2RpW8xN4k",
+              "title": "Paradise & Hell — Islamic Reminder...",
+              "speaker": "FreeQuranEducation / Islamic Guidance",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "celestial-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "kqz8nhm65w8",
+              "title": "Every Detail About Jannah You Need To Know (2h+ Complete)",
+              "speaker": "One Islam Productions",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 7309,
+              "tags": [
+                "jannah",
+                "comprehensive",
+                "paradise"
+              ]
+            },
+            {
+              "id": "9JcCiEdA2nE",
+              "title": "Seeing Allah in Jannah! - Ahmed Sidky",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "jannah",
+                "seeing-allah",
+                "sidky"
+              ]
+            },
+            {
+              "id": "DW6PSRAALtk",
+              "title": "Can a Non-Muslim Go to Paradise? - Siraj Wahhaj",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "paradise",
+                "non-muslim",
+                "wahhaj"
+              ]
             }
           ]
         },
@@ -2061,6 +3320,32 @@
                 "jahannam",
                 "layers"
               ]
+            },
+            {
+              "id": "hEanxqGLhGQ",
+              "title": "Every Level of Paradise (Jannah) EXPLAINED",
+              "speaker": "Brother Aqib",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 501,
+              "tags": [
+                "jannah",
+                "levels",
+                "ranks"
+              ]
+            },
+            {
+              "id": "c_Ac1xH8SJ4",
+              "title": "A Discussion Between Paradise and Hellfire",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1500,
+              "tags": [
+                "jannah",
+                "levels",
+                "comparison"
+              ]
             }
           ]
         },
@@ -2093,6 +3378,32 @@
                 "jannah",
                 "bliss",
                 "comparison"
+              ]
+            },
+            {
+              "id": "rWuFF32ZisM",
+              "title": "This Is Life in Jannah (Paradise)",
+              "speaker": "Belal Assaad",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 2796,
+              "tags": [
+                "jannah",
+                "bliss",
+                "seeing-allah"
+              ]
+            },
+            {
+              "id": "q9-XZh9scQA",
+              "title": "A Description of Paradise",
+              "speaker": "Hisham Abu Yusuf",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2526,
+              "tags": [
+                "jannah",
+                "bliss",
+                "description"
               ]
             }
           ]
@@ -2167,6 +3478,30 @@
                 "webinar",
                 "comprehensive"
               ]
+            },
+            {
+              "id": "TlVwgthVLTU",
+              "title": "Heaven & Hell - Wahaj Tarin",
+              "speaker": "Wahaj Tarin",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "celestial-realms",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "Bn4mK9pQ7tL",
+              "title": "Life After Death: Heaven & Hell — Islamic Guidance...",
+              "speaker": "Islamic Guidance",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "celestial-realms",
+                "doc-import"
+              ]
             }
           ]
         },
@@ -2187,6 +3522,92 @@
                 "levels",
                 "hellfire",
                 "ranks"
+              ]
+            },
+            {
+              "id": "3NRJ0xTE6_Q",
+              "title": "7 Levels of Jahannam in Islam — Part 2: Who Goes Where?",
+              "speaker": "Islamic Philosophy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 317,
+              "tags": [
+                "jahannam",
+                "levels",
+                "who-goes"
+              ]
+            },
+            {
+              "id": "DlahctJIrWM",
+              "title": "The Eternality of Heaven & Hell",
+              "speaker": "Islam AsMercy",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 3223,
+              "tags": [
+                "jahannam",
+                "eternal",
+                "temporary"
+              ]
+            },
+            {
+              "id": "kwzPTu7GmUs",
+              "title": "Who Are 'The People of the al-A'raf (Heights)'?",
+              "speaker": "Islam AsMercy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2646,
+              "tags": [
+                "al-araf",
+                "heights",
+                "people"
+              ]
+            },
+            {
+              "id": "WkhvY3hmBIY",
+              "title": "The 7 Layers of Jannah & Jahannam",
+              "speaker": "Islam AsMercy",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3013,
+              "tags": [
+                "jahannam",
+                "jannah",
+                "layers"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "poor-jannah",
+          "name": "THE POOR OF JANNAH (Ahl al-Suffa)",
+          "nameAr": "أهل الصفة: فقراء الجنة",
+          "videos": [
+            {
+              "id": "AD3RJqudRvQ",
+              "title": "Jannah Is Better Than That",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1800,
+              "tags": [
+                "jannah",
+                "poor",
+                "suffa",
+                "mufti-menk"
+              ]
+            },
+            {
+              "id": "rWuFF32ZisM",
+              "title": "This Is Life in Jannah (Paradise)",
+              "speaker": "Belal Assaad",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 2796,
+              "tags": [
+                "jannah",
+                "belal-assaad",
+                "paradise"
               ]
             }
           ]
@@ -2298,6 +3719,44 @@
                 "quranic-linguistics",
                 "bayyinah"
               ]
+            },
+            {
+              "id": "WQyZjfCRnWM",
+              "title": "The Unbroken Chain of Prophets: From Adam to Muhammad",
+              "speaker": "Islam Channel",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "human-story",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "WYEox2ZnsLo",
+              "title": "From Adam to Muhammad ﷺ | The Unbroken Chain",
+              "speaker": "Zahir Shah Online",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "human-story",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "LnUDDZP-e8M",
+              "title": "Adam (AS) Made the First Human Mistake",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "adam",
+                "mistake",
+                "human-story",
+                "nak"
+              ]
             }
           ]
         },
@@ -2357,6 +3816,20 @@
                 "purpose",
                 "contemporary",
                 "meaning"
+              ]
+            },
+            {
+              "id": "laDqzkN-HVk",
+              "title": "From the Streets to the Masjids",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2881,
+              "tags": [
+                "seerah",
+                "conversion",
+                "wahhaj",
+                "siraj-wahhaj"
               ]
             }
           ]
@@ -2521,6 +3994,149 @@
                 "adam-to-muhammad",
                 "complete"
               ]
+            },
+            {
+              "id": "y6Nkz1Y9tA8",
+              "title": "The Human Story of Prophet Muhammad — Islamic Biog...",
+              "speaker": "Islamic Biography / FreeQuranEducation",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "human-story",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "h4JmRRxXdu0",
+              "title": "Life of Prophet Muhammad — Merciful Servant...",
+              "speaker": "Merciful Servant",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "human-story",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "7lqQbsNmqMU",
+              "title": "Seerah ka Khulasa (Urdu) — Dr. Israr Ahmed",
+              "speaker": "Dr. Israr Ahmed",
+              "difficulty": 2,
+              "language": "ur",
+              "duration": 7200,
+              "tags": [
+                "seerah",
+                "urdu",
+                "israr-ahmed",
+                "prophet-muhammad"
+              ]
+            },
+            {
+              "id": "I7ql5ZRXOew",
+              "title": "Desert Rose - Part 4 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "LsOKMpSvbLo",
+              "title": "Desert Rose - Part 7 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "bWimr9SNgU0",
+              "title": "Desert Rose - Part 6 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "NVaoIvx_Ipk",
+              "title": "Desert Rose - Part 5 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "PiDLP2iaBwU",
+              "title": "Desert Rose - Part 3 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "6a4WXojpEE4",
+              "title": "Desert Rose - Part 2 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "eHP5nYTMve8",
+              "title": "Desert Rose - Part 1 - Muhammad al-Shareef",
+              "speaker": "Muhammad al-Shareef",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "seerah",
+                "desert-rose",
+                "al-shareef"
+              ]
+            },
+            {
+              "id": "VzelKWv-Pok",
+              "title": "Celebrating the Prophet of Mercy (PBUH)",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "mercy",
+                "prophet",
+                "khutbah",
+                "quba"
+              ]
             }
           ]
         }
@@ -2601,6 +4217,19 @@
                 "death",
                 "soul",
                 "extraction"
+              ]
+            },
+            {
+              "id": "3On7UTa4EHg",
+              "title": "Maut ke Baad Kya Hoga? (Urdu) — Dr. Israr Ahmed",
+              "speaker": "Dr. Israr Ahmed",
+              "difficulty": 2,
+              "language": "ur",
+              "duration": 2400,
+              "tags": [
+                "death",
+                "afterlife",
+                "urdu"
               ]
             }
           ]
@@ -2688,6 +4317,20 @@
                 "first-station",
                 "death"
               ]
+            },
+            {
+              "id": "oVW1KXZPZoE",
+              "title": "What REALLY Happens When You are Buried? The Shocking Reality of the Grave",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 3237,
+              "tags": [
+                "grave",
+                "buried",
+                "qadhi",
+                "verified"
+              ]
             }
           ]
         },
@@ -2765,7 +4408,7 @@
               "id": "Ul5E53kzLJY",
               "title": "The Journey Of Soul After Death – Barzakh, Ruh & Nafs EXPLAINED!",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 3572,
               "tags": [
@@ -2798,6 +4441,19 @@
                 "barzakh",
                 "40-days",
                 "hidden"
+              ]
+            },
+            {
+              "id": "7G6QbBnX1mM",
+              "title": "Barzakh Ka Mamla (Urdu) — Mufti Tariq Masood",
+              "speaker": "Mufti Tariq Masood",
+              "difficulty": 2,
+              "language": "ur",
+              "duration": 2700,
+              "tags": [
+                "barzakh",
+                "urdu",
+                "tariq-masood"
               ]
             }
           ]
@@ -2898,6 +4554,143 @@
                 "current-state",
                 "menk"
               ]
+            },
+            {
+              "id": "vHmGJoUaHQk",
+              "title": "The Signs of the Hour - Part IV: The Dajjal",
+              "speaker": "Muhammad Tim Humble",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "AXbOekg6NPE",
+              "title": "The Dajjal (Part 1) - Major Signs Series",
+              "speaker": "Karim AbuZaid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "YHuIGIgSYqY",
+              "title": "The Mahdi, the Dajjal and the Messiah",
+              "speaker": "Wahaj Tarin",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "hrwaoKzceA4",
+              "title": "The Story of Gog and Magog (Ya'juj And Ma'juj)",
+              "speaker": "MercifulServant",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "QuCxQlNW-LA",
+              "title": "Gog & Magog Are Already Here",
+              "speaker": "Sheikh Imran Hosein",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "8ZKfuDXHPOk",
+              "title": "The End Series - Yajuj And Majuj - Bilal Assad",
+              "speaker": "Bilal Assad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "U4gSBotVAWc",
+              "title": "Yajuj Majuj | Gog Magog | Beginning Of The End",
+              "speaker": "Muhammad Tim Humble",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "F8PLz9m1PIs",
+              "title": "Gog & Magog Revealed - Are They From Europe?",
+              "speaker": "Sheikh Imran Hosein",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "dEpEMV77x44",
+              "title": "Shaytan Prepared You For Dajjal | Signs of the Hour Ep. 4",
+              "speaker": "Dr. Omar Suleiman (Yaqeen)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1763,
+              "tags": [
+                "signs",
+                "dajjal",
+                "shaytan",
+                "verified"
+              ]
+            },
+            {
+              "id": "D9w2nl6618k",
+              "title": "Miraculous Prophecy — Islam Will Enter Every House",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "prophecy",
+                "quran",
+                "spread"
+              ]
+            },
+            {
+              "id": "wOw73WqclA8",
+              "title": "Reflection on Ashura 06/26/26",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ashura",
+                "reflection",
+                "history",
+                "quba"
+              ]
             }
           ]
         },
@@ -2910,7 +4703,7 @@
               "id": "_fhOL4F9oik",
               "title": "The Day of Judgment Will Be FAR Worse Than You Imagine | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 3240,
               "tags": [
@@ -2923,7 +4716,7 @@
               "id": "e2UGmSC1hI4",
               "title": "A Day Like No Other: The Day of Judgement | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 2700,
               "tags": [
@@ -3009,6 +4802,42 @@
                 "reckoning",
                 "comprehensive"
               ]
+            },
+            {
+              "id": "2YjP3OaQpJ8",
+              "title": "The Day of Judgment — Mufti Menk...",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "qL7mN8p2XwR",
+              "title": "Reality of Day of Judgment — Nouman Ali Khan...",
+              "speaker": "Nouman Ali Khan / Bayyinah Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
+            },
+            {
+              "id": "Hy8KpL3nQ5w",
+              "title": "Preparing for Day of Judgment — Mufti Menk...",
+              "speaker": "Mufti Menk",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hereafter",
+                "doc-import"
+              ]
             }
           ]
         },
@@ -3021,7 +4850,7 @@
               "id": "_fhOL4F9oik",
               "title": "The Day of Judgment Will Be FAR Worse Than You Imagine | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 3240,
               "tags": [
@@ -3067,13 +4896,39 @@
               "id": "e2UGmSC1hI4",
               "title": "A Day Like No Other: The Day of Judgement | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 2700,
               "tags": [
                 "hashr",
                 "gathering",
                 "resurrection"
+              ]
+            },
+            {
+              "id": "_fhOL4F9oik",
+              "title": "The Day of Judgment Will Be FAR Worse Than You Imagine",
+              "speaker": "Dr. Yasir Qadhi",
+              "difficulty": 4,
+              "language": "en",
+              "duration": 3240,
+              "tags": [
+                "hashr",
+                "gathering",
+                "qiyamah"
+              ]
+            },
+            {
+              "id": "wcJWdZ0AKfo",
+              "title": "Day of Reckoning - Powerful Lecture",
+              "speaker": "Abdul Jabbar",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 3169,
+              "tags": [
+                "hashr",
+                "gathering",
+                "reckoning"
               ]
             }
           ]
@@ -3181,7 +5036,7 @@
               "id": "e2UGmSC1hI4",
               "title": "A Day Like No Other: The Day of Judgement | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 2700,
               "tags": [
@@ -3266,7 +5121,7 @@
               "id": "_fhOL4F9oik",
               "title": "The Day of Judgment Will Be FAR Worse Than You Imagine | Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 3240,
               "tags": [
@@ -3407,6 +5262,32 @@
                 "believers",
                 "purified"
               ]
+            },
+            {
+              "id": "c_Ac1xH8SJ4",
+              "title": "A Discussion Between Paradise and Hellfire",
+              "speaker": "Mufti Menk",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 1500,
+              "tags": [
+                "jannah",
+                "poor",
+                "mufti-menk"
+              ]
+            },
+            {
+              "id": "rWuFF32ZisM",
+              "title": "This Is Life in Jannah (Paradise)",
+              "speaker": "Belal Assaad",
+              "difficulty": 1,
+              "language": "en",
+              "duration": 2796,
+              "tags": [
+                "jannah",
+                "poor",
+                "suffa"
+              ]
             }
           ]
         },
@@ -3427,6 +5308,32 @@
                 "hellfire",
                 "punishment",
                 "warning"
+              ]
+            },
+            {
+              "id": "2kvL5Xsh5MY",
+              "title": "The 7 Levels of Jahannam (Hell)",
+              "speaker": "One Islam Productions",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 800,
+              "tags": [
+                "jahannam",
+                "levels",
+                "hellfire"
+              ]
+            },
+            {
+              "id": "zTkMBR5F5jo",
+              "title": "A Journey Through The Hellfire",
+              "speaker": "Abu Bakr Zoud",
+              "difficulty": 3,
+              "language": "en",
+              "duration": 4443,
+              "tags": [
+                "jahannam",
+                "journey",
+                "punishment"
               ]
             }
           ]
@@ -3548,7 +5455,7 @@
               "id": "dClt_aGyajA",
               "title": "Most common mistakes in the Prayer",
               "speaker": "OnePath Network",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 101,
               "tags": [
@@ -3581,6 +5488,164 @@
                 "salah",
                 "motivation",
                 "menk"
+              ]
+            },
+            {
+              "id": "oP4Nq71PU3A",
+              "title": "Dried Morning Eye Mucus — Barrier to Wudu? Sheikh Assim Al Hakeem",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "wudu"
+              ]
+            },
+            {
+              "id": "KmQahlg8PxU",
+              "title": "Can an 18 Year Old Go to Far Masjid Disobeying Parents?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "parents",
+                "masjid"
+              ]
+            },
+            {
+              "id": "FfYH8AUIbIQ",
+              "title": "Friday Prayer at Masjid With Biddah / Milad",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "salah",
+                "biddah"
+              ]
+            },
+            {
+              "id": "vvVlTu48APs",
+              "title": "Super Glue on Hand — Is Wudu & Prayer Valid?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "wudu",
+                "salah"
+              ]
+            },
+            {
+              "id": "ajIXeTBaT5E",
+              "title": "Do Lotions or Perfumes Block Ghusl Water?",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "ghusl",
+                "purity"
+              ]
+            },
+            {
+              "id": "U_Kp7b_wtzs",
+              "title": "Saying Allahu Akbar Twice — Invalidates Salah?",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "salah",
+                "takbir"
+              ]
+            },
+            {
+              "id": "nI80kXrhUkA",
+              "title": "Accidentally Repeating Phrases — Invalidates Salah?",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "salah",
+                "doubt"
+              ]
+            },
+            {
+              "id": "j5TRyMbSE98",
+              "title": "Total Cycle Dryness vs Absolute Purity",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "menstruation",
+                "purity"
+              ]
+            },
+            {
+              "id": "UnagbtQao9I",
+              "title": "If I ask my barber to thin the hair behind my sideburns, is that considered qaza?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "hair",
+                "qaza"
+              ]
+            },
+            {
+              "id": "6NPE2eueBbM",
+              "title": "Taraweeh 8 or 20 Rakaat - Dr Zakir Naik",
+              "speaker": "Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "taraweeh",
+                "salah",
+                "ramadan",
+                "naik"
+              ]
+            },
+            {
+              "id": "NcCYVRB6UbA",
+              "title": "Is There Difference Between Taraweeh and Tahajjud?",
+              "speaker": "Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "taraweeh",
+                "tahajjud",
+                "salah",
+                "naik"
+              ]
+            },
+            {
+              "id": "G1vbhD8kdb8",
+              "title": "How to Perform Wudu Ablution - Dr Zakir Naik",
+              "speaker": "Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "wudu",
+                "ablution",
+                "purity",
+                "naik"
               ]
             }
           ]
@@ -3837,6 +5902,32 @@
                 "umrah",
                 "purpose"
               ]
+            },
+            {
+              "id": "4Vrm_-usIwY",
+              "title": "Can I Do Umrah for Deceased While Waiting for Hajj Tamattu?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "umrah",
+                "hajj"
+              ]
+            },
+            {
+              "id": "erA1-2fR9Yw",
+              "title": "Saudi Hajj Rules: Woman Without Male Mahram?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "hajj",
+                "mahram"
+              ]
             }
           ]
         },
@@ -3923,6 +6014,123 @@
                 "quran",
                 "bayyinah"
               ]
+            },
+            {
+              "id": "4RkE3be9EK4",
+              "title": "My Mom Doesn't Wear Hijab — Fearing People See Her",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "hijab",
+                "family"
+              ]
+            },
+            {
+              "id": "nBR9OniacBQ",
+              "title": "Girls Demanding Excessive Mahr ($30k) — BARAKAH?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "mahr",
+                "marriage"
+              ]
+            },
+            {
+              "id": "dWnPa59xLk4",
+              "title": "Can I Drive My Catholic Mother to Church?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "family",
+                "christianity"
+              ]
+            },
+            {
+              "id": "p0m7Cymr5FM",
+              "title": "Wife Pregnant, Can We Abort If We Both Agree?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "abortion",
+                "family"
+              ]
+            },
+            {
+              "id": "-nn3ZOUUKOw",
+              "title": "Wife Deny Intimacy to Avoid Sick Child?",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "marriage",
+                "family"
+              ]
+            },
+            {
+              "id": "epq-3Oyg0LI",
+              "title": "Halal Status of Secret Divorce",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "divorce",
+                "marriage"
+              ]
+            },
+            {
+              "id": "C4Lbm2Nl2A8",
+              "title": "Can Guys and Girls Just Be Friends? - Omar Suleiman",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "relationships",
+                "hijab",
+                "halal-haram"
+              ]
+            },
+            {
+              "id": "Q499xV32L1g",
+              "title": "Why Muslim Women Wear Hijab? - Aminah Assilmi",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hijab",
+                "women",
+                "fiqh"
+              ]
+            },
+            {
+              "id": "vT4Qh8wNR_0",
+              "title": "Beauty of Hijab",
+              "speaker": "Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hijab",
+                "naik",
+                "beauty"
+              ]
             }
           ]
         }
@@ -3944,7 +6152,7 @@
               "id": "gDwoZga80Bs",
               "title": "Sufism - A complete Guide - Dr.Umar Faruq Abd Allah",
               "speaker": "Dr. Umar Faruq Abd Allah",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 29049,
               "tags": [
@@ -3990,6 +6198,34 @@
                 "tasawwuf",
                 "sufism",
                 "truth"
+              ]
+            },
+            {
+              "id": "PmK25RP3DS4",
+              "title": "A Person May Recite Quran, Make Du'a — Yet Feel It's Not Enough",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "dua",
+                "worship",
+                "nak"
+              ]
+            },
+            {
+              "id": "w_7928XlfQo",
+              "title": "Understanding the Reality of Mahabbah: Ibn Taymiyya",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "mahabbah",
+                "ibn-taymiyya",
+                "tasawwuf",
+                "qadhi"
               ]
             }
           ]
@@ -4082,6 +6318,32 @@
                 "tazkiyah",
                 "practical",
                 "ways"
+              ]
+            },
+            {
+              "id": "THn5oesBTfU",
+              "title": "Tazkiyah and the Purification of the Soul — The 3 Levels of Din",
+              "speaker": "Dr. Hatem AlHaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tazkiyah",
+                "purification",
+                "3-levels"
+              ]
+            },
+            {
+              "id": "J2WKwOvGAX4",
+              "title": "The Soul & Self (Ruh & Nafs)",
+              "speaker": "Sheikh Belal Assad",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3600,
+              "tags": [
+                "tazkiyah",
+                "nafs",
+                "heart"
               ]
             }
           ]
@@ -4176,7 +6438,7 @@
               "id": "G7XSmRPjXgI",
               "title": "Introduction To Tafseer Ibn Kathir",
               "speaker": "Ustadh Abdulrahman Hassan",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 14175,
               "tags": [
@@ -4202,7 +6464,7 @@
               "id": "aN5cJIyPph0",
               "title": "Quran Tafsir #1: Surah Baqarah",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 3708,
               "tags": [
@@ -4274,6 +6536,46 @@
                 "tafsir",
                 "yaseen",
                 "qadhi"
+              ]
+            },
+            {
+              "id": "tNzz6lieW50",
+              "title": "How Do You Know You're Not Misreading the Quran?",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "tafsir",
+                "nak"
+              ]
+            },
+            {
+              "id": "J7izynGKrek",
+              "title": "Whose Words Are These?",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "revelation",
+                "nak"
+              ]
+            },
+            {
+              "id": "WsBkrfGQniU",
+              "title": "Deeper Look Series: Surah Al-Jinn",
+              "speaker": "Nouman Ali Khan (Bayyinah)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "jinn",
+                "surah",
+                "nak",
+                "deeper-look"
               ]
             }
           ]
@@ -4431,6 +6733,19 @@
                 "qiraat",
                 "tajweed",
                 "prayer"
+              ]
+            },
+            {
+              "id": "8MO_ZoszXHM",
+              "title": "Shuʿbah: Voice of ʿAsim's Recitation | Ep.14",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "qiraat",
+                "recitation",
+                "tajweed"
               ]
             }
           ]
@@ -4598,6 +6913,32 @@
                 "hadith",
                 "reading"
               ]
+            },
+            {
+              "id": "7gPVlu7Ncuo",
+              "title": "Al Adab Al Mufrad Episode 244 — Supplications",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hadith",
+                "adab",
+                "supplications"
+              ]
+            },
+            {
+              "id": "ublP4vVIufw",
+              "title": "Al Adab Al Mufrad Episode 245 — Supplications",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hadith",
+                "adab",
+                "supplications"
+              ]
             }
           ]
         },
@@ -4636,7 +6977,7 @@
               "id": "heitI0S9BCo",
               "title": "Verifying and Understanding Hadith - Dr. Jonathan Brown",
               "speaker": "Dr. Jonathan Brown",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 3577,
               "tags": [
@@ -4716,6 +7057,44 @@
                 "authentic",
                 "verification"
               ]
+            },
+            {
+              "id": "heitI0S9BCo",
+              "title": "Verifying and Understanding Hadith",
+              "speaker": "Dr. Jonathan Brown",
+              "difficulty": 4,
+              "language": "en",
+              "duration": 3577,
+              "tags": [
+                "hadith",
+                "verification",
+                "academic"
+              ]
+            },
+            {
+              "id": "-asSANXwnNE",
+              "title": "Can't Verify a Hadith — Implement or Ignore?",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hadith",
+                "verification"
+              ]
+            },
+            {
+              "id": "0nJtS0NaZQg",
+              "title": "Why Are Our Children Suspicious of the Hadith? - Jeffrey Lang",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "hadith",
+                "children",
+                "modern"
+              ]
             }
           ]
         }
@@ -4771,6 +7150,569 @@
                 "change",
                 "character"
               ]
+            },
+            {
+              "id": "7xFz9VTeC88",
+              "title": "The Pursuit of Excellence",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3369,
+              "tags": [
+                "akhlaq",
+                "excellence",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "Z29aFXcrKiU",
+              "title": "The True Spirit of Islam",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 3178,
+              "tags": [
+                "akhlaq",
+                "spirit",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "1nlCkI61xvI",
+              "title": "Are You Ready to Die?",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 2062,
+              "tags": [
+                "death",
+                "readiness",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "IuRcNa87Efs",
+              "title": "Be Opposite the Disbelievers!",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1807,
+              "tags": [
+                "character",
+                "identity",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "meBS8sY_nfU",
+              "title": "It's Not What You Say, It's What You Do!",
+              "speaker": "Siraj Wahhaj",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 1288,
+              "tags": [
+                "character",
+                "action",
+                "wahhaj",
+                "siraj-wahhaj"
+              ]
+            },
+            {
+              "id": "x9FETZfLtME",
+              "title": "Your Pain Can Make You Unfair | Khutbah By Ustadh Nouman Ali Khan",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "akhlaq",
+                "khutbah",
+                "nak"
+              ]
+            },
+            {
+              "id": "txXK9Er-Sdk",
+              "title": "Sin Can Appear Attractive in the Moment",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "sin",
+                "temptation",
+                "nak"
+              ]
+            },
+            {
+              "id": "HX90NAkZ_Ic",
+              "title": "We May Defend Ourselves, Make Excuses",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "akhlaq",
+                "excuses",
+                "nak"
+              ]
+            },
+            {
+              "id": "-siyztg0mlM",
+              "title": "I Attended a Muslim Hackathon Event | Helsinki 2026",
+              "speaker": "Nouman Ali Khan",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "youth",
+                "community",
+                "nak"
+              ]
+            },
+            {
+              "id": "NU9LdhIQYBg",
+              "title": "Your Actions Don't Just Reflect You, They Reflect Islam",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "character",
+                "akhlaq",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "PPnKJM8IXww",
+              "title": "Allah Chose You for This Role",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "responsibility",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "lHwcvy1AZts",
+              "title": "The ONE Reason Why We're Always Divided",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "unity",
+                "division",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "klBFL6XaCeo",
+              "title": "Dear Trump, Meet The New Guy | Election Results",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "politics",
+                "america",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "kzwjOLPxIFE",
+              "title": "Those Who Value Time — How to Spend Your Life",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "time",
+                "discipline",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "Ol-hfoD7Uvw",
+              "title": "Imam Nadim Bashir Jummah Khutbah",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah"
+              ]
+            },
+            {
+              "id": "c46LhgovLFk",
+              "title": "Planting the Seed of Faith | Family A-Z Eps-24",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "family",
+                "faith",
+                "children"
+              ]
+            },
+            {
+              "id": "OMnxfQPItoE",
+              "title": "Ustadh Nouman Ali Khan Jummah Khutbah",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "nak"
+              ]
+            },
+            {
+              "id": "bl-ZraRmLpQ",
+              "title": "Shaykh Anas Zaheer Jummah Khutbah",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah"
+              ]
+            },
+            {
+              "id": "Xhw_Xee8f4U",
+              "title": "Major Sins - Abdur Raheem Green Part 8 [1/2]",
+              "speaker": "Abdur Raheem Green",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "sins",
+                "major",
+                "green"
+              ]
+            },
+            {
+              "id": "AD_HPFYhKs4",
+              "title": "Major Sins - Abdur Raheem Green Part 8 [2/2]",
+              "speaker": "Abdur Raheem Green",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "sins",
+                "major",
+                "green"
+              ]
+            },
+            {
+              "id": "gdQbIWGKvrE",
+              "title": "The Muslim House - Shaikh Salem Al Amry Part 7 [2/2]",
+              "speaker": "Sheikh Salem Al Amry",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "muslim-house",
+                "family",
+                "amry"
+              ]
+            },
+            {
+              "id": "QmuPwc3cbs4",
+              "title": "The Muslim House - Shaikh Salem Al Amry Part 7 [1/2]",
+              "speaker": "Sheikh Salem Al Amry",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "muslim-house",
+                "family",
+                "amry"
+              ]
+            },
+            {
+              "id": "kQns38InZGM",
+              "title": "Faith In Action: Relationship with the Self Part 7 [2/2]",
+              "speaker": "Yassir Fazaga",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "faith-in-action",
+                "self",
+                "fazaga"
+              ]
+            },
+            {
+              "id": "Qx_pACAl-5w",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 08/28/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "KEYDs5bPhJA",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 08/21/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "x58H17qPYpc",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 08/14/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "XSgYrpC7uXw",
+              "title": "Khutbatul Jumu'ah (Friday Sermon) 08/07/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "Jai0Jxdo1mw",
+              "title": "What is Emotional Intelligence in Islam? - Hosai Mojadiddi",
+              "speaker": "Hosai Mojadiddi (Zaytuna)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "emotional-intelligence",
+                "mojadiddi",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "9omzY7ZOqaE",
+              "title": "Where Is Our Community? - President Hamza Yusuf",
+              "speaker": "Hamza Yusuf (Zaytuna)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "community",
+                "hamza-yusuf",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "eY94KOis_z8",
+              "title": "Technology, Ethics, and the Cost of Change - Hamza Yusuf",
+              "speaker": "Hamza Yusuf (Zaytuna)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ethics",
+                "technology",
+                "hamza-yusuf",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "6NwhNEpFwCs",
+              "title": "What Is Transformational Education? A Zaytuna Grad Reflects",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "education",
+                "zaytuna",
+                "grad"
+              ]
+            },
+            {
+              "id": "obDi6NVmm84",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 07/31/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "6cMgFvMMM3s",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 07/24/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "lSUJqfnLpGc",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 07/17/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "-BqWcI6Pzgw",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 07/10/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "7qcHWqc5zEU",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 07/03/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "lr0GTRSLh-0",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 06/19/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "VEDAptoaOnk",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 06/12/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "1vlnzAKPm4s",
+              "title": "Jumu'ah Khutbah (Friday Sermon) 06/05/2026",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "khutbah",
+                "jummah",
+                "sermon",
+                "quba"
+              ]
+            },
+            {
+              "id": "t1sSELFbF_M",
+              "title": "Sacred Stewardship and Service: Learning Permaculture at Zaytuna College",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "stewardship",
+                "service",
+                "permaculture",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "yRShYLwoKI0",
+              "title": "In Service of Our Community - Zaytuna College Alumni",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "service",
+                "community",
+                "alumni",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "DDcu_Um1XU4",
+              "title": "More Than a Degree: How Zaytuna Changed Everything",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "education",
+                "zaytuna",
+                "graduation"
+              ]
             }
           ]
         },
@@ -4809,7 +7751,7 @@
               "id": "8M8tyeMh3AY",
               "title": "Sabr Jameel: The Grace of Enduring with Strength",
               "speaker": "Nouman Ali Khan",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 1762,
               "tags": [
@@ -4908,6 +7850,31 @@
                 "tawakkul",
                 "trust",
                 "qadhi"
+              ]
+            },
+            {
+              "id": "7gxJ_rLuySw",
+              "title": "Going Through Difficulties? Trust in Allah - Shuaib S. Khan",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "tawakkul",
+                "trust",
+                "difficulties"
+              ]
+            },
+            {
+              "id": "NFFfc8qqZG4",
+              "title": "Self Sufficient vs Non Self Sufficient | Ep 17 | Imam Nadim Bashir",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "self-sufficient",
+                "tawakkul"
               ]
             }
           ]
@@ -5174,7 +8141,7 @@
               "id": "JaHiRVndqQ8",
               "title": "Islamic Finance Q&A | Shaykh Dr. Yasir Qadhi",
               "speaker": "Dr. Yasir Qadhi",
-              "difficulty": 2,
+              "difficulty": 4,
               "language": "en",
               "duration": 2197,
               "tags": [
@@ -5246,6 +8213,46 @@
                 "finance",
                 "stocks",
                 "naik"
+              ]
+            },
+            {
+              "id": "J6lL9RJIO8M",
+              "title": "Sheikh Says YouTube Earnings Are Halal",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "earnings",
+                "halal"
+              ]
+            },
+            {
+              "id": "XiuAijAjx7M",
+              "title": "Paying Full Price for Grocery Vegetables to Poor Vendors",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "fiqh",
+                "spending",
+                "charity"
+              ]
+            },
+            {
+              "id": "nak4y1BV9S8",
+              "title": "The Prophet's Economic Protocols",
+              "speaker": "QUBA Institute",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "economics",
+                "prophet",
+                "finance",
+                "quba"
               ]
             }
           ]
@@ -5451,6 +8458,32 @@
                 "dua",
                 "prophet",
                 "hamza-yusuf"
+              ]
+            },
+            {
+              "id": "1qyACjDyu4A",
+              "title": "Prayer of Need for Illness and Safe Travel",
+              "speaker": "Huda TV",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "dua",
+                "salah",
+                "need"
+              ]
+            },
+            {
+              "id": "rLlE7lIWdRM",
+              "title": "Sins Block Dua, Istighfar Opens the Door to Blessings | Ustadh Mohamad Baajour",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "dua",
+                "sins",
+                "istighfar"
               ]
             }
           ]
@@ -5774,6 +8807,73 @@
                 "story",
                 "comprehensive"
               ]
+            },
+            {
+              "id": "oc3G-vWTEpk",
+              "title": "The ONE Decision That Changed Muslim History",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "Q8xnFKxNmvY",
+              "title": "Malcolm X Provides Much Hope For Youth in America",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "history",
+                "malcolm-x",
+                "america"
+              ]
+            },
+            {
+              "id": "rPyWsakz_lE",
+              "title": "Companions of the Prophet: Abu Bakr (ra) Part 7 [2/2]",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "abu-bakr",
+                "seerah",
+                "companions",
+                "hakeem"
+              ]
+            },
+            {
+              "id": "pmvek7wtvBQ",
+              "title": "Companions of the Prophet: Abu Bakr (ra) Part 7 [1/2]",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "abu-bakr",
+                "seerah",
+                "companions",
+                "hakeem"
+              ]
+            },
+            {
+              "id": "cINxZLYPgiw",
+              "title": "Companions of the Prophet: Umar Ibn Al-Khattab (ra) Part 8 [1/2]",
+              "speaker": "Assim Al Hakeem",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "umar",
+                "seerah",
+                "companions",
+                "hakeem"
+              ]
             }
           ]
         },
@@ -5859,6 +8959,19 @@
                 "history",
                 "complete"
               ]
+            },
+            {
+              "id": "v79lLEGOAPo",
+              "title": "Andalus: Is History Repeating Itself?",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "andalus",
+                "history",
+                "qadhi"
+              ]
             }
           ]
         },
@@ -5871,7 +8984,7 @@
               "id": "Z017QKEkxSs",
               "title": "ISLAMIC HISTORY OF THE UMAYYAD CALIPHATE",
               "speaker": "Hugh Kennedy",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 10905,
               "tags": [
@@ -5930,6 +9043,72 @@
                 "umayyad",
                 "complete",
                 "history"
+              ]
+            },
+            {
+              "id": "okXRjhgci5U",
+              "title": "The Debate That Shaped the Birth of Pakistan",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "pakistan",
+                "history",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "m1w3XEEOuR0",
+              "title": "Inside Syria's New Beginning",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "syria",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "pDVT7VQZBVc",
+              "title": "Palestine: Whose Land is It?",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "palestine",
+                "history",
+                "politics"
+              ]
+            },
+            {
+              "id": "thGTq1tgtp4",
+              "title": "What the Fall of Andalus Teaches Us About Muslim Unity",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "andalus",
+                "unity",
+                "history",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "W-hPGrH0uU8",
+              "title": "The Birth of Pakistan: A Battle of Fatwas and Ideas | Pre-Partition Debate",
+              "speaker": "EPIC Masjid",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "pakistan",
+                "fatwa",
+                "history",
+                "debate"
               ]
             }
           ]
@@ -6004,7 +9183,7 @@
               "id": "_2oCE8yupjw",
               "title": "Comparative Theology: Islam, Judaism, Christianity",
               "speaker": "Dr. Ali Ataie",
-              "difficulty": 3,
+              "difficulty": 4,
               "language": "en",
               "duration": 27169,
               "tags": [
@@ -6050,6 +9229,178 @@
                 "jesus",
                 "isa",
                 "life"
+              ]
+            },
+            {
+              "id": "a1qb78yUkoc",
+              "title": "Artificial Intelligence & Islam: Are We Ready?",
+              "speaker": "Yasir Qadhi",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ai",
+                "technology",
+                "qadhi"
+              ]
+            },
+            {
+              "id": "r8V-hPH8XSM",
+              "title": "Nation of Islam/Farrakhan Not Muslims",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "groups",
+                "aqeedah",
+                "comparative"
+              ]
+            },
+            {
+              "id": "VneS4PLkxeo",
+              "title": "Music in Islam? - Abdal Hakim Murad",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "music",
+                "fiqh",
+                "murdar"
+              ]
+            },
+            {
+              "id": "ycy1juIm-Vc",
+              "title": "Voting: Halal or Haram? - Omar Suleiman",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "voting",
+                "politics",
+                "fiqh"
+              ]
+            },
+            {
+              "id": "gJhZOq3u-XI",
+              "title": "The Islamic Ruling on Apostasy is NOT Black and White",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "apostasy",
+                "ruling",
+                "fiqh"
+              ]
+            },
+            {
+              "id": "jE-kuZTdBcw",
+              "title": "The Salafi/Wahhabi Fallacy - Abdal Hakim Murad",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "salafi",
+                "wahhabi",
+                "murdar"
+              ]
+            },
+            {
+              "id": "Nug6Fqhu884",
+              "title": "Muslims Pray Like Jesus Prayed",
+              "speaker": "Islam On Demand",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "jesus",
+                "salah",
+                "comparative"
+              ]
+            },
+            {
+              "id": "vHxp8Rljyb0",
+              "title": "Qur'an and Modern Science",
+              "speaker": "Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "quran",
+                "science",
+                "naik"
+              ]
+            },
+            {
+              "id": "CVPN9n67YwQ",
+              "title": "Mohamed by Non-Muslim Scholars",
+              "speaker": "Zakir Naik",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "muhammad",
+                "scholars",
+                "non-muslim",
+                "naik"
+              ]
+            },
+            {
+              "id": "F7_7l7xdM0I",
+              "title": "The AI Mirror & Magnifica Humanitas",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ai",
+                "ethics",
+                "zaytuna",
+                "hamza-yusuf"
+              ]
+            },
+            {
+              "id": "EFyO_eS7tvw",
+              "title": "Law and Order: The Impact of Artificial Intelligence",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ai",
+                "law",
+                "ethics",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "mmuBNgOHhNc",
+              "title": "How Artificial Intelligence Developed",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ai",
+                "history",
+                "zaytuna"
+              ]
+            },
+            {
+              "id": "EfZmaHLv-pQ",
+              "title": "Can We Affect the Future of AI?",
+              "speaker": "Zaytuna College",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "ai",
+                "future",
+                "zaytuna"
               ]
             }
           ]
@@ -6187,6 +9538,20 @@
                 "dawah",
                 "questions",
                 "answered"
+              ]
+            },
+            {
+              "id": "0tDFr44R2eg",
+              "title": "How Can Muslims Help America? - President Hamza Yusuf",
+              "speaker": "Hamza Yusuf (Zaytuna)",
+              "difficulty": 2,
+              "language": "en",
+              "duration": 0,
+              "tags": [
+                "america",
+                "community",
+                "hamza-yusuf",
+                "zaytuna"
               ]
             }
           ]

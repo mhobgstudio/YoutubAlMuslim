@@ -1,48 +1,80 @@
 # YoutubAlMuslim
 
-An Islamic Knowledge Hub — a YouTube-exact clone featuring 227+ curated Islamic videos across 6 major topics and 11 languages.
-
-## Features
-
-- 🎬 **YouTube-exact UI** — Grid layout, watch modal, sidebar navigation
-- 🔍 **Search & Filter** — Search by keyword, filter by topic, subtopic, and language
-- 🌍 **11 Languages** — English, Arabic, Urdu, Turkish, Malay, French, Indonesian, Beng Hausa, Swahili, Chinese
-- 📚 **6 Major Topics** — Based on "THE RECORD" comprehensive Islamic knowledge base
-- 🔖 **Bookmarks** — Save videos to watch later (localStorage)
-- 🎲 **Inspire Me** — Random video discovery
-- 🌙 **Dark/Light Theme** — Toggle appearance
-- ⌨️ **Keyboard Shortcuts** — `/` to search, `Esc` to close modal
-
-## Topics Covered
-
-1. **The Foundation** — Allah & Pre-Eternity
-2. **Primordial Creation** — Sea, Throne, Pen, Book
-3. **Unseen Realms** — Souls, Angels, Jinn
-4. **Celestial Realms** — Jannah & Jahannam
-5. **Earth: The Human Story** — Creation, Test, Guidance
-6. **The Hereafter** — Death, Resurrection, Judgment
+A YouTube-exact UI for curated Islamic video lectures. Built as a static site (no build step) with a single JSON dataset driving a fast, filterable grid.
 
 ## Quick Start
 
 ```bash
-cd "YoutubAlMuslim"
-python3 -m http.server 8080
-# Open http://localhost:8080
+# Serve locally
+python3 -m http.server 8000
+# open http://localhost:8000
 ```
 
-No build step required. Pure HTML/CSS/JS.
+## Stack
 
-## Tech Stack
+- Plain HTML / CSS / vanilla JS — no framework, no bundler
+- `data/topics.json` is the single source of truth (16 topics, 470+ videos, 11 languages)
+- PWA: `manifest.json` + `sw.js` for offline shell
 
-- Pure HTML, CSS, JavaScript (no frameworks)
-- YouTube iframe embeds for video playback
-- IntersectionObserver for infinite scroll
-- localStorage for bookmarks and theme
+## Features
 
-## Data
+- 16 Islamic topics across 3 learning paths (Aqeedah, Hereafter, Unseen Realms)
+- 11 language filters (en, ar, ur, tr, ms, fr, id, bn, ha, sw, zh)
+- Difficulty tiers (Beginner → Scholar) with color badges
+- Search, topic + subtopic chips, infinite scroll
+- Bookmarks (persisted to `localStorage`)
+- "Inspire Me" random play
+- Dark / light theme
+- Real watch-progress tracking via the YouTube IFrame API
+- YouTube-accurate two-column watch view with related videos
+- Mobile responsive (sidebar drawer below 1024px)
 
-Video data is stored in `data/topics.json`. Each topic contains subtopics, and each subtopic contains video entries with YouTube IDs, speakers, difficulty levels, and language tags.
+## Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `/` | Focus search |
+| `Esc` | Close watch modal |
+| Click outside sidebar (mobile) | Close drawer |
+
+## Project Layout
+
+```
+index.html        page shell + masthead + sidebar + watch overlay
+app.js            data fetch, filter, grid render, modal, bookmarks, theme
+style.css         YouTube-accurate dark + light theme
+data/topics.json  video dataset (source of truth)
+data/Docs/        editorial notes / source links (not loaded at runtime)
+sw.js             service worker
+manifest.json     PWA manifest
+tests/            Playwright e2e
+```
+
+## Updating Content
+
+Add / edit videos in `data/topics.json`. Schema:
+
+```json
+{
+  "id": "YouTubeID",
+  "title": "Display title",
+  "speaker": "Scholar name",
+  "difficulty": 1,
+  "language": "en",
+  "duration": 1234,
+  "tags": ["tag1", "tag2"]
+}
+```
+
+`difficulty`: 1=Beginner, 2=Intermediate, 3=Advanced, 4=Scholar.
+`duration`: seconds. `language`: ISO 639-1 code from the language list at the top of `topics.json`.
+
+## Tests
+
+```bash
+./run-tests.sh
+```
 
 ## License
 
-Educational use — videos are embedded from YouTube with proper attribution.
+Educational / non-commercial use. All video links go to YouTube.

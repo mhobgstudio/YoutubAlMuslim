@@ -4,12 +4,13 @@
 let db=null,allV=[],filtV=[],dispCnt=0;const PS=20;
 let actTid=null,actSid=null,actLang=null,curV=null;
 let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
+let progMap=JSON.parse(localStorage.getItem('ym_prog')||'{}'); // {vid: {pct:0-100, ts:number}}
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 const E={
   si:$('#searchInput'),sb:$('#searchBtn'),st:$('#sidebarToggle'),
   sbx:$('#sidebar'),sbt:$('#sidebarTopics'),
   cb:$('#chipsBar'),sc:$('#subtopicChips'),
-  vg:$('#videoGrid'),nr:$('#noResults'),lm:$('#loadMore'),lmb:$('#loadMoreBtn'),
+  vg:$('#videoGrid'),nr:$('#noResults'),
   hv:$('#homeView'),bv:$('#bookmarksView'),bg:$('#bookmarksGrid'),nb:$('#noBookmarks'),bc:$('#bookmarkCount'),
   vm:$('#videoModal'),mp:$('#modalPlayer'),mt:$('#modalTitle'),ma:$('#modalAvatar'),
   ms:$('#modalSpeaker'),mm:$('#modalMeta'),md:$('#modalDifficulty'),
@@ -100,13 +101,21 @@ function deselect(){
 
 function applyF(){
   const q=E.si.value.toLowerCase().trim();
+  // Multi-term AND: split on whitespace, each term must appear in haystack
+  const terms=q?q.split(/\s+/).filter(Boolean):[];
   filtV=allV.filter(v=>{
     if(actTid&&v.topicId!==actTid)return false;
     if(actSid&&v.subtopicId!==actSid)return false;
     if(actLang&&v.language!==actLang)return false;
-    if(q){const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();return s.includes(q);}
+    if(terms.length){
+      const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();
+      for(const t of terms){if(!s.includes(t))return false;}
+    }
     return true;
   });
+  // Update live result count for screen readers
+  const live=document.getElementById('yt-search-live');
+  if(live)live.textContent=filtV.length+' videos';
   renderGrid(true);
 }
 
@@ -138,18 +147,20 @@ function mkCard(v){
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
   const thumb=`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
   const ini=(v.speaker||'?')[0].toUpperCase();
-  const prog=0; // Progress tracked per-user in future
-  const el=document.createElement('div');el.className='yt-card';
+  const prog=progMap[v.id]?.pct||0;
+  const isNew=(v.tags||[]).includes('doc-import');
+  const el=document.createElement('div');el.className='yt-card';el.setAttribute('role','listitem');el.setAttribute('tabindex','0');el.setAttribute('aria-label',`${v.title} by ${v.speaker}`);
   el.style.setProperty('--progress',prog+'%');
   el.innerHTML=`
     <div class="yt-card-thumb">
-      <img src="${thumb}" alt="" loading="lazy">
+      <img src="${thumb}" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${v.id}/hqdefault.jpg';this.onerror=function(){this.style.display='none';this.parentNode.classList.add('yt-card-thumb--noimg');};">
       <div class="yt-card-overlay"></div>
       <span class="yt-card-duration">${dur}</span>
       <span class="yt-card-difficulty" style="background:${d.c}">${d.l}</span>
+      ${isNew?'<span class="yt-card-new">NEW</span>':''}
       <div class="yt-card-progress"></div>
-      <button class="yt-card-bookmark ${isBm?'bookmarked':''}" data-id="${v.id}" data-topic="${v.topicId}">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+      <button class="yt-card-bookmark ${isBm?'bookmarked':''}" data-id="${v.id}" data-topic="${v.topicId}" aria-label="Save">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
       </button>
     </div>
     <div class="yt-card-info">
@@ -162,6 +173,12 @@ function mkCard(v){
     </div>`;
   el.querySelector('.yt-card-thumb').addEventListener('click',e=>{if(e.target.closest('.yt-card-bookmark'))return;openWatch(v);});
   el.querySelector('.yt-card-bookmark').addEventListener('click',e=>{e.stopPropagation();toggleBm(v);e.currentTarget.classList.toggle('bookmarked');});
+  // Keyboard: Enter / Space on focused card opens watch
+  el.addEventListener('keydown',e=>{
+    if((e.key==='Enter'||e.key===' ')&&!e.target.closest('.yt-card-bookmark')){
+      e.preventDefault();openWatch(v);
+    }
+  });
   return el;
 }
 
@@ -175,12 +192,16 @@ function openWatch(v){
   const tags=(v.tags||[]).map(t=>`<span class="yt-watch-tag">${esc(t)}</span>`).join('');
   E.mm.innerHTML=`<span style="color:var(--yt-text)">${d.l}</span> • ${LANG[v.language]||v.language} • ${fmtD(v.duration)}${tags?'  •  '+tags:''}`;
   E.mtg.innerHTML=tags;
-  E.mp.innerHTML=`<iframe src="https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
+  E.mp.innerHTML=`<iframe id="ytPlayerIframe" src="https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
+  // Wire progress tracking via YouTube IFrame API (loaded once)
+  setupYTProgress(v);
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
   E.mb.classList.toggle('bookmarked',isBm);
   E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
-  // Related
-  const rel=allV.filter(rv=>rv.topicId===v.topicId&&rv.id!==v.id).slice(0,10);
+  // Related: same topic first, then cross-topic by language + difficulty, exclude self.
+  const sameTopic=allV.filter(rv=>rv.topicId===v.topicId&&rv.id!==v.id);
+  const others=allV.filter(rv=>rv.topicId!==v.topicId&&rv.id!==v.id&&(rv.language===v.language||rv.difficulty===v.difficulty));
+  const rel=[...sameTopic,...others].slice(0,10);
   E.mr.innerHTML=rel.map(rv=>{
     const rd=D[rv.difficulty]||D[1];
     const rini=(rv.speaker||'?')[0].toUpperCase();
@@ -200,7 +221,13 @@ function openWatch(v){
   E.vm.style.display='block';document.body.style.overflow='hidden';
 }
 
-function closeModal(){E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;}
+function closeModal(){
+  // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
+  // If user opened but YT API never reported time, record a 1% "visited" marker.
+  if(curV&&!progMap[curV.id]){progMap[curV.id]={pct:1,ts:Date.now()};saveProg();}
+  E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
+}
+function saveProg(){try{localStorage.setItem('ym_prog',JSON.stringify(progMap));}catch(e){}}
 window.closeModal=closeModal;
 
 function toggleBm(v){
@@ -216,6 +243,25 @@ window.toggleBookmarkFromModal=function(){
   const btn=document.querySelector(`.yt-card-bookmark[data-id="${curV.id}"]`);
   if(btn)btn.classList.toggle('bookmarked',isBm);
 };
+window.shareCurrent=function(){
+  if(!curV)return;
+  const url=`https://www.youtube.com/watch?v=${curV.id}`;
+  const text=`${curV.title} — ${curV.speaker}`;
+  if(navigator.share){
+    navigator.share({title:curV.title,text,url}).catch(()=>{});
+  }else if(navigator.clipboard){
+    navigator.clipboard.writeText(`${text}\n${url}`).then(()=>{
+      const span=E.ms&&E.ms.parentNode;
+      const orig=E.mb.querySelector('span').textContent;
+      const shareBtn=document.getElementById('modalShare');
+      if(shareBtn){shareBtn.querySelector('span').textContent='Copied!';setTimeout(()=>{if(shareBtn.querySelector('span'))shareBtn.querySelector('span').textContent='Share';},1800);}
+    }).catch(()=>{
+      prompt('Copy this link:',url);
+    });
+  }else{
+    prompt('Copy this link:',url);
+  }
+};
 
 function renderBookmarks(){
   if(!bms.length){E.bg.innerHTML='';E.nb.style.display='block';E.bc.textContent='';return;}
@@ -230,8 +276,14 @@ window.showHome=function(){E.hv.style.display='';E.bv.style.display='none';$$('.
 window.showBookmarks=function(){E.hv.style.display='none';E.bv.style.display='';$$('.yt-guide-item').forEach(i=>i.classList.toggle('yt-guide-item--active',i.dataset.view==='bookmarks'));renderBookmarks();};
 
 function loadTheme(){const t=localStorage.getItem('ym_theme')||'dark';document.documentElement.setAttribute('data-theme',t);updTI(t);}
+// Icon shows the action: in dark mode, show SUN (click to switch to light). In light mode, show MOON (click to switch to dark).
 function toggleTheme(){const c=document.documentElement.getAttribute('data-theme');const n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('ym_theme',n);updTI(n);}
-function updTI(t){E.tid.style.display=t==='dark'?'':'none';E.til.style.display=t==='light'?'':'none';}
+function updTI(t){
+  // tid (themeIconDark) is the SUN. Show when in dark mode (offers switch to light).
+  // til (themeIconLight) is the MOON. Show when in light mode (offers switch to dark).
+  E.tid.style.display=t==='dark'?'':'none';
+  E.til.style.display=t==='light'?'':'none';
+}
 
 function fmtD(s){if(!s)return'';const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60;return h>0?`${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`:`${m}:${String(sec).padStart(2,'0')}`;}
 function esc(s){if(!s)return'';return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -243,7 +295,6 @@ function bindEv(){
   E.st.addEventListener('click',()=>E.sbx.classList.toggle('open'));
   E.tt.addEventListener('click',toggleTheme);
   E.rb.addEventListener('click',window.randomVideo);
-  if(E.lmb) E.lmb.addEventListener('click',()=>renderGrid(false));
   E.bkb.addEventListener('click',()=>{if(E.bv.style.display==='none'||!E.bv.style.display)window.showBookmarks();else window.showHome();});
   document.addEventListener('keydown',e=>{
     if(e.key==='Escape')closeModal();
@@ -255,4 +306,46 @@ function bindEv(){
 }
 
 document.addEventListener('DOMContentLoaded',init);
+
+// ===== YouTube IFrame API for real progress tracking =====
+let ytPlayer=null,ytReadyCb=null;
+(function loadYT(){
+  if(window.YT&&window.YT.Player)return;
+  const tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';
+  document.head.appendChild(tag);
+  window.onYouTubeIframeAPIReady=function(){
+    if(typeof ytReadyCb==='function')ytReadyCb();
+  };
+})();
+function setupYTProgress(v){
+  const init=()=>{
+    try{
+      ytPlayer=new YT.Player('ytPlayerIframe',{
+        events:{
+          onReady:(e)=>{e.target.unMute&&e.target.unMute();},
+          onStateChange:(e)=>{
+            if(e.data===YT.PlayerState.PLAYING){
+              const tick=()=>{
+                if(!ytPlayer||!ytPlayer.getCurrentTime||!curV)return;
+                const t=ytPlayer.getCurrentTime();
+                const d=ytPlayer.getDuration();
+                if(d>0){
+                  const pct=Math.min(100,Math.round((t/d)*100));
+                  if(pct>(progMap[curV.id]?.pct||0)){
+                    progMap[curV.id]={pct,ts:Date.now()};
+                    saveProg();
+                  }
+                }
+                if(ytPlayer.getPlayerState()===YT.PlayerState.PLAYING)setTimeout(tick,5000);
+              };
+              tick();
+            }
+          }
+        }
+      });
+    }catch(err){console.warn('YT Player init failed',err);}
+  };
+  if(window.YT&&window.YT.Player)init();
+  else ytReadyCb=init;
+}
 })();
