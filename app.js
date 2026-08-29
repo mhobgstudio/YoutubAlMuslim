@@ -863,15 +863,11 @@ function initMiniPlayer() {
   if (!miniEl || miniEl._wired) return;
   miniEl._wired = true;
 
-  // Expand button — scroll back to main player
+  // Expand button — reopen the full modal with current video
   document.getElementById('miniPlayerExpand')?.addEventListener('click', () => {
-    if (!curV) return;
+    const video = miniPlayerVideo;
     hideMiniPlayer();
-    E.vm.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    E.vm.scrollTop = 0;
-    wireFullscreenBtn();
-    updateFullscreenIcon();
+    if (video) openWatch(video);
   });
 
   // Close button — stop playing and hide
