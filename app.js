@@ -437,9 +437,16 @@ function openWatch(v){
   const tags=(v.tags||[]).map(t=>`<span class="yt-watch-tag">${esc(t)}</span>`).join('');
   E.mm.innerHTML=`<span style="color:var(--yt-text)">${d.l}</span> • ${LANG[v.language]||v.language} • ${fmtD(v.duration)}${tags?'  •  '+tags:''}`;
   E.mtg.innerHTML=tags;
-  E.mp.innerHTML=`<iframe id="ytPlayerIframe" src="https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
-  // Wire progress tracking via YouTube IFrame API (loaded once)
+  // Build player URL — if video belongs to a known playlist, load the
+  // entire playlist (YouTube IFrame API will autoplay through it).
+  const playCtx=resolvePlaylist(v);
+  const playerSrc=playCtx
+    ? `https://www.youtube.com/embed/videoseries?list=${playCtx.playlistId}&autoplay=1&rel=0&enablejsapi=1&v=${v.id}`
+    : `https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1`;
+  E.mp.innerHTML=`<iframe id="ytPlayerIframe" src="${playerSrc}" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
+  // Wire progress tracking + caption (transcript) detection via YouTube IFrame API
   setupYTProgress(v);
+  setupTranscript(v);
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
   E.mb.classList.toggle('bookmarked',isBm);
   E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
@@ -454,6 +461,8 @@ function openWatch(v){
       subBtn.style.display='none';
     }
   }
+  // Playlist panel
+  renderPlaylistPanel(v, playCtx);
   // Related: same topic first, then cross-topic by language + difficulty, exclude self.
   // Also honor current base topic + subtopic filters so recommendations stay in the user's chosen scope.
   const btsArr=Array.from(actBts);
@@ -485,10 +494,138 @@ function openWatch(v){
   E.vm.style.display='block';document.body.style.overflow='hidden';
 }
 
+// ===== Playlist resolution =====
+// Returns {playlistId, title, url} if v is part of a known playlist, else null.
+function resolvePlaylist(v){
+  if(!v.playlists||!v.playlists.length)return null;
+  const plRef=db.playlistRefs&&db.playlistRefs[v.playlists[0]];
+  if(!plRef)return null;
+  return {playlistId:plRef.id, title:plRef.title, url:plRef.url, refId:v.playlists[0]};
+}
+
+function renderPlaylistPanel(v, playCtx){
+  const panel=document.getElementById('modalPlaylist');
+  if(!panel)return;
+  if(!playCtx){
+    panel.style.display='none';
+    panel.innerHTML='';
+    return;
+  }
+  // Try to list the other videos in the same playlist, if the dataset knows them.
+  const otherIds=db.playlistVideos&&db.playlistVideos[playCtx.refId]||[];
+  const others=otherIds.filter(id=>id!==v.id).map(id=>allV.find(x=>x.id===id)).filter(Boolean);
+  panel.style.display='';
+  panel.innerHTML=`
+    <div class="yt-watch-playlist-head">
+      <span class="g-emoji">${playCtx.title.startsWith('Background')?'🎵':'📂'}</span>
+      <div class="yt-watch-playlist-meta">
+        <div class="yt-watch-playlist-label">PLAYLIST</div>
+        <div class="yt-watch-playlist-title">${esc(playCtx.title)}</div>
+      </div>
+      <a class="yt-watch-playlist-open" href="${esc(playCtx.url)}" target="_blank" rel="noopener noreferrer" title="Open on YouTube">↗</a>
+    </div>
+    <div class="yt-watch-playlist-autoplay">
+      <span class="yt-watch-playlist-dot"></span> Autoplay through playlist is ON
+    </div>
+    ${others.length?`<div class="yt-watch-playlist-list">
+      ${others.slice(0,5).map(o=>`<a class="yt-watch-playlist-item" href="#" data-vid="${o.id}" data-tid="${o.topicId}">
+        <img src="https://img.youtube.com/vi/${o.id}/default.jpg" alt="" loading="lazy">
+        <span>${esc(o.title)}</span>
+      </a>`).join('')}
+    </div>`:''}
+  `;
+  // Click handlers for up-next items
+  $$('.yt-watch-playlist-item').forEach(el=>el.addEventListener('click',e=>{
+    e.preventDefault();
+    const vid=allV.find(x=>x.id===el.dataset.vid&&x.topicId===el.dataset.tid);
+    if(vid){E.vm.scrollTop=0;openWatch(vid);}
+  }));
+}
+
+// ===== Transcript (captions) =====
+function setupTranscript(v){
+  const btn=document.getElementById('transcriptBtn');
+  const panel=document.getElementById('transcriptPanel');
+  if(!btn||!panel)return;
+  btn.style.display='';
+  btn.onclick=()=>{
+    panel.style.display=panel.style.display==='none'?'block':'none';
+    if(panel.style.display==='block'&&!panel.dataset.loaded){
+      panel.innerHTML='<div class="yt-transcript-loading">Loading transcript…</div>';
+      loadTranscript(v, panel);
+    }
+  };
+}
+function loadTranscript(v, panel){
+  // The YouTube IFrame API can list available caption tracks via getOption.
+  // We attempt that; if unavailable, fall back to the timedtext API which
+  // is public and returns a 3-word-cue list for many videos.
+  if(ytPlayer&&typeof ytPlayer.getOption==='function'){
+    try{
+      const list=ytPlayer.getOption('captions','tracklist');
+      const tracks=Array.isArray(list)?list:[];
+      if(tracks.length>0){
+        // Prefer the manually-uploaded English track; fall back to first.
+        const en=tracks.find(t=>(t.languageCode||'').startsWith('en'))||tracks[0];
+        if(en&&en.baseUrl){
+          fetchTranscriptFromBaseUrl(en.baseUrl, panel);
+          return;
+        }
+      }
+    }catch(e){/* fall through */}
+  }
+  // Fallback: timedtext API (no JSAPI needed) — returns 200 for many
+  // videos, with v3 captions that include timed cues.
+  const lang='en';
+  fetch(`https://www.youtube.com/api/timedtext?type=track&v=${encodeURIComponent(v.id)}&lang=${lang}&fmt=json3`)
+    .then(r=>r.ok?r.json():null)
+    .then(j=>{
+      if(!j||!j.events){panel.innerHTML='<div class="yt-transcript-empty">No transcript available for this video on YouTube.</div>';return;}
+      renderTranscriptEvents(j.events, panel);
+    })
+    .catch(()=>{
+      panel.innerHTML='<div class="yt-transcript-empty">Transcript not available (network or video has no captions).</div>';
+    });
+}
+function fetchTranscriptFromBaseUrl(baseUrl, panel){
+  // baseUrl is an explicit timedtext URL. Append &fmt=json3 to get JSON.
+  const u=baseUrl+(baseUrl.includes('?')?'&':'?')+'fmt=json3';
+  fetch(u).then(r=>r.ok?r.json():null).then(j=>{
+    if(!j||!j.events){panel.innerHTML='<div class="yt-transcript-empty">No transcript segments returned.</div>';return;}
+    renderTranscriptEvents(j.events, panel);
+  }).catch(()=>{
+    panel.innerHTML='<div class="yt-transcript-empty">Transcript not available.</div>';
+  });
+}
+function renderTranscriptEvents(events, panel){
+  // events: array of {tStartMs, dDurationMs, segs:[{utf8:"..."}]}
+  const cues=events.filter(e=>e.segs&&e.segs.length).map(e=>{
+    const text=e.segs.map(s=>s.utf8||'').join('').replace(/\s+/g,' ').trim();
+    return {t:(e.tStartMs||0)/1000, text};
+  }).filter(c=>c.text);
+  if(!cues.length){panel.innerHTML='<div class="yt-transcript-empty">No transcript segments returned.</div>';return;}
+  panel.dataset.loaded='1';
+  panel.innerHTML=`<div class="yt-transcript-list">${cues.map(c=>`<p class="yt-transcript-cue" data-t="${c.t.toFixed(1)}"><span class="yt-transcript-time">${fmtT(c.t)}</span><span>${esc(c.text)}</span></p>`).join('')}</div>`;
+  // Click a cue to seek the player
+  $$('.yt-transcript-cue').forEach(el=>el.addEventListener('click',()=>{
+    const t=parseFloat(el.dataset.t);
+    if(ytPlayer&&typeof ytPlayer.seekTo==='function')ytPlayer.seekTo(t,true);
+  }));
+}
+function fmtT(s){
+  s=Math.max(0,Math.floor(s));
+  const m=Math.floor(s/60),r=s%60;
+  return m+':'+String(r).padStart(2,'0');
+}
+
 function closeModal(){
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
   if(curV&&!progMap[curV.id]){progMap[curV.id]={pct:1,ts:Date.now()};saveProg();}
+  // Reset transcript + playlist panels for the next open
+  const tp=document.getElementById('transcriptPanel');if(tp){tp.style.display='none';tp.innerHTML='';delete tp.dataset.loaded;}
+  const pl=document.getElementById('modalPlaylist');if(pl){pl.style.display='none';pl.innerHTML='';}
+  const tb=document.getElementById('transcriptBtn');if(tb)tb.style.display='none';
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
 }
 function saveProg(){try{localStorage.setItem('ym_prog',JSON.stringify(progMap));}catch(e){}}

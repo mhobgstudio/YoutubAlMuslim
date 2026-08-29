@@ -11317,5 +11317,38 @@
       "color": "#8e44ad",
       "nameAr": "العلوم"
     }
-  ]
+  ],
+  "playlistRefs": {
+    "pl-seerah-full": {
+      "id": "PLWIRFDFSWZPt2M_3AIMo23V52uy8lk59f",
+      "title": "The Entire Seerah of the Prophet (SAW) — Full Playlist (40+ Lectures)",
+      "url": "https://www.youtube.com/playlist?list=PLWIRFDFSWZPt2M_3AIMo23V52uy8lk59f"
+    },
+    "pl-arabic-roots-shorts": {
+      "id": "PL-l9lo3mVheLo-4KNsGwKgWN2KoftShhI",
+      "title": "200 Arabic Roots Series (Shorts) | The Arabic Academy — Full Playlist",
+      "url": "https://www.youtube.com/playlist?list=PL-l9lo3mVheLo-4KNsGwKgWN2KoftShhI"
+    },
+    "pl-arabic-beginners": {
+      "id": "PL-l9lo3mVheI0LxWe4nmvO7e7P9H3ngvs",
+      "title": "Arabic Series For Beginners | 200 Arabic Roots Lessons — Full Playlist",
+      "url": "https://www.youtube.com/playlist?list=PL-l9lo3mVheI0LxWe4nmvO7e7P9H3ngvs"
+    },
+    "pl-tajweed-beginner": {
+      "id": "PL6TlMIZ5ylgqM4Uuu7iAhIeuSdF0v9yxo",
+      "title": "Learn Tajweed Easily (Beginner) — Full Playlist",
+      "url": "https://www.youtube.com/playlist?list=PL6TlMIZ5ylgqM4Uuu7iAhIeuSdF0v9yxo"
+    },
+    "pl-early-muslim-wars": {
+      "id": "PL3_xd3-vE5mhwB2BW-8HpqC80tdgdKzcp",
+      "title": "Early Muslim Wars (Season 1) — Full Playlist",
+      "url": "https://www.youtube.com/playlist?list=PL3_xd3-vE5mhwB2BW-8HpqC80tdgdKzcp"
+    },
+    "pl-background-halal-sound": {
+      "id": "PLzPxIZl0Ji3zzpI7Kqc_ynLI8THYJxeiO",
+      "title": "Background Halal Sound — Full Playlist",
+      "url": "https://www.youtube.com/playlist?list=PLzPxIZl0Ji3zzpI7Kqc_ynLI8THYJxeiO"
+    }
+  },
+  "playlistVideos": {}
 }
