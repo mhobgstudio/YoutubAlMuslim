@@ -785,6 +785,7 @@ function closeModal(){
   adTabOpenedFor=null;
   autoUnmuteIfNeeded();
   // Show mini-player if video was playing
+  console.log('closeModal curV:', curV ? curV.id : 'null', 'isPlaylistRef:', curV?.isPlaylistRef, 'isChannelRef:', curV?.isChannelRef);
   if(curV && !curV.isPlaylistRef && !curV.isChannelRef) {
     showMiniPlayer(curV);
   } else {
@@ -884,6 +885,7 @@ function initMiniPlayer() {
 }
 
 function showMiniPlayer(video) {
+  console.log('showMiniPlayer called:', video?.id, video?.title?.substring(0,30));
   if (!video || video.isPlaylistRef || video.isChannelRef) return;
   const miniEl = document.getElementById('miniPlayer');
   const container = document.getElementById('miniPlayerContainer');
@@ -899,8 +901,10 @@ function showMiniPlayer(video) {
   const src = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&enablejsapi=1&iv_load_policy=3&modestbranding=1&playsinline=1`;
   container.innerHTML = `<iframe src="${src}" allow="autoplay;encrypted-media" allowfullscreen playsinline></iframe>`;
 
+  console.log('showMiniPlayer: setting display, el:', !!miniEl, 'container:', !!container);
   miniEl.style.display = '';
   miniEl.classList.remove('hidden');
+  console.log('showMiniPlayer: display after:', miniEl.style.display, 'hidden:', miniEl.classList.contains('hidden'));
   // Animate in
   requestAnimationFrame(() => {
     miniEl.style.opacity = '1';
