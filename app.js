@@ -36,6 +36,7 @@ const L=LANG;
 
 async function init(){
   loadTheme();
+  initArmedBadge();
   try{
     const r=await fetch('data/topics.json');db=await r.json();
     buildIdx();renderChips();renderSide();renderGrid(true);bindEv();
@@ -473,7 +474,14 @@ function openWatch(v){
     tricksBtn._wired=true;
     tricksBtn.addEventListener('click',()=>{
       const panel=document.getElementById('modalAdTricks');
-      if(panel)panel.style.display=panel.style.display==='none'?'block':'none';
+      if(panel){
+        const wasHidden=panel.style.display==='none';
+        panel.style.display=wasHidden?'block':'none';
+        // First-time: offer the "auto-open alt tab" opt-in
+        if(wasHidden&&localStorage.getItem('ym_auto_alt_on_ad')===null){
+          showAutoAltOptIn();
+        }
+      }
     });
   }
   // Download panel — third-party downloader URLs
@@ -791,6 +799,10 @@ function closeModal(){
   if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
   const tricks=document.getElementById('modalAdTricks');if(tricks)tricks.style.display='none';
   const dl=document.getElementById('modalDownload');if(dl)dl.style.display='none';
+  // Reset ad mitigation state for the next video
+  if(_adPollTimer){clearInterval(_adPollTimer);_adPollTimer=null;}
+  adTabOpenedFor=null;
+  autoUnmuteIfNeeded();
   E.vm.style.display='none';E.mp.innerHTML='';document.body.style.overflow='';curV=null;
 }
 function saveProg(){try{localStorage.setItem('ym_prog',JSON.stringify(progMap));}catch(e){}}
@@ -1005,77 +1017,178 @@ function detectAdState(){
       updateAdUI({data:st});
     }
   }catch(e){}
+  // Poll the player state too as a backup signal (some YT IFrame API
+  // versions don't expose onAdStateChange reliably)
+  pollAdFromState();
 }
 
 let adSkipTicker=null;
+let adTabOpenedFor=null;  // dedupe: open alt tab only once per video
+let _adPollTimer=null;
+
+function pollAdFromState(){
+  // Some ads only set a flag we can read via the player's HTML element
+  // (e.g. ad-overlay class on the iframe). We poll every 1s and re-run
+  // updateAdUI when we detect it.
+  const iframe=document.getElementById('ytPlayerIframe');
+  if(!iframe)return;
+  if(_adPollTimer)return;
+  _adPollTimer=setInterval(()=>{
+    try{
+      const isAd=iframe&&/ad-showing|ytp-ad|ad-module/.test(iframe.className||'');
+      if(isAd)updateAdUI({data:1});  // 1 = skippable/playing
+      // Also try getAdState via the iframe.contentWindow — sometimes works
+      // cross-frame even when not exposed in the wrapper
+    }catch(e){}
+  },1500);
+  // Stop polling when modal closes
+  setTimeout(()=>{if(_adPollTimer&&!document.getElementById('videoModal').style.display.includes('block')){clearInterval(_adPollTimer);_adPollTimer=null;}},5000);
+}
 
 function updateAdUI(adEvent){
   const overlay=document.getElementById('adOverlay');
   const skipBtn=document.getElementById('adSkipBtn');
   if(!overlay||!skipBtn)return;
-  // State codes from YouTube IFrame API (1 = skippable ad, e.g. true after 5s)
+  // YT IFrame API state codes
   const SKIPPABLE=1, SKIPPED=2, AD_END=3;
-  if(!adEvent||adEvent.data===SKIPPED||adEvent.data===AD_END||adEvent.data===0&&!isAdPlaying()){
+  const adState=adEvent?adEvent.data:0;
+  // Treat any positive state (except SKIPPED/AD_END) as "ad playing"
+  const isAd=adState>0&&adState!==SKIPPED&&adState!==AD_END;
+
+  if(!isAd){
     overlay.classList.remove('visible');
     skipBtn.style.display='none';
     if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
+    autoUnmuteIfNeeded();
     return;
   }
-  // Try to detect that an ad is playing via player state too
-  if(isAdPlaying()){
-    overlay.classList.add('visible');
-    skipBtn.style.display='inline-flex';
-    // Countdown to skippable (YouTube's skip-ad countdown)
-    if(!adSkipTicker){
-      let s=5;
-      const tick=()=>{
-        skipBtn.textContent=s>0?('Skip ad in '+s+'s'):'⏭ Skip ad';
-        skipBtn.disabled=s>0;
-        skipBtn.classList.toggle('ready',s<=0);
-        if(s<=0){clearInterval(adSkipTicker);adSkipTicker=null;return;}
-        s--;
-      };
-      tick();
-      adSkipTicker=setInterval(tick,1000);
-    }
-  }else{
-    overlay.classList.remove('visible');
-    skipBtn.style.display='none';
+
+  // ===== Inherent automatic ad mitigation =====
+  // (1) Auto-mute the player during the ad (avoids the audio blast)
+  autoMuteForAd();
+  // (2) Show the persistent overlay with skip countdown
+  overlay.classList.add('visible');
+  skipBtn.style.display='inline-flex';
+  // (3) Auto-open an alt URL in a new tab once per video (user opted in)
+  autoOpenAltTabForAd();
+  // (4) Start the skip countdown
+  if(!adSkipTicker){
+    let s=5;
+    const tick=()=>{
+      skipBtn.textContent=s>0?('Skip ad in '+s+'s'):'⏭ Skip ad';
+      skipBtn.disabled=s>0;
+      skipBtn.classList.toggle('ready',s<=0);
+      if(s<=0){clearInterval(adSkipTicker);adSkipTicker=null;return;}
+      s--;
+    };
+    tick();
+    adSkipTicker=setInterval(tick,1000);
   }
 }
 
-function isAdPlaying(){
-  if(!ytPlayer)return false;
+let _mutedForAd=false;
+function autoMuteForAd(){
+  if(!ytPlayer||_mutedForAd)return;
   try{
-    // A video playing inside the embed can be either the user video or an
-    // ad. The IFrame API exposes cuepoints; an ad's getCurrentTime does
-    // not contribute to the user's progress. We treat the ad as "playing"
-    // when there is no progress being recorded AND the player is PLAYING.
-    // Heuristic: getDuration returns 0 during the pre-roll of certain ads.
-    const dur=ytPlayer.getDuration&&ytPlayer.getDuration();
-    const t=ytPlayer.getCurrentTime&&ytPlayer.getCurrentTime();
-    const playing=ytPlayer.getPlayerState&&ytPlayer.getPlayerState()===YT.PlayerState.PLAYING;
-    if(playing&&dur&&t!==undefined){
-      // Normal video: duration > 30s, t grows. Ad: usually short, often <30s.
-      // We can't reliably distinguish, so we use the user-controllable hint
-      // via the overlay (which the user can dismiss) instead of auto-skipping.
-      return false;
+    if(typeof ytPlayer.isMuted==='function'&&!ytPlayer.isMuted()){
+      ytPlayer.mute();
+      _mutedForAd=true;
     }
   }catch(e){}
-  return false;
+}
+function autoUnmuteIfNeeded(){
+  if(!ytPlayer||!_mutedForAd)return;
+  try{ytPlayer.unMute();}catch(e){}
+  _mutedForAd=false;
+}
+
+// Auto-open an alt URL once per video when the user opted in.
+// Off by default. Persisted in localStorage so it's a one-time toggle.
+function autoOpenAltTabForAd(){
+  if(!curV)return;
+  if(localStorage.getItem('ym_auto_alt_on_ad')!=='1')return;
+  if(adTabOpenedFor===curV.id)return;  // dedupe per video
+  adTabOpenedFor=curV.id;
+  const url=localStorage.getItem('ym_auto_alt_url')||('https://www.ssyoutube.com/watch?v='+curV.id);
+  try{window.open(url,'_blank','noopener,noreferrer');}catch(e){}
 }
 
 function skipAd(){
   if(!ytPlayer)return;
   try{
-    // Try the official skipAd API
     if(typeof ytPlayer.skipAd==='function'){ytPlayer.skipAd();return;}
-    // Fallback: stop the player to silence the ad, then close the modal
     if(typeof ytPlayer.stopVideo==='function')ytPlayer.stopVideo();
   }catch(e){console.warn('skipAd failed',e);}
+  autoUnmuteIfNeeded();
 }
 
 window.skipAd=skipAd;
+
+// ===== Auto-open alt tab opt-in (one-time ask) =====
+function showAutoAltOptIn(){
+  // Inject a one-time prompt at the top of the Ad Tricks panel
+  const panel=document.getElementById('modalAdTricks');
+  if(!panel)return;
+  let banner=document.getElementById('ym-auto-optin');
+  if(banner)return; // already showing
+  banner=document.createElement('div');
+  banner.id='ym-auto-optin';
+  banner.className='yt-auto-optin';
+  banner.innerHTML=`
+    <div class="yt-auto-optin-body">
+      <strong>🛡️ Enable automatic ad removal?</strong>
+      <p>When an ad is detected, this site will <em>automatically</em> open a new tab on <code>ssyoutube.com</code> (or your choice) so your browser-level ad blocker can handle it. You can disable this in localStorage any time.</p>
+      <div class="yt-auto-optin-actions">
+        <button class="yt-auto-optin-enable" type="button">✓ Enable</button>
+        <button class="yt-auto-optin-pick" type="button">Pick a different service</button>
+        <button class="yt-auto-optin-dismiss" type="button">Not now</button>
+      </div>
+    </div>`;
+  panel.prepend(banner);
+  banner.querySelector('.yt-auto-optin-enable').addEventListener('click',()=>{
+    localStorage.setItem('ym_auto_alt_on_ad','1');
+    localStorage.setItem('ym_auto_alt_url','https://www.ssyoutube.com/watch?v='+(curV?curV.id:''));
+    banner.remove();
+    updateArmedBadge();
+  });
+  banner.querySelector('.yt-auto-optin-pick').addEventListener('click',()=>{
+    const url=prompt('Enter the alt-URL template. Use {id} for the video id, e.g. https://inv.nadeko.net/watch?v={id}',localStorage.getItem('ym_auto_alt_url')||'https://www.ssyoutube.com/watch?v={id}');
+    if(url){
+      localStorage.setItem('ym_auto_alt_on_ad','1');
+      localStorage.setItem('ym_auto_alt_url',url);
+      banner.remove();
+      updateArmedBadge();
+    }
+  });
+  banner.querySelector('.yt-auto-optin-dismiss').addEventListener('click',()=>{
+    localStorage.setItem('ym_auto_alt_on_ad','0');
+    banner.remove();
+  });
+}
+
+// Masthead status badge — "🛡️ Ad-Block armed" when enabled
+function updateArmedBadge(){
+  const b=document.getElementById('ym-armed-badge');
+  if(!b)return;
+  const on=localStorage.getItem('ym_auto_alt_on_ad')==='1';
+  b.style.display=on?'inline-flex':'none';
+  const url=localStorage.getItem('ym_auto_alt_url')||'';
+  b.title=on?('Will auto-open: '+url):'';
+}
+function initArmedBadge(){
+  if(localStorage.getItem('ym_auto_alt_on_ad')===null)localStorage.setItem('ym_auto_alt_on_ad','0');
+  updateArmedBadge();
+  const b=document.getElementById('ym-armed-badge');
+  if(b&&!b._wired){
+    b._wired=true;
+    b.addEventListener('click',()=>{
+      const on=localStorage.getItem('ym_auto_alt_on_ad')==='1';
+      const next=!on;
+      localStorage.setItem('ym_auto_alt_on_ad',next?'1':'0');
+      updateArmedBadge();
+    });
+  }
+}
 
 // Wire the skip button (only on first init, so it survives across modal opens)
 (function wireSkipBtn(){

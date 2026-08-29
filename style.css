@@ -208,7 +208,7 @@ input{font-family:inherit}
 
 /* Ad overlay (visible during detected ad playback) */
 .yt-ad-overlay{position:absolute;top:0;left:0;right:0;z-index:5;padding:12px;background:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0));display:none;pointer-events:none}
-.yt-ad-overlay.visible{display:block}
+.yt-ad-overlay.visible{display:block;pointer-events:auto}
 .yt-ad-overlay-inner{display:flex;align-items:center;gap:12px;background:rgba(20,20,20,.95);border:1px solid #3a3a3a;border-radius:10px;padding:10px 14px;pointer-events:auto;max-width:560px}
 .yt-ad-overlay-icon{font-size:24px;flex-shrink:0}
 .yt-ad-overlay-text{flex:1;min-width:0}
@@ -217,6 +217,26 @@ input{font-family:inherit}
 .yt-ad-skip-btn{flex-shrink:0;padding:8px 14px;height:auto;border-radius:18px;background:#444;color:#aaa;font-size:12px;font-weight:600;cursor:not-allowed;border:none;transition:background .15s}
 .yt-ad-skip-btn.ready{background:#ffd54f;color:#000;cursor:pointer}
 .yt-ad-skip-btn.ready:hover{background:#ffca28}
+
+/* Masthead "Ad-Block armed" badge */
+.ym-armed-badge{color:#4caf50;position:relative}
+.ym-armed-badge::after{content:'';position:absolute;top:6px;right:6px;width:8px;height:8px;border-radius:50%;background:#4caf50;animation:ym-pulse 1.8s ease-in-out infinite}
+.ym-armed-badge:hover{background:rgba(76,175,80,.15)}
+@keyframes ym-pulse{0%,100%{opacity:.3;transform:scale(.9)}50%{opacity:1;transform:scale(1.2)}}
+
+/* Auto-open opt-in banner (inside ad-tricks panel) */
+.yt-auto-optin{background:rgba(76,175,80,.08);border:1px solid #4caf50;border-radius:10px;padding:14px;margin-bottom:12px}
+.yt-auto-optin-body strong{display:block;color:#4caf50;font-size:14px;margin-bottom:6px}
+.yt-auto-optin-body p{font-size:12px;color:#ccc;line-height:1.5;margin-bottom:10px}
+.yt-auto-optin-body p code{background:rgba(255,255,255,.08);padding:1px 5px;border-radius:3px;font-size:11px}
+.yt-auto-optin-actions{display:flex;gap:6px;flex-wrap:wrap}
+.yt-auto-optin-actions button{padding:6px 12px;border-radius:14px;font-size:12px;font-weight:500;border:none;cursor:pointer;transition:background .15s}
+.yt-auto-optin-enable{background:#4caf50;color:#fff}
+.yt-auto-optin-enable:hover{background:#43a047}
+.yt-auto-optin-pick{background:transparent;color:#3ea6ff;border:1px solid #3ea6ff}
+.yt-auto-optin-pick:hover{background:rgba(62,166,255,.15)}
+.yt-auto-optin-dismiss{background:transparent;color:#aaa;border:1px solid #555}
+.yt-auto-optin-dismiss:hover{background:rgba(255,255,255,.05);color:#fff}
 
 /* Watch metadata */
 .yt-watch-metadata{margin-bottom:24px}
