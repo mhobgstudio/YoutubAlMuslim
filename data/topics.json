@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "lastUpdated": "2026-08-27",
+  "version": "2.1",
+  "lastUpdated": "2026-08-29",
   "totalTopics": 16,
   "languages": [
     {
@@ -913,6 +913,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "aqeedah"
       ]
     },
     {
@@ -1277,6 +1280,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "aqeedah"
       ]
     },
     {
@@ -3067,6 +3073,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "aqeedah",
+        "akhlaq"
       ]
     },
     {
@@ -3612,6 +3622,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "aqeedah"
       ]
     },
     {
@@ -4140,6 +4153,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "history",
+        "aqeedah"
       ]
     },
     {
@@ -5398,6 +5415,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "aqeedah",
+        "akhlaq"
       ]
     },
     {
@@ -6134,6 +6155,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "worship"
       ]
     },
     {
@@ -6394,6 +6418,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "akhlaq",
+        "worship"
       ]
     },
     {
@@ -6783,6 +6811,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "knowledge",
+        "worship"
       ]
     },
     {
@@ -7098,6 +7130,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "knowledge"
       ]
     },
     {
@@ -7879,6 +7914,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "akhlaq"
       ]
     },
     {
@@ -8123,6 +8161,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "worship",
+        "knowledge"
       ]
     },
     {
@@ -8342,6 +8384,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "knowledge",
+        "worship"
       ]
     },
     {
@@ -8625,6 +8671,10 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "worship",
+        "akhlaq"
       ]
     },
     {
@@ -9113,6 +9163,9 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "history"
       ]
     },
     {
@@ -9556,7 +9609,80 @@
             }
           ]
         }
+      ],
+      "baseTopics": [
+        "knowledge",
+        "akhlaq"
       ]
+    }
+  ],
+  "baseTopics": {
+    "aqeedah": {
+      "name": "Aqeedah (Belief)",
+      "icon": "☪️",
+      "color": "#1a5f2a",
+      "nameAr": "العقيدة"
+    },
+    "akhlaq": {
+      "name": "Akhlaq (Character)",
+      "icon": "💎",
+      "color": "#16a085",
+      "nameAr": "الأخلاق"
+    },
+    "worship": {
+      "name": "Worship & Practice",
+      "icon": "🕌",
+      "color": "#2c3e50",
+      "nameAr": "العبادة"
+    },
+    "history": {
+      "name": "History & Seerah",
+      "icon": "🏛️",
+      "color": "#d35400",
+      "nameAr": "التاريخ"
+    },
+    "knowledge": {
+      "name": "Knowledge & Sciences",
+      "icon": "📖",
+      "color": "#8e44ad",
+      "nameAr": "العلوم"
+    }
+  },
+  "baseTopicsList": [
+    {
+      "id": "aqeedah",
+      "name": "Aqeedah (Belief)",
+      "icon": "☪️",
+      "color": "#1a5f2a",
+      "nameAr": "العقيدة"
+    },
+    {
+      "id": "akhlaq",
+      "name": "Akhlaq (Character)",
+      "icon": "💎",
+      "color": "#16a085",
+      "nameAr": "الأخلاق"
+    },
+    {
+      "id": "worship",
+      "name": "Worship & Practice",
+      "icon": "🕌",
+      "color": "#2c3e50",
+      "nameAr": "العبادة"
+    },
+    {
+      "id": "history",
+      "name": "History & Seerah",
+      "icon": "🏛️",
+      "color": "#d35400",
+      "nameAr": "التاريخ"
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge & Sciences",
+      "icon": "📖",
+      "color": "#8e44ad",
+      "nameAr": "العلوم"
     }
   ]
 }

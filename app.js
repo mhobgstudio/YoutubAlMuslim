@@ -3,12 +3,14 @@
 'use strict';
 let db=null,allV=[],filtV=[],dispCnt=0;const PS=20;
 let actTid=null,actSid=null,actLang=null,curV=null;
+let actBts=new Set(); // multi-select base topics (AND filter)
 let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
 let progMap=JSON.parse(localStorage.getItem('ym_prog')||'{}'); // {vid: {pct:0-100, ts:number}}
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 const E={
   si:$('#searchInput'),sb:$('#searchBtn'),st:$('#sidebarToggle'),
   sbx:$('#sidebar'),sbt:$('#sidebarTopics'),
+  sbb:$('#sidebarBaseTopics'),
   cb:$('#chipsBar'),sc:$('#subtopicChips'),
   vg:$('#videoGrid'),nr:$('#noResults'),
   hv:$('#homeView'),bv:$('#bookmarksView'),bg:$('#bookmarksGrid'),nb:$('#noBookmarks'),bc:$('#bookmarkCount'),
@@ -38,7 +40,7 @@ async function init(){
 function buildIdx(){
   allV=[];
   db.topics.forEach(t=>t.subtopics.forEach(s=>s.videos.forEach(v=>{
-    allV.push({...v,topicId:t.id,topicName:t.name,topicNameAr:t.nameAr,topicIcon:t.icon,topicColor:t.color,subtopicId:s.id,subtopicName:s.name,subtopicNameAr:s.nameAr});
+    allV.push({...v,topicId:t.id,topicName:t.name,topicNameAr:t.nameAr,topicIcon:t.icon,topicColor:t.color,subtopicId:s.id,subtopicName:s.name,subtopicNameAr:s.nameAr,baseTopics:t.baseTopics||[]});
   })));
   filtV=[...allV];
 }
@@ -66,15 +68,55 @@ function renderChips(){
 }
 
 function renderSide(){
+  // Base topics (multi-select, AND filter)
+  const bts=db.baseTopics||{};
+  if(E.sbb){
+    E.sbb.innerHTML=Object.entries(bts).map(([id,bt])=>{
+      const n=db.topics.filter(t=>(t.baseTopics||[]).includes(id))
+        .reduce((a,t)=>a+t.subtopics.reduce((b,s)=>b+s.videos.length,0),0);
+      return `<div class="yt-guide-topic yt-guide-base" data-base-id="${id}" role="checkbox" aria-checked="false" tabindex="0">
+        <span class="g-emoji">${bt.icon}</span>
+        <span>${bt.name}</span>
+        <span class="g-count">${n}</span>
+      </div>`;
+    }).join('');
+    $$('.yt-guide-base').forEach(el=>el.addEventListener('click',()=>toggleBase(el.dataset.baseId)));
+    // Keyboard accessibility
+    $$('.yt-guide-base').forEach(el=>el.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleBase(el.dataset.baseId);}
+    }));
+  }
+  // Clear button
+  const clearBtn=document.getElementById('clearBaseTopics');
+  if(clearBtn)clearBtn.addEventListener('click',()=>{actBts.clear();updateBaseUI();applyF();});
+
+  // Subscriptions (single-select sub-topic filter)
   E.sbt.innerHTML=db.topics.map(t=>{
     const n=t.subtopics.reduce((a,s)=>a+s.videos.length,0);
     return `<div class="yt-guide-topic" data-topic-id="${t.id}"><span class="g-emoji">${t.icon}</span><span>${t.name}</span><span class="g-count">${n}</span></div>`;
   }).join('');
-  $$('.yt-guide-topic').forEach(el=>el.addEventListener('click',()=>{
+  $$('.yt-guide-topic:not(.yt-guide-base)').forEach(el=>el.addEventListener('click',()=>{
     const tid=el.dataset.topicId;
     if(actTid===tid)deselect();else select(tid);
     showHome();window.scrollTo({top:0,behavior:'smooth'});
   }));
+}
+
+function toggleBase(btid){
+  if(actBts.has(btid))actBts.delete(btid);else actBts.add(btid);
+  updateBaseUI();
+  applyF();
+}
+
+function updateBaseUI(){
+  if(!E.sbb)return;
+  $$('.yt-guide-base').forEach(el=>{
+    const on=actBts.has(el.dataset.baseId);
+    el.classList.toggle('active',on);
+    el.setAttribute('aria-checked',on?'true':'false');
+  });
+  const actions=document.getElementById('sidebarBaseActions');
+  if(actions)actions.style.display=actBts.size>0?'block':'none';
 }
 
 function select(tid){
@@ -103,10 +145,13 @@ function applyF(){
   const q=E.si.value.toLowerCase().trim();
   // Multi-term AND: split on whitespace, each term must appear in haystack
   const terms=q?q.split(/\s+/).filter(Boolean):[];
+  // AND filter: video's baseTopics must contain every selected base topic
+  const btsArr=Array.from(actBts);
   filtV=allV.filter(v=>{
     if(actTid&&v.topicId!==actTid)return false;
     if(actSid&&v.subtopicId!==actSid)return false;
     if(actLang&&v.language!==actLang)return false;
+    if(btsArr.length){for(const bt of btsArr){if(!v.baseTopics.includes(bt))return false;}}
     if(terms.length){
       const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();
       for(const t of terms){if(!s.includes(t))return false;}
@@ -199,8 +244,11 @@ function openWatch(v){
   E.mb.classList.toggle('bookmarked',isBm);
   E.mb.querySelector('span').textContent=isBm?'Saved':'Save';
   // Related: same topic first, then cross-topic by language + difficulty, exclude self.
-  const sameTopic=allV.filter(rv=>rv.topicId===v.topicId&&rv.id!==v.id);
-  const others=allV.filter(rv=>rv.topicId!==v.topicId&&rv.id!==v.id&&(rv.language===v.language||rv.difficulty===v.difficulty));
+  // Also honor current base topic filter so recommendations stay in the user's chosen scope.
+  const btsArr=Array.from(actBts);
+  const inScope=rv=>btsArr.length===0||btsArr.every(b=>rv.baseTopics.includes(b));
+  const sameTopic=allV.filter(rv=>rv.topicId===v.topicId&&rv.id!==v.id&&inScope(rv));
+  const others=allV.filter(rv=>rv.topicId!==v.topicId&&rv.id!==v.id&&inScope(rv)&&(rv.language===v.language||rv.difficulty===v.difficulty));
   const rel=[...sameTopic,...others].slice(0,10);
   E.mr.innerHTML=rel.map(rv=>{
     const rd=D[rv.difficulty]||D[1];
