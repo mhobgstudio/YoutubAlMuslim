@@ -372,7 +372,7 @@ function mkCard(v){
   const d=D[v.difficulty]||D[1];
   const dur=fmtD(v.duration);
   const isBm=bms.some(b=>b.id===v.id&&b.topicId===v.topicId);
-  const thumb=`https://img.youtube.com./vi/${v.id}/mqdefault.jpg`;
+  const thumb=`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
   const ini=(v.speaker||'?')[0].toUpperCase();
   const prog=progMap[v.id]?.pct||0;
   const isNew=(v.tags||[]).includes('doc-import');
