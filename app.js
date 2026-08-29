@@ -7,7 +7,7 @@ let actBts=new Set(); // multi-select base topics (AND filter)
 let actSids=new Set(); // multi-select subtopics (AND filter across all topics)
 let actDiffs=new Set(); // multi-select difficulties (1-4) (AND filter)
 let actSpeakers=new Set(); // multi-select speakers (AND filter)
-let actQf={continue:false,bookmarks:false,new:false}; // quick filter toggles
+let actQf={continue:false,bookmarks:false,new:false,kids:false}; // quick filter toggles
 let sidebarFilter=''; // text filter for sidebar items
 let bms=JSON.parse(localStorage.getItem('ym_bms')||'[]');
 let progMap=JSON.parse(localStorage.getItem('ym_prog')||'{}'); // {vid: {pct:0-100, ts:number}}
@@ -181,17 +181,21 @@ function renderSide(){
   const cwc=document.getElementById('qfContinueCount');
   const bmc=document.getElementById('qfBookmarksCount');
   const newc=document.getElementById('qfNewCount');
+  const kidsc=document.getElementById('qfKidsCount');
   if(cwc)cwc.textContent=allV.filter(v=>(progMap[v.id]?.pct||0)>0).length;
   if(bmc)bmc.textContent=bms.length;
   if(newc)newc.textContent=allV.filter(v=>(v.tags||[]).includes('doc-import')).length;
+  if(kidsc)kidsc.textContent=allV.filter(v=>v.topicId==='islamic-children').length;
 
   // Quick filter button states
   const qfc=document.getElementById('qfContinue');
   const qfb=document.getElementById('qfBookmarks');
   const qfn=document.getElementById('qfNew');
+  const qfk=document.getElementById('qfKids');
   if(qfc)qfc.dataset.active=actQf.continue;
   if(qfb)qfb.dataset.active=actQf.bookmarks;
   if(qfn)qfn.dataset.active=actQf.new;
+  if(qfk)qfk.dataset.active=actQf.kids;
 
   // Clear-all button
   const clearAll=document.getElementById('clearAllFilters');
@@ -327,6 +331,7 @@ function applyF(){
     if(actQf.continue&&!(progMap[v.id]?.pct>0))return false;
     if(actQf.bookmarks&&!bms.some(b=>b.id===v.id&&b.topicId===v.topicId))return false;
     if(actQf.new&&!(v.tags||[]).includes('doc-import'))return false;
+    if(actQf.kids&&v.topicId!=='islamic-children')return false;
     if(terms.length){
       const s=[v.title,v.titleAr||'',v.speaker,v.topicName,v.topicNameAr||'',v.subtopicName,v.subtopicNameAr||'',...(v.tags||[])].join(' ').toLowerCase();
       for(const t of terms){if(!s.includes(t))return false;}
@@ -486,14 +491,7 @@ function openWatch(v){
   }
   // Download panel — third-party downloader URLs
   populateDownload(v);
-  const downloadBtn=document.getElementById('modalDownloadBtn');
-  if(downloadBtn&&!downloadBtn._wired){
-    downloadBtn._wired=true;
-    downloadBtn.addEventListener('click',()=>{
-      const panel=document.getElementById('modalDownload');
-      if(panel)panel.style.display=panel.style.display==='none'?'block':'none';
-    });
-  }
+  wireDownloadMenu(v);
   // Wire close buttons (one per panel)
   document.querySelectorAll('.yt-watch-adtricks-close').forEach(btn=>{
     if(btn._wired)return;
@@ -786,6 +784,51 @@ function populateDownload(v){
   });
 }
 
+// Map of downloader key -> URL template (uses {id} for the video id)
+const DL_TEMPLATES={
+  ssyoutube:`https://www.ssyoutube.com/watch?v={id}`,
+  y2mate:`https://www.y2mate.com/youtube/{id}`,
+  '9convert':`https://www.9convert.com/?url=https://www.youtube.com/watch?v={id}`,
+  piped:`https://piped.video/watch?v={id}`,
+  invidious:`https://inv.nadeko.net/watch?v={id}`,
+};
+
+function wireDownloadMenu(v){
+  const btn=document.getElementById('modalDownloadBtn');
+  const menu=document.getElementById('modalDownloadMenu');
+  const more=document.getElementById('modalDownloadMore');
+  if(!btn||!menu)return;
+  if(btn._wired)return;
+  btn._wired=true;
+  const close=()=>{menu.hidden=true;btn.setAttribute('aria-expanded','false');};
+  const open =()=>{menu.hidden=false;btn.setAttribute('aria-expanded','true');};
+  // Toggle on click
+  btn.addEventListener('click',e=>{e.stopPropagation();if(menu.hidden)open();else close();});
+  // Click each method item: open the URL in a new tab + close menu
+  menu.querySelectorAll('.yt-download-menu-item[data-method]').forEach(item=>{
+    item.addEventListener('click',e=>{
+      e.stopPropagation();
+      const tmpl=DL_TEMPLATES[item.dataset.method];
+      if(!tmpl)return;
+      const url=tmpl.replace('{id}',v.id);
+      window.open(url,'_blank','noopener,noreferrer');
+      close();
+    });
+  });
+  // "More options" opens the full panel
+  if(more){
+    more.addEventListener('click',e=>{
+      e.stopPropagation();
+      const panel=document.getElementById('modalDownload');
+      if(panel){panel.style.display='block';panel.scrollIntoView({behavior:'smooth',block:'start'});}
+      close();
+    });
+  }
+  // Close on outside click / Escape
+  document.addEventListener('click',e=>{if(!menu.hidden&&!menu.contains(e.target)&&e.target!==btn)close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden)close();});
+}
+
 function closeModal(){
   // Real watch progress is captured via setupYTProgress (YouTube IFrame API).
   // If user opened but YT API never reported time, record a 1% "visited" marker.
@@ -799,6 +842,8 @@ function closeModal(){
   if(adSkipTicker){clearInterval(adSkipTicker);adSkipTicker=null;}
   const tricks=document.getElementById('modalAdTricks');if(tricks)tricks.style.display='none';
   const dl=document.getElementById('modalDownload');if(dl)dl.style.display='none';
+  const dlm=document.getElementById('modalDownloadMenu');if(dlm)dlm.hidden=true;
+  const dlb=document.getElementById('modalDownloadBtn');if(dlb)dlb.setAttribute('aria-expanded','false');
   // Reset ad mitigation state for the next video
   if(_adPollTimer){clearInterval(_adPollTimer);_adPollTimer=null;}
   adTabOpenedFor=null;
@@ -882,9 +927,11 @@ function bindEv(){
   const qfContinue=document.getElementById('qfContinue');
   const qfBookmarks=document.getElementById('qfBookmarks');
   const qfNew=document.getElementById('qfNew');
+  const qfKids=document.getElementById('qfKids');
   if(qfContinue)qfContinue.addEventListener('click',()=>{actQf.continue=!actQf.continue;renderSide();applyF();});
   if(qfBookmarks)qfBookmarks.addEventListener('click',()=>{actQf.bookmarks=!actQf.bookmarks;renderSide();applyF();});
   if(qfNew)qfNew.addEventListener('click',()=>{actQf.new=!actQf.new;renderSide();applyF();});
+  if(qfKids)qfKids.addEventListener('click',()=>{actQf.kids=!actQf.kids;renderSide();applyF();});
 
   document.addEventListener('keydown',e=>{
     if(e.key==='Escape')closeModal();

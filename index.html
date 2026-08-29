@@ -104,6 +104,11 @@
             <span>New</span>
             <span class="yt-guide-quick-count" id="qfNewCount">0</span>
           </button>
+          <button class="yt-guide-quick-btn yt-guide-quick-btn--kids" id="qfKids" data-active="false" title="Islamic children content: cartoons, nasheeds, Quran learning">
+            <span>🧒</span>
+            <span>Kids</span>
+            <span class="yt-guide-quick-count" id="qfKidsCount">0</span>
+          </button>
         </div>
       </div>
       <div class="yt-guide-divider"></div>
@@ -229,10 +234,41 @@
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
                   <span>Ad tricks</span>
                 </button>
-                <button id="modalDownloadBtn" class="yt-watch-btn yt-watch-btn--secondary" type="button" title="Download this video via third-party downloader">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                  <span>Download</span>
-                </button>
+                <div class="yt-download-wrap">
+                  <button id="modalDownloadBtn" class="yt-watch-btn yt-watch-btn--secondary" type="button" title="Download via third-party downloader" aria-haspopup="true" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                    <span>Download</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true" style="margin-left:2px"><path d="M7 10l5 5 5-5z"/></svg>
+                  </button>
+                  <div id="modalDownloadMenu" class="yt-download-menu" role="menu" aria-label="Download methods" hidden>
+                    <div class="yt-download-menu-header">Pick a method <span class="yt-download-menu-sub">opens in a new tab</span></div>
+                    <button class="yt-download-menu-item" type="button" role="menuitem" data-method="ssyoutube">
+                      <span class="yt-dl-icon">⤓</span>
+                      <span class="yt-dl-text"><strong>SSYoutube</strong><em>https://ssyoutube.com</em></span>
+                    </button>
+                    <button class="yt-download-menu-item" type="button" role="menuitem" data-method="y2mate">
+                      <span class="yt-dl-icon">⤓</span>
+                      <span class="yt-dl-text"><strong>Y2Mate</strong><em>https://y2mate.com</em></span>
+                    </button>
+                    <button class="yt-download-menu-item" type="button" role="menuitem" data-method="9convert">
+                      <span class="yt-dl-icon">⤓</span>
+                      <span class="yt-dl-text"><strong>9Convert</strong><em>https://9convert.com</em></span>
+                    </button>
+                    <button class="yt-download-menu-item" type="button" role="menuitem" data-method="piped">
+                      <span class="yt-dl-icon">▶</span>
+                      <span class="yt-dl-text"><strong>Piped</strong><em>https://piped.video</em></span>
+                    </button>
+                    <button class="yt-download-menu-item" type="button" role="menuitem" data-method="invidious">
+                      <span class="yt-dl-icon">▶</span>
+                      <span class="yt-dl-text"><strong>Invidious</strong><em>https://inv.nadeko.net</em></span>
+                    </button>
+                    <div class="yt-download-menu-divider"></div>
+                    <button class="yt-download-menu-item yt-download-menu-item--more" type="button" role="menuitem" id="modalDownloadMore">
+                      <span class="yt-dl-icon">⋯</span>
+                      <span class="yt-dl-text"><strong>More download options</strong><em>open the full panel with all sources + copy</em></span>
+                    </button>
+                  </div>
+                </div>
                 <button id="modalShare" class="yt-watch-btn yt-watch-btn--share" onclick="shareCurrent()" aria-label="Copy link">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M15 5.63L20.66 12 15 18.37V14h-1c-3.96 0-7.14 1-9.75 3.09 1.84-4.07 5.11-6.4 9.89-7.1l.86-.13V5.63M14 3v6C6.22 10.13 3.11 15.33 2 21c2.78-3.97 6.44-6 12-6v6l8-9-8-9z"/></svg>
                   <span>Share</span>
