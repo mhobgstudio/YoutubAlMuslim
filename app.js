@@ -1180,9 +1180,16 @@ function setupYTProgress(v){
       ytPlayer=new YT.Player('ytPlayerIframe',{
         events:{
           onReady:(e)=>{
-            e.target.unMute&&e.target.unMute();
-            // Try to detect ad-state on initial load.
+            // Force autoplay: unmute + play
+            try{
+              e.target.unMute();
+              e.target.playVideo();
+            }catch(err){}
             detectAdState();
+          },
+          onError:(e)=>{
+            // If embed fails, show fallback play button
+            showAutoplayFallback(v);
           },
           onStateChange:(e)=>{
             detectAdState();
@@ -1201,6 +1208,21 @@ function setupYTProgress(v){
                 if(ytPlayer.getPlayerState()===YT.PlayerState.PLAYING)setTimeout(tick,5000);
               };
               tick();
+            }
+            // If video ended or is unstarted, force play
+            if(e.data===YT.PlayerState.ENDED){
+              try{ ytPlayer.seekTo(0); ytPlayer.playVideo(); }catch(ex){}
+            }
+            if(e.data===YT.PlayerState.UNSTARTED||e.data===YT.PlayerState.PAUSED){
+              // Retry play once after brief delay (handles blocked autoplay)
+              setTimeout(()=>{
+                try{
+                  if(ytPlayer&&typeof ytPlayer.playVideo==='function'){
+                    ytPlayer.unMute();
+                    ytPlayer.playVideo();
+                  }
+                }catch(ex){}
+              },500);
             }
           },
           onAdStateChange:(e)=>updateAdUI(e)
@@ -1284,6 +1306,57 @@ function ensureAutoplaySupport(){
 }
 
 // ===== Responsive: auto-close sidebar on mobile when opening video =====
+// ===== Autoplay fallback — retry with playVideo() after delay =====
+function showAutoplayFallback(v) {
+  const iframe = document.getElementById('ytPlayerIframe');
+  if (!iframe || !v) return;
+  // Try programmatic play after a short delay
+  setTimeout(() => {
+    try {
+      if (ytPlayer && typeof ytPlayer.playVideo === 'function') {
+        ytPlayer.unMute();
+        ytPlayer.playVideo();
+      }
+    } catch(e) {}
+  }, 1000);
+  // Show a "Click to play" overlay if still paused after 2s
+  setTimeout(() => {
+    if (!ytPlayer || !curV) return;
+    try {
+      const state = ytPlayer.getPlayerState && ytPlayer.getPlayerState();
+      if (state === YT.PlayerState.PAUSED || state === YT.PlayerState.UNSTARTED || state === -1) {
+        const player = document.querySelector('.yt-player');
+        if (!player || document.querySelector('.yt-autoplay-retry')) return;
+        const overlay = document.createElement('div');
+        overlay.className = 'yt-autoplay-retry';
+        overlay.innerHTML = '<div class="yt-autoplay-retry-btn"><svg viewBox="0 0 24 24" width="32" height="32" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>';
+        overlay.addEventListener('click', () => {
+          try { ytPlayer.unMute(); ytPlayer.playVideo(); } catch(e) {}
+          overlay.classList.add('hidden');
+          setTimeout(() => overlay.remove(), 300);
+        });
+        player.appendChild(overlay);
+      }
+    } catch(e) {}
+  }, 2500);
+}
+
+// Force play on next user interaction if autoplay was blocked
+function forceAutoplayOnInteraction() {
+  const handler = () => {
+    if (ytPlayer && typeof ytPlayer.playVideo === 'function') {
+      try {
+        ytPlayer.unMute();
+        ytPlayer.playVideo();
+      } catch(e) {}
+    }
+    document.removeEventListener('click', handler);
+    document.removeEventListener('keydown', handler);
+  };
+  document.addEventListener('click', handler, { once: true });
+  document.addEventListener('keydown', handler, { once: true });
+}
+
 function autoCloseSidebarOnMobile(){
   if(window.innerWidth<=1024&&E.sbx&&E.sbx.classList.contains('open')){
     E.sbx.classList.remove('open');

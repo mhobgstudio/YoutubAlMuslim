@@ -534,6 +534,13 @@ yt-player iframe,
 .yt-player-loading::after{content:'';width:40px;height:40px;border:3px solid rgba(255,255,255,.2);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
+/* Autoplay retry overlay */
+.yt-autoplay-retry{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.6);z-index:5;cursor:pointer;transition:opacity .3s}
+.yt-autoplay-retry.hidden{opacity:0;pointer-events:none}
+.yt-autoplay-retry-btn{width:68px;height:68px;border-radius:50%;background:rgba(255,0,0,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.4);transition:transform .2s}
+.yt-autoplay-retry-btn:hover{transform:scale(1.1)}
+.yt-autoplay-retry-btn svg{margin-left:4px}
+
 /* Video player touch overlay for play/pause */
 .yt-player-touch-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:4;pointer-events:none;opacity:0;transition:opacity .3s}
 .yt-player-touch-play.visible{opacity:1;pointer-events:none}
